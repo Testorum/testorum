@@ -9,6 +9,7 @@ interface Props {
   resultId: string
   shareText: string
   theme?: TestTheme
+  locale?: string
 }
 
 interface KakaoSDK {
@@ -21,11 +22,12 @@ interface KakaoSDK {
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://testorum.app'
 
-export function ShareButtons({ slug, resultId, shareText, theme }: Props) {
+export function ShareButtons({ slug, resultId, shareText, theme, locale = 'en' }: Props) {
   const [copied, setCopied] = useState(false)
   const [canNativeShare, setCanNativeShare] = useState(false)
+  const isKo = locale === 'ko'
 
-  const url = `${SITE_URL}/tests/${slug}/result?r=${resultId}`
+  const url = `${SITE_URL}/${locale}/tests/${slug}/result?r=${resultId}`
   const ogImage = `${SITE_URL}/api/og?slug=${slug}&result=${resultId}`
   const encodedText = encodeURIComponent(`${shareText}\n${url}`)
   const primaryColor = theme?.primary || '#FF4F4F'
@@ -62,14 +64,14 @@ export function ShareButtons({ slug, resultId, shareText, theme }: Props) {
       objectType: 'feed',
       content: {
         title: shareText,
-        description: '나도 해보기 → Testorum',
+        description: isKo ? '나도 해보기 → Testorum' : 'Try it yourself → Testorum',
         imageUrl: ogImage,
         imageWidth: 1200,
         imageHeight: 630,
         link: { mobileWebUrl: url, webUrl: url },
       },
       buttons: [
-        { title: '나도 해보기', link: { mobileWebUrl: url, webUrl: url } },
+        { title: isKo ? '나도 해보기' : 'Take the test', link: { mobileWebUrl: url, webUrl: url } },
       ],
     })
   }
@@ -86,7 +88,9 @@ export function ShareButtons({ slug, resultId, shareText, theme }: Props) {
   function shareInstagram() {
     trackEvent('share_click', { share_platform: 'instagram', test_slug: slug })
     navigator.clipboard.writeText(url).then(() => {
-      alert('링크 복사됨! 인스타 스토리에 붙여넣기 해봐 📸')
+      alert(isKo
+        ? '링크 복사됨! 인스타 스토리에 붙여넣기 해봐 📸'
+        : 'Link copied! Paste it in your Instagram Story 📸')
     })
   }
 
@@ -104,36 +108,34 @@ export function ShareButtons({ slug, resultId, shareText, theme }: Props) {
 
   return (
     <div className="flex flex-col gap-3 w-full">
-      {/* CTA */}
       <p className="text-sm text-center font-medium" style={{ color: primaryColor }}>
-        친구는 어떤 유형일까? 👀
+        {isKo ? '친구는 어떤 유형일까? 👀' : 'What type are your friends? 👀'}
       </p>
 
-      {/* Kakao */}
-      <button
-        onClick={shareKakao}
-        className="w-full py-3.5 rounded-[14px] bg-[#FEE500] text-[#3A1D1D] font-bold text-base active:scale-[0.97] transition-all flex items-center justify-center gap-2"
-      >
-        <span className="text-lg">💬</span>
-        카카오톡 공유
-      </button>
+      {/* Kakao (show prominently for ko) */}
+      {isKo && (
+        <button
+          onClick={shareKakao}
+          className="w-full py-3.5 rounded-[14px] bg-[#FEE500] text-[#3A1D1D] font-bold text-base active:scale-[0.97] transition-all flex items-center justify-center gap-2"
+        >
+          <span className="text-lg">💬</span>
+          카카오톡 공유
+        </button>
+      )}
 
-      {/* X / Instagram / Link */}
       <div className="flex gap-2">
         <button
           onClick={shareX}
           className="flex-1 py-3 rounded-[14px] bg-[#0F1419] text-white font-semibold text-sm active:scale-[0.97] transition-all flex items-center justify-center gap-1"
         >
-          𝕏 공유
+          𝕏 {isKo ? '공유' : 'Share'}
         </button>
         <button
           onClick={shareInstagram}
           className="flex-1 py-3 rounded-[14px] font-semibold text-sm text-white active:scale-[0.97] transition-all"
-          style={{
-            background: 'linear-gradient(135deg, #833AB4, #E1306C, #F77737)',
-          }}
+          style={{ background: 'linear-gradient(135deg, #833AB4, #E1306C, #F77737)' }}
         >
-          📸 인스타
+          📸 {isKo ? '인스타' : 'Insta'}
         </button>
         <button
           onClick={copyLink}
@@ -143,17 +145,26 @@ export function ShareButtons({ slug, resultId, shareText, theme }: Props) {
               : 'bg-white text-gray-600 border border-gray-200'
           }`}
         >
-          {copied ? '✓ 복사됨' : '🔗 링크'}
+          {copied ? (isKo ? '✓ 복사됨' : '✓ Copied') : (isKo ? '🔗 링크' : '🔗 Link')}
         </button>
       </div>
 
-      {/* Native share */}
+      {/* Kakao for non-ko (smaller) */}
+      {!isKo && (
+        <button
+          onClick={shareKakao}
+          className="w-full py-3 rounded-[14px] bg-[#FEE500] text-[#3A1D1D] font-semibold text-sm active:scale-[0.97] transition-all flex items-center justify-center gap-2"
+        >
+          <span>💬</span> KakaoTalk
+        </button>
+      )}
+
       {canNativeShare && (
         <button
           onClick={shareNative}
           className="w-full py-3 rounded-[14px] border border-gray-200 text-gray-500 font-semibold text-sm active:scale-[0.97] transition-all"
         >
-          다른 앱으로 공유하기
+          {isKo ? '다른 앱으로 공유하기' : 'Share via other apps'}
         </button>
       )}
     </div>

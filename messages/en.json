@@ -1,0 +1,143 @@
+{
+  "Common": {
+    "siteName": "Testorum",
+    "siteTagline": "Discover who you really are",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "share": "Share",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "seeMore": "See more",
+    "questionCount": "{current} of {total}"
+  },
+  "Nav": {
+    "home": "Home",
+    "tests": "All Tests",
+    "about": "About",
+    "premium": "Premium",
+    "language": "Language"
+  },
+  "Home": {
+    "heroTitle": "What kind of person are you, really?",
+    "heroSubtitle": "Fun psychology tests backed by real insights. Take a test, share your results, and see how you compare.",
+    "ctaStart": "Take a Test",
+    "ctaExplore": "Explore Tests",
+    "trendingTitle": "Trending Now",
+    "trendingSubtitle": "See what everyone's taking right now",
+    "featuredTitle": "Editor's Picks",
+    "categoryAll": "All",
+    "categoryLove": "Love & Dating",
+    "categoryPersonality": "Personality",
+    "categorySocial": "Social",
+    "categoryFun": "Just for Fun",
+    "statsParticipants": "{count} people took this",
+    "statsShares": "{count} shares"
+  },
+  "TestList": {
+    "title": "All Tests",
+    "subtitle": "Pick one that speaks to you",
+    "filterAll": "All",
+    "filterPopular": "Popular",
+    "filterNew": "New",
+    "filterFree": "Free",
+    "emptyState": "No tests found. Check back soon!",
+    "duration": "{minutes} min",
+    "questionCountLabel": "{count} questions",
+    "premium": "Premium",
+    "free": "Free"
+  },
+  "TestPlay": {
+    "startTitle": "Ready?",
+    "startDescription": "Answer honestly — there are no right or wrong answers.",
+    "startButton": "Let's Go",
+    "progressLabel": "Question {current} of {total}",
+    "selectPrompt": "Pick the one that fits you best",
+    "nextQuestion": "Next",
+    "prevQuestion": "Previous",
+    "calculating": "Analyzing your answers...",
+    "calculatingSubtext": "This might take a moment"
+  },
+  "TestResult": {
+    "yourResult": "Your Result",
+    "typeLabel": "You are:",
+    "descriptionTitle": "What this means",
+    "strengthsTitle": "Your Strengths",
+    "weaknessesTitle": "Watch Out For",
+    "compatibilityTitle": "Best Match",
+    "statsTitle": "How rare are you?",
+    "statsPercentage": "{percentage}% of people got this result",
+    "shareTitle": "Share Your Result",
+    "shareDescription": "I got \"{resultType}\" on {testName}!",
+    "shareButton": "Share with Friends",
+    "copyLink": "Copy Link",
+    "retakeButton": "Take Again",
+    "otherTests": "Try Another Test",
+    "premiumUnlock": "Unlock Full Analysis",
+    "premiumTeaser": "Want deeper insights? Get your detailed report.",
+    "premiumCta": "Get Full Report"
+  },
+  "Premium": {
+    "title": "Go Premium",
+    "subtitle": "Unlock the full picture",
+    "feature1Title": "Detailed Analysis",
+    "feature1Desc": "Get a deep dive into your personality traits and patterns",
+    "feature2Title": "Compatibility Reports",
+    "feature2Desc": "See how you match with friends and partners",
+    "feature3Title": "Hidden Insights",
+    "feature3Desc": "Discover what your answers reveal between the lines",
+    "priceLabel": "One-time unlock",
+    "priceAmount": "$1.49",
+    "priceNote": "Per test — no subscription",
+    "buyButton": "Unlock Now",
+    "buyButtonProcessing": "Processing...",
+    "successTitle": "Unlocked!",
+    "successMessage": "Your full report is ready.",
+    "errorPayment": "Payment failed. Please try again.",
+    "guarantee": "Not satisfied? Contact us within 24 hours."
+  },
+  "Share": {
+    "ogTitle": "{testName} — Testorum",
+    "ogDescription": "I got \"{resultType}\"! Take the test and find out yours.",
+    "kakaoTitle": "{testName}",
+    "kakaoDescription": "I got {resultType}! What about you?",
+    "twitterText": "I got \"{resultType}\" on {testName}! Take the test:",
+    "linkCopied": "Link copied! Share it anywhere.",
+    "shareVia": "Share via",
+    "methods": {
+      "kakao": "KakaoTalk",
+      "twitter": "X (Twitter)",
+      "facebook": "Facebook",
+      "link": "Copy Link",
+      "instagram": "Instagram Story"
+    }
+  },
+  "Footer": {
+    "copyright": "© {year} Testorum. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact",
+    "madeWith": "Made with curiosity"
+  },
+  "Error": {
+    "notFound": "Page not found",
+    "notFoundDesc": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go Home",
+    "serverError": "Something went wrong",
+    "serverErrorDesc": "We're working on fixing this. Please try again later."
+  },
+  "Meta": {
+    "homeTitle": "Testorum — Fun Psychology Tests",
+    "homeDescription": "Discover who you really are with fun, insightful psychology tests. Share your results and see how you compare.",
+    "testsTitle": "All Tests — Testorum",
+    "testsDescription": "Browse our collection of psychology tests about love, personality, and more.",
+    "resultTitle": "{resultType} — {testName} | Testorum",
+    "resultDescription": "I got \"{resultType}\" on {testName}. Take the test and discover yours!"
+  }
+}

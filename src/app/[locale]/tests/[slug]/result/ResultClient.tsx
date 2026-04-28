@@ -6,17 +6,20 @@ import { FeedbackWidget } from '@/components/feedback/FeedbackWidget'
 import { AdBanner } from '@/components/ads/AdBanner'
 import { RPGRadarChart } from '@/components/test/RadarChart'
 import { useTestStore } from '@/store/testStore'
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import type { TestData, TestResult, FeedbackCount } from '@/types'
-import Link from 'next/link'
 
 interface Props {
   data: TestData
   result: TestResult
   initialCounts: FeedbackCount
+  locale: string
 }
 
-export function ResultClient({ data, result, initialCounts }: Props) {
+export function ResultClient({ data, result, initialCounts, locale }: Props) {
   const { rpgStats } = useTestStore()
+  const t = useTranslations('TestResult')
   const isRPG = data.scoring.type === 'rpg'
   const hasStats = isRPG && Object.keys(rpgStats).length > 0
 
@@ -25,7 +28,7 @@ export function ResultClient({ data, result, initialCounts }: Props) {
       className="max-w-[480px] mx-auto px-4 py-8 flex flex-col gap-4 min-h-screen"
       style={{ backgroundColor: data.meta.theme.bg }}
     >
-      <ResultCard result={result} meta={data.meta}>
+      <ResultCard result={result} meta={data.meta} locale={locale}>
         {hasStats && (
           <div className="mt-4 w-full">
             <RPGRadarChart stats={rpgStats} />
@@ -35,6 +38,7 @@ export function ResultClient({ data, result, initialCounts }: Props) {
           testSlug={data.meta.slug}
           resultId={result.id}
           initialCounts={initialCounts}
+          locale={locale}
         />
       </ResultCard>
 
@@ -45,13 +49,14 @@ export function ResultClient({ data, result, initialCounts }: Props) {
         resultId={result.id}
         shareText={`${data.meta.shareText} - ${result.title}`}
         theme={data.meta.theme}
+        locale={locale}
       />
 
       <Link
         href="/"
         className="block w-full text-center py-4 rounded-[14px] border border-gray-200 text-gray-500 font-semibold text-sm active:scale-[0.97] transition-all bg-white"
       >
-        다른 테스트 해보기
+        {t('otherTests')}
       </Link>
 
       {/* Testorum watermark */}

@@ -1,13 +1,19 @@
-import Link from 'next/link'
-import { setRequestLocale } from 'next-intl/server';
+import { Link } from '@/i18n/navigation'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { getAllTestSlugs, getTestData } from '@/lib/tests'
 
 type Props = {
-  params: Promise<{ locale: string }>;
-};
+  params: Promise<{ locale: string }>
+}
+
 export default async function HomePage({ params }: Props) {
-  const { locale } = await params;
-  setRequestLocale(locale);
+  const { locale } = await params
+  setRequestLocale(locale)
+
+  const t = await getTranslations('Home')
+  const tNav = await getTranslations('Nav')
+  const tCommon = await getTranslations('Common')
+  const tFooter = await getTranslations('Footer')
 
   const slugs = getAllTestSlugs()
   const tests = await Promise.all(slugs.map(getTestData))
@@ -24,7 +30,7 @@ export default async function HomePage({ params }: Props) {
           Testorum
         </h1>
         <p className="text-sm" style={{ color: '#9B9B9B' }}>
-          심리테스트 한판 어때?
+          {t('heroSubtitle')}
         </p>
       </div>
 
@@ -54,7 +60,7 @@ export default async function HomePage({ params }: Props) {
                     {data!.meta.title}
                   </p>
                   <p className="text-xs mt-0.5" style={{ color: '#9B9B9B' }}>
-                    약 {data!.meta.estimatedMinutes}분 · {data!.meta.category}
+                    {locale === 'ko' ? '약' : '~'} {data!.meta.estimatedMinutes}{locale === 'ko' ? '분' : ' min'} · {data!.meta.category}
                   </p>
                 </div>
                 {/* Arrow */}
@@ -69,8 +75,8 @@ export default async function HomePage({ params }: Props) {
 
       {/* Footer */}
       <footer className="mt-12 text-center text-xs flex gap-4 justify-center" style={{ color: '#C4C4C4' }}>
-        <Link href="/about" className="hover:underline">소개</Link>
-        <Link href="/privacy" className="hover:underline">개인정보처리방침</Link>
+        <Link href="/about" className="hover:underline">{tNav('about')}</Link>
+        <Link href="/privacy" className="hover:underline">{tFooter('privacy')}</Link>
       </footer>
     </div>
   )

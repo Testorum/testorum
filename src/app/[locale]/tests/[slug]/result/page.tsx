@@ -3,33 +3,47 @@ import { notFound } from 'next/navigation'
 import { ResultClient } from './ResultClient'
 import type { Metadata } from 'next'
 import { supabase } from '@/lib/supabase'
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server'
+import { routing } from '@/i18n/routing'
 
 interface Props {
-  params: Promise<{ slug: string, locale: string }>
+  params: Promise<{ slug: string; locale: string }>
   searchParams: Promise<{ r?: string }>
 }
 
 export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const { slug, locale } = await params
-  setRequestLocale(locale);
+  setRequestLocale(locale)
   const { r } = await searchParams
   const data = await getTestData(slug)
   if (!data) return {}
+
   const result = data.results.find((res) => res.id === r)
   const title = result ? `${result.title} | ${data.meta.title}` : data.meta.title
+
   return {
     title: `${title} | Testorum`,
     description: data.meta.description,
+    alternates: {
+      canonical: `https://testorum.app/${locale}/tests/${slug}/result${r ? `?r=${r}` : ''}`,
+      languages: Object.fromEntries(
+        routing.locales.map((l) => [
+          l,
+          `https://testorum.app/${l}/tests/${slug}/result${r ? `?r=${r}` : ''}`,
+        ])
+      ),
+    },
     openGraph: {
       title,
       images: [`/api/og?slug=${slug}&result=${r ?? ''}`],
+      locale: locale === 'ko' ? 'ko_KR' : 'en_US',
     },
   }
 }
 
 export default async function ResultPage({ params, searchParams }: Props) {
-  const { slug } = await params
+  const { slug, locale } = await params
+  setRequestLocale(locale)
   const { r } = await searchParams
   const data = await getTestData(slug)
   if (!data) notFound()
@@ -56,6 +70,7 @@ export default async function ResultPage({ params, searchParams }: Props) {
       data={data}
       result={result}
       initialCounts={counts}
+      locale={locale}
     />
   )
 }

@@ -1,4 +1,4 @@
-// components/LocaleSwitcher.tsx
+// src/components/LocaleSwitcher.tsx
 'use client';
 
 import { useLocale } from 'next-intl';

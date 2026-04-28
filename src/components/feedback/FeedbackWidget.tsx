@@ -9,20 +9,30 @@ interface Props {
   testSlug: string
   resultId: string
   initialCounts: FeedbackCount
+  locale?: string
 }
 
-const EMOJIS: { key: FeedbackEmoji; label: string; text: string }[] = [
+const EMOJIS_KO: { key: FeedbackEmoji; label: string; text: string }[] = [
   { key: 'shocked', label: '😱', text: '소름' },
   { key: 'lol', label: '😂', text: '웃겨' },
   { key: 'think', label: '🤔', text: '글쎄' },
 ]
 
-export function FeedbackWidget({ testSlug, resultId, initialCounts }: Props) {
+const EMOJIS_EN: { key: FeedbackEmoji; label: string; text: string }[] = [
+  { key: 'shocked', label: '😱', text: 'Wow' },
+  { key: 'lol', label: '😂', text: 'LOL' },
+  { key: 'think', label: '🤔', text: 'Hmm' },
+]
+
+export function FeedbackWidget({ testSlug, resultId, initialCounts, locale = 'en' }: Props) {
   const [counts, setCounts] = useState<FeedbackCount>(initialCounts)
   const [selected, setSelected] = useState<FeedbackEmoji | null>(null)
   const [comment, setComment] = useState('')
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+
+  const isKo = locale === 'ko'
+  const EMOJIS = isKo ? EMOJIS_KO : EMOJIS_EN
 
   async function handleFeedback(emoji: FeedbackEmoji) {
     if (loading) return
@@ -30,11 +40,10 @@ export function FeedbackWidget({ testSlug, resultId, initialCounts }: Props) {
 
     const prev = selected
 
-    // 낙관적 업데이트 (즉시 UI 반영)
     setCounts((c) => {
       const next = { ...c }
-      if (prev) next[prev] = Math.max(0, next[prev] - 1) // 이전 것 취소
-      next[emoji] = next[emoji] + 1                       // 새 것 추가
+      if (prev) next[prev] = Math.max(0, next[prev] - 1)
+      next[emoji] = next[emoji] + 1
       return next
     })
     setSelected(emoji)
@@ -45,8 +54,6 @@ export function FeedbackWidget({ testSlug, resultId, initialCounts }: Props) {
       feedback_type: emoji,
     })
 
-    // DB: 이전 피드백 삭제 후 새 것 삽입
-    // 세션 기반으로 관리 (localStorage로 ID 저장)
     const storageKey = `feedback_${testSlug}_${resultId}`
     const existingId = localStorage.getItem(storageKey)
 
@@ -83,14 +90,12 @@ export function FeedbackWidget({ testSlug, resultId, initialCounts }: Props) {
   return (
     <div className="mt-6 w-full">
       <p className="text-sm text-gray-400 text-center mb-3 font-medium">
-        결과가 어때요?
+        {isKo ? '결과가 어때요?' : 'How accurate is this?'}
       </p>
 
-      {/* 반응 버튼 */}
       <div className="flex justify-center gap-3 mb-2">
         {EMOJIS.map(({ key, label, text }) => {
           const isSelected = selected === key
-          const pct = total > 0 ? Math.round((counts[key] / total) * 100) : 0
           return (
             <button
               key={key}
@@ -112,12 +117,11 @@ export function FeedbackWidget({ testSlug, resultId, initialCounts }: Props) {
         })}
       </div>
 
-      {/* 퍼센트 바 (총 1개 이상일 때만 표시) */}
       {total > 0 && (
         <div className="flex rounded-full overflow-hidden h-1.5 mb-5 mx-4">
           {EMOJIS.map(({ key }) => {
             const pct = Math.round((counts[key] / total) * 100)
-            const colors = { shocked: 'bg-purple-300', lol: 'bg-yellow-300', think: 'bg-blue-300' }
+            const colors: Record<string, string> = { shocked: 'bg-purple-300', lol: 'bg-yellow-300', think: 'bg-blue-300' }
             return pct > 0 ? (
               <div
                 key={key}
@@ -129,14 +133,13 @@ export function FeedbackWidget({ testSlug, resultId, initialCounts }: Props) {
         </div>
       )}
 
-      {/* 한줄평 */}
       {!submitted ? (
         <div className="flex gap-2">
           <input
             value={comment}
             onChange={(e) => setComment(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && handleComment()}
-            placeholder="한줄 소감 남기기..."
+            placeholder={isKo ? '한줄 소감 남기기...' : 'Leave a quick thought...'}
             maxLength={60}
             className="flex-1 px-4 py-3 rounded-2xl border border-gray-200 text-sm focus:outline-none focus:border-rose-300 bg-white"
           />
@@ -144,11 +147,13 @@ export function FeedbackWidget({ testSlug, resultId, initialCounts }: Props) {
             onClick={handleComment}
             className="px-4 py-3 rounded-2xl bg-rose-400 text-white text-sm font-semibold active:scale-95 transition-all"
           >
-            등록
+            {isKo ? '등록' : 'Post'}
           </button>
         </div>
       ) : (
-        <p className="text-center text-sm text-gray-400">소감 감사해요! 🙏</p>
+        <p className="text-center text-sm text-gray-400">
+          {isKo ? '소감 감사해요! 🙏' : 'Thanks for sharing! 🙏'}
+        </p>
       )}
     </div>
   )

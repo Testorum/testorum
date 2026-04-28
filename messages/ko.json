@@ -1,0 +1,143 @@
+{
+  "Common": {
+    "siteName": "테스토럼",
+    "siteTagline": "진짜 나를 알아가는 시간",
+    "loading": "잠깐만~",
+    "error": "앗 뭔가 잘못됐어",
+    "retry": "다시 해볼래",
+    "back": "뒤로",
+    "next": "다음",
+    "close": "닫기",
+    "share": "공유",
+    "copy": "복사",
+    "copied": "복사 완료!",
+    "save": "저장",
+    "cancel": "취소",
+    "confirm": "확인",
+    "seeMore": "더 보기",
+    "questionCount": "{total}개 중 {current}번째"
+  },
+  "Nav": {
+    "home": "홈",
+    "tests": "테스트 모아보기",
+    "about": "소개",
+    "premium": "프리미엄",
+    "language": "언어"
+  },
+  "Home": {
+    "heroTitle": "나 진짜 어떤 사람일까?",
+    "heroSubtitle": "재밌는 심리테스트로 알아보자! 결과 공유하고 친구들이랑 비교해봐 🔥",
+    "ctaStart": "테스트 시작",
+    "ctaExplore": "뭐가 있나 보기",
+    "trendingTitle": "지금 핫한 테스트",
+    "trendingSubtitle": "다들 이거 하고 있어",
+    "featuredTitle": "에디터 추천",
+    "categoryAll": "전체",
+    "categoryLove": "연애/썸",
+    "categoryPersonality": "성격",
+    "categorySocial": "관계",
+    "categoryFun": "재미로",
+    "statsParticipants": "{count}명이 해봤어",
+    "statsShares": "공유 {count}회"
+  },
+  "TestList": {
+    "title": "전체 테스트",
+    "subtitle": "끌리는 거 하나 골라봐",
+    "filterAll": "전체",
+    "filterPopular": "인기순",
+    "filterNew": "최신",
+    "filterFree": "무료",
+    "emptyState": "아직 테스트가 없어~ 곧 올라올 거야!",
+    "duration": "약 {minutes}분",
+    "questionCountLabel": "{count}문항",
+    "premium": "프리미엄",
+    "free": "무료"
+  },
+  "TestPlay": {
+    "startTitle": "준비됐어?",
+    "startDescription": "정답 없으니까 솔직하게 골라봐! 느낌 가는 대로 ㄱㄱ",
+    "startButton": "시작해볼까",
+    "progressLabel": "{total}개 중 {current}번째 질문",
+    "selectPrompt": "나랑 가장 비슷한 거 하나 골라봐",
+    "nextQuestion": "다음",
+    "prevQuestion": "이전",
+    "calculating": "답변 분석 중... 🧠",
+    "calculatingSubtext": "잠깐이면 돼"
+  },
+  "TestResult": {
+    "yourResult": "내 결과는",
+    "typeLabel": "너는 바로!",
+    "descriptionTitle": "이게 뭔 뜻이냐면",
+    "strengthsTitle": "이런 게 장점이야",
+    "weaknessesTitle": "이건 좀 조심 ⚠️",
+    "compatibilityTitle": "찰떡궁합",
+    "statsTitle": "이 유형 얼마나 드물까?",
+    "statsPercentage": "참여자 중 {percentage}%가 이 결과!",
+    "shareTitle": "결과 자랑하기",
+    "shareDescription": "나 '{testName}'에서 \"{resultType}\" 나왔어!",
+    "shareButton": "친구한테 알려주기",
+    "copyLink": "링크 복사",
+    "retakeButton": "다시 해볼래",
+    "otherTests": "다른 테스트도 해보기",
+    "premiumUnlock": "전체 분석 보기",
+    "premiumTeaser": "더 깊은 분석이 궁금하다면? 상세 리포트 확인해봐",
+    "premiumCta": "상세 리포트 열기"
+  },
+  "Premium": {
+    "title": "프리미엄으로 업그레이드",
+    "subtitle": "숨겨진 나까지 전부 파헤쳐보자",
+    "feature1Title": "심층 분석",
+    "feature1Desc": "내 성격 패턴이랑 숨은 특성까지 낱낱이 분석해줘",
+    "feature2Title": "궁합 리포트",
+    "feature2Desc": "친구나 애인이랑 얼마나 맞는지 확인해봐",
+    "feature3Title": "히든 인사이트",
+    "feature3Desc": "내 답변 속에 숨어 있던 의외의 면을 발견해봐",
+    "priceLabel": "1회 잠금해제",
+    "priceAmount": "1,900원",
+    "priceNote": "테스트당 결제 — 구독 아님",
+    "buyButton": "지금 열기",
+    "buyButtonProcessing": "처리 중...",
+    "successTitle": "잠금해제 완료! 🎉",
+    "successMessage": "상세 리포트가 준비됐어",
+    "errorPayment": "결제가 안 됐어 다시 시도해줘",
+    "guarantee": "만족 못 했으면? 24시간 내에 문의해줘"
+  },
+  "Share": {
+    "ogTitle": "{testName} — 테스토럼",
+    "ogDescription": "나 \"{resultType}\" 나왔어! 너도 해봐~",
+    "kakaoTitle": "{testName}",
+    "kakaoDescription": "나 {resultType} 나왔어ㅋㅋ 너는?",
+    "twitterText": "'{testName}'에서 \"{resultType}\" 나왔어! 너도 해봐:",
+    "linkCopied": "링크 복사됨! 아무 데나 붙여넣기 해봐",
+    "shareVia": "공유하기",
+    "methods": {
+      "kakao": "카카오톡",
+      "twitter": "X (트위터)",
+      "facebook": "페이스북",
+      "link": "링크 복사",
+      "instagram": "인스타 스토리"
+    }
+  },
+  "Footer": {
+    "copyright": "© {year} Testorum. All rights reserved.",
+    "privacy": "개인정보처리방침",
+    "terms": "이용약관",
+    "contact": "문의하기",
+    "madeWith": "호기심으로 만들었어"
+  },
+  "Error": {
+    "notFound": "페이지를 찾을 수 없어",
+    "notFoundDesc": "없는 페이지거나 주소가 바뀌었을 수도 있어",
+    "goHome": "홈으로 가기",
+    "serverError": "앗 뭔가 문제가 생겼어",
+    "serverErrorDesc": "수정하고 있으니까 잠깐 후에 다시 와줘!"
+  },
+  "Meta": {
+    "homeTitle": "테스토럼 — 재밌는 심리테스트",
+    "homeDescription": "재밌고 은근 정확한 심리테스트! 결과 공유하고 친구들이랑 비교해봐",
+    "testsTitle": "전체 테스트 — 테스토럼",
+    "testsDescription": "연애부터 성격까지 다양한 심리테스트 모음",
+    "resultTitle": "{resultType} — {testName} | 테스토럼",
+    "resultDescription": "나 '{testName}'에서 \"{resultType}\" 나왔어! 너도 해봐~"
+  }
+}

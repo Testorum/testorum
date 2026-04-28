@@ -1,8 +1,9 @@
-// 이 파일은 최소한만 유지. html/body는 [locale]/layout.tsx로 이동
+// Root layout — minimal pass-through
+// html/body/providers are in [locale]/layout.tsx
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
-  return children;
+  return children
 }

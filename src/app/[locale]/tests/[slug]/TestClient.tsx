@@ -1,7 +1,8 @@
 'use client'
 
 import { useCallback, useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter } from '@/i18n/navigation'
+import { useTranslations } from 'next-intl'
 import { useTestStore } from '@/store/testStore'
 import { QuestionCard } from '@/components/test/QuestionCard'
 import { LoadingAnalysis } from '@/components/test/LoadingAnalysis'
@@ -13,10 +14,12 @@ import { useEffect } from 'react'
 
 interface Props {
   data: TestData
+  locale: string
 }
 
-export function TestClient({ data }: Props) {
+export function TestClient({ data, locale }: Props) {
   const router = useRouter()
+  const t = useTranslations('TestPlay')
   const { currentIndex, answers, addAnswer, reset } = useTestStore()
   const [showLoading, setShowLoading] = useState(false)
   const [pendingResultId, setPendingResultId] = useState<string | null>(null)
@@ -56,6 +59,7 @@ export function TestClient({ data }: Props) {
     return (
       <LoadingAnalysis
         theme={data.meta.theme}
+        locale={locale}
         onComplete={handleLoadingComplete}
       />
     )
