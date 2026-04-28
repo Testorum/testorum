@@ -3,12 +3,16 @@
     "slug": "t01",
     "title": "썸 타는 스타일 테스트",
     "subtitle": "나는 어떤 썸 유형일까?",
-    "description": "썸을 탈 때 나의 행동 패턴을 분석해드려요",
+    "description": "썸을 탈 때 나의 행동 패턴을 분석해봐",
     "emoji": "💕",
     "category": "연애",
     "estimatedMinutes": 3,
     "shareText": "나의 썸 타는 스타일은?",
-    "ogColor": "#ff6b9d"
+    "theme": {
+      "primary": "#FF6B6B",
+      "bg": "#FFF5F5",
+      "accent": "#2D2D2D"
+    }
   },
   "scoring": {
     "type": "accumulate",
@@ -17,22 +21,83 @@
   "questions": [
     {
       "id": 1,
+      "type": "text_choice",
       "text": "좋아하는 사람이 생기면\n가장 먼저 하는 행동은?",
       "options": [
-        { "text": "SNS를 샅샅이 탐색한다", "scores": { "A": 2, "B": 1 } },
-        { "text": "어떻게 접근할지 계획을 세운다", "scores": { "B": 2, "C": 1 } },
-        { "text": "자연스럽게 친해지길 기다린다", "scores": { "C": 2, "D": 1 } },
-        { "text": "주변 지인에게 알아봐달라고 한다", "scores": { "D": 2, "E": 1 } }
+        { "text": "SNS를 샅샅이 탐색한다", "emoji": "🔍", "scores": { "A": 2, "B": 1 } },
+        { "text": "어떻게 접근할지 계획을 세운다", "emoji": "📋", "scores": { "B": 2, "C": 1 } },
+        { "text": "자연스럽게 친해지길 기다린다", "emoji": "🌿", "scores": { "C": 2, "D": 1 } },
+        { "text": "주변 지인에게 알아봐달라고 한다", "emoji": "🗣️", "scores": { "D": 2, "E": 1 } }
       ]
     },
     {
       "id": 2,
+      "type": "binary",
+      "text": "연락 먼저 하는 편?\n기다리는 편?",
+      "options": [
+        { "text": "먼저 함", "emoji": "📱", "scores": { "A": 2, "F": 1 } },
+        { "text": "기다림", "emoji": "😶", "scores": { "C": 2, "D": 1 } }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "text_choice",
       "text": "썸 상대가 갑자기\n연락이 뜸해지면?",
       "options": [
-        { "text": "먼저 연락해서 확인한다", "scores": { "A": 2, "F": 1 } },
-        { "text": "불안하지만 기다린다", "scores": { "C": 2, "D": 1 } },
-        { "text": "나도 연락을 줄인다", "scores": { "B": 2, "E": 1 } },
-        { "text": "왜인지 분석하다 지친다", "scores": { "F": 2, "A": 1 } }
+        { "text": "먼저 연락해서 확인한다", "emoji": "📞", "scores": { "A": 2, "F": 1 } },
+        { "text": "불안하지만 기다린다", "emoji": "😰", "scores": { "C": 2, "D": 1 } },
+        { "text": "나도 연락을 줄인다", "emoji": "🙄", "scores": { "B": 2, "E": 1 } },
+        { "text": "왜인지 분석하다 지친다", "emoji": "🧠", "scores": { "F": 2, "A": 1 } }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "binary",
+      "text": "고백은 직접 하는 편?\n분위기 만들고 기다리는 편?",
+      "options": [
+        { "text": "직접 말함", "emoji": "💬", "scores": { "A": 2, "E": 1 } },
+        { "text": "분위기 조성", "emoji": "🕯️", "scores": { "B": 2, "D": 1 } }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "text_choice",
+      "text": "첫 데이트 장소\n고르는 스타일은?",
+      "options": [
+        { "text": "내가 다 알아보고 예약까지", "emoji": "📝", "scores": { "B": 2, "A": 1 } },
+        { "text": "상대한테 뭐 하고 싶은지 물어봄", "emoji": "🤝", "scores": { "D": 2, "C": 1 } },
+        { "text": "그냥 만나서 발길 닿는 대로", "emoji": "🚶", "scores": { "C": 2, "E": 1 } }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "image_grid",
+      "text": "이 중에 가장 설레는\n데이트 장면은?",
+      "options": [
+        { "text": "야경 드라이브", "emoji": "🌃", "scores": { "E": 2, "B": 1 } },
+        { "text": "카페에서 수다", "emoji": "☕", "scores": { "C": 2, "D": 1 } },
+        { "text": "놀이공원 데이트", "emoji": "🎢", "scores": { "A": 2, "F": 1 } },
+        { "text": "집에서 영화", "emoji": "🎬", "scores": { "D": 2, "C": 1 } }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "text_choice",
+      "text": "썸 타다가\n제일 참기 힘든 건?",
+      "options": [
+        { "text": "읽씹당하는 거", "emoji": "💀", "scores": { "A": 2, "F": 1 } },
+        { "text": "밀당하는 거", "emoji": "🎭", "scores": { "F": 2, "E": 1 } },
+        { "text": "진심인지 모르겠는 거", "emoji": "❓", "scores": { "D": 2, "B": 1 } },
+        { "text": "진도가 안 나가는 거", "emoji": "🐌", "scores": { "E": 2, "A": 1 } }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "binary",
+      "text": "썸 상대 앞에서 나는?",
+      "options": [
+        { "text": "더 말 많아짐", "emoji": "🗣️", "scores": { "A": 2, "E": 1 } },
+        { "text": "더 조용해짐", "emoji": "🤫", "scores": { "D": 2, "F": 1 } }
       ]
     }
   ],
@@ -40,56 +105,56 @@
     {
       "id": "A",
       "title": "직진형 썸꾼",
-      "description": "좋아하면 바로 티 내는 타입이에요. 솔직하고 당당한 매력이 있지만 가끔 상대방이 부담을 느낄 수도 있어요.",
+      "description": "좋아하면 바로 티 내는 타입! 솔직하고 당당한 매력이 있지만 가끔 상대가 부담 느낄 수도 있어",
       "emoji": "🎯",
+      "emojiCombo": "🎯💕🔥",
       "tags": ["직진", "솔직", "당당"],
-      "coupangKeyword": "데이트 선물",
-      "coupangUrl": "https://link.coupang.com/a/example"
+      "compatibility": "기다림의 미학형"
     },
     {
       "id": "B",
       "title": "전략형 썸꾼",
-      "description": "철저히 계산하고 움직이는 타입이에요. 상대방 마음을 파악하는 능력이 뛰어나요.",
+      "description": "철저히 계산하고 움직이는 타입! 상대 마음 파악하는 능력이 뛰어나",
       "emoji": "♟️",
+      "emojiCombo": "♟️🧠💫",
       "tags": ["전략적", "분석형", "신중"],
-      "coupangKeyword": "커플 아이템",
-      "coupangUrl": "https://link.coupang.com/a/example2"
+      "compatibility": "소심한 관종형"
     },
     {
       "id": "C",
       "title": "기다림의 미학형",
-      "description": "자연스럽게 가까워지길 기다리는 타입이에요. 강요 없이 편안한 분위기를 만들어요.",
+      "description": "자연스럽게 가까워지길 기다리는 타입! 강요 없이 편안한 분위기를 잘 만들어",
       "emoji": "🌸",
+      "emojiCombo": "🌸☁️💭",
       "tags": ["자연스러움", "여유", "배려"],
-      "coupangKeyword": "힐링 선물",
-      "coupangUrl": "https://link.coupang.com/a/example3"
+      "compatibility": "직진형 썸꾼"
     },
     {
       "id": "D",
       "title": "소심한 관종형",
-      "description": "좋아하지만 직접 나서기 어려운 타입이에요. 간접적으로 신호를 보내며 반응을 살펴요.",
+      "description": "좋아하지만 직접 나서기 어려운 타입! 간접적으로 신호 보내면서 반응 살펴",
       "emoji": "🐣",
+      "emojiCombo": "🐣💌🥺",
       "tags": ["소심", "섬세", "감수성"],
-      "coupangKeyword": "편지지 세트",
-      "coupangUrl": "https://link.coupang.com/a/example4"
+      "compatibility": "전략형 썸꾼"
     },
     {
       "id": "E",
       "title": "밀당 고수형",
-      "description": "밀고 당기기를 본능적으로 하는 타입이에요. 상대의 관심을 끄는 능력이 탁월해요.",
+      "description": "밀고 당기기를 본능적으로 하는 타입! 상대의 관심 끄는 능력 탁월해",
       "emoji": "🎣",
-      "tags": ["밀당", "신비로움", "매력적"],
-      "coupangKeyword": "향수 선물",
-      "coupangUrl": "https://link.coupang.com/a/example5"
+      "emojiCombo": "🎣😏🌙",
+      "tags": ["밀당", "본능적", "매력"],
+      "compatibility": "분석 마비형"
     },
     {
       "id": "F",
-      "title": "분석 과부하형",
-      "description": "상대방의 행동 하나하나를 분석하다 지치는 타입이에요. 생각이 너무 많아 행동이 늦어질 때도 있어요.",
+      "title": "분석 마비형",
+      "description": "상대의 모든 행동을 분석하다 지치는 타입! 생각은 많은데 행동이 느려ㅋㅋ",
       "emoji": "🔬",
-      "tags": ["분석적", "신중", "완벽주의"],
-      "coupangKeyword": "다이어리 플래너",
-      "coupangUrl": "https://link.coupang.com/a/example6"
+      "emojiCombo": "🔬🤯💫",
+      "tags": ["과분석", "신중", "생각쟁이"],
+      "compatibility": "밀당 고수형"
     }
   ]
 }

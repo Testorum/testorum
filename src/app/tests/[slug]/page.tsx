@@ -2,9 +2,10 @@ import { getTestData, getAllTestSlugs } from '@/lib/tests'
 import { TestClient } from './TestClient'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import { setRequestLocale } from 'next-intl/server';
 
 interface Props {
-  params: Promise<{ slug: string }>
+  params: Promise<{ slug: string, locale: string }>
 }
 
 export async function generateStaticParams() {
@@ -12,11 +13,12 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params
+  const { slug, locale } = await params
+  setRequestLocale(locale);
   const data = await getTestData(slug)
   if (!data) return {}
   return {
-    title: `${data.meta.title} | 테스트팩토리`,
+    title: `${data.meta.title} | Testorum`,
     description: data.meta.description,
     openGraph: {
       title: data.meta.title,

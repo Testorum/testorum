@@ -3,21 +3,23 @@ import { notFound } from 'next/navigation'
 import { ResultClient } from './ResultClient'
 import type { Metadata } from 'next'
 import { supabase } from '@/lib/supabase'
+import { setRequestLocale } from 'next-intl/server';
 
 interface Props {
-  params: Promise<{ slug: string }>
+  params: Promise<{ slug: string, locale: string }>
   searchParams: Promise<{ r?: string }>
 }
 
 export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
-  const { slug } = await params
+  const { slug, locale } = await params
+  setRequestLocale(locale);
   const { r } = await searchParams
   const data = await getTestData(slug)
   if (!data) return {}
   const result = data.results.find((res) => res.id === r)
   const title = result ? `${result.title} | ${data.meta.title}` : data.meta.title
   return {
-    title: `${title} | 테스트팩토리`,
+    title: `${title} | Testorum`,
     description: data.meta.description,
     openGraph: {
       title,

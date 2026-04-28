@@ -8,112 +8,351 @@
     "category": "연애",
     "estimatedMinutes": 3,
     "shareText": "나의 카톡 답장 유형은?",
-    "ogColor": "#f59e0b"
+    "theme": {
+      "primary": "#F4A261",
+      "bg": "#FFFBF5",
+      "accent": "#2A2A2A"
+    }
   },
   "scoring": {
     "type": "accumulate",
-    "dimensions": ["quick", "slow", "reader", "emoji", "voice"]
+    "dimensions": [
+      "quick",
+      "slow",
+      "reader",
+      "emoji",
+      "voice"
+    ]
   },
   "questions": [
     {
       "id": 1,
       "text": "좋아하는 사람에게\n카톡이 오면?",
       "options": [
-        { "text": "읽자마자 바로 답장", "scores": { "quick": 3 } },
-        { "text": "읽고 적당히 텀 두고 답장", "scores": { "slow": 2, "reader": 1 } },
-        { "text": "읽씹하다가 나중에 답장", "scores": { "reader": 2, "slow": 1 } },
-        { "text": "음성메시지로 보낸다", "scores": { "voice": 3 } }
-      ]
+        {
+          "text": "읽자마자 바로 답장",
+          "scores": {
+            "quick": 3
+          }
+        },
+        {
+          "text": "읽고 적당히 텀 두고 답장",
+          "scores": {
+            "slow": 2,
+            "reader": 1
+          }
+        },
+        {
+          "text": "읽씹하다가 나중에 답장",
+          "scores": {
+            "reader": 2,
+            "slow": 1
+          }
+        },
+        {
+          "text": "음성메시지로 보낸다",
+          "scores": {
+            "voice": 3
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 2,
       "text": "답장할 때 이모티콘을\n얼마나 쓰는 편?",
       "options": [
-        { "text": "거의 모든 문장에 이모티콘", "scores": { "emoji": 3, "quick": 1 } },
-        { "text": "가끔 분위기에 맞게", "scores": { "slow": 1, "quick": 1 } },
-        { "text": "거의 안 씀, 텍스트만", "scores": { "reader": 2 } },
-        { "text": "이모티콘보다 짤 전문", "scores": { "emoji": 2, "voice": 1 } }
-      ]
+        {
+          "text": "거의 모든 문장에 이모티콘",
+          "scores": {
+            "emoji": 3,
+            "quick": 1
+          }
+        },
+        {
+          "text": "가끔 분위기에 맞게",
+          "scores": {
+            "slow": 1,
+            "quick": 1
+          }
+        },
+        {
+          "text": "거의 안 씀, 텍스트만",
+          "scores": {
+            "reader": 2
+          }
+        },
+        {
+          "text": "이모티콘보다 짤 전문",
+          "scores": {
+            "emoji": 2,
+            "voice": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 3,
       "text": "바쁠 때 카톡이 오면?",
       "options": [
-        { "text": "바빠도 일단 확인하고 답장", "scores": { "quick": 3 } },
-        { "text": "나중에 답장할게 짧게 알림", "scores": { "slow": 2 } },
-        { "text": "읽고 일 끝나면 답장", "scores": { "reader": 2, "slow": 1 } },
-        { "text": "아예 알림 꺼두고 나중에", "scores": { "reader": 3 } }
-      ]
+        {
+          "text": "바빠도 일단 확인하고 답장",
+          "scores": {
+            "quick": 3
+          }
+        },
+        {
+          "text": "나중에 답장할게 짧게 알림",
+          "scores": {
+            "slow": 2
+          }
+        },
+        {
+          "text": "읽고 일 끝나면 답장",
+          "scores": {
+            "reader": 2,
+            "slow": 1
+          }
+        },
+        {
+          "text": "아예 알림 꺼두고 나중에",
+          "scores": {
+            "reader": 3
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 4,
       "text": "카톡 대화할 때\n메시지 길이는?",
       "options": [
-        { "text": "한두 글자로 리액션 위주", "scores": { "emoji": 2, "quick": 1 } },
-        { "text": "짧게 핵심만", "scores": { "slow": 2 } },
-        { "text": "길게 편지처럼 씀", "scores": { "voice": 2, "slow": 1 } },
-        { "text": "상황마다 다름", "scores": { "reader": 1, "slow": 1 } }
-      ]
+        {
+          "text": "한두 글자로 리액션 위주",
+          "scores": {
+            "emoji": 2,
+            "quick": 1
+          }
+        },
+        {
+          "text": "짧게 핵심만",
+          "scores": {
+            "slow": 2
+          }
+        },
+        {
+          "text": "길게 편지처럼 씀",
+          "scores": {
+            "voice": 2,
+            "slow": 1
+          }
+        },
+        {
+          "text": "상황마다 다름",
+          "scores": {
+            "reader": 1,
+            "slow": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 5,
       "text": "상대가 읽씹하면\n어떤 반응?",
       "options": [
-        { "text": "추가 카톡 보냄", "scores": { "quick": 3 } },
-        { "text": "답장 올 때까지 기다림", "scores": { "slow": 2, "reader": 1 } },
-        { "text": "나도 읽씹으로 응수", "scores": { "reader": 3 } },
-        { "text": "전화를 건다", "scores": { "voice": 3 } }
-      ]
+        {
+          "text": "추가 카톡 보냄",
+          "scores": {
+            "quick": 3
+          }
+        },
+        {
+          "text": "답장 올 때까지 기다림",
+          "scores": {
+            "slow": 2,
+            "reader": 1
+          }
+        },
+        {
+          "text": "나도 읽씹으로 응수",
+          "scores": {
+            "reader": 3
+          }
+        },
+        {
+          "text": "전화를 건다",
+          "scores": {
+            "voice": 3
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 6,
       "text": "새벽에 카톡이 오면?",
       "options": [
-        { "text": "바로 깨서 답장", "scores": { "quick": 3 } },
-        { "text": "다음날 아침에 답장", "scores": { "slow": 2 } },
-        { "text": "읽고 다시 잠", "scores": { "reader": 2 } },
-        { "text": "알림 꺼두니 모름", "scores": { "reader": 2, "slow": 1 } }
-      ]
+        {
+          "text": "바로 깨서 답장",
+          "scores": {
+            "quick": 3
+          }
+        },
+        {
+          "text": "다음날 아침에 답장",
+          "scores": {
+            "slow": 2
+          }
+        },
+        {
+          "text": "읽고 다시 잠",
+          "scores": {
+            "reader": 2
+          }
+        },
+        {
+          "text": "알림 꺼두니 모름",
+          "scores": {
+            "reader": 2,
+            "slow": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 7,
       "text": "카톡 프로필 사진은\n자주 바꾸는 편?",
       "options": [
-        { "text": "자주 바꿈, 기분따라", "scores": { "emoji": 2, "quick": 1 } },
-        { "text": "가끔 바꿈", "scores": { "slow": 2 } },
-        { "text": "거의 안 바꿈", "scores": { "reader": 2 } },
-        { "text": "사진 없음", "scores": { "reader": 1, "voice": 1 } }
-      ]
+        {
+          "text": "자주 바꿈, 기분따라",
+          "scores": {
+            "emoji": 2,
+            "quick": 1
+          }
+        },
+        {
+          "text": "가끔 바꿈",
+          "scores": {
+            "slow": 2
+          }
+        },
+        {
+          "text": "거의 안 바꿈",
+          "scores": {
+            "reader": 2
+          }
+        },
+        {
+          "text": "사진 없음",
+          "scores": {
+            "reader": 1,
+            "voice": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 8,
       "text": "카톡보다 선호하는\n소통 방식은?",
       "options": [
-        { "text": "카톡이 최고", "scores": { "quick": 2, "emoji": 1 } },
-        { "text": "전화 통화", "scores": { "voice": 3 } },
-        { "text": "직접 만나는 게 최고", "scores": { "slow": 2, "voice": 1 } },
-        { "text": "다 괜찮음", "scores": { "slow": 1, "reader": 1 } }
-      ]
+        {
+          "text": "카톡이 최고",
+          "scores": {
+            "quick": 2,
+            "emoji": 1
+          }
+        },
+        {
+          "text": "전화 통화",
+          "scores": {
+            "voice": 3
+          }
+        },
+        {
+          "text": "직접 만나는 게 최고",
+          "scores": {
+            "slow": 2,
+            "voice": 1
+          }
+        },
+        {
+          "text": "다 괜찮음",
+          "scores": {
+            "slow": 1,
+            "reader": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 9,
       "text": "단톡방에서 나는?",
       "options": [
-        { "text": "활발히 리액션하는 편", "scores": { "emoji": 2, "quick": 1 } },
-        { "text": "가끔 중요한 것만 답함", "scores": { "slow": 2 } },
-        { "text": "읽기만 하고 거의 안 씀", "scores": { "reader": 3 } },
-        { "text": "단톡방은 알림 꺼둠", "scores": { "reader": 2, "slow": 1 } }
-      ]
+        {
+          "text": "활발히 리액션하는 편",
+          "scores": {
+            "emoji": 2,
+            "quick": 1
+          }
+        },
+        {
+          "text": "가끔 중요한 것만 답함",
+          "scores": {
+            "slow": 2
+          }
+        },
+        {
+          "text": "읽기만 하고 거의 안 씀",
+          "scores": {
+            "reader": 3
+          }
+        },
+        {
+          "text": "단톡방은 알림 꺼둠",
+          "scores": {
+            "reader": 2,
+            "slow": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 10,
       "text": "카톡 답장 속도로\n상대방 마음을 판단하는 편?",
       "options": [
-        { "text": "당연히 판단함", "scores": { "quick": 3 } },
-        { "text": "어느 정도 참고는 함", "scores": { "slow": 2 } },
-        { "text": "바빠서 그럴 수 있다 이해", "scores": { "reader": 2 } },
-        { "text": "전혀 신경 안 씀", "scores": { "voice": 2, "slow": 1 } }
-      ]
+        {
+          "text": "당연히 판단함",
+          "scores": {
+            "quick": 3
+          }
+        },
+        {
+          "text": "어느 정도 참고는 함",
+          "scores": {
+            "slow": 2
+          }
+        },
+        {
+          "text": "바빠서 그럴 수 있다 이해",
+          "scores": {
+            "reader": 2
+          }
+        },
+        {
+          "text": "전혀 신경 안 씀",
+          "scores": {
+            "voice": 2,
+            "slow": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     }
   ],
   "results": [
@@ -122,45 +361,60 @@
       "title": "즉답 요정",
       "description": "카톡 오면 0.1초 안에 답장하는 타입이에요. 읽씹은 나의 사전에 없어요. 상대방이 답장 느리면 불안해지는 경향이 있어요. 카톡 중독 테스트도 한번 해보세요 ㅋㅋ",
       "emoji": "⚡",
-      "tags": ["즉답", "열정적", "카톡중독"],
-      "coupangKeyword": "스마트폰 거치대",
-      "coupangUrl": ""
+      "tags": [
+        "즉답",
+        "열정적",
+        "카톡중독"
+      ],
+      "emojiCombo": "⚡"
     },
     {
       "id": "slow",
       "title": "여유로운 늦답러",
       "description": "답장이 늦는 게 나쁜 게 아니에요. 생각 정리하고 제대로 된 답장을 보내는 타입이에요. 상대방이 답장 빨리 원하면 갈등이 생길 수 있어요.",
       "emoji": "🐢",
-      "tags": ["신중함", "여유", "생각파"],
-      "coupangKeyword": "슬로우 라이프 굿즈",
-      "coupangUrl": ""
+      "tags": [
+        "신중함",
+        "여유",
+        "생각파"
+      ],
+      "emojiCombo": "🐢"
     },
     {
       "id": "reader",
       "title": "읽씹의 달인",
       "description": "읽고 답장 안 하는 게 습관인 타입이에요. 악의는 없지만 상대방 마음은 타들어가고 있어요. 가끔은 짧게라도 반응해주면 관계가 훨씬 편해져요!",
       "emoji": "👁️",
-      "tags": ["읽씹", "독립적", "자유로움"],
-      "coupangKeyword": "명상 용품",
-      "coupangUrl": ""
+      "tags": [
+        "읽씹",
+        "독립적",
+        "자유로움"
+      ],
+      "emojiCombo": "👁️"
     },
     {
       "id": "emoji",
       "title": "이모티콘 수집가",
       "description": "텍스트보다 이모티콘이 더 자연스러운 타입이에요. 감정 표현이 풍부하고 대화가 항상 밝아요. 카카오 이모티콘 구독은 필수겠죠?",
       "emoji": "🎭",
-      "tags": ["이모티콘", "감성적", "밝음"],
-      "coupangKeyword": "이모티콘 굿즈",
-      "coupangUrl": ""
+      "tags": [
+        "이모티콘",
+        "감성적",
+        "밝음"
+      ],
+      "emojiCombo": "🎭"
     },
     {
       "id": "voice",
       "title": "전화 선호파",
       "description": "카톡보다 목소리가 더 편한 타입이에요. 텍스트로 감정 전달이 어렵다고 느껴요. 아날로그 감성의 소유자로 통화 한 번에 오해가 다 풀리는 스타일이에요.",
       "emoji": "📞",
-      "tags": ["통화선호", "감성적", "직접소통"],
-      "coupangKeyword": "무선 이어폰",
-      "coupangUrl": ""
+      "tags": [
+        "통화선호",
+        "감성적",
+        "직접소통"
+      ],
+      "emojiCombo": "📞"
     }
   ]
 }

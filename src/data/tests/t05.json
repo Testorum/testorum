@@ -8,112 +8,343 @@
     "category": "연애",
     "estimatedMinutes": 4,
     "shareText": "내 연애 RPG 클래스는?",
-    "ogColor": "#10b981"
+    "theme": {
+      "primary": "#6A994E",
+      "bg": "#F5FAF0",
+      "accent": "#1B2E1B"
+    }
   },
   "scoring": {
     "type": "rpg",
-    "dimensions": ["charm", "empathy", "courage", "patience", "humor"]
+    "dimensions": [
+      "charm",
+      "empathy",
+      "courage",
+      "patience",
+      "humor"
+    ]
   },
   "questions": [
     {
       "id": 1,
       "text": "좋아하는 사람 앞에서\n나는?",
       "options": [
-        { "text": "평소보다 더 빛난다", "scores": { "charm": 3, "courage": 1 } },
-        { "text": "상대 감정을 먼저 살핀다", "scores": { "empathy": 3 } },
-        { "text": "용기 내서 먼저 다가간다", "scores": { "courage": 3 } },
-        { "text": "긴장해서 말이 많아진다", "scores": { "humor": 2, "charm": 1 } }
-      ]
+        {
+          "text": "평소보다 더 빛난다",
+          "scores": {
+            "charm": 3,
+            "courage": 1
+          }
+        },
+        {
+          "text": "상대 감정을 먼저 살핀다",
+          "scores": {
+            "empathy": 3
+          }
+        },
+        {
+          "text": "용기 내서 먼저 다가간다",
+          "scores": {
+            "courage": 3
+          }
+        },
+        {
+          "text": "긴장해서 말이 많아진다",
+          "scores": {
+            "humor": 2,
+            "charm": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 2,
       "text": "연애에서 가장 중요하게\n생각하는 것은?",
       "options": [
-        { "text": "서로 끌리는 매력", "scores": { "charm": 3 } },
-        { "text": "깊은 이해와 공감", "scores": { "empathy": 3 } },
-        { "text": "솔직한 표현과 고백", "scores": { "courage": 3 } },
-        { "text": "즐거운 시간과 웃음", "scores": { "humor": 3 } }
-      ]
+        {
+          "text": "서로 끌리는 매력",
+          "scores": {
+            "charm": 3
+          }
+        },
+        {
+          "text": "깊은 이해와 공감",
+          "scores": {
+            "empathy": 3
+          }
+        },
+        {
+          "text": "솔직한 표현과 고백",
+          "scores": {
+            "courage": 3
+          }
+        },
+        {
+          "text": "즐거운 시간과 웃음",
+          "scores": {
+            "humor": 3
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 3,
       "text": "상대방이 힘들어할 때\n나는?",
       "options": [
-        { "text": "말없이 곁에 있어준다", "scores": { "empathy": 3, "patience": 1 } },
-        { "text": "웃기게 만들어 기분 전환시킨다", "scores": { "humor": 3 } },
-        { "text": "적극적으로 해결책을 찾는다", "scores": { "courage": 2, "charm": 1 } },
-        { "text": "끝날 때까지 기다려준다", "scores": { "patience": 3 } }
-      ]
+        {
+          "text": "말없이 곁에 있어준다",
+          "scores": {
+            "empathy": 3,
+            "patience": 1
+          }
+        },
+        {
+          "text": "웃기게 만들어 기분 전환시킨다",
+          "scores": {
+            "humor": 3
+          }
+        },
+        {
+          "text": "적극적으로 해결책을 찾는다",
+          "scores": {
+            "courage": 2,
+            "charm": 1
+          }
+        },
+        {
+          "text": "끝날 때까지 기다려준다",
+          "scores": {
+            "patience": 3
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 4,
       "text": "썸 단계에서 나는\n주로?",
       "options": [
-        { "text": "나의 매력을 어필한다", "scores": { "charm": 3 } },
-        { "text": "상대의 취향을 파악한다", "scores": { "empathy": 2, "patience": 1 } },
-        { "text": "먼저 고백한다", "scores": { "courage": 3 } },
-        { "text": "재밌는 사람이 되려 한다", "scores": { "humor": 3 } }
-      ]
+        {
+          "text": "나의 매력을 어필한다",
+          "scores": {
+            "charm": 3
+          }
+        },
+        {
+          "text": "상대의 취향을 파악한다",
+          "scores": {
+            "empathy": 2,
+            "patience": 1
+          }
+        },
+        {
+          "text": "먼저 고백한다",
+          "scores": {
+            "courage": 3
+          }
+        },
+        {
+          "text": "재밌는 사람이 되려 한다",
+          "scores": {
+            "humor": 3
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 5,
       "text": "연애 중 갈등이 생기면?",
       "options": [
-        { "text": "매력 어필로 분위기 전환", "scores": { "charm": 2, "humor": 1 } },
-        { "text": "상대 입장에서 먼저 생각한다", "scores": { "empathy": 3 } },
-        { "text": "바로 대화로 해결한다", "scores": { "courage": 3 } },
-        { "text": "감정이 가라앉을 때까지 기다린다", "scores": { "patience": 3 } }
-      ]
+        {
+          "text": "매력 어필로 분위기 전환",
+          "scores": {
+            "charm": 2,
+            "humor": 1
+          }
+        },
+        {
+          "text": "상대 입장에서 먼저 생각한다",
+          "scores": {
+            "empathy": 3
+          }
+        },
+        {
+          "text": "바로 대화로 해결한다",
+          "scores": {
+            "courage": 3
+          }
+        },
+        {
+          "text": "감정이 가라앉을 때까지 기다린다",
+          "scores": {
+            "patience": 3
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 6,
       "text": "이상형의 첫 번째 조건은?",
       "options": [
-        { "text": "나를 설레게 하는 매력", "scores": { "charm": 3 } },
-        { "text": "내 말을 잘 들어주는 사람", "scores": { "empathy": 2, "patience": 1 } },
-        { "text": "표현을 잘 하는 사람", "scores": { "courage": 2, "charm": 1 } },
-        { "text": "같이 있으면 웃긴 사람", "scores": { "humor": 3 } }
-      ]
+        {
+          "text": "나를 설레게 하는 매력",
+          "scores": {
+            "charm": 3
+          }
+        },
+        {
+          "text": "내 말을 잘 들어주는 사람",
+          "scores": {
+            "empathy": 2,
+            "patience": 1
+          }
+        },
+        {
+          "text": "표현을 잘 하는 사람",
+          "scores": {
+            "courage": 2,
+            "charm": 1
+          }
+        },
+        {
+          "text": "같이 있으면 웃긴 사람",
+          "scores": {
+            "humor": 3
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 7,
       "text": "연애에서 내 약점은?",
       "options": [
-        { "text": "관심받고 싶어한다", "scores": { "charm": 2 } },
-        { "text": "내 감정보다 상대 감정 우선", "scores": { "empathy": 2 } },
-        { "text": "너무 직접적으로 표현한다", "scores": { "courage": 2 } },
-        { "text": "진지한 대화가 어렵다", "scores": { "humor": 2 } }
-      ]
+        {
+          "text": "관심받고 싶어한다",
+          "scores": {
+            "charm": 2
+          }
+        },
+        {
+          "text": "내 감정보다 상대 감정 우선",
+          "scores": {
+            "empathy": 2
+          }
+        },
+        {
+          "text": "너무 직접적으로 표현한다",
+          "scores": {
+            "courage": 2
+          }
+        },
+        {
+          "text": "진지한 대화가 어렵다",
+          "scores": {
+            "humor": 2
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 8,
       "text": "데이트 코스를 고른다면?",
       "options": [
-        { "text": "분위기 좋은 감성 카페/레스토랑", "scores": { "charm": 3 } },
-        { "text": "상대가 좋아하는 곳", "scores": { "empathy": 3, "patience": 1 } },
-        { "text": "새로운 액티비티 도전", "scores": { "courage": 3 } },
-        { "text": "웃긴 체험/방탈출", "scores": { "humor": 3 } }
-      ]
+        {
+          "text": "분위기 좋은 감성 카페/레스토랑",
+          "scores": {
+            "charm": 3
+          }
+        },
+        {
+          "text": "상대가 좋아하는 곳",
+          "scores": {
+            "empathy": 3,
+            "patience": 1
+          }
+        },
+        {
+          "text": "새로운 액티비티 도전",
+          "scores": {
+            "courage": 3
+          }
+        },
+        {
+          "text": "웃긴 체험/방탈출",
+          "scores": {
+            "humor": 3
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 9,
       "text": "오래 기다려야 하는 상황에서?",
       "options": [
-        { "text": "내 매력을 보여줄 기회로 삼는다", "scores": { "charm": 2 } },
-        { "text": "상대가 편하도록 배려한다", "scores": { "empathy": 2, "patience": 1 } },
-        { "text": "다른 방법을 바로 찾는다", "scores": { "courage": 2 } },
-        { "text": "웃기게 시간을 때운다", "scores": { "humor": 2, "patience": 1 } }
-      ]
+        {
+          "text": "내 매력을 보여줄 기회로 삼는다",
+          "scores": {
+            "charm": 2
+          }
+        },
+        {
+          "text": "상대가 편하도록 배려한다",
+          "scores": {
+            "empathy": 2,
+            "patience": 1
+          }
+        },
+        {
+          "text": "다른 방법을 바로 찾는다",
+          "scores": {
+            "courage": 2
+          }
+        },
+        {
+          "text": "웃기게 시간을 때운다",
+          "scores": {
+            "humor": 2,
+            "patience": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 10,
       "text": "연애에서 가장 뿌듯할 때는?",
       "options": [
-        { "text": "상대가 나한테 설렌다고 할 때", "scores": { "charm": 3 } },
-        { "text": "상대가 나한테 마음 털어놓을 때", "scores": { "empathy": 3 } },
-        { "text": "먼저 고백해서 사귀게 됐을 때", "scores": { "courage": 3 } },
-        { "text": "배꼽 잡고 웃은 날", "scores": { "humor": 3 } }
-      ]
+        {
+          "text": "상대가 나한테 설렌다고 할 때",
+          "scores": {
+            "charm": 3
+          }
+        },
+        {
+          "text": "상대가 나한테 마음 털어놓을 때",
+          "scores": {
+            "empathy": 3
+          }
+        },
+        {
+          "text": "먼저 고백해서 사귀게 됐을 때",
+          "scores": {
+            "courage": 3
+          }
+        },
+        {
+          "text": "배꼽 잡고 웃은 날",
+          "scores": {
+            "humor": 3
+          }
+        }
+      ],
+      "type": "text_choice"
     }
   ],
   "results": [
@@ -122,45 +353,60 @@
       "title": "직진 워리어",
       "description": "용기(courage) 스탯이 MAX인 당신! 좋아하면 바로 돌진하는 직진형 연애러예요. 고백 성공률은 높지만 가끔 상대방이 놀랄 수 있어요. 매력도를 조금 더 올려보세요!",
       "emoji": "⚔️",
-      "tags": ["직진", "용기", "리더형"],
-      "coupangKeyword": "데이트 이벤트 용품",
-      "coupangUrl": ""
+      "tags": [
+        "직진",
+        "용기",
+        "리더형"
+      ],
+      "emojiCombo": "⚔️"
     },
     {
       "id": "mage",
       "title": "공감 마법사",
       "description": "공감(empathy) 스탯이 MAX인 당신! 상대방 마음을 읽는 능력이 탁월해요. 연애에서 최고의 파트너지만, 가끔은 본인 감정도 표현해보세요!",
       "emoji": "🔮",
-      "tags": ["공감능력", "이해심", "배려"],
-      "coupangKeyword": "감성 선물 세트",
-      "coupangUrl": ""
+      "tags": [
+        "공감능력",
+        "이해심",
+        "배려"
+      ],
+      "emojiCombo": "🔮"
     },
     {
       "id": "bard",
       "title": "매력 바드",
       "description": "매력(charm) 스탯이 MAX인 당신! 어디서든 빛나는 존재감의 소유자예요. 상대방이 먼저 반하는 타입이지만, 내실도 같이 키워봐요!",
       "emoji": "🎭",
-      "tags": ["매력적", "존재감", "카리스마"],
-      "coupangKeyword": "뷰티 선물세트",
-      "coupangUrl": ""
+      "tags": [
+        "매력적",
+        "존재감",
+        "카리스마"
+      ],
+      "emojiCombo": "🎭"
     },
     {
       "id": "paladin",
       "title": "인내 팔라딘",
       "description": "인내(patience) 스탯이 MAX인 당신! 기다림과 배려의 달인이에요. 장기전에 강하고 상대방이 믿고 의지하는 타입이에요. 다만 너무 참지는 말아요!",
       "emoji": "🛡️",
-      "tags": ["인내심", "안정감", "신뢰"],
-      "coupangKeyword": "커플 무드등",
-      "coupangUrl": ""
+      "tags": [
+        "인내심",
+        "안정감",
+        "신뢰"
+      ],
+      "emojiCombo": "🛡️"
     },
     {
       "id": "rogue",
       "title": "유머 로그",
       "description": "유머(humor) 스탯이 MAX인 당신! 함께 있으면 항상 웃음이 넘치는 타입이에요. 최고의 분위기 메이커지만, 진지한 순간도 만들어보세요!",
       "emoji": "🃏",
-      "tags": ["유머", "밝음", "분위기메이커"],
-      "coupangKeyword": "웃긴 커플 아이템",
-      "coupangUrl": ""
+      "tags": [
+        "유머",
+        "밝음",
+        "분위기메이커"
+      ],
+      "emojiCombo": "🃏"
     }
   ]
 }

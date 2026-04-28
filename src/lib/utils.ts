@@ -6,16 +6,17 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function buildShareUrl(slug: string, resultId: string): string {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://testfactory.kr'
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://testorum.app'
   return `${base}/tests/${slug}/result?r=${resultId}`
 }
 
 export function buildOgImageUrl(slug: string, resultId: string): string {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://testfactory.kr'
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://testorum.app'
   return `${base}/api/og?slug=${slug}&result=${resultId}`
 }
 
-// 쿠팡 파트너스 링크 미설정 시 검색 fallback
-export function buildCoupangSearchUrl(keyword: string): string {
-  return `https://www.coupang.com/np/search?q=${encodeURIComponent(keyword)}&channel=share`
+export function formatNumber(n: number): string {
+  if (n >= 10000) return `${(n / 10000).toFixed(1)}만`
+  if (n >= 1000) return `${(n / 1000).toFixed(1)}천`
+  return n.toLocaleString()
 }

@@ -8,112 +8,350 @@
     "category": "연애",
     "estimatedMinutes": 3,
     "shareText": "전 애인 기억 속 나는 어떤 사람?",
-    "ogColor": "#8b5cf6"
+    "theme": {
+      "primary": "#2B2D42",
+      "bg": "#F3F4F8",
+      "accent": "#EF476F"
+    }
   },
   "scoring": {
     "type": "accumulate",
-    "dimensions": ["warm", "cool", "funny", "sad", "mystery"]
+    "dimensions": [
+      "warm",
+      "cool",
+      "funny",
+      "sad",
+      "mystery"
+    ]
   },
   "questions": [
     {
       "id": 1,
       "text": "연애할 때 나는 주로\n어떤 역할이었나요?",
       "options": [
-        { "text": "챙겨주는 역할", "scores": { "warm": 3 } },
-        { "text": "챙김받는 역할", "scores": { "cool": 2, "sad": 1 } },
-        { "text": "분위기 메이커", "scores": { "funny": 3 } },
-        { "text": "감성 담당", "scores": { "mystery": 2, "sad": 1 } }
-      ]
+        {
+          "text": "챙겨주는 역할",
+          "scores": {
+            "warm": 3
+          }
+        },
+        {
+          "text": "챙김받는 역할",
+          "scores": {
+            "cool": 2,
+            "sad": 1
+          }
+        },
+        {
+          "text": "분위기 메이커",
+          "scores": {
+            "funny": 3
+          }
+        },
+        {
+          "text": "감성 담당",
+          "scores": {
+            "mystery": 2,
+            "sad": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 2,
       "text": "싸웠을 때 나는?",
       "options": [
-        { "text": "먼저 사과하고 해결하려 했다", "scores": { "warm": 3 } },
-        { "text": "화 풀릴 때까지 거리 뒀다", "scores": { "cool": 3 } },
-        { "text": "웃기게 분위기 풀려 했다", "scores": { "funny": 3 } },
-        { "text": "많이 울었다", "scores": { "sad": 3 } }
-      ]
+        {
+          "text": "먼저 사과하고 해결하려 했다",
+          "scores": {
+            "warm": 3
+          }
+        },
+        {
+          "text": "화 풀릴 때까지 거리 뒀다",
+          "scores": {
+            "cool": 3
+          }
+        },
+        {
+          "text": "웃기게 분위기 풀려 했다",
+          "scores": {
+            "funny": 3
+          }
+        },
+        {
+          "text": "많이 울었다",
+          "scores": {
+            "sad": 3
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 3,
       "text": "기념일이나 이벤트를\n얼마나 챙겼나요?",
       "options": [
-        { "text": "아주 꼼꼼히 챙겼다", "scores": { "warm": 2, "funny": 1 } },
-        { "text": "적당히 챙겼다", "scores": { "cool": 2 } },
-        { "text": "깜빡하는 편이었다", "scores": { "cool": 1, "mystery": 2 } },
-        { "text": "이벤트보다 일상에 집중했다", "scores": { "sad": 1, "mystery": 2 } }
-      ]
+        {
+          "text": "아주 꼼꼼히 챙겼다",
+          "scores": {
+            "warm": 2,
+            "funny": 1
+          }
+        },
+        {
+          "text": "적당히 챙겼다",
+          "scores": {
+            "cool": 2
+          }
+        },
+        {
+          "text": "깜빡하는 편이었다",
+          "scores": {
+            "cool": 1,
+            "mystery": 2
+          }
+        },
+        {
+          "text": "이벤트보다 일상에 집중했다",
+          "scores": {
+            "sad": 1,
+            "mystery": 2
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 4,
       "text": "전 애인이 힘들 때 나는?",
       "options": [
-        { "text": "달려가서 옆에 있어줬다", "scores": { "warm": 3 } },
-        { "text": "말 잘 들어줬다", "scores": { "warm": 2, "sad": 1 } },
-        { "text": "해결책을 같이 찾았다", "scores": { "cool": 2, "funny": 1 } },
-        { "text": "개인 시간이 필요하다고 판단했다", "scores": { "cool": 2, "mystery": 1 } }
-      ]
+        {
+          "text": "달려가서 옆에 있어줬다",
+          "scores": {
+            "warm": 3
+          }
+        },
+        {
+          "text": "말 잘 들어줬다",
+          "scores": {
+            "warm": 2,
+            "sad": 1
+          }
+        },
+        {
+          "text": "해결책을 같이 찾았다",
+          "scores": {
+            "cool": 2,
+            "funny": 1
+          }
+        },
+        {
+          "text": "개인 시간이 필요하다고 판단했다",
+          "scores": {
+            "cool": 2,
+            "mystery": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 5,
       "text": "데이트 코스는 주로\n누가 정했나요?",
       "options": [
-        { "text": "내가 늘 열심히 계획했다", "scores": { "warm": 2, "funny": 1 } },
-        { "text": "반반 정했다", "scores": { "cool": 2 } },
-        { "text": "상대방이 주로 정했다", "scores": { "sad": 1, "mystery": 2 } },
-        { "text": "즉흥적으로 정했다", "scores": { "funny": 2, "mystery": 1 } }
-      ]
+        {
+          "text": "내가 늘 열심히 계획했다",
+          "scores": {
+            "warm": 2,
+            "funny": 1
+          }
+        },
+        {
+          "text": "반반 정했다",
+          "scores": {
+            "cool": 2
+          }
+        },
+        {
+          "text": "상대방이 주로 정했다",
+          "scores": {
+            "sad": 1,
+            "mystery": 2
+          }
+        },
+        {
+          "text": "즉흥적으로 정했다",
+          "scores": {
+            "funny": 2,
+            "mystery": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 6,
       "text": "연락 빈도는 어땠나요?",
       "options": [
-        { "text": "항상 먼저 연락했다", "scores": { "warm": 2, "sad": 1 } },
-        { "text": "비슷하게 주고받았다", "scores": { "cool": 2 } },
-        { "text": "상대방이 더 많이 했다", "scores": { "cool": 1, "mystery": 2 } },
-        { "text": "연락은 적어도 만나면 잘 통했다", "scores": { "mystery": 2, "funny": 1 } }
-      ]
+        {
+          "text": "항상 먼저 연락했다",
+          "scores": {
+            "warm": 2,
+            "sad": 1
+          }
+        },
+        {
+          "text": "비슷하게 주고받았다",
+          "scores": {
+            "cool": 2
+          }
+        },
+        {
+          "text": "상대방이 더 많이 했다",
+          "scores": {
+            "cool": 1,
+            "mystery": 2
+          }
+        },
+        {
+          "text": "연락은 적어도 만나면 잘 통했다",
+          "scores": {
+            "mystery": 2,
+            "funny": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 7,
       "text": "헤어질 때 마지막 모습은?",
       "options": [
-        { "text": "좋게 마무리하려 노력했다", "scores": { "warm": 3 } },
-        { "text": "담담하게 받아들였다", "scores": { "cool": 3 } },
-        { "text": "많이 울었다", "scores": { "sad": 3 } },
-        { "text": "어이없게 웃었다", "scores": { "funny": 2, "mystery": 1 } }
-      ]
+        {
+          "text": "좋게 마무리하려 노력했다",
+          "scores": {
+            "warm": 3
+          }
+        },
+        {
+          "text": "담담하게 받아들였다",
+          "scores": {
+            "cool": 3
+          }
+        },
+        {
+          "text": "많이 울었다",
+          "scores": {
+            "sad": 3
+          }
+        },
+        {
+          "text": "어이없게 웃었다",
+          "scores": {
+            "funny": 2,
+            "mystery": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 8,
       "text": "전 애인이 나를\n뭐라고 불렀나요?",
       "options": [
-        { "text": "따뜻한 별명", "scores": { "warm": 2 } },
-        { "text": "그냥 이름", "scores": { "cool": 2 } },
-        { "text": "웃긴 별명", "scores": { "funny": 3 } },
-        { "text": "특이한 별명", "scores": { "mystery": 2 } }
-      ]
+        {
+          "text": "따뜻한 별명",
+          "scores": {
+            "warm": 2
+          }
+        },
+        {
+          "text": "그냥 이름",
+          "scores": {
+            "cool": 2
+          }
+        },
+        {
+          "text": "웃긴 별명",
+          "scores": {
+            "funny": 3
+          }
+        },
+        {
+          "text": "특이한 별명",
+          "scores": {
+            "mystery": 2
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 9,
       "text": "연애하면서 나는\n얼마나 변했나요?",
       "options": [
-        { "text": "상대 맞춰 많이 변했다", "scores": { "warm": 1, "sad": 2 } },
-        { "text": "별로 안 변했다", "scores": { "cool": 3 } },
-        { "text": "더 밝아졌다", "scores": { "funny": 2, "warm": 1 } },
-        { "text": "더 감성적이 됐다", "scores": { "mystery": 2, "sad": 1 } }
-      ]
+        {
+          "text": "상대 맞춰 많이 변했다",
+          "scores": {
+            "warm": 1,
+            "sad": 2
+          }
+        },
+        {
+          "text": "별로 안 변했다",
+          "scores": {
+            "cool": 3
+          }
+        },
+        {
+          "text": "더 밝아졌다",
+          "scores": {
+            "funny": 2,
+            "warm": 1
+          }
+        },
+        {
+          "text": "더 감성적이 됐다",
+          "scores": {
+            "mystery": 2,
+            "sad": 1
+          }
+        }
+      ],
+      "type": "text_choice"
     },
     {
       "id": 10,
       "text": "전 애인이 가장 좋아했던\n나의 모습은?",
       "options": [
-        { "text": "챙겨주는 다정함", "scores": { "warm": 3 } },
-        { "text": "의젓하고 멋있는 모습", "scores": { "cool": 3 } },
-        { "text": "재밌고 밝은 에너지", "scores": { "funny": 3 } },
-        { "text": "알 수 없는 신비로움", "scores": { "mystery": 3 } }
-      ]
+        {
+          "text": "챙겨주는 다정함",
+          "scores": {
+            "warm": 3
+          }
+        },
+        {
+          "text": "의젓하고 멋있는 모습",
+          "scores": {
+            "cool": 3
+          }
+        },
+        {
+          "text": "재밌고 밝은 에너지",
+          "scores": {
+            "funny": 3
+          }
+        },
+        {
+          "text": "알 수 없는 신비로움",
+          "scores": {
+            "mystery": 3
+          }
+        }
+      ],
+      "type": "text_choice"
     }
   ],
   "results": [
@@ -122,45 +360,60 @@
       "title": "따뜻한 사람으로 기억됨",
       "description": "전 애인 기억 속에서 당신은 따뜻하고 다정한 사람이에요. '그 사람은 진짜 나를 많이 아껴줬는데'라는 말을 들을 타입이에요. 이런 사람 다시 만나기 힘들다는 걸 전 애인도 알고 있을 거예요.",
       "emoji": "🌻",
-      "tags": ["다정함", "따뜻함", "배려"],
-      "coupangKeyword": "커플 선물",
-      "coupangUrl": ""
+      "tags": [
+        "다정함",
+        "따뜻함",
+        "배려"
+      ],
+      "emojiCombo": "🌻"
     },
     {
       "id": "cool",
       "title": "쿨한 사람으로 기억됨",
       "description": "전 애인 기억 속에서 당신은 멋있고 독립적인 사람이에요. '참 어른스러웠는데'라는 말을 들을 타입이에요. 가끔 차갑게 느꼈을 수 있지만, 그 여유로움이 매력이었을 거예요.",
       "emoji": "😎",
-      "tags": ["쿨함", "독립적", "어른스러움"],
-      "coupangKeyword": "향수 선물세트",
-      "coupangUrl": ""
+      "tags": [
+        "쿨함",
+        "독립적",
+        "어른스러움"
+      ],
+      "emojiCombo": "😎"
     },
     {
       "id": "funny",
       "title": "재밌는 사람으로 기억됨",
       "description": "전 애인 기억 속에서 당신은 항상 웃음을 주는 사람이에요. '그때 진짜 많이 웃었는데'라는 말을 들을 타입이에요. 힘들 때도 웃게 만들어준 소중한 사람으로 기억될 거예요.",
       "emoji": "😄",
-      "tags": ["유머", "밝음", "에너지"],
-      "coupangKeyword": "재미있는 보드게임",
-      "coupangUrl": ""
+      "tags": [
+        "유머",
+        "밝음",
+        "에너지"
+      ],
+      "emojiCombo": "😄"
     },
     {
       "id": "sad",
       "title": "안쓰러운 사람으로 기억됨",
       "description": "전 애인 기억 속에서 당신은 많이 노력했던 사람이에요. '내가 더 잘해줬어야 했는데'라는 미안함과 함께 기억될 타입이에요. 이제는 당신을 위한 연애를 해보세요!",
       "emoji": "🥺",
-      "tags": ["노력파", "감성적", "순수함"],
-      "coupangKeyword": "힐링 선물",
-      "coupangUrl": ""
+      "tags": [
+        "노력파",
+        "감성적",
+        "순수함"
+      ],
+      "emojiCombo": "🥺"
     },
     {
       "id": "mystery",
       "title": "신비로운 사람으로 기억됨",
       "description": "전 애인 기억 속에서 당신은 끝까지 파악이 안 됐던 사람이에요. '아직도 그 사람이 뭘 생각했는지 모르겠어'라는 말을 들을 타입이에요. 그 신비로움이 오래도록 기억될 거예요.",
       "emoji": "🌙",
-      "tags": ["신비로움", "독특함", "깊이"],
-      "coupangKeyword": "심리학 도서",
-      "coupangUrl": ""
+      "tags": [
+        "신비로움",
+        "독특함",
+        "깊이"
+      ],
+      "emojiCombo": "🌙"
     }
   ]
 }

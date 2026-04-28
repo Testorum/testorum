@@ -1,8 +1,10 @@
 'use client'
 
+import { useCallback, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useTestStore } from '@/store/testStore'
 import { QuestionCard } from '@/components/test/QuestionCard'
+import { LoadingAnalysis } from '@/components/test/LoadingAnalysis'
 import { AdBanner } from '@/components/ads/AdBanner'
 import { trackEvent } from '@/lib/ga4'
 import { resolveResult } from '@/lib/scoring'
@@ -16,6 +18,8 @@ interface Props {
 export function TestClient({ data }: Props) {
   const router = useRouter()
   const { currentIndex, answers, addAnswer, reset } = useTestStore()
+  const [showLoading, setShowLoading] = useState(false)
+  const [pendingResultId, setPendingResultId] = useState<string | null>(null)
 
   useEffect(() => {
     reset()
@@ -37,8 +41,24 @@ export function TestClient({ data }: Props) {
         test_slug: data.meta.slug,
         result_id: resultId,
       })
-      router.push(`/tests/${data.meta.slug}/result?r=${resultId}`)
+      setPendingResultId(resultId)
+      setShowLoading(true)
     }
+  }
+
+  const handleLoadingComplete = useCallback(() => {
+    if (pendingResultId) {
+      router.push(`/tests/${data.meta.slug}/result?r=${pendingResultId}`)
+    }
+  }, [pendingResultId, data.meta.slug, router])
+
+  if (showLoading) {
+    return (
+      <LoadingAnalysis
+        theme={data.meta.theme}
+        onComplete={handleLoadingComplete}
+      />
+    )
   }
 
   if (currentIndex >= data.questions.length) return null
@@ -46,8 +66,7 @@ export function TestClient({ data }: Props) {
   const question = data.questions[currentIndex]
 
   return (
-    <div className="max-w-md mx-auto">
-      {/* 중간 광고 (5번째 질문마다) */}
+    <div className="max-w-[480px] mx-auto">
       {currentIndex > 0 && currentIndex % 5 === 0 && (
         <AdBanner slot="1234567890" format="horizontal" />
       )}
@@ -55,6 +74,7 @@ export function TestClient({ data }: Props) {
         question={question}
         questionIndex={currentIndex + 1}
         totalQuestions={data.questions.length}
+        theme={data.meta.theme}
         onAnswer={handleAnswer}
       />
     </div>

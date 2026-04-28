@@ -2,12 +2,13 @@
 
 import { useEffect, useState } from 'react'
 import { trackEvent } from '@/lib/ga4'
-import { buildShareUrl } from '@/lib/utils'
+import type { TestTheme } from '@/types'
 
 interface Props {
   slug: string
   resultId: string
   shareText: string
+  theme?: TestTheme
 }
 
 interface KakaoSDK {
@@ -18,15 +19,16 @@ interface KakaoSDK {
   }
 }
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://testfactory-kmtuxwnip-lordofwins.vercel.app'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://testorum.app'
 
-export function ShareButtons({ slug, resultId, shareText }: Props) {
+export function ShareButtons({ slug, resultId, shareText, theme }: Props) {
   const [copied, setCopied] = useState(false)
   const [canNativeShare, setCanNativeShare] = useState(false)
 
   const url = `${SITE_URL}/tests/${slug}/result?r=${resultId}`
   const ogImage = `${SITE_URL}/api/og?slug=${slug}&result=${resultId}`
   const encodedText = encodeURIComponent(`${shareText}\n${url}`)
+  const primaryColor = theme?.primary || '#FF4F4F'
 
   useEffect(() => {
     setCanNativeShare(
@@ -60,20 +62,14 @@ export function ShareButtons({ slug, resultId, shareText }: Props) {
       objectType: 'feed',
       content: {
         title: shareText,
-        description: '테스트팩토리에서 나도 해보기 →',
-        imageUrl: ogImage,   // 절대경로 보장
+        description: '나도 해보기 → Testorum',
+        imageUrl: ogImage,
         imageWidth: 1200,
         imageHeight: 630,
-        link: {
-          mobileWebUrl: url,
-          webUrl: url,
-        },
+        link: { mobileWebUrl: url, webUrl: url },
       },
       buttons: [
-        {
-          title: '나도 해보기',
-          link: { mobileWebUrl: url, webUrl: url },
-        },
+        { title: '나도 해보기', link: { mobileWebUrl: url, webUrl: url } },
       ],
     })
   }
@@ -90,7 +86,7 @@ export function ShareButtons({ slug, resultId, shareText }: Props) {
   function shareInstagram() {
     trackEvent('share_click', { share_platform: 'instagram', test_slug: slug })
     navigator.clipboard.writeText(url).then(() => {
-      alert('링크가 복사됐어요!\n인스타 스토리에 붙여넣기 해보세요 📸')
+      alert('링크 복사됨! 인스타 스토리에 붙여넣기 해봐 📸')
     })
   }
 
@@ -108,43 +104,56 @@ export function ShareButtons({ slug, resultId, shareText }: Props) {
 
   return (
     <div className="flex flex-col gap-3 w-full">
+      {/* CTA */}
+      <p className="text-sm text-center font-medium" style={{ color: primaryColor }}>
+        친구는 어떤 유형일까? 👀
+      </p>
+
+      {/* Kakao */}
       <button
         onClick={shareKakao}
-        className="w-full py-3.5 rounded-2xl bg-[#FEE500] text-[#3A1D1D] font-bold text-base active:scale-95 transition-all flex items-center justify-center gap-2"
+        className="w-full py-3.5 rounded-[14px] bg-[#FEE500] text-[#3A1D1D] font-bold text-base active:scale-[0.97] transition-all flex items-center justify-center gap-2"
       >
         <span className="text-lg">💬</span>
-        카카오톡으로 공유하기
+        카카오톡 공유
       </button>
 
+      {/* X / Instagram / Link */}
       <div className="flex gap-2">
         <button
           onClick={shareX}
-          className="flex-1 py-3 rounded-2xl bg-black text-white font-semibold text-sm active:scale-95 transition-all flex items-center justify-center gap-1"
+          className="flex-1 py-3 rounded-[14px] bg-[#0F1419] text-white font-semibold text-sm active:scale-[0.97] transition-all flex items-center justify-center gap-1"
         >
           𝕏 공유
         </button>
         <button
           onClick={shareInstagram}
-          className="flex-1 py-3 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 text-white font-semibold text-sm active:scale-95 transition-all"
+          className="flex-1 py-3 rounded-[14px] font-semibold text-sm text-white active:scale-[0.97] transition-all"
+          style={{
+            background: 'linear-gradient(135deg, #833AB4, #E1306C, #F77737)',
+          }}
         >
           📸 인스타
         </button>
         <button
           onClick={copyLink}
-          className={`flex-1 py-3 rounded-2xl font-semibold text-sm active:scale-95 transition-all ${
-            copied ? 'bg-green-100 text-green-600' : 'bg-gray-100 text-gray-700'
+          className={`flex-1 py-3 rounded-[14px] font-semibold text-sm active:scale-[0.97] transition-all ${
+            copied
+              ? 'bg-green-50 text-green-600 border border-green-200'
+              : 'bg-white text-gray-600 border border-gray-200'
           }`}
         >
           {copied ? '✓ 복사됨' : '🔗 링크'}
         </button>
       </div>
 
+      {/* Native share */}
       {canNativeShare && (
         <button
           onClick={shareNative}
-          className="w-full py-3 rounded-2xl border-2 border-gray-100 text-gray-500 font-semibold text-sm active:scale-95 transition-all"
+          className="w-full py-3 rounded-[14px] border border-gray-200 text-gray-500 font-semibold text-sm active:scale-[0.97] transition-all"
         >
-          더 많은 앱으로 공유하기
+          다른 앱으로 공유하기
         </button>
       )}
     </div>

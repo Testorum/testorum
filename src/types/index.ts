@@ -1,23 +1,8 @@
-// ─── 테스트 관련 타입 ───────────────────────────────────────────
-export interface TestQuestion {
-  id: number
-  text: string
-  options: TestOption[]
-}
-
-export interface TestOption {
-  text: string
-  scores: Record<string, number>
-}
-
-export interface TestResult {
-  id: string
-  title: string
-  description: string
-  emoji: string
-  tags: string[]
-  coupangKeyword?: string
-  coupangUrl?: string
+// ─── 테스트 메타 ─────────────────────────────────────────────
+export interface TestTheme {
+  primary: string
+  bg: string
+  accent: string
 }
 
 export interface TestMeta {
@@ -29,17 +14,38 @@ export interface TestMeta {
   category: string
   estimatedMinutes: number
   shareText: string
-  ogColor: string
+  theme: TestTheme
 }
 
-export interface TestData {
-  meta: TestMeta
-  questions: TestQuestion[]
-  scoring: ScoringConfig
-  results: TestResult[]
+// ─── 질문 타입 (3종) ─────────────────────────────────────────
+export type QuestionType = 'text_choice' | 'image_grid' | 'binary'
+
+export interface TestOption {
+  text: string
+  image?: string       // image_grid 전용
+  emoji?: string       // text_choice/binary 보조
+  scores: Record<string, number>
 }
 
-// ─── 스코어링 타입 ──────────────────────────────────────────────
+export interface TestQuestion {
+  id: number
+  type: QuestionType
+  text: string
+  options: TestOption[]
+}
+
+// ─── 결과 ────────────────────────────────────────────────────
+export interface TestResult {
+  id: string
+  title: string
+  description: string
+  emoji: string         // 단일 이모지 (레거시)
+  emojiCombo?: string   // 이모지 콤보 (🌙💌🥀)
+  tags: string[]
+  compatibility?: string // 궁합 유형 ID
+}
+
+// ─── 스코어링 ────────────────────────────────────────────────
 export type ScoringType = 'accumulate' | 'max' | 'rpg'
 
 export interface ScoringConfig {
@@ -47,7 +53,15 @@ export interface ScoringConfig {
   dimensions?: string[]
 }
 
-// ─── 피드백 / 댓글 타입 ─────────────────────────────────────────
+// ─── 테스트 데이터 (JSON) ────────────────────────────────────
+export interface TestData {
+  meta: TestMeta
+  questions: TestQuestion[]
+  scoring: ScoringConfig
+  results: TestResult[]
+}
+
+// ─── 피드백 / 댓글 ──────────────────────────────────────────
 export type FeedbackEmoji = 'shocked' | 'lol' | 'think'
 
 export interface FeedbackCount {
@@ -64,7 +78,7 @@ export interface Comment {
   created_at: string
 }
 
-// ─── GA4 이벤트 타입 ────────────────────────────────────────────
+// ─── GA4 이벤트 ──────────────────────────────────────────────
 export type GA4EventName =
   | 'test_start'
   | 'question_answer'
@@ -72,7 +86,6 @@ export type GA4EventName =
   | 'test_complete'
   | 'result_feedback'
   | 'share_click'
-  | 'coupang_click'
   | 'comment_submit'
 
 export interface GA4EventParams {
