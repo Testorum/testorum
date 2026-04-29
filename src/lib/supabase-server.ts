@@ -32,3 +32,4 @@ export async function createSupabaseServer() {
     }
   );
 }
+export { createSupabaseServer as createServerClient };

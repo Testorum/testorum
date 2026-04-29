@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
     }
 
     // 3. Insert via server client (bypasses RLS — we've already validated)
-    const supabase = createServerClient();
+    const supabase = await createServerClient();
     const { data, error } = await supabase
       .from('feedback')
       .insert({
@@ -83,7 +83,7 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const supabase = createServerClient();
+    const supabase = await createServerClient();
     const { data, error } = await supabase
       .from('feedback')
       .select('emoji')
@@ -152,7 +152,7 @@ export async function DELETE(request: NextRequest) {
       );
     }
 
-    const supabase = createServerClient();
+    const supabase = await createServerClient();
     const { error } = await supabase
       .from('feedback')
       .delete()

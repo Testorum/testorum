@@ -76,7 +76,7 @@ export async function POST(request: NextRequest) {
     }
 
     // 4. Insert via server client
-    const supabase = createServerClient();
+    const supabase = await createServerClient();
     const { data, error } = await supabase
       .from('comments')
       .insert({
@@ -125,7 +125,7 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const supabase = createServerClient();
+    const supabase = await createServerClient();
     const { data, error } = await supabase
       .from('comments')
       .select('id, content, created_at')
