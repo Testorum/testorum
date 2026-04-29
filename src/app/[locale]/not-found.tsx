@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 
 export default function NotFoundPage() {
-  const t = useTranslations('NotFound');
+  const t = useTranslations('Error');
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
@@ -18,12 +18,12 @@ export default function NotFoundPage() {
 
         {/* Title */}
         <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3">
-          {t('title')}
+          {t('notFound')}
         </h1>
 
         {/* Message */}
         <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-          {t('message')}
+          {t('notFoundDesc')}
         </p>
 
         {/* CTAs */}

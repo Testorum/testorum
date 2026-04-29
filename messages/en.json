@@ -129,6 +129,7 @@
     "notFound": "Page not found",
     "notFoundDesc": "The page you're looking for doesn't exist or has been moved.",
     "goHome": "Go Home",
+    "browseTests": "Browse Tests",
     "serverError": "Something went wrong",
     "serverErrorDesc": "We're working on fixing this. Please try again later."
   },

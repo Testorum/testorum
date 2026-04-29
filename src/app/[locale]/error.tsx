@@ -11,6 +11,7 @@ interface ErrorPageProps {
 
 export default function ErrorPage({ error, reset }: ErrorPageProps) {
   const t = useTranslations('Error');
+  const tc = useTranslations('Common');
 
   useEffect(() => {
     logger.error('ErrorBoundary', error, { digest: error.digest });
@@ -26,12 +27,12 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
 
         {/* Title */}
         <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3">
-          {t('title')}
+          {t('serverError')}
         </h1>
 
         {/* Message */}
         <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-          {t('message')}
+          {t('serverErrorDesc')}
         </p>
 
         {/* Retry Button */}
@@ -39,7 +40,7 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
           onClick={reset}
           className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-violet-600 text-white font-medium hover:bg-violet-700 transition-colors focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2"
         >
-          🔄 {t('retry')}
+          🔄 {tc('retry')}
         </button>
 
         {/* Home Link */}
