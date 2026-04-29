@@ -115,3 +115,63 @@ export async function GET(request: NextRequest) {
     );
   }
 }
+
+/**
+ * DELETE /api/feedback
+ *
+ * 기존 피드백 삭제 (이모지 변경 시 이전 것 제거용)
+ * body: { id: string }
+ */
+const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+export async function DELETE(request: NextRequest) {
+  try {
+    let body: unknown;
+    try {
+      body = await request.json();
+    } catch {
+      return NextResponse.json(
+        { error: 'Invalid JSON body' },
+        { status: 400 }
+      );
+    }
+
+    if (!body || typeof body !== 'object') {
+      return NextResponse.json(
+        { error: 'Request body must be a JSON object' },
+        { status: 400 }
+      );
+    }
+
+    const { id } = body as Record<string, unknown>;
+
+    if (typeof id !== 'string' || !UUID_PATTERN.test(id)) {
+      return NextResponse.json(
+        { error: 'Valid feedback id (UUID) is required' },
+        { status: 400 }
+      );
+    }
+
+    const supabase = createServerClient();
+    const { error } = await supabase
+      .from('feedback')
+      .delete()
+      .eq('id', id);
+
+    if (error) {
+      logger.error('API/feedback/DELETE', error, { id });
+      return NextResponse.json(
+        { error: 'Failed to delete feedback' },
+        { status: 500 }
+      );
+    }
+
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    logger.error('API/feedback/DELETE/unhandled', error);
+    return NextResponse.json(
+      { error: 'Internal server error' },
+      { status: 500 }
+    );
+  }
+}

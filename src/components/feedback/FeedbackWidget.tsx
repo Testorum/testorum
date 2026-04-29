@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { supabase } from '@/lib/supabase'
 import { trackEvent } from '@/lib/ga4'
 import type { FeedbackEmoji, FeedbackCount } from '@/types'
 
@@ -54,21 +53,38 @@ export function FeedbackWidget({ testSlug, resultId, initialCounts, locale = 'en
       feedback_type: emoji,
     })
 
-    const storageKey = `feedback_${testSlug}_${resultId}`
-    const existingId = localStorage.getItem(storageKey)
+    try {
+      // 기존 피드백이 있으면 삭제 (localStorage에 저장된 ID)
+      const storageKey = `feedback_${testSlug}_${resultId}`
+      const existingId = localStorage.getItem(storageKey)
 
-    if (existingId) {
-      await supabase.from('feedback').delete().eq('id', existingId)
-    }
+      if (existingId) {
+        await fetch('/api/feedback', {
+          method: 'DELETE',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: existingId }),
+        })
+      }
 
-    const { data } = await supabase
-      .from('feedback')
-      .insert({ test_slug: testSlug, result_id: resultId, emoji })
-      .select('id')
-      .single()
+      // 새 피드백 삽입
+      const res = await fetch('/api/feedback', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          test_slug: testSlug,
+          result_id: resultId,
+          emoji,
+        }),
+      })
 
-    if (data?.id) {
-      localStorage.setItem(storageKey, data.id)
+      if (res.ok) {
+        const { data } = await res.json()
+        if (data?.id) {
+          localStorage.setItem(storageKey, data.id)
+        }
+      }
+    } catch (err) {
+      console.error('[FeedbackWidget] feedback error:', err)
     }
 
     setLoading(false)
@@ -78,11 +94,26 @@ export function FeedbackWidget({ testSlug, resultId, initialCounts, locale = 'en
     if (!comment.trim() || submitted) return
     setSubmitted(true)
     trackEvent('comment_submit', { test_slug: testSlug, result_id: resultId })
-    await supabase.from('comments').insert({
-      test_slug: testSlug,
-      result_id: resultId,
-      content: comment.trim(),
-    })
+
+    try {
+      const res = await fetch('/api/comments', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          test_slug: testSlug,
+          result_id: resultId,
+          content: comment.trim(),
+        }),
+      })
+
+      if (!res.ok) {
+        // 중복 댓글 등 에러 시 다시 입력 가능하게
+        setSubmitted(false)
+      }
+    } catch (err) {
+      console.error('[FeedbackWidget] comment error:', err)
+      setSubmitted(false)
+    }
   }
 
   const total = counts.shocked + counts.lol + counts.think
@@ -101,11 +132,10 @@ export function FeedbackWidget({ testSlug, resultId, initialCounts, locale = 'en
               key={key}
               onClick={() => handleFeedback(key)}
               disabled={loading}
-              className={`flex flex-col items-center gap-1 px-5 py-3 rounded-2xl border-2 transition-all active:scale-95 min-w-[72px] ${
-                isSelected
+              className={`flex flex-col items-center gap-1 px-5 py-3 rounded-2xl border-2 transition-all active:scale-95 min-w-[72px] ${isSelected
                   ? 'border-rose-400 bg-rose-50 shadow-sm'
                   : 'border-gray-100 bg-white hover:border-gray-200'
-              } ${loading ? 'opacity-60' : ''}`}
+                } ${loading ? 'opacity-60' : ''}`}
             >
               <span className="text-2xl">{label}</span>
               <span className={`text-xs font-bold ${isSelected ? 'text-rose-500' : 'text-gray-400'}`}>
