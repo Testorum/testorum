@@ -7,6 +7,7 @@ import localFont from 'next/font/local'
 import '../globals.css'
 import { LocaleSwitcher } from '@/components/LocaleSwitcher'
 import Script from 'next/script'
+import LemonSqueezyScript from '@/components/billing/LemonSqueezyScript';
 
 const pretendard = localFont({
   src: '../../fonts/PretendardVariable.woff2',
@@ -136,6 +137,7 @@ export default async function LocaleLayout({
           </div>
           {children}
         </NextIntlClientProvider>
+        <LemonSqueezyScript />
       </body>
     </html>
   )
