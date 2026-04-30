@@ -314,3 +314,105 @@ export interface GA4EventParams {
   tori_mood?: string
   [key: string]: string | number | undefined
 }
+// ============================================================
+// Step4-D Types — 궁합 비교 + 레퍼럴 시스템
+// src/types/index.ts 에 추가할 타입들
+// ============================================================
+
+// --- 궁합 비교 ---
+
+export type CompatibilityGrade = '🔥' | '💛' | '🤔' | '💀';
+
+export interface CompatibilityResult {
+  score: number; // 0~100
+  grade: CompatibilityGrade;
+  gradeLabel: string; // locale-resolved
+  highlights: string[]; // locale-resolved (2~3개)
+}
+
+export interface CompareSession {
+  id: string;
+  test_slug: string;
+  initiator_session_id: string;
+  initiator_result_id: string;
+  partner_session_id: string | null;
+  partner_result_id: string | null;
+  created_at: string;
+  completed_at: string | null;
+  expires_at: string;
+}
+
+export interface ComparePageData {
+  session: CompareSession;
+  initiator: {
+    resultId: string;
+    typeName: string;
+    emojiCombo: string;
+    description: string;
+  };
+  partner: {
+    resultId: string;
+    typeName: string;
+    emojiCombo: string;
+    description: string;
+  };
+  compatibility: CompatibilityResult;
+  isPremium: boolean;
+}
+
+// --- 레퍼럴 ---
+
+export type ReferralStatus = 'pending' | 'activated' | 'converted' | 'expired';
+
+export interface ReferralRecord {
+  id: string;
+  referrer_id: string;
+  referred_id: string;
+  referral_code: string;
+  status: ReferralStatus;
+  credits_awarded: boolean;
+  created_at: string;
+  completed_at: string | null;
+  activated_at: string | null;
+  converted_at: string | null;
+}
+
+export interface ReferralStats {
+  total: number;
+  pending: number;
+  activated: number;
+  converted: number;
+  expired: number;
+  totalCreditsEarned: number;
+  recentReferrals: ReferralFriendSummary[];
+  nextMilestone: ReferralMilestone | null;
+}
+
+export interface ReferralFriendSummary {
+  index: number; // "Friend #1" 등 (개인정보 보호)
+  status: ReferralStatus;
+  createdAt: string;
+}
+
+export interface ReferralMilestone {
+  type: 'activated' | 'converted';
+  target: number;
+  current: number;
+  reward: string; // "Pro 1 month free" 등
+}
+
+// 마일스톤 정의 (상수)
+export const REFERRAL_MILESTONES = [
+  { type: 'activated' as const, target: 5, reward: 'pro_1month' },
+  { type: 'activated' as const, target: 15, reward: 'creator_1month' },
+  { type: 'converted' as const, target: 10, reward: 'pro_3months' },
+  { type: 'converted' as const, target: 30, reward: 'pro_lifetime' },
+] as const;
+
+// 크레딧 보상 상수
+export const REFERRAL_CREDITS = {
+  SIGNUP_REFERRER: 5,
+  SIGNUP_REFERRED: 10,
+  ACTIVATION_REFERRER: 15,
+  CONVERSION_REFERRER: 30,
+} as const;

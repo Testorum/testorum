@@ -183,5 +183,41 @@
     "dna": "DNA",
     "history": "기록",
     "referral": "초대"
+  },
+  "Compare": {
+    "ogTitle": "궁합 체크 — Testorum",
+    "ogDescription": "우리 궁합은 몇 점일까? 같은 테스트 하고 확인해봐!",
+    "loading": "궁합 계산 중...",
+    "waitingTitle": "친구를 기다리는 중!",
+    "waitingDescription": "링크를 공유하고 친구가 테스트를 완료할 때까지 기다려봐",
+    "refresh": "다시 확인",
+    "errorTitle": "뭔가 잘못됐어",
+    "errorDescription": "이 비교 세션이 만료됐거나 존재하지 않아",
+    "tryTest": "이 테스트 해보기!",
+    "compareButton": "친구랑 궁합 비교하기!",
+    "creating": "링크 만드는 중...",
+    "createError": "비교 링크 생성 실패",
+    "copy": "복사",
+    "shareFriend": "친구한테 보내기",
+    "shareTitle": "Testorum — 결과 비교해보자!",
+    "shareText": "이 테스트 하고 우리 궁합 확인해보자! 🔥",
+    "premiumFeature": "상세 궁합 분석",
+    "detailedAnalysis": "심층 분석"
+  },
+  "Referral": {
+    "yourCode": "내 추천 코드",
+    "copy": "복사",
+    "shareLink": "초대 링크 공유",
+    "invited": "초대됨",
+    "active": "활성",
+    "premium": "프리미엄",
+    "nextMilestone": "다음 마일스톤",
+    "recentFriends": "최근 친구들",
+    "rewardGuide": "보상 안내",
+    "signupReward": "친구 가입",
+    "activationReward": "친구 테스트 3개 완료",
+    "conversionReward": "친구 Pro 업그레이드",
+    "totalEarned": "총 획득",
+    "welcomeToast": "환영해! 친구 덕분에 크레딧 {credits}개 받았어! 🎁"
   }
 }

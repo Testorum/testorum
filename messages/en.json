@@ -183,5 +183,41 @@
     "dna": "DNA",
     "history": "History",
     "referral": "Referral"
+  },
+  "Compare": {
+    "ogTitle": "Compatibility Check — Testorum",
+    "ogDescription": "How compatible are you? Take the same test and find out!",
+    "loading": "Calculating your chemistry...",
+    "waitingTitle": "Waiting for your friend!",
+    "waitingDescription": "Share the link and wait for them to complete the test",
+    "refresh": "Check again",
+    "errorTitle": "Something went wrong",
+    "errorDescription": "This comparison session may have expired or doesn't exist",
+    "tryTest": "Take this test!",
+    "compareButton": "Compare with a friend!",
+    "creating": "Creating link...",
+    "createError": "Failed to create comparison link",
+    "copy": "Copy",
+    "shareFriend": "Send to a friend",
+    "shareTitle": "Testorum — Compare results!",
+    "shareText": "Take this test and let's compare our results! 🔥",
+    "premiumFeature": "Detailed Compatibility Analysis",
+    "detailedAnalysis": "Deep Analysis"
+  },
+  "Referral": {
+    "yourCode": "Your referral code",
+    "copy": "Copy",
+    "shareLink": "Share invite link",
+    "invited": "Invited",
+    "active": "Active",
+    "premium": "Premium",
+    "nextMilestone": "Next milestone",
+    "recentFriends": "Recent friends",
+    "rewardGuide": "How rewards work",
+    "signupReward": "Friend signs up",
+    "activationReward": "Friend completes 3 tests",
+    "conversionReward": "Friend upgrades to Pro",
+    "totalEarned": "Total earned",
+    "welcomeToast": "Welcome! You got {credits} bonus credits from a friend! 🎁"
   }
 }
