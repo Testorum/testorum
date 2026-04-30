@@ -82,7 +82,7 @@ const intlMiddleware = createMiddleware({
 });
 
 // ─── Main Middleware ───
-export default function middleware(request: NextRequest) {
+export default function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // === API Route Handling ===
