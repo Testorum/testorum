@@ -144,6 +144,7 @@ export function ProfileClient({ locale, user }: Props) {
               <ReferralTab
                 referralCode={user.referralCode}
                 locale={locale}
+                locale={locale}
               />
             )}
           </motion.div>
@@ -294,84 +295,6 @@ function HistoryTab({
           <span className="text-gray-300 text-sm">→</span>
         </Link>
       ))}
-    </div>
-  )
-}
-
-// ─── Tab 4: Referral ────────────────────────────────────────────
-
-function ReferralTab({
-  referralCode,
-  locale,
-}: {
-  referralCode: string | null
-  locale: string
-}) {
-  const isKo = locale === 'ko'
-  const [copied, setCopied] = useState(false)
-
-  const handleCopy = useCallback(() => {
-    if (!referralCode) return
-    const url = `https://testorum.app?ref=${referralCode}`
-    navigator.clipboard.writeText(url).then(() => {
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-      trackEvent('share_click', { share_platform: 'referral_copy' })
-    }).catch(() => {
-      // Fallback: noop
-    })
-  }, [referralCode])
-
-  if (!referralCode) {
-    return (
-      <EmptyState
-        emoji="👥"
-        message={isKo
-          ? '레퍼럴 코드가 아직 없어! 가입하면 자동 생성돼'
-          : "You don't have a referral code yet!"
-        }
-      />
-    )
-  }
-
-  return (
-    <div className="flex flex-col items-center gap-5 py-4">
-      <div className="text-center">
-        <h3 className="text-lg font-bold text-gray-800">
-          {isKo ? '친구 초대하기' : 'Invite Friends'}
-        </h3>
-        <p className="text-xs text-gray-400 mt-1">
-          {isKo
-            ? '친구가 가입하면 둘 다 크레딧 받아!'
-            : 'Both you and your friend get credits!'
-          }
-        </p>
-      </div>
-
-      <div className="w-full bg-white rounded-2xl border border-gray-100 p-4">
-        <p className="text-[10px] text-gray-400 mb-1.5 font-medium uppercase tracking-wide">
-          {isKo ? '내 레퍼럴 코드' : 'Your referral code'}
-        </p>
-        <div className="flex items-center gap-2">
-          <code className="flex-1 bg-gray-50 rounded-lg px-3 py-2.5 text-sm font-mono font-bold text-gray-700 tracking-wider">
-            {referralCode}
-          </code>
-          <button
-            onClick={handleCopy}
-            className="px-4 py-2.5 rounded-lg text-xs font-bold text-white transition-all active:scale-95"
-            style={{ backgroundColor: copied ? '#22c55e' : '#FF4F4F' }}
-          >
-            {copied
-              ? (isKo ? '복사됨!' : 'Copied!')
-              : (isKo ? '복사' : 'Copy')
-            }
-          </button>
-        </div>
-      </div>
-
-      <p className="text-[10px] text-gray-300 text-center">
-        {isKo ? '레퍼럴 상세는 곧 업데이트 예정이야!' : 'Detailed referral stats coming soon!'}
-      </p>
     </div>
   )
 }

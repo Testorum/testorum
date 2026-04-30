@@ -41,6 +41,13 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url)
 
+    // === Compare OG card ===
+    const ogType = searchParams.get('type')
+    if (ogType === 'compare') {
+      const { generateCompareOG } = await import('@/lib/og-compare')
+      return generateCompareOG(searchParams)
+    }
+
     // 입력값 검증
     const slug = validateOgSlug(searchParams.get('slug')) ?? 't01'
     const resultId = validateOgResult(searchParams.get('result')) ?? ''

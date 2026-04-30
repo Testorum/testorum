@@ -1,6 +1,20 @@
 import { supabaseAdmin } from '@/lib/supabase-admin';
 import { PLAN_CONFIGS, type SubscriptionPlan } from '@/types/billing';
 
+// Referral conversion on first payment
+async function handleReferralConversion(userId: string) {
+  try {
+    const { data } = await supabaseAdmin.rpc('convert_referral', {
+      p_referred_id: userId,
+    });
+    if (data?.converted) {
+      console.log('[webhook] referral converted', { userId, referrerId: data.referrer_id });
+    }
+  } catch (err) {
+    console.error('[webhook] referral conversion error (non-blocking)', err);
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Variant ID → Plan mapping (reverse lookup)
 // ---------------------------------------------------------------------------
@@ -166,6 +180,9 @@ export async function handleSubscriptionCreated(
       p_type: 'refill',
       p_desc: `${planInfo.plan} subscription activated`,
     });
+
+  // Referral conversion check (first payment)
+  await handleReferralConversion(userId);
   }
 }
 

@@ -138,11 +138,34 @@ export function TestClient({ data, locale }: Props) {
     }
   }
 
-  const handleLoadingComplete = useCallback(() => {
+  const handleLoadingComplete = useCallback(async () => {
     if (pendingResultId) {
+      // Compare mode: complete partner session
+      if (compareFromId) {
+        try {
+          const res = await fetch('/api/compare/complete', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              session_id: compareFromId,
+              partner_session_id: `${data.meta.slug}_${pendingResultId}_${Date.now()}`,
+              partner_result_id: pendingResultId,
+            }),
+          })
+          if (res.ok) {
+            const cData = await res.json()
+            if (cData.redirect_url) {
+              router.push(cData.redirect_url)
+              return
+            }
+          }
+        } catch {
+          // Fallback to normal result
+        }
+      }
       router.push(`/tests/${data.meta.slug}/result?r=${pendingResultId}`)
     }
-  }, [pendingResultId, data.meta.slug, router])
+  }, [pendingResultId, data.meta.slug, router, compareFromId])
 
   if (showLoading) {
     return (

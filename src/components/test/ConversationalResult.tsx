@@ -334,6 +334,13 @@ export function ConversationalResult({
               locale={locale}
             />
 
+            <CompareButton
+              testSlug={data.meta.slug}
+              sessionId={`${data.meta.slug}_${result.id}_${Date.now()}`}
+              resultId={result.id}
+              locale={locale}
+            />
+
             <Link
               href="/"
               className="block w-full text-center py-4 rounded-[14px] border border-gray-200 text-gray-500 font-semibold text-sm active:scale-[0.97] transition-all bg-white"
