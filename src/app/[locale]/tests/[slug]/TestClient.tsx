@@ -2,6 +2,7 @@
 
 import { useCallback, useState, useRef, useEffect } from 'react'
 import { useRouter } from '@/i18n/navigation'
+import { useSearchParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { useTestStore } from '@/store/testStore'
 import { QuestionCard } from '@/components/test/QuestionCard'
@@ -28,6 +29,8 @@ export function TestClient({ data, locale }: Props) {
   const t = useTranslations('TestPlay')
   const { currentIndex, answers, addAnswer, reset } = useTestStore()
   const [showLoading, setShowLoading] = useState(false)
+  const searchParams = useSearchParams()
+  const compareFromId = searchParams.get('from')
   const [pendingResultId, setPendingResultId] = useState<string | null>(null)
 
   // Tori state
