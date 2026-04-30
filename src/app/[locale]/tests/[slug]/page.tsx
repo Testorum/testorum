@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, locale } = await params
   setRequestLocale(locale)
-  const data = await getTestData(slug)
+  const data = await getTestData(slug, locale)
   if (!data) return {}
 
   const t = await getTranslations({ locale, namespace: 'Meta' })
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function TestPage({ params }: Props) {
   const { slug, locale } = await params
   setRequestLocale(locale)
-  const data = await getTestData(slug)
+  const data = await getTestData(slug, locale)
   if (!data) notFound()
   return <TestClient data={data} locale={locale} />
 }

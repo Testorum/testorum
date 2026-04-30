@@ -447,7 +447,7 @@ function PremiumContent({
   locale: string
 }) {
   const isKo = locale === 'ko'
-  const lang = isKo ? 'ko' : 'en'
+  // locale is already resolved by getTestData
 
   if (!premiumResult) {
     return (
@@ -465,7 +465,7 @@ function PremiumContent({
       <div className="px-4">
         <ToriMessage
           mood="thinking"
-          message={premiumResult.deepAnalysis[lang]}
+          message={premiumResult.deepAnalysis}
           locale={locale}
           theme={theme}
           showTypingIndicator={false}
@@ -479,7 +479,7 @@ function PremiumContent({
           mood="happy"
           message={
             (isKo ? '💪 너의 강점이야!\n' : '💪 Your strengths!\n') +
-            premiumResult.strengths[lang].map((s) => `• ${s}`).join('\n')
+            premiumResult.strengths.map((s) => `• ${s}`).join('\n')
           }
           locale={locale}
           theme={theme}
@@ -494,7 +494,7 @@ function PremiumContent({
           mood="curious"
           message={
             (isKo ? '⚠️ 이건 좀 조심!\n' : '⚠️ Watch out for:\n') +
-            premiumResult.weaknesses[lang].map((w) => `• ${w}`).join('\n')
+            premiumResult.weaknesses.map((w) => `• ${w}`).join('\n')
           }
           locale={locale}
           theme={theme}
@@ -509,7 +509,7 @@ function PremiumContent({
           mood="happy"
           message={
             (isKo ? '💡 토리의 조언!\n' : '💡 Tori\'s advice!\n') +
-            premiumResult.advice[lang]
+            premiumResult.advice
           }
           locale={locale}
           theme={theme}

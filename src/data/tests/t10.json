@@ -1,0 +1,408 @@
+{
+  "meta": {
+    "slug": "t10",
+    "locale_data": {
+      "en": {
+        "title": "How High Is Your EQ?",
+        "subtitle": "Test your emotional intelligence",
+        "description": "Find out how well you read emotions — yours and others'",
+        "shareText": "My EQ grade is..."
+      },
+      "ko": {
+        "title": "나의 감성지능 테스트",
+        "subtitle": "나의 EQ 등급은?",
+        "description": "나의 감정 인식 능력과 공감 능력을 분석해봐",
+        "shareText": "나의 감성지능 등급은?"
+      }
+    },
+    "emoji": "🧠",
+    "category": "communication",
+    "estimatedMinutes": 3,
+    "theme": {
+      "primary": "#0D9488",
+      "bg": "#F0FDFA",
+      "accent": "#134E4A"
+    }
+  },
+  "scoring": {
+    "type": "accumulate",
+    "dimensions": ["S", "A", "B", "C"]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "text_choice",
+      "locale_data": {
+        "en": { "text": "A friend suddenly goes quiet\nin the group chat. You..." },
+        "ko": { "text": "친구가 갑자기 단톡에서\n조용해졌다. 나는?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "DM them to check in privately" },
+            "ko": { "text": "개인 톡으로 안부를 물어본다" }
+          },
+          "emoji": "💬",
+          "scores": { "S": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Notice but wait for them to come back" },
+            "ko": { "text": "눈치채지만 돌아오길 기다린다" }
+          },
+          "emoji": "👀",
+          "scores": { "A": 2, "B": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Didn't really notice tbh" },
+            "ko": { "text": "솔직히 잘 못 느꼈다" }
+          },
+          "emoji": "🤷",
+          "scores": { "B": 2, "C": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Mention it in the group chat" },
+            "ko": { "text": "단톡에서 공개적으로 언급한다" }
+          },
+          "emoji": "📢",
+          "scores": { "C": 3 }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "binary",
+      "locale_data": {
+        "en": { "text": "Someone is telling you about\ntheir bad day. You..." },
+        "ko": { "text": "누군가 힘든 하루에 대해\n이야기한다. 나는?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Listen fully before responding" },
+            "ko": { "text": "끝까지 듣고 나서 반응한다" }
+          },
+          "emoji": "👂",
+          "scores": { "S": 2, "A": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Jump in with advice or my own story" },
+            "ko": { "text": "조언이나 내 경험을 먼저 말한다" }
+          },
+          "emoji": "💡",
+          "scores": { "B": 2, "C": 1 }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "image_grid",
+      "locale_data": {
+        "en": { "text": "You can tell someone is upset\neven when they say 'I'm fine.' How?" },
+        "ko": { "text": "'괜찮아'라고 하지만\n기분이 안 좋은 걸 어떻게 알지?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Tone of voice" },
+            "ko": { "text": "목소리 톤으로" }
+          },
+          "emoji": "🗣️",
+          "scores": { "S": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Body language" },
+            "ko": { "text": "바디랭귀지로" }
+          },
+          "emoji": "🤷",
+          "scores": { "A": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Context clues" },
+            "ko": { "text": "상황 맥락으로" }
+          },
+          "emoji": "🧩",
+          "scores": { "A": 2, "B": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "I usually can't tell" },
+            "ko": { "text": "솔직히 잘 모르겠음" }
+          },
+          "emoji": "❓",
+          "scores": { "C": 3 }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "text_choice",
+      "locale_data": {
+        "en": { "text": "When you're angry,\nhow do you handle it?" },
+        "ko": { "text": "화가 날 때\n나는 어떻게 하나?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Identify why I'm angry, then address it" },
+            "ko": { "text": "왜 화가 났는지 먼저 파악한다" }
+          },
+          "emoji": "🧠",
+          "scores": { "S": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Cool down first, talk later" },
+            "ko": { "text": "일단 진정하고 나중에 말한다" }
+          },
+          "emoji": "🧊",
+          "scores": { "A": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Vent immediately to whoever's near" },
+            "ko": { "text": "옆에 있는 사람한테 바로 풀어버림" }
+          },
+          "emoji": "🌋",
+          "scores": { "B": 2, "C": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Bottle it up until it explodes" },
+            "ko": { "text": "참다 참다 폭발한다" }
+          },
+          "emoji": "💣",
+          "scores": { "C": 3 }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "binary",
+      "locale_data": {
+        "en": { "text": "Watching a sad movie,\nyou..." },
+        "ko": { "text": "슬픈 영화를 볼 때\n나는?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Cry openly — no shame" },
+            "ko": { "text": "당당하게 울어버린다" }
+          },
+          "emoji": "😭",
+          "scores": { "S": 2, "A": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Hold it in or barely react" },
+            "ko": { "text": "참거나 별 감흥 없다" }
+          },
+          "emoji": "😐",
+          "scores": { "B": 2, "C": 1 }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "image_grid",
+      "locale_data": {
+        "en": { "text": "A coworker takes credit\nfor your idea. You..." },
+        "ko": { "text": "동료가 내 아이디어를\n자기 거라고 한다. 나는?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Address it calmly" },
+            "ko": { "text": "차분하게 짚어준다" }
+          },
+          "emoji": "🧘",
+          "scores": { "S": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Frustrated but strategic" },
+            "ko": { "text": "화나지만 전략적 대응" }
+          },
+          "emoji": "♟️",
+          "scores": { "A": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Call them out publicly" },
+            "ko": { "text": "공개적으로 지적" }
+          },
+          "emoji": "📢",
+          "scores": { "B": 2, "C": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Let it go" },
+            "ko": { "text": "그냥 넘어간다" }
+          },
+          "emoji": "🤷",
+          "scores": { "B": 1, "C": 2 }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "text_choice",
+      "locale_data": {
+        "en": { "text": "After a tough conversation,\nyou usually..." },
+        "ko": { "text": "힘든 대화가 끝나고\n나는 보통?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Reflect on both sides fairly" },
+            "ko": { "text": "양쪽 입장을 공정하게 복기한다" }
+          },
+          "emoji": "⚖️",
+          "scores": { "S": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Replay what I should've said differently" },
+            "ko": { "text": "내가 다르게 말했어야 할 걸 되짚는다" }
+          },
+          "emoji": "🔄",
+          "scores": { "A": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Move on quickly" },
+            "ko": { "text": "빨리 잊고 넘어간다" }
+          },
+          "emoji": "🚶",
+          "scores": { "B": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Hold a grudge for a while" },
+            "ko": { "text": "한동안 찝찝함이 남는다" }
+          },
+          "emoji": "😤",
+          "scores": { "C": 3 }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "binary",
+      "locale_data": {
+        "en": { "text": "Do you find it easy\nto name your emotions specifically?" },
+        "ko": { "text": "내 감정을 구체적으로\n이름 붙이는 게 쉬운 편?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Yes — I know exactly what I feel" },
+            "ko": { "text": "응 — 내가 뭘 느끼는지 정확히 알아" }
+          },
+          "emoji": "🎯",
+          "scores": { "S": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Not really — it's just 'good' or 'bad'" },
+            "ko": { "text": "아니 — 그냥 '좋다' 아니면 '나쁘다'" }
+          },
+          "emoji": "🤔",
+          "scores": { "B": 2, "C": 1 }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "S",
+      "locale_data": {
+        "en": {
+          "title": "EQ Rank: S — Emotional Genius",
+          "description": "You read rooms like a book. You know exactly what you feel, why you feel it, and what others feel too. Your emotional vocabulary is rich and your responses are calibrated. Rare breed.",
+          "tags": ["self-aware", "empathetic", "calibrated"],
+          "compatibility": "EQ Rank: B"
+        },
+        "ko": {
+          "title": "EQ 등급: S — 감성 천재",
+          "description": "공간의 분위기를 책 읽듯 파악하는 타입! 내 감정도 남의 감정도 정확히 읽어요. 감정 표현 어휘가 풍부하고 반응도 딱 맞아요. 진짜 드문 유형이에요.",
+          "tags": ["자기인식", "공감력", "조율 능력"],
+          "compatibility": "EQ 등급: B"
+        }
+      },
+      "emoji": "💎",
+      "emojiCombo": "💎🧠✨"
+    },
+    {
+      "id": "A",
+      "locale_data": {
+        "en": {
+          "title": "EQ Rank: A — Emotionally Skilled",
+          "description": "You're tuned in to emotions — yours and others'. You don't always react perfectly in the moment, but you process well and grow from every interaction. Solid emotional intelligence.",
+          "tags": ["aware", "growing", "thoughtful"],
+          "compatibility": "EQ Rank: C"
+        },
+        "ko": {
+          "title": "EQ 등급: A — 감성 숙련자",
+          "description": "감정에 잘 연결되어 있는 타입! 순간적으로 완벽하진 않아도 나중에 잘 정리하고 성장해요. 탄탄한 감성지능의 소유자!",
+          "tags": ["인식력", "성장형", "사려 깊음"],
+          "compatibility": "EQ 등급: C"
+        }
+      },
+      "emoji": "🌟",
+      "emojiCombo": "🌟🫶💭"
+    },
+    {
+      "id": "B",
+      "locale_data": {
+        "en": {
+          "title": "EQ Rank: B — Work In Progress",
+          "description": "You've got the basics down but emotional subtlety sometimes escapes you. You mean well — you just don't always catch the signals in time. A little more active listening goes a long way.",
+          "tags": ["developing", "well-meaning", "practical"],
+          "compatibility": "EQ Rank: S"
+        },
+        "ko": {
+          "title": "EQ 등급: B — 성장 중",
+          "description": "기본기는 있는데 미묘한 감정의 결은 놓칠 때가 있어요. 마음은 좋은데 신호를 제때 못 잡는 타입! 능동적으로 듣는 연습을 조금만 하면 확 달라져요.",
+          "tags": ["발전 중", "선의", "실용적"],
+          "compatibility": "EQ 등급: S"
+        }
+      },
+      "emoji": "📈",
+      "emojiCombo": "📈🌱💪"
+    },
+    {
+      "id": "C",
+      "locale_data": {
+        "en": {
+          "title": "EQ Rank: C — Emotionally Loading...",
+          "description": "Emotions are kind of a foreign language to you — and that's okay! It doesn't mean you don't care. You just process differently. Start by naming one emotion a day and go from there.",
+          "tags": ["logical", "direct", "developing"],
+          "compatibility": "EQ Rank: A"
+        },
+        "ko": {
+          "title": "EQ 등급: C — 감성 로딩 중...",
+          "description": "감정이 좀 외국어 같은 타입 — 근데 그래도 괜찮아요! 신경 안 쓰는 게 아니라 처리 방식이 다른 거예요. 하루에 감정 하나씩 이름 붙이는 연습부터 시작해봐요!",
+          "tags": ["논리적", "직설적", "성장 가능"],
+          "compatibility": "EQ 등급: A"
+        }
+      },
+      "emoji": "🔧",
+      "emojiCombo": "🔧🧩💡"
+    }
+  ],
+  "dna_mapping": {
+    "category": "communication",
+    "traits": {
+      "S": { "responsiveness": 0.8, "clarity": 0.9, "emotional_awareness": 0.95, "humor": 0.6 },
+      "A": { "responsiveness": 0.7, "clarity": 0.7, "emotional_awareness": 0.75, "humor": 0.5 },
+      "B": { "responsiveness": 0.5, "clarity": 0.6, "emotional_awareness": 0.5, "humor": 0.6 },
+      "C": { "responsiveness": 0.4, "clarity": 0.5, "emotional_awareness": 0.3, "humor": 0.4 }
+    }
+  }
+}

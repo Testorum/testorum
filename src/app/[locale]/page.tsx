@@ -16,7 +16,7 @@ export default async function HomePage({ params }: Props) {
   const tFooter = await getTranslations('Footer')
 
   const slugs = getAllTestSlugs()
-  const tests = await Promise.all(slugs.map(getTestData))
+  const tests = await Promise.all(slugs.map((slug) => getTestData(slug, locale)))
   const validTests = tests.filter(Boolean)
 
   return (

@@ -1,0 +1,382 @@
+{
+  "meta": {
+    "slug": "t07",
+    "locale_data": {
+      "en": {
+        "title": "How Do You Handle Conflict?",
+        "subtitle": "What's your argument style?",
+        "description": "Discover how you deal with disagreements and tension",
+        "shareText": "My conflict style is..."
+      },
+      "ko": {
+        "title": "갈등 해결 스타일 테스트",
+        "subtitle": "나는 싸울 때 어떤 유형일까?",
+        "description": "갈등 상황에서 나의 행동 패턴을 분석해봐",
+        "shareText": "나의 갈등 해결 스타일은?"
+      }
+    },
+    "emoji": "⚡",
+    "category": "social",
+    "estimatedMinutes": 3,
+    "theme": {
+      "primary": "#10B981",
+      "bg": "#ECFDF5",
+      "accent": "#064E3B"
+    }
+  },
+  "scoring": {
+    "type": "accumulate",
+    "dimensions": ["fight", "flight", "fix", "feel"]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "text_choice",
+      "locale_data": {
+        "en": { "text": "A friend says something\nthat lowkey offends you. You..." },
+        "ko": { "text": "친구가 은근히\n기분 나쁜 말을 한다. 나는?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Call it out right away" },
+            "ko": { "text": "바로 지적한다" }
+          },
+          "emoji": "🗣️",
+          "scores": { "fight": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Let it slide and move on" },
+            "ko": { "text": "그냥 넘어간다" }
+          },
+          "emoji": "😶",
+          "scores": { "flight": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Bring it up later in private" },
+            "ko": { "text": "나중에 따로 얘기한다" }
+          },
+          "emoji": "💬",
+          "scores": { "fix": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Feel hurt but say nothing" },
+            "ko": { "text": "상처받지만 말 못 한다" }
+          },
+          "emoji": "💔",
+          "scores": { "feel": 3 }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "image_grid",
+      "locale_data": {
+        "en": { "text": "In the middle of a heated argument,\nyou're most likely to..." },
+        "ko": { "text": "격한 논쟁 중에\n나는 보통..." }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Raise my voice" },
+            "ko": { "text": "목소리가 커짐" }
+          },
+          "emoji": "📢",
+          "scores": { "fight": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Walk away" },
+            "ko": { "text": "자리를 뜸" }
+          },
+          "emoji": "🚶",
+          "scores": { "flight": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Find middle ground" },
+            "ko": { "text": "타협점 탐색" }
+          },
+          "emoji": "🤝",
+          "scores": { "fix": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Start crying" },
+            "ko": { "text": "눈물이 남" }
+          },
+          "emoji": "😢",
+          "scores": { "feel": 3 }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "binary",
+      "locale_data": {
+        "en": { "text": "After a big fight,\nwho reaches out first?" },
+        "ko": { "text": "큰 싸움 후에\n먼저 연락하는 쪽은?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "I do — can't leave it unresolved" },
+            "ko": { "text": "내가 — 미해결이 싫어서" }
+          },
+          "emoji": "📱",
+          "scores": { "fix": 2, "feel": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "I wait for them" },
+            "ko": { "text": "상대가 먼저 하길 기다림" }
+          },
+          "emoji": "⏳",
+          "scores": { "flight": 2, "fight": 1 }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "text_choice",
+      "locale_data": {
+        "en": { "text": "Someone cuts in line\nright in front of you" },
+        "ko": { "text": "누군가 내 앞에서\n새치기를 한다" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Excuse me, the line's back there" },
+            "ko": { "text": "저기요 줄은 뒤에요" }
+          },
+          "emoji": "✋",
+          "scores": { "fight": 2, "fix": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Annoyed but I let it go" },
+            "ko": { "text": "짜증나지만 참는다" }
+          },
+          "emoji": "😤",
+          "scores": { "flight": 2, "feel": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Politely point it out" },
+            "ko": { "text": "부드럽게 알려준다" }
+          },
+          "emoji": "🙂",
+          "scores": { "fix": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Stew in silence and rant later" },
+            "ko": { "text": "속으로 삭이고 나중에 하소연" }
+          },
+          "emoji": "🫨",
+          "scores": { "feel": 2, "flight": 1 }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "image_grid",
+      "locale_data": {
+        "en": { "text": "Your partner forgot\nsomething important to you" },
+        "ko": { "text": "연인이 중요한 걸\n깜빡했다. 나는?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Confront directly" },
+            "ko": { "text": "바로 따진다" }
+          },
+          "emoji": "😠",
+          "scores": { "fight": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Say it's fine" },
+            "ko": { "text": "괜찮다고 함" }
+          },
+          "emoji": "🙂",
+          "scores": { "flight": 2, "feel": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Explain how I feel" },
+            "ko": { "text": "내 감정을 설명" }
+          },
+          "emoji": "💭",
+          "scores": { "fix": 2, "feel": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Get quietly upset" },
+            "ko": { "text": "조용히 서운해함" }
+          },
+          "emoji": "🥺",
+          "scores": { "feel": 3 }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "binary",
+      "locale_data": {
+        "en": { "text": "In group conflicts,\nyou tend to..." },
+        "ko": { "text": "단체 갈등 상황에서\n나는 보통?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Pick a side and defend it" },
+            "ko": { "text": "편 들고 방어한다" }
+          },
+          "emoji": "⚔️",
+          "scores": { "fight": 2, "fix": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Stay neutral no matter what" },
+            "ko": { "text": "무조건 중립 유지" }
+          },
+          "emoji": "🧘",
+          "scores": { "flight": 1, "fix": 2 }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "text_choice",
+      "locale_data": {
+        "en": { "text": "A week after a fight,\nyou're still thinking about it because..." },
+        "ko": { "text": "싸운 지 일주일 후에도\n생각나는 이유는?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "I should've said more" },
+            "ko": { "text": "더 할 말이 있었는데 못해서" }
+          },
+          "emoji": "😤",
+          "scores": { "fight": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "I wish I hadn't engaged at all" },
+            "ko": { "text": "아예 안 싸웠으면 좋았는데" }
+          },
+          "emoji": "😔",
+          "scores": { "flight": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "I keep refining what I should say next" },
+            "ko": { "text": "다음엔 뭐라고 할지 정리 중" }
+          },
+          "emoji": "📝",
+          "scores": { "fix": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "The emotions just won't go away" },
+            "ko": { "text": "감정이 계속 남아있어서" }
+          },
+          "emoji": "🫠",
+          "scores": { "feel": 3 }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "fight",
+      "locale_data": {
+        "en": {
+          "title": "The Direct Confronter",
+          "description": "You face problems head-on — no sugarcoating, no dodging. People know where they stand with you, which is refreshing. Just watch the delivery — sometimes the message gets lost in the heat.",
+          "tags": ["direct", "assertive", "fierce"],
+          "compatibility": "The Diplomat"
+        },
+        "ko": {
+          "title": "정면 돌파형",
+          "description": "문제가 생기면 바로 부딪히는 타입! 돌려 말하기 싫고 직접적으로 해결하려 해요. 시원시원해서 좋지만 가끔 말투가 강할 수 있으니 전달 방식에 주의!",
+          "tags": ["직접적", "당당함", "전투적"],
+          "compatibility": "외교관형"
+        }
+      },
+      "emoji": "🔥",
+      "emojiCombo": "🔥💢🗣️"
+    },
+    {
+      "id": "flight",
+      "locale_data": {
+        "en": {
+          "title": "The Conflict Avoider",
+          "description": "Peace is your priority — even at the cost of your own comfort. You'd rather walk away than escalate. Noble, but things left unsaid have a way of piling up.",
+          "tags": ["peaceful", "avoidant", "reserved"],
+          "compatibility": "The Emotional Processor"
+        },
+        "ko": {
+          "title": "회피형",
+          "description": "싸우느니 참는 게 나은 타입! 갈등 자체가 스트레스여서 가능하면 피해요. 평화로운 성격이지만 쌓아두면 언젠가 터지니 적당히 표현하는 연습도 필요해요!",
+          "tags": ["평화주의", "회피형", "조용함"],
+          "compatibility": "감정파형"
+        }
+      },
+      "emoji": "🕊️",
+      "emojiCombo": "🕊️🫥💨"
+    },
+    {
+      "id": "fix",
+      "locale_data": {
+        "en": {
+          "title": "The Diplomat",
+          "description": "You believe every conflict has a solution if both sides try. You stay calm, listen, and find the middle ground. Master negotiator — just don't compromise your own values away.",
+          "tags": ["rational", "diplomatic", "solution-oriented"],
+          "compatibility": "The Direct Confronter"
+        },
+        "ko": {
+          "title": "외교관형",
+          "description": "모든 갈등에는 해결책이 있다고 믿는 타입! 차분하게 듣고 타협점을 찾아요. 조율의 달인이지만 남 맞추다 내 기준을 잃지 않도록 주의!",
+          "tags": ["합리적", "외교적", "해결 지향"],
+          "compatibility": "정면 돌파형"
+        }
+      },
+      "emoji": "🤝",
+      "emojiCombo": "🤝⚖️💬"
+    },
+    {
+      "id": "feel",
+      "locale_data": {
+        "en": {
+          "title": "The Emotional Processor",
+          "description": "You feel conflicts deeply — they hit your heart before your head. Your emotional intelligence is high, but sometimes feelings overwhelm the facts. Give yourself space to process, then speak.",
+          "tags": ["sensitive", "empathetic", "deep"],
+          "compatibility": "The Conflict Avoider"
+        },
+        "ko": {
+          "title": "감정파형",
+          "description": "갈등이 생기면 머리보다 마음이 먼저 반응하는 타입! 감수성이 풍부하고 공감 능력이 높아요. 감정이 앞서면 말을 못 하기도 하니 정리 후 표현하는 연습이 도움 돼요!",
+          "tags": ["감수성", "공감형", "깊이 있음"],
+          "compatibility": "회피형"
+        }
+      },
+      "emoji": "💜",
+      "emojiCombo": "💜🌊😢"
+    }
+  ],
+  "dna_mapping": {
+    "category": "social",
+    "traits": {
+      "fight": { "assertiveness": 0.9, "empathy": 0.4, "composure": 0.3, "diplomacy": 0.3 },
+      "flight": { "assertiveness": 0.2, "empathy": 0.5, "composure": 0.7, "diplomacy": 0.4 },
+      "fix": { "assertiveness": 0.6, "empathy": 0.7, "composure": 0.8, "diplomacy": 0.9 },
+      "feel": { "assertiveness": 0.3, "empathy": 0.9, "composure": 0.4, "diplomacy": 0.5 }
+    }
+  }
+}

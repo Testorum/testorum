@@ -95,18 +95,99 @@ export interface ToriResponse {
   data_driven: boolean // Phase A: always false / Phase B: true
 }
 
-// ─── 프리미엄 결과 ────────────────────────────────────────────
+// ─── 프리미엄 결과 (flat / locale 적용 후) ──────────────────────
 export interface PremiumResult {
-  deepAnalysis: { en: string; ko: string }
-  strengths: { en: string[]; ko: string[] }
-  weaknesses: { en: string[]; ko: string[] }
-  advice: { en: string; ko: string }
+  deepAnalysis: string
+  strengths: string[]
+  weaknesses: string[]
+  advice: string
 }
 
 // ─── TestData 확장 (premiumResults 선택적) ─────────────────────
-// TestData에 premiumResults 추가용 인터페이스
 export interface TestDataWithPremium extends TestData {
   premiumResults?: Record<string, PremiumResult>
+}
+
+// ─── DNA Mapping ──────────────────────────────────────────────
+export interface DnaMapping {
+  category: string
+  traits: Record<string, Record<string, number>>
+}
+
+// ─── Raw JSON 타입 (locale_data 구조 / 파일에서 읽은 그대로) ────
+
+export interface LocaleData<T> {
+  en: T
+  ko: T
+  [locale: string]: T
+}
+
+export interface TestMetaLocale {
+  title: string
+  subtitle: string
+  description: string
+  shareText: string
+}
+
+export interface TestQuestionLocale {
+  text: string
+}
+
+export interface TestOptionLocale {
+  text: string
+}
+
+export interface TestResultLocale {
+  title: string
+  description: string
+  tags: string[]
+  compatibility: string
+}
+
+export interface PremiumResultLocale {
+  deepAnalysis: string
+  strengths: string[]
+  weaknesses: string[]
+  advice: string
+}
+
+export interface TestOptionRaw {
+  locale_data: LocaleData<TestOptionLocale>
+  image?: string
+  emoji?: string
+  scores: Record<string, number>
+}
+
+export interface TestQuestionRaw {
+  id: number
+  type: QuestionType
+  locale_data: LocaleData<TestQuestionLocale>
+  options: TestOptionRaw[]
+}
+
+export interface TestResultRaw {
+  id: string
+  locale_data: LocaleData<TestResultLocale>
+  emoji: string
+  emojiCombo?: string
+}
+
+export interface TestMetaRaw {
+  slug: string
+  locale_data: LocaleData<TestMetaLocale>
+  emoji: string
+  category: string
+  estimatedMinutes: number
+  theme: TestTheme
+}
+
+export interface TestDataRaw {
+  meta: TestMetaRaw
+  scoring: ScoringConfig
+  questions: TestQuestionRaw[]
+  results: TestResultRaw[]
+  premiumResults?: Record<string, { locale_data: LocaleData<PremiumResultLocale> }>
+  dna_mapping?: DnaMapping
 }
 
 // ─── 행동 추적 ────────────────────────────────────────────────

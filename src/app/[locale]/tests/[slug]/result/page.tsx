@@ -15,7 +15,7 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
   const { slug, locale } = await params
   setRequestLocale(locale)
   const { r } = await searchParams
-  const data = await getTestData(slug)
+  const data = await getTestData(slug, locale)
   if (!data) return {}
 
   const result = data.results.find((res) => res.id === r)
@@ -45,7 +45,7 @@ export default async function ResultPage({ params, searchParams }: Props) {
   const { slug, locale } = await params
   setRequestLocale(locale)
   const { r } = await searchParams
-  const data = await getTestData(slug)
+  const data = await getTestData(slug, locale)
   if (!data) notFound()
 
   const resultId = r ?? ''

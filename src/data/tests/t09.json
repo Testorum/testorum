@@ -1,0 +1,520 @@
+{
+  "meta": {
+    "slug": "t09",
+    "locale_data": {
+      "en": {
+        "title": "What Era Are You Living In?",
+        "subtitle": "Are you from the past, present, or future?",
+        "description": "Find out which time period matches your soul",
+        "shareText": "I belong in the..."
+      },
+      "ko": {
+        "title": "나는 어느 시대 사람일까?",
+        "subtitle": "내 영혼은 어느 시대에서 왔을까?",
+        "description": "나의 성향과 취향에 맞는 시대를 찾아봐",
+        "shareText": "나는 이 시대 사람이래!"
+      }
+    },
+    "emoji": "⏳",
+    "category": "social",
+    "estimatedMinutes": 3,
+    "theme": {
+      "primary": "#A855F7",
+      "bg": "#FAF5FF",
+      "accent": "#3B0764"
+    }
+  },
+  "scoring": {
+    "type": "accumulate",
+    "dimensions": ["primal", "ancient", "medieval", "retro", "modern", "future"]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "image_grid",
+      "locale_data": {
+        "en": { "text": "Pick your ideal Friday night" },
+        "ko": { "text": "이상적인 금요일 밤은?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Bonfire under stars" },
+            "ko": { "text": "모닥불 아래 밤하늘" }
+          },
+          "emoji": "🔥",
+          "scores": { "primal": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Vinyl records + wine" },
+            "ko": { "text": "LP판 + 와인" }
+          },
+          "emoji": "🎶",
+          "scores": { "retro": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Netflix and chill" },
+            "ko": { "text": "넷플릭스 정주행" }
+          },
+          "emoji": "📺",
+          "scores": { "modern": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "VR gaming marathon" },
+            "ko": { "text": "VR 게임 올나잇" }
+          },
+          "emoji": "🥽",
+          "scores": { "future": 3 }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "text_choice",
+      "locale_data": {
+        "en": { "text": "If you could have any superpower,\nwhat would you pick?" },
+        "ko": { "text": "초능력 하나를\n가질 수 있다면?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Talk to animals" },
+            "ko": { "text": "동물과 대화하기" }
+          },
+          "emoji": "🦁",
+          "scores": { "primal": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Read ancient texts instantly" },
+            "ko": { "text": "고대 문서 즉시 해독" }
+          },
+          "emoji": "📜",
+          "scores": { "ancient": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Time travel to the past" },
+            "ko": { "text": "과거로 시간여행" }
+          },
+          "emoji": "⏰",
+          "scores": { "medieval": 2, "retro": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Upload my brain to the cloud" },
+            "ko": { "text": "뇌를 클라우드에 업로드" }
+          },
+          "emoji": "☁️",
+          "scores": { "future": 3 }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "binary",
+      "locale_data": {
+        "en": { "text": "Your approach to conflict:" },
+        "ko": { "text": "갈등 해결 방식은?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Face-to-face, settle it now" },
+            "ko": { "text": "직접 만나서 지금 해결" }
+          },
+          "emoji": "⚔️",
+          "scores": { "primal": 1, "medieval": 2 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Send a carefully worded text" },
+            "ko": { "text": "신중하게 문자로 전달" }
+          },
+          "emoji": "📱",
+          "scores": { "modern": 2, "future": 1 }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "text_choice",
+      "locale_data": {
+        "en": { "text": "Your ideal vacation?" },
+        "ko": { "text": "이상적인 휴가는?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Camping deep in the wilderness" },
+            "ko": { "text": "오지 캠핑" }
+          },
+          "emoji": "⛺",
+          "scores": { "primal": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Exploring ancient ruins" },
+            "ko": { "text": "고대 유적 탐험" }
+          },
+          "emoji": "🏛️",
+          "scores": { "ancient": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "European castle tour" },
+            "ko": { "text": "유럽 성 투어" }
+          },
+          "emoji": "🏰",
+          "scores": { "medieval": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Tokyo or Seoul city trip" },
+            "ko": { "text": "도쿄 or 서울 도시 여행" }
+          },
+          "emoji": "🌃",
+          "scores": { "modern": 2, "retro": 1 }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "image_grid",
+      "locale_data": {
+        "en": { "text": "Pick the aesthetic\nthat speaks to your soul" },
+        "ko": { "text": "내 영혼에 맞는\n분위기를 골라봐" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Raw nature" },
+            "ko": { "text": "날것의 자연" }
+          },
+          "emoji": "🌿",
+          "scores": { "primal": 2, "ancient": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Vintage charm" },
+            "ko": { "text": "빈티지 감성" }
+          },
+          "emoji": "📻",
+          "scores": { "retro": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Minimalist clean" },
+            "ko": { "text": "미니멀 클린" }
+          },
+          "emoji": "🤍",
+          "scores": { "modern": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Cyberpunk neon" },
+            "ko": { "text": "사이버펑크 네온" }
+          },
+          "emoji": "💜",
+          "scores": { "future": 3 }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "binary",
+      "locale_data": {
+        "en": { "text": "When making decisions,\nyou trust..." },
+        "ko": { "text": "결정을 내릴 때\n나는 주로?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "My gut instinct" },
+            "ko": { "text": "직감을 믿는다" }
+          },
+          "emoji": "🫀",
+          "scores": { "primal": 2, "medieval": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Data and research" },
+            "ko": { "text": "데이터와 리서치" }
+          },
+          "emoji": "📊",
+          "scores": { "modern": 1, "future": 2 }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "text_choice",
+      "locale_data": {
+        "en": { "text": "Your communication style\nin one word?" },
+        "ko": { "text": "나의 소통 스타일을\n한 마디로?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Action over words" },
+            "ko": { "text": "말보다 행동" }
+          },
+          "emoji": "💪",
+          "scores": { "primal": 2, "medieval": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Poetic and deep" },
+            "ko": { "text": "시적이고 깊게" }
+          },
+          "emoji": "🪶",
+          "scores": { "ancient": 2, "retro": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Quick and efficient" },
+            "ko": { "text": "빠르고 효율적으로" }
+          },
+          "emoji": "⚡",
+          "scores": { "modern": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Memes say it better" },
+            "ko": { "text": "짤이 더 잘 표현함" }
+          },
+          "emoji": "🖼️",
+          "scores": { "future": 2, "modern": 1 }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "primal",
+      "locale_data": {
+        "en": {
+          "title": "Stone Age Soul",
+          "description": "You crave raw, unfiltered experiences. Nature over screens, instinct over analysis. You'd thrive around a campfire sharing stories under the stars. Born in the wrong millennium, honestly.",
+          "tags": ["primal", "nature-lover", "instinctive"],
+          "compatibility": "Future Citizen"
+        },
+        "ko": {
+          "title": "원시시대 영혼",
+          "description": "가공되지 않은 날것의 경험을 갈망하는 타입! 스크린보다 자연 속에서 빛나요. 모닥불 아래 이야기 나누는 게 진정한 행복인 사람 — 솔직히 태어난 시대가 잘못됐어요ㅋㅋ",
+          "tags": ["원시적", "자연인", "본능적"],
+          "compatibility": "미래 시민형"
+        }
+      },
+      "emoji": "🦴",
+      "emojiCombo": "🦴🔥🌿"
+    },
+    {
+      "id": "ancient",
+      "locale_data": {
+        "en": {
+          "title": "Ancient Philosopher",
+          "description": "You belong in a toga discussing the meaning of life. Wisdom, art, and deep conversations are your oxygen. Modern small talk physically pains you.",
+          "tags": ["wise", "philosophical", "cultured"],
+          "compatibility": "Medieval Adventurer"
+        },
+        "ko": {
+          "title": "고대 철학자형",
+          "description": "토가 입고 인생의 의미를 논해야 할 사람! 지혜와 예술과 깊은 대화가 산소인 타입이에요. 현대의 스몰토크가 물리적 고통이에요.",
+          "tags": ["현명함", "철학적", "교양 있음"],
+          "compatibility": "중세 모험가형"
+        }
+      },
+      "emoji": "📜",
+      "emojiCombo": "📜🏛️🫒"
+    },
+    {
+      "id": "medieval",
+      "locale_data": {
+        "en": {
+          "title": "Medieval Adventurer",
+          "description": "Honor, loyalty, and a good quest — that's your vibe. You value face-to-face connections and acts of courage. Somewhere a castle is missing its knight.",
+          "tags": ["adventurous", "loyal", "honorable"],
+          "compatibility": "Retro Romantic"
+        },
+        "ko": {
+          "title": "중세 모험가형",
+          "description": "명예와 충성과 멋진 모험이 삶의 원동력! 대면 관계와 용기 있는 행동을 중시하는 타입이에요. 어딘가에 당신을 기다리는 성이 있을 거예요.",
+          "tags": ["모험적", "충성스러움", "명예로움"],
+          "compatibility": "레트로 로맨티스트형"
+        }
+      },
+      "emoji": "🏰",
+      "emojiCombo": "🏰⚔️🐴"
+    },
+    {
+      "id": "retro",
+      "locale_data": {
+        "en": {
+          "title": "Retro Romantic",
+          "description": "Vinyl records, handwritten letters, slow dances — you live for the aesthetic of a simpler time. The 60s-80s energy runs through your veins. Born too late, but making it work.",
+          "tags": ["nostalgic", "artistic", "romantic"],
+          "compatibility": "Modern Minimalist"
+        },
+        "ko": {
+          "title": "레트로 로맨티스트형",
+          "description": "LP판과 손편지와 슬로우 댄스의 미학! 60~80년대 감성이 핏줄에 흐르는 타입이에요. 늦게 태어났지만 빈티지 감성으로 현재를 살아가는 중!",
+          "tags": ["노스탤지아", "예술적", "로맨틱"],
+          "compatibility": "현대 미니멀리스트형"
+        }
+      },
+      "emoji": "📻",
+      "emojiCombo": "📻🎵🕰️"
+    },
+    {
+      "id": "modern",
+      "locale_data": {
+        "en": {
+          "title": "Modern Minimalist",
+          "description": "You're perfectly calibrated to the now. Efficient, connected, and aesthetically clean. You optimize everything — from your morning routine to your notification settings.",
+          "tags": ["efficient", "current", "clean"],
+          "compatibility": "Stone Age Soul"
+        },
+        "ko": {
+          "title": "현대 미니멀리스트형",
+          "description": "현재에 완벽히 최적화된 타입! 효율적이고 연결되어 있으며 미니멀한 미학을 추구해요. 모닝 루틴부터 알림 설정까지 전부 최적화하는 스타일!",
+          "tags": ["효율적", "현재 지향", "깔끔함"],
+          "compatibility": "원시시대 영혼"
+        }
+      },
+      "emoji": "📱",
+      "emojiCombo": "📱✨🤍"
+    },
+    {
+      "id": "future",
+      "locale_data": {
+        "en": {
+          "title": "Future Citizen",
+          "description": "You're already living in 2040. AI, space travel, digital everything — you embrace what's next before most people even hear about it. Just don't forget to touch grass sometimes.",
+          "tags": ["visionary", "tech-forward", "futuristic"],
+          "compatibility": "Ancient Philosopher"
+        },
+        "ko": {
+          "title": "미래 시민형",
+          "description": "이미 2040년을 살고 있는 타입! AI와 우주여행과 디지털 세상을 남들보다 먼저 받아들여요. 다만 가끔은 풀밭에 나가서 풀이라도 만져보세요ㅋㅋ",
+          "tags": ["선구자", "테크 지향", "미래적"],
+          "compatibility": "고대 철학자형"
+        }
+      },
+      "emoji": "🚀",
+      "emojiCombo": "🚀🤖💜"
+    }
+  ],
+  "premiumResults": {
+    "primal": {
+      "locale_data": {
+        "en": {
+          "deepAnalysis": "You're drawn to what's real and unmediated. While others scroll, you want to touch, taste, and experience firsthand. This isn't regression — it's a counter-signal to an over-digitized world. You process emotions through physical experience: a hike clears your head better than any meditation app. The tension in your life comes from living in systems (offices, cities, screens) that were not designed for people like you. Your challenge is finding environments that honor your instincts without rejecting modern tools entirely.",
+          "strengths": ["Deeply present — you experience things others scroll past", "Physical and emotional resilience from direct engagement with the world", "Natural ability to read environments and nonverbal cues"],
+          "weaknesses": ["Can seem out of touch in highly digital or corporate settings", "Impatience with abstract or theoretical discussions", "May romanticize simplicity and resist useful technology"],
+          "advice": "You don't have to choose between nature and tech. Design a weekly ritual that feeds your primal side — forest walk, cooking over fire, cold water swim — and let it recharge you for the modern demands you can't escape."
+        },
+        "ko": {
+          "deepAnalysis": "가공되지 않은 진짜에 끌리는 타입이에요. 남들이 스크롤할 때 직접 만지고 맛보고 경험하고 싶어해요. 퇴행이 아니라 과도하게 디지털화된 세상에 대한 반작용이에요. 감정을 신체적 경험으로 처리하는 스타일이라 명상 앱보다 등산이 머리를 더 잘 비워줘요. 삶의 긴장감은 사무실과 도시와 스크린 같은 당신 같은 사람을 위해 설계되지 않은 시스템에서 사는 데서 와요. 본능을 존중하면서도 현대 도구를 완전히 거부하지 않는 환경을 찾는 게 과제예요.",
+          "strengths": ["깊이 있는 현재 감각 — 남들이 스크롤로 넘기는 걸 직접 경험함", "세상과 직접 부딪히면서 오는 신체적/정서적 회복력", "환경과 비언어적 신호를 자연스럽게 읽는 능력"],
+          "weaknesses": ["고도로 디지털화되거나 기업적인 환경에서 시대에 뒤떨어져 보일 수 있음", "추상적이거나 이론적인 논의에 대한 조급함", "단순함을 미화하고 유용한 기술을 거부할 수 있음"],
+          "advice": "자연과 기술 중 하나를 선택할 필요 없어요. 원시적 측면을 채워주는 주간 의식을 만드세요 — 숲 산책이나 모닥불 요리나 찬물 수영 — 그게 피할 수 없는 현대적 요구를 위해 재충전해줄 거예요."
+        }
+      }
+    },
+    "ancient": {
+      "locale_data": {
+        "en": {
+          "deepAnalysis": "You seek meaning in everything — and not in a bumper-sticker way, but in a way that genuinely shapes how you live. Art, philosophy, history — these aren't hobbies for you; they're lenses through which you understand reality. This depth is magnetic to some and intimidating to others. Your relationships tend to be few but profound. The modern world can feel shallow to you, and you might struggle with environments that prioritize speed over substance. But remember: wisdom without adaptability becomes rigidity.",
+          "strengths": ["Exceptional depth of thinking — you see patterns others miss", "Conversations with you leave people changed", "You bring historical context that prevents repeated mistakes"],
+          "weaknesses": ["Can seem pretentious or disconnected from practical concerns", "Patience with 'shallow' talk is very low", "May overvalue tradition and resist necessary change"],
+          "advice": "Your depth is your gift. But try meeting the modern world halfway — the best philosophers were also engaged citizens. Share your insights in formats people actually consume: a podcast, a tweet thread, a conversation at a bar. Package wisdom for speed without diluting it."
+        },
+        "ko": {
+          "deepAnalysis": "모든 것에서 의미를 찾는 타입 — 범퍼 스티커 수준이 아니라 진짜로 삶의 방식을 형성하는 수준으로. 예술과 철학과 역사가 취미가 아니라 현실을 이해하는 렌즈예요. 이 깊이가 어떤 사람에겐 자석 같고 다른 사람에겐 위압적이에요. 관계는 적지만 깊은 편이에요. 현대 세상이 얕게 느껴질 수 있고 속도를 본질보다 우선시하는 환경에서 힘들어할 수 있어요. 하지만 기억하세요 — 적응력 없는 지혜는 경직이 돼요.",
+          "strengths": ["뛰어난 사고의 깊이 — 남들이 놓치는 패턴을 봄", "당신과의 대화는 사람을 변화시킴", "반복되는 실수를 막는 역사적 맥락을 제공함"],
+          "weaknesses": ["허세적이거나 실용적 관심사와 동떨어져 보일 수 있음", "'얕은' 대화에 대한 인내심이 매우 낮음", "전통을 과대평가하고 필요한 변화를 거부할 수 있음"],
+          "advice": "깊이가 당신의 선물이에요. 하지만 현대 세상과 반 정도는 만나보세요 — 최고의 철학자들은 참여하는 시민이기도 했어요. 팟캐스트나 트위터 스레드나 바에서의 대화 같이 사람들이 실제로 소비하는 형태로 인사이트를 나눠보세요."
+        }
+      }
+    },
+    "medieval": {
+      "locale_data": {
+        "en": {
+          "deepAnalysis": "Honor, loyalty, and courage — these aren't abstract concepts to you; they're operating principles. You value face-to-face commitments and a handshake that means something. In a world of ghosting and passive-aggressive Slack messages, your directness is refreshing. But medieval values can clash with modern nuance. Not every situation calls for a sword — some call for diplomacy. Your growth edge is learning when to fight and when to negotiate, without abandoning the core values that make you admirable.",
+          "strengths": ["People trust your word — you follow through", "Brave in situations where others freeze", "Loyalty that creates ride-or-die friendships"],
+          "weaknesses": ["Can be rigid about 'right' and 'wrong' in gray situations", "Directness can steamroll more sensitive communicators", "May struggle with ambiguity and modern relationship complexity"],
+          "advice": "Keep your code of honor, but add a diplomatic toolkit. Before charging in, ask: 'Will directness solve this, or will it just feel satisfying in the moment?' The strongest knights also knew when to parley."
+        },
+        "ko": {
+          "deepAnalysis": "명예와 충성과 용기 — 추상적 개념이 아니라 운영 원칙이에요. 대면 약속과 의미 있는 악수를 중시해요. 잠수와 소극적 공격적 슬랙 메시지의 세상에서 당신의 직접적임은 상쾌해요. 하지만 중세적 가치는 현대적 뉘앙스와 충돌할 수 있어요. 모든 상황이 칼을 필요로 하지 않아요 — 외교가 필요한 것도 있죠. 성장 포인트는 언제 싸우고 언제 협상할지를 배우는 건데 당신을 존경스럽게 만드는 핵심 가치를 버리지 않으면서요.",
+          "strengths": ["사람들이 당신의 말을 신뢰함 — 약속을 지킴", "남들이 얼어붙는 상황에서 용감함", "죽이 되든 밥이 되든 함께하는 우정을 만드는 충성심"],
+          "weaknesses": ["회색 지대에서 '옳고' '그름'에 대해 경직될 수 있음", "직접적인 것이 더 예민한 소통자를 압도할 수 있음", "모호함과 현대적 관계의 복잡성에 힘들어할 수 있음"],
+          "advice": "명예의 코드는 유지하되 외교 도구를 추가하세요. 돌진하기 전에 물어보세요 — '직접적으로 하면 이게 해결될까 아니면 그 순간만 시원할까?' 가장 강한 기사도 언제 협상할지 알았어요."
+        }
+      }
+    },
+    "retro": {
+      "locale_data": {
+        "en": {
+          "deepAnalysis": "You're not just nostalgic — you've identified something genuinely missing from modern life. Slow intentionality, aesthetic craft, human warmth over digital efficiency. Your retro sensibility isn't about escaping the present; it's about importing the best parts of the past into it. The risk is when nostalgia becomes avoidance — idealizing an era you never lived in while missing the advantages of the one you're in. The key is curation: take the vinyl warmth, leave the lack of air conditioning.",
+          "strengths": ["Strong aesthetic sensibility — you create beautiful, intentional spaces", "Value slow, meaningful connections in a fast world", "Appreciation for craft and quality over mass production"],
+          "weaknesses": ["May reject useful innovations out of aesthetic preference", "Nostalgia can distort reality — the past had problems too", "Can come across as pretentious about 'the old way'"],
+          "advice": "Build a life that's hybrid: analog rituals (handwritten notes, vinyl evenings, film photography) inside a modern framework. You don't need to live in the past — just visit regularly and bring back souvenirs."
+        },
+        "ko": {
+          "deepAnalysis": "단순한 노스탤지어가 아니라 현대 생활에서 진짜 빠진 것을 포착한 거예요. 느린 의도성과 미적 장인 정신과 디지털 효율성보다 인간적 따뜻함. 레트로 감성이 현재를 도피하는 게 아니라 과거의 가장 좋은 부분을 현재로 가져오는 거예요. 리스크는 노스탤지어가 회피가 될 때 — 살아보지 않은 시대를 이상화하면서 현재의 장점을 놓치는 거예요. 핵심은 큐레이션이에요 — 바이닐의 따뜻함은 가져오고 에어컨 없는 건 두고 오세요.",
+          "strengths": ["강한 미적 감각 — 아름답고 의도적인 공간을 만듦", "빠른 세상에서 느리고 의미 있는 연결을 중시함", "대량 생산보다 장인 정신과 품질에 대한 감사"],
+          "weaknesses": ["미적 선호로 유용한 혁신을 거부할 수 있음", "노스탤지어가 현실을 왜곡할 수 있음 — 과거에도 문제는 있었음", "'옛날 방식'에 대해 허세적으로 보일 수 있음"],
+          "advice": "하이브리드한 삶을 만드세요 — 현대적 프레임워크 안에 아날로그 의식(손편지나 바이닐 저녁이나 필름 사진). 과거에 살 필요는 없어요 — 정기적으로 방문하고 기념품을 가져오면 돼요."
+        }
+      }
+    },
+    "modern": {
+      "locale_data": {
+        "en": {
+          "deepAnalysis": "You're optimized for now — and that's both a strength and a subtle trap. Your efficiency is enviable: you get things done, stay connected, and navigate modern complexity with ease. But optimization can become a cage. When everything is measured, scheduled, and streamlined, you might lose touch with experiences that don't fit neatly into a system — creativity, spontaneity, doing nothing productive and being okay with it. Your edge is learning to be comfortable with inefficiency sometimes.",
+          "strengths": ["Highly adaptable to changing environments and tools", "Gets things done with minimal friction", "Strong digital literacy and systems thinking"],
+          "weaknesses": ["Can struggle with unstructured time or ambiguity", "Efficiency obsession might crowd out serendipity", "May undervalue traditions and analog experiences that don't 'scale'"],
+          "advice": "Schedule time to be unscheduled. Seriously — block two hours with no agenda, no phone, no goal. The discomfort you feel is the signal that you need it. The best ideas don't come from optimized systems; they come from the gaps between them."
+        },
+        "ko": {
+          "deepAnalysis": "현재에 최적화된 타입 — 강점이면서 미묘한 함정이기도 해요. 효율성이 부러울 정도: 일을 해내고 연결 상태를 유지하고 현대의 복잡성을 쉽게 탐색해요. 하지만 최적화가 감옥이 될 수 있어요. 모든 것이 측정되고 스케줄되고 간소화되면 시스템에 깔끔히 맞지 않는 경험들 — 창의성과 즉흥성과 생산적인 것 없이 괜찮은 것 — 을 잃어버릴 수 있어요. 성장 포인트는 가끔 비효율에 편해지는 법을 배우는 거예요.",
+          "strengths": ["변화하는 환경과 도구에 높은 적응력", "최소한의 마찰로 일을 해냄", "강한 디지털 리터러시와 시스템 사고"],
+          "weaknesses": ["구조화되지 않은 시간이나 모호함에 힘들어할 수 있음", "효율 집착이 우연한 발견을 밀어낼 수 있음", "'확장 가능하지 않은' 전통과 아날로그 경험을 과소평가할 수 있음"],
+          "advice": "스케줄 안 된 시간을 스케줄하세요. 진심으로 — 의제도 폰도 목표도 없는 두 시간을 블록하세요. 느끼는 불편함이 바로 그게 필요하다는 신호예요. 최고의 아이디어는 최적화된 시스템이 아니라 시스템 사이의 빈틈에서 나와요."
+        }
+      }
+    },
+    "future": {
+      "locale_data": {
+        "en": {
+          "deepAnalysis": "You see around corners that others can't even see exist. While most people react to the present, you're already adapting to what's coming — AI, remote-first living, new forms of connection. This forward-thinking is your superpower, but it can also isolate you. When you're excited about brain-computer interfaces and your friends are still figuring out Bluetooth, connection becomes harder. The risk isn't being ahead; it's losing patience with the present and the people in it. The future needs ambassadors, not just inhabitants.",
+          "strengths": ["Early adopter instinct — you're always ahead of trends", "Comfortable with change that paralyzes others", "Systems-level thinking about how the world is evolving"],
+          "weaknesses": ["Can dismiss present-day concerns as 'soon to be obsolete'", "Social disconnect with people who process change slowly", "May over-invest in unproven technologies or ideas"],
+          "advice": "Be the bridge, not the island. Translate your future-vision into something your friends, colleagues, and community can actually use today. The best futurists don't just predict — they help others transition. That's how you become influential, not just informed."
+        },
+        "ko": {
+          "deepAnalysis": "남들이 존재조차 모르는 코너를 미리 보는 타입이에요. 대부분이 현재에 반응할 때 이미 다가올 것에 적응하고 있어요 — AI와 원격 우선 생활과 새로운 형태의 연결. 이 선행 사고가 슈퍼파워이지만 고립시킬 수도 있어요. 뇌-컴퓨터 인터페이스에 흥분할 때 친구들은 아직 블루투스를 파악하고 있으면 연결이 어려워져요. 위험은 앞서가는 게 아니라 현재와 그 안의 사람들에 대한 인내심을 잃는 거예요. 미래에는 주민만이 아니라 대사가 필요해요.",
+          "strengths": ["얼리 어답터 본능 — 항상 트렌드보다 앞서 있음", "다른 사람을 마비시키는 변화에 편안함", "세상이 어떻게 진화하는지에 대한 시스템 레벨 사고"],
+          "weaknesses": ["현재의 걱정을 '곧 쓸모없어질 것'으로 무시할 수 있음", "변화를 천천히 처리하는 사람들과의 사회적 단절", "검증되지 않은 기술이나 아이디어에 과잉 투자할 수 있음"],
+          "advice": "섬이 아니라 다리가 되세요. 미래 비전을 친구와 동료와 커뮤니티가 오늘 실제로 쓸 수 있는 것으로 번역하세요. 최고의 미래학자는 예측만 하지 않아요 — 다른 사람의 전환을 도와요. 그래야 단순히 아는 게 아니라 영향력 있는 사람이 돼요."
+        }
+      }
+    }
+  },
+  "dna_mapping": {
+    "category": "social",
+    "traits": {
+      "primal": { "assertiveness": 0.8, "empathy": 0.6, "composure": 0.4, "diplomacy": 0.3 },
+      "ancient": { "assertiveness": 0.4, "empathy": 0.8, "composure": 0.9, "diplomacy": 0.7 },
+      "medieval": { "assertiveness": 0.9, "empathy": 0.5, "composure": 0.6, "diplomacy": 0.4 },
+      "retro": { "assertiveness": 0.3, "empathy": 0.7, "composure": 0.7, "diplomacy": 0.6 },
+      "modern": { "assertiveness": 0.6, "empathy": 0.5, "composure": 0.8, "diplomacy": 0.7 },
+      "future": { "assertiveness": 0.7, "empathy": 0.4, "composure": 0.5, "diplomacy": 0.5 }
+    }
+  }
+}

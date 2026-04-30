@@ -1,0 +1,484 @@
+{
+  "meta": {
+    "slug": "t06",
+    "locale_data": {
+      "en": {
+        "title": "What's Your Office Persona?",
+        "subtitle": "Who are you at work, really?",
+        "description": "Discover your workplace personality type and how colleagues see you",
+        "shareText": "My office persona is..."
+      },
+      "ko": {
+        "title": "회사에서 나는 어떤 유형?",
+        "subtitle": "직장에서의 진짜 내 모습은?",
+        "description": "직장에서 나의 행동 패턴과 동료들이 보는 나를 분석해봐",
+        "shareText": "회사에서 나는 이런 유형!"
+      }
+    },
+    "emoji": "💼",
+    "category": "work",
+    "estimatedMinutes": 3,
+    "theme": {
+      "primary": "#2563EB",
+      "bg": "#EFF6FF",
+      "accent": "#1E293B"
+    }
+  },
+  "scoring": {
+    "type": "accumulate",
+    "dimensions": ["lead", "solo", "peace", "grind", "social"]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "text_choice",
+      "locale_data": {
+        "en": { "text": "Monday morning.\nYou walk into the office and..." },
+        "ko": { "text": "월요일 아침\n출근하면 제일 먼저?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Check the team's progress board" },
+            "ko": { "text": "팀 진행 상황부터 체크한다" }
+          },
+          "emoji": "📋",
+          "scores": { "lead": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Put on headphones and zone in" },
+            "ko": { "text": "이어폰 끼고 바로 집중 모드" }
+          },
+          "emoji": "🎧",
+          "scores": { "solo": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Make coffee rounds for the team" },
+            "ko": { "text": "커피 돌리면서 분위기 풀기" }
+          },
+          "emoji": "☕",
+          "scores": { "social": 2, "peace": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Tackle the hardest task first" },
+            "ko": { "text": "가장 어려운 업무부터 처리" }
+          },
+          "emoji": "🔥",
+          "scores": { "grind": 3 }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "binary",
+      "locale_data": {
+        "en": { "text": "A meeting runs 30 minutes\nover schedule. You..." },
+        "ko": { "text": "회의가 30분이나\n넘어가고 있다. 나는?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Steer it back on track" },
+            "ko": { "text": "정리해서 마무리 유도" }
+          },
+          "emoji": "⏱️",
+          "scores": { "lead": 2, "grind": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Suffer in silence" },
+            "ko": { "text": "속으로 삭이며 버틴다" }
+          },
+          "emoji": "😐",
+          "scores": { "peace": 2, "solo": 1 }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "image_grid",
+      "locale_data": {
+        "en": { "text": "Team project with a tight deadline.\nYou naturally become the..." },
+        "ko": { "text": "촉박한 팀 프로젝트!\n나는 자연스럽게..." }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Leader" },
+            "ko": { "text": "리더 역할" }
+          },
+          "emoji": "👔",
+          "scores": { "lead": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Solo grinder" },
+            "ko": { "text": "혼자 돌격" }
+          },
+          "emoji": "💻",
+          "scores": { "solo": 2, "grind": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Mediator" },
+            "ko": { "text": "중재자 역할" }
+          },
+          "emoji": "🤝",
+          "scores": { "peace": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Morale booster" },
+            "ko": { "text": "분위기 메이커" }
+          },
+          "emoji": "🎉",
+          "scores": { "social": 3 }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "text_choice",
+      "locale_data": {
+        "en": { "text": "Your boss gives you\nharsh feedback. Your reaction?" },
+        "ko": { "text": "상사에게 날카로운\n피드백을 받으면?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Take notes and create an action plan" },
+            "ko": { "text": "메모하고 개선 계획 세운다" }
+          },
+          "emoji": "📝",
+          "scores": { "grind": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Push back with my own perspective" },
+            "ko": { "text": "내 의견도 당당하게 전달한다" }
+          },
+          "emoji": "💪",
+          "scores": { "lead": 2, "solo": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Nod and process it later privately" },
+            "ko": { "text": "일단 수긍하고 혼자 정리한다" }
+          },
+          "emoji": "🧘",
+          "scores": { "peace": 2, "solo": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Vent to a work friend after" },
+            "ko": { "text": "동료한테 가서 하소연한다" }
+          },
+          "emoji": "🗣️",
+          "scores": { "social": 3 }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "binary",
+      "locale_data": {
+        "en": { "text": "Lunch break —\nwhat's your move?" },
+        "ko": { "text": "점심시간\n나는 보통?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Eat with the crew" },
+            "ko": { "text": "동료들이랑 같이" }
+          },
+          "emoji": "🍱",
+          "scores": { "social": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Solo recharge time" },
+            "ko": { "text": "혼자만의 시간" }
+          },
+          "emoji": "🧩",
+          "scores": { "solo": 3 }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "text_choice",
+      "locale_data": {
+        "en": { "text": "Two teammates are in conflict.\nYou..." },
+        "ko": { "text": "동료 두 명이 갈등 중이다.\n나는?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Step in and mediate" },
+            "ko": { "text": "중간에서 조율해준다" }
+          },
+          "emoji": "⚖️",
+          "scores": { "peace": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Take charge and decide the direction" },
+            "ko": { "text": "방향을 잡아서 결론을 낸다" }
+          },
+          "emoji": "🎯",
+          "scores": { "lead": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Stay out of it completely" },
+            "ko": { "text": "모르는 척 내 할 일 한다" }
+          },
+          "emoji": "🙈",
+          "scores": { "solo": 2, "grind": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Lighten the mood first" },
+            "ko": { "text": "분위기부터 풀어준다" }
+          },
+          "emoji": "😄",
+          "scores": { "social": 2, "peace": 1 }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "image_grid",
+      "locale_data": {
+        "en": { "text": "Your dream work setup?" },
+        "ko": { "text": "이상적인 업무 환경은?" }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": { "text": "Corner office" },
+            "ko": { "text": "개인 사무실" }
+          },
+          "emoji": "🏢",
+          "scores": { "lead": 2, "solo": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Remote & flexible" },
+            "ko": { "text": "재택근무" }
+          },
+          "emoji": "🏠",
+          "scores": { "solo": 3 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Open collab space" },
+            "ko": { "text": "오픈 협업 공간" }
+          },
+          "emoji": "🤝",
+          "scores": { "social": 2, "peace": 1 }
+        },
+        {
+          "locale_data": {
+            "en": { "text": "Startup chaos" },
+            "ko": { "text": "스타트업 에너지" }
+          },
+          "emoji": "🚀",
+          "scores": { "grind": 2, "lead": 1 }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "lead",
+      "locale_data": {
+        "en": {
+          "title": "The Natural Leader",
+          "description": "You step up before anyone asks. Decision-making is your comfort zone and people look to you for direction. Just remember — delegating isn't losing control, it's leveling up.",
+          "tags": ["decisive", "driven", "authoritative"],
+          "compatibility": "The Peacekeeper"
+        },
+        "ko": {
+          "title": "타고난 리더형",
+          "description": "누가 시키지 않아도 앞에 나서는 타입! 결정 내리는 게 편하고 사람들이 자연스럽게 따라와요. 다만 위임하는 것도 실력이에요 — 다 안고 가지 마세요!",
+          "tags": ["결단력", "추진력", "카리스마"],
+          "compatibility": "평화유지군형"
+        }
+      },
+      "emoji": "👔",
+      "emojiCombo": "👔🎯🔥"
+    },
+    {
+      "id": "solo",
+      "locale_data": {
+        "en": {
+          "title": "The Lone Wolf",
+          "description": "Headphones on, world off. You do your best work alone and your output speaks for itself. Collaboration isn't your enemy though — sometimes two brains really are better.",
+          "tags": ["focused", "independent", "efficient"],
+          "compatibility": "The Office Social Butterfly"
+        },
+        "ko": {
+          "title": "독립 전문가형",
+          "description": "이어폰 끼면 존재감 사라지는 타입! 혼자 일할 때 최고 퍼포먼스가 나와요. 결과물로 말하는 스타일이지만 가끔은 동료와 시너지도 내보세요!",
+          "tags": ["집중력", "독립적", "효율적"],
+          "compatibility": "오피스 소셜형"
+        }
+      },
+      "emoji": "🐺",
+      "emojiCombo": "🐺🎧💻"
+    },
+    {
+      "id": "peace",
+      "locale_data": {
+        "en": {
+          "title": "The Peacekeeper",
+          "description": "Office drama? Not on your watch. You smooth things over before they escalate and everyone trusts you. Just make sure you're not suppressing your own needs to keep the peace.",
+          "tags": ["diplomatic", "calm", "balanced"],
+          "compatibility": "The Natural Leader"
+        },
+        "ko": {
+          "title": "평화유지군형",
+          "description": "사무실 드라마를 미연에 방지하는 타입! 갈등 중재의 달인이고 모두가 신뢰해요. 다만 남의 평화만 지키다가 내 의견을 삼키진 않는지 체크해봐요!",
+          "tags": ["외교적", "차분함", "균형감"],
+          "compatibility": "타고난 리더형"
+        }
+      },
+      "emoji": "☮️",
+      "emojiCombo": "☮️⚖️🕊️"
+    },
+    {
+      "id": "grind",
+      "locale_data": {
+        "en": {
+          "title": "The Hustle Machine",
+          "description": "You outwork everyone and you know it. First in, last out — your work ethic is insane. But remember: burnout isn't a badge of honor. Rest is productive too.",
+          "tags": ["relentless", "ambitious", "disciplined"],
+          "compatibility": "The Lone Wolf"
+        },
+        "ko": {
+          "title": "워커홀릭형",
+          "description": "일에 진심인 타입! 누구보다 일찍 출근하고 늦게 퇴근해요. 업무 성과는 항상 탑이지만 가끔은 쉬어가는 것도 생산성이에요. 번아웃 조심!",
+          "tags": ["성실함", "야망", "근면"],
+          "compatibility": "독립 전문가형"
+        }
+      },
+      "emoji": "⚡",
+      "emojiCombo": "⚡💪📈"
+    },
+    {
+      "id": "social",
+      "locale_data": {
+        "en": {
+          "title": "The Office Social Butterfly",
+          "description": "Everyone knows your name and you know everyone's coffee order. You make work feel less like work. Your network is your superpower — just don't let the chat distract from the craft.",
+          "tags": ["connected", "energetic", "team-player"],
+          "compatibility": "The Hustle Machine"
+        },
+        "ko": {
+          "title": "오피스 소셜형",
+          "description": "모든 동료 이름은 물론 커피 취향까지 아는 타입! 회사 생활을 즐겁게 만드는 핵인싸예요. 인맥이 곧 무기지만 수다에 시간 뺏기지 않도록 조심!",
+          "tags": ["인싸", "활발함", "팀플레이어"],
+          "compatibility": "워커홀릭형"
+        }
+      },
+      "emoji": "🦋",
+      "emojiCombo": "🦋☕🎉"
+    }
+  ],
+  "premiumResults": {
+    "lead": {
+      "locale_data": {
+        "en": {
+          "deepAnalysis": "You don't wait for permission to lead — you just do it. This is incredibly valuable in work environments that reward initiative, but it can create friction with peers who feel steamrolled. Your leadership style is 'decide and delegate,' which works when you're right (often) but creates resentment when you skip the input phase. The real growth edge: learning that leadership isn't about having the answer — it's about creating conditions where the best answer emerges from the team.",
+          "strengths": ["Decisive under pressure — teams look to you in chaos", "Natural ability to turn vision into action plans", "Creates momentum when projects stall"],
+          "weaknesses": ["May dismiss ideas that aren't your own", "Can micromanage when stressed", "Peers might see confidence as arrogance"],
+          "advice": "Before your next big decision, ask two teammates for their take — not to be polite, but because blind spots exist and theirs are different from yours. Leadership that includes others scales; solo leadership burns out."
+        },
+        "ko": {
+          "deepAnalysis": "허락을 기다리지 않고 그냥 리드하는 타입 — 주도성을 보상하는 환경에서 엄청나게 가치 있지만 동료들이 치이는 느낌을 받을 수 있어요. '결정하고 위임하는' 스타일인데 맞을 때(자주)는 효과적이지만 의견 수렴 단계를 건너뛰면 불만이 쌓여요. 진짜 성장 포인트는 리더십이 정답을 가진 게 아니라 팀에서 최선의 답이 나올 조건을 만드는 것이라는 걸 배우는 거예요.",
+          "strengths": ["압박 속에서 결단력 있음 — 혼란 속에서 팀이 의지함", "비전을 실행 계획으로 바꾸는 타고난 능력", "프로젝트가 멈출 때 추진력을 만듦"],
+          "weaknesses": ["자기 것이 아닌 아이디어를 무시할 수 있음", "스트레스받으면 마이크로매니징할 수 있음", "동료들이 자신감을 오만으로 볼 수 있음"],
+          "advice": "다음 큰 결정 전에 동료 두 명에게 의견을 물어보세요 — 예의가 아니라 사각지대는 존재하고 그들의 사각지대는 당신과 다르니까요. 다른 사람을 포함하는 리더십은 확장되고 혼자 하는 리더십은 번아웃 돼요."
+        }
+      }
+    },
+    "solo": {
+      "locale_data": {
+        "en": {
+          "deepAnalysis": "Your independence isn't antisocial — it's how you produce your best work. Deep focus requires uninterrupted blocks, and you've structured your work life around protecting that. The challenge is that modern work is increasingly collaborative, and being seen as 'the person who always works alone' can limit your career trajectory. You don't need to become an extrovert, but strategic visibility — speaking up in the right meeting, sharing your process — can amplify your impact without draining your energy.",
+          "strengths": ["Output quality is consistently high", "Self-managing — bosses trust you to deliver", "Deep expertise from focused, uninterrupted work"],
+          "weaknesses": ["May be overlooked for leadership roles or promotions", "Knowledge stays siloed — team doesn't benefit from your insights", "Can seem unapproachable to newer colleagues"],
+          "advice": "Pick one meeting per week to actively contribute one idea or question. Not for performance — because your insights deserve air time and visibility compounds. The work speaks, but sometimes it needs a microphone."
+        },
+        "ko": {
+          "deepAnalysis": "독립성이 반사회적인 게 아니라 최고의 결과물을 내는 방법이에요. 깊은 집중에는 방해 없는 시간이 필요하고 그걸 보호하는 방식으로 업무를 구조화한 거죠. 문제는 현대 업무가 점점 더 협업 중심이 되고 있고 '항상 혼자 일하는 사람'으로 보이면 커리어 성장이 제한될 수 있다는 거예요. 외향적이 될 필요는 없지만 전략적 가시성 — 적절한 회의에서 발언하기, 과정 공유하기 — 이 에너지를 소모하지 않으면서 임팩트를 증폭시킬 수 있어요.",
+          "strengths": ["결과물의 품질이 일관되게 높음", "자기 관리형 — 상사가 맡기면 믿고 기다림", "집중적이고 방해 없는 작업에서 오는 깊은 전문성"],
+          "weaknesses": ["리더십 역할이나 승진에서 간과될 수 있음", "지식이 개인에게만 머물러 팀이 혜택을 못 받음", "신입 동료에게 접근하기 어려운 사람으로 보일 수 있음"],
+          "advice": "매주 회의 하나를 골라서 아이디어나 질문 하나를 적극적으로 기여해보세요. 보여주기용이 아니라 당신의 인사이트가 공유될 자격이 있으니까요. 결과물이 말하지만 가끔은 마이크가 필요해요."
+        }
+      }
+    },
+    "peace": {
+      "locale_data": {
+        "en": {
+          "deepAnalysis": "You're the emotional shock absorber of your team — absorbing tension so others don't have to. This is genuinely valuable and often invisible. The risk is that being everyone's mediator means your own frustrations never get voiced. Over time, this creates a 'peacekeeper paradox': the person who resolves everyone else's conflicts slowly builds up unresolved ones of their own. Your diplomatic skill is a superpower; just make sure it doesn't come at the cost of your own needs.",
+          "strengths": ["Teams function more smoothly because of you", "Trusted by all sides in a conflict", "Creates psychologically safe work environments"],
+          "weaknesses": ["Own opinions get buried to maintain harmony", "May enable toxic dynamics by smoothing them over instead of addressing them", "Risk of being taken for granted"],
+          "advice": "Once a month, share one genuine opinion that might create mild disagreement. You'll find that people respect you MORE, not less, when you have a stance. Peace without truth isn't real peace."
+        },
+        "ko": {
+          "deepAnalysis": "팀의 감정적 완충제 역할 — 긴장감을 흡수해서 다른 사람이 안 겪게 해요. 진심으로 가치 있는 역할인데 자주 눈에 안 보여요. 리스크는 모두의 중재자가 되면 자기 불만은 절대 표현 안 된다는 거예요. 시간이 지나면 '평화유지군 패러독스'가 생겨요 — 남의 갈등은 다 풀어주면서 자신의 미해결 갈등은 쌓이는 거죠. 외교 능력은 슈퍼파워지만 자기 필요를 희생하면서까지 발휘하면 안 돼요.",
+          "strengths": ["당신 덕분에 팀이 더 원활하게 기능함", "갈등의 모든 측에서 신뢰받음", "심리적으로 안전한 업무 환경을 만듦"],
+          "weaknesses": ["조화를 유지하기 위해 자기 의견이 묻힘", "해결 대신 덮어서 유독한 역학을 유지시킬 수 있음", "당연하게 여겨질 위험이 있음"],
+          "advice": "한 달에 한 번은 약간의 의견 충돌을 만들 수 있는 진짜 의견을 하나 공유해보세요. 입장이 있을 때 사람들이 당신을 덜이 아니라 더 존중한다는 걸 알게 될 거예요. 진실 없는 평화는 진짜 평화가 아니에요."
+        }
+      }
+    },
+    "grind": {
+      "locale_data": {
+        "en": {
+          "deepAnalysis": "Your work ethic is genuinely exceptional — and that's not just a compliment. You probably outwork 95% of people around you. But here's the thing nobody tells grinders: effort doesn't always equal impact. You might be the first in and last out, but if you're spending that time on the wrong priorities, you're just running faster on the wrong track. The next level for you isn't working harder — it's working on the right things, and recovering properly so you can sustain this for decades, not just years.",
+          "strengths": ["Reliable and consistent — deadlines are sacred to you", "Sets the standard for work ethic on any team", "Willingness to take on challenges others avoid"],
+          "weaknesses": ["Burnout risk is real and probably already present", "May judge colleagues who don't match your intensity", "Effort can become identity — rest feels like failure"],
+          "advice": "Block 2 hours every week as 'strategic thinking time' — no tasks, no emails, just thinking about whether you're working on what matters most. Productivity without direction is just organized chaos."
+        },
+        "ko": {
+          "deepAnalysis": "당신의 업무 윤리는 진심으로 뛰어나요 — 칭찬만이 아니에요. 아마 주변 95%보다 더 열심히 일할 거예요. 하지만 그라인더에게 아무도 안 말해주는 게 있어요 — 노력이 항상 임팩트와 같지 않아요. 가장 일찍 출근하고 가장 늦게 퇴근해도 잘못된 우선순위에 시간을 쓰고 있다면 틀린 길을 더 빠르게 달리는 것뿐이에요. 다음 레벨은 더 열심히 하는 게 아니라 올바른 것에 일하고 제대로 회복해서 몇 년이 아니라 수십 년 동안 지속하는 거예요.",
+          "strengths": ["신뢰할 수 있고 일관적 — 마감은 신성한 것", "어떤 팀에서든 업무 윤리의 기준을 세움", "남들이 피하는 도전을 기꺼이 맡음"],
+          "weaknesses": ["번아웃 위험이 실재하고 이미 진행 중일 가능성", "자기 강도에 못 미치는 동료를 판단할 수 있음", "노력이 정체성이 되어 쉬는 게 실패처럼 느껴질 수 있음"],
+          "advice": "매주 2시간을 '전략적 사고 시간'으로 블록하세요 — 업무도 이메일도 없이 가장 중요한 일에 집중하고 있는지만 생각하는 시간. 방향 없는 생산성은 그냥 정리된 혼돈이에요."
+        }
+      }
+    },
+    "social": {
+      "locale_data": {
+        "en": {
+          "deepAnalysis": "Your network IS your net worth — at least professionally. You know who to call for what, who's hiring where, and who needs an introduction. This social capital is incredibly powerful and often undervalued in technical workplaces. The growth edge: make sure your relationships aren't just wide but deep. Having 200 contacts who know your name is less valuable than having 20 who'd vouch for your skills. And keep an eye on the line between building relationships and avoiding deep work.",
+          "strengths": ["Information reaches you first — you're always in the loop", "Can assemble cross-functional teams effortlessly", "Makes workplace culture better for everyone"],
+          "weaknesses": ["Socializing can eat into productive hours", "May prioritize being liked over being respected", "Surface-level connections don't always convert to real support"],
+          "advice": "Once a quarter, pick 3 contacts and have a real, deeper conversation — not just catch-up coffee. Ask what they're struggling with, share what you're working through. Depth converts acquaintances into allies."
+        },
+        "ko": {
+          "deepAnalysis": "당신의 네트워크가 곧 순자산이에요 — 최소한 직업적으로는. 뭘 위해 누구에게 연락할지, 어디서 채용 중인지, 누구에게 소개가 필요한지 다 알고 있어요. 이 소셜 자본은 놀라울 정도로 강력하고 기술 중심 직장에서 종종 과소평가돼요. 성장 포인트는 관계가 넓기만 할 게 아니라 깊어야 한다는 것. 이름을 아는 200명보다 능력을 보증해줄 20명이 더 가치 있어요. 그리고 관계 구축과 딥워크 회피 사이의 경계도 주시하세요.",
+          "strengths": ["정보가 당신에게 먼저 도달함 — 항상 루프 안에 있음", "부서 간 팀을 손쉽게 구성할 수 있음", "모두를 위해 직장 문화를 개선함"],
+          "weaknesses": ["사교가 생산적인 시간을 잠식할 수 있음", "존경받는 것보다 좋아지는 것을 우선시할 수 있음", "표면적 관계가 실질적 지원으로 이어지지 않을 수 있음"],
+          "advice": "분기마다 연락처 3명을 골라서 진짜 깊은 대화를 해보세요 — 안부 커피가 아니라. 무엇으로 힘들어하는지 묻고 자신이 겪고 있는 것도 나누세요. 깊이가 지인을 동맹으로 바꿔요."
+        }
+      }
+    }
+  },
+  "dna_mapping": {
+    "category": "work",
+    "traits": {
+      "lead": { "leadership": 0.9, "adaptability": 0.6, "ambition": 0.8, "collaboration": 0.5 },
+      "solo": { "leadership": 0.3, "adaptability": 0.5, "ambition": 0.6, "collaboration": 0.2 },
+      "peace": { "leadership": 0.4, "adaptability": 0.9, "ambition": 0.4, "collaboration": 0.8 },
+      "grind": { "leadership": 0.5, "adaptability": 0.4, "ambition": 0.9, "collaboration": 0.3 },
+      "social": { "leadership": 0.5, "adaptability": 0.7, "ambition": 0.5, "collaboration": 0.9 }
+    }
+  }
+}
