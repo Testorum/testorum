@@ -140,5 +140,23 @@
     "testsDescription": "연애부터 성격까지 다양한 심리테스트 모음",
     "resultTitle": "{resultType} — {testName} | 테스토럼",
     "resultDescription": "나 '{testName}'에서 \"{resultType}\" 나왔어! 너도 해봐~"
+  },
+  "Paywall": {
+    "signUpTitle": "가입하면 열 수 있어!",
+    "signUpDesc": "무료 계정만 만들면 프리미엄 기능 쓸 수 있어",
+    "signUpCta": "무료 가입",
+    "frozenTitle": "계정 일시정지 중",
+    "frozenDesc": "다시 구독하면 프리미엄 기능 쓸 수 있어",
+    "frozenCta": "요금제 보기",
+    "insufficientTitle": "크레딧이 부족해",
+    "buyCreditsCta": "크레딧 구매",
+    "viewPlans": "전체 요금제 보기",
+    "unlockCta": "{credits}크레딧으로 열기 ✨",
+    "unlocking": "열고 있어...",
+    "remaining": "잔여 {balance}크레딧"
+  },
+  "Conversational": {
+    "skipButton": "건너뛰기",
+    "premiumComingSoon": "프리미엄 콘텐츠 준비 중..."
   }
 }

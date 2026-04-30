@@ -140,5 +140,23 @@
     "testsDescription": "Browse our collection of psychology tests about love, personality, and more.",
     "resultTitle": "{resultType} — {testName} | Testorum",
     "resultDescription": "I got \"{resultType}\" on {testName}. Take the test and discover yours!"
+  },
+  "Paywall": {
+    "signUpTitle": "Sign up to unlock!",
+    "signUpDesc": "Create a free account to access premium features",
+    "signUpCta": "Sign Up Free",
+    "frozenTitle": "Account paused",
+    "frozenDesc": "Resubscribe to unlock premium features",
+    "frozenCta": "View Plans",
+    "insufficientTitle": "Not enough credits",
+    "buyCreditsCta": "Buy Credits",
+    "viewPlans": "View all plans",
+    "unlockCta": "Unlock for {credits} credits ✨",
+    "unlocking": "Unlocking...",
+    "remaining": "{balance} credits remaining"
+  },
+  "Conversational": {
+    "skipButton": "Skip",
+    "premiumComingSoon": "Premium content coming soon..."
   }
 }

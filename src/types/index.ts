@@ -78,6 +78,47 @@ export interface Comment {
   created_at: string
 }
 
+// ─── Tori 마스코트 ────────────────────────────────────────────
+export type ToriMood =
+  | 'happy'
+  | 'curious'
+  | 'excited'
+  | 'smug'
+  | 'surprised'
+  | 'celebrating'
+  | 'sad'
+  | 'thinking'
+
+export interface ToriResponse {
+  message: string
+  mood: ToriMood
+  data_driven: boolean // Phase A: always false / Phase B: true
+}
+
+// ─── 프리미엄 결과 ────────────────────────────────────────────
+export interface PremiumResult {
+  deepAnalysis: { en: string; ko: string }
+  strengths: { en: string[]; ko: string[] }
+  weaknesses: { en: string[]; ko: string[] }
+  advice: { en: string; ko: string }
+}
+
+// ─── TestData 확장 (premiumResults 선택적) ─────────────────────
+// TestData에 premiumResults 추가용 인터페이스
+export interface TestDataWithPremium extends TestData {
+  premiumResults?: Record<string, PremiumResult>
+}
+
+// ─── 행동 추적 ────────────────────────────────────────────────
+export interface TestInteraction {
+  test_slug: string
+  question_index: number
+  choice_made: string
+  time_spent_ms: number
+  choice_changed: boolean
+  question_type: QuestionType
+}
+
 // ─── GA4 이벤트 ──────────────────────────────────────────────
 export type GA4EventName =
   | 'test_start'
@@ -87,6 +128,10 @@ export type GA4EventName =
   | 'result_feedback'
   | 'share_click'
   | 'comment_submit'
+  | 'premium_unlock'
+  | 'tori_message_shown'
+  | 'paywall_shown'
+  | 'paywall_unlock_attempt'
 
 export interface GA4EventParams {
   test_slug?: string
@@ -94,5 +139,7 @@ export interface GA4EventParams {
   result_id?: string
   feedback_type?: FeedbackEmoji
   share_platform?: string
+  feature?: string
+  tori_mood?: string
   [key: string]: string | number | undefined
 }
