@@ -108,6 +108,22 @@ export default function proxy(request: NextRequest) {
     return applySecurityHeaders(response);
   }
 
+  // === Referral Detection ===
+  const refCode = request.nextUrl.searchParams.get('ref');
+  if (refCode && /^[A-Za-z0-9]{6,12}$/.test(refCode)) {
+    const cleanUrl = new URL(request.nextUrl.toString());
+    cleanUrl.searchParams.delete('ref');
+    const refResponse = NextResponse.redirect(cleanUrl);
+    refResponse.cookies.set('testorum_ref', refCode, {
+      maxAge: 30 * 24 * 60 * 60,
+      path: '/',
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax',
+    });
+    return applySecurityHeaders(refResponse);
+  }
+
   // === Page Routes: next-intl + Security Headers ===
   const response = intlMiddleware(request);
   return applySecurityHeaders(response);
