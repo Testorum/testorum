@@ -1,5 +1,7 @@
 import { ImageResponse } from 'next/og'
 import { getTestData } from '@/lib/tests'
+import { getTestDataRaw } from '@/lib/tests'
+import { calculateCompatibility } from '@/lib/compatibility'
 import { validateOgSlug, validateOgResult } from '@/lib/validation'
 import { logger } from '@/lib/logger'
 

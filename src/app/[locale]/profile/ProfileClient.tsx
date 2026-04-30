@@ -13,6 +13,7 @@ import { DNAProfile } from '@/components/dna/DNAProfile'
 import { Link } from '@/i18n/navigation'
 import { useProgress, useDnaProfile } from '@/hooks/useGamification'
 import { trackEvent } from '@/lib/ga4'
+import { ReferralTab } from './ReferralTab'
 import type { DnaProfileByCategory, PersonalityDnaEntry } from '@/types'
 
 // ─── Types ──────────────────────────────────────────────────────
