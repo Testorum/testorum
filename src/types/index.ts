@@ -200,6 +200,91 @@ export interface TestInteraction {
   question_type: QuestionType
 }
 
+// ─── 게이미피케이션 ────────────────────────────────────────────
+export interface UserProgress {
+  id: string
+  user_id: string
+  level: number
+  xp: number
+  total_tests_taken: number
+  current_streak: number
+  longest_streak: number
+  last_test_date: string | null
+  created_at: string
+  updated_at: string
+}
+
+export interface Badge {
+  id: string
+  slug: string
+  name_en: string
+  name_ko: string
+  description_en: string | null
+  description_ko: string | null
+  icon_emoji: string
+  category: string
+  xp_reward: number
+  credit_reward: number
+  condition_type: string
+  condition_value: number
+  sort_order: number
+}
+
+export interface UserBadge {
+  id: string
+  user_id: string
+  badge_id: string
+  earned_at: string
+  badge?: Badge
+}
+
+export type GamificationActionType = 'test_complete' | 'premium_unlock' | 'share' | 'referral'
+
+export interface GamificationUpdateResult {
+  xp: number
+  level: number
+  old_level: number
+  level_up: boolean
+  streak: number
+  new_badges: Array<{
+    slug: string
+    emoji: string
+    name_en: string
+    name_ko: string
+    xp_reward: number
+    credit_reward: number
+  }>
+  level_rewards: Array<{
+    level: number
+    credits: number
+  }>
+}
+
+export interface GamificationState {
+  progress: UserProgress | null
+  badges: UserBadge[]
+  allBadges: Badge[]
+}
+
+// ─── 성격 DNA 프로필 ──────────────────────────────────────────
+export interface PersonalityDnaEntry {
+  id: string
+  user_id: string
+  category: string
+  test_slug: string
+  result_type_id: string
+  result_label_en: string | null
+  result_label_ko: string | null
+  trait_scores: Record<string, number>
+  taken_at: string
+}
+
+export interface DnaProfileByCategory {
+  category: string
+  entries: PersonalityDnaEntry[]
+  averageTraits: Record<string, number>
+}
+
 // ─── GA4 이벤트 ──────────────────────────────────────────────
 export type GA4EventName =
   | 'test_start'
@@ -213,6 +298,11 @@ export type GA4EventName =
   | 'tori_message_shown'
   | 'paywall_shown'
   | 'paywall_unlock_attempt'
+  | 'xp_gained'
+  | 'level_up'
+  | 'badge_earned'
+  | 'dna_updated'
+  | 'streak_milestone'
 
 export interface GA4EventParams {
   test_slug?: string

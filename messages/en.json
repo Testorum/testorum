@@ -158,5 +158,30 @@
   "Conversational": {
     "skipButton": "Skip",
     "premiumComingSoon": "Premium content coming soon..."
+  },
+  "Gamification": {
+    "badges": "Badges",
+    "days": "days",
+    "toNextLevel": "to next level",
+    "streakStart": "Start your streak today!",
+    "streakNice": "Nice start! Keep going!",
+    "streakKeepGoing": "Keep it going! You're on fire!",
+    "streakWeek": "One week strong! Amazing!",
+    "streakOnFire": "Unstoppable! You're on fire!",
+    "streakLegend": "Legendary streak! You're incredible!",
+    "longestStreak": "Longest streak",
+    "streakCalendar": "Last 30 days",
+    "noTest": "No test",
+    "tested": "Tested"
+  },
+  "DNA": {
+    "title": "Personality DNA",
+    "filledCategories": "{filled} of {total} categories filled"
+  },
+  "Profile": {
+    "overview": "Overview",
+    "dna": "DNA",
+    "history": "History",
+    "referral": "Referral"
   }
 }

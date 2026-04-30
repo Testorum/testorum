@@ -158,5 +158,30 @@
   "Conversational": {
     "skipButton": "건너뛰기",
     "premiumComingSoon": "프리미엄 콘텐츠 준비 중..."
+  },
+  "Gamification": {
+    "badges": "뱃지",
+    "days": "일",
+    "toNextLevel": "다음 레벨까지",
+    "streakStart": "오늘부터 스트릭 시작해볼까!",
+    "streakNice": "좋은 시작이야! 계속 가자!",
+    "streakKeepGoing": "이 기세 멈추지 마! 🔥",
+    "streakWeek": "1주일 연속이야! 대단해!",
+    "streakOnFire": "멈출 수 없어! 불타오르는 중!",
+    "streakLegend": "전설의 스트릭! 진짜 대단해!",
+    "longestStreak": "최장 스트릭",
+    "streakCalendar": "최근 30일",
+    "noTest": "안 함",
+    "tested": "완료"
+  },
+  "DNA": {
+    "title": "성격 DNA",
+    "filledCategories": "{total}개 중 {filled}개 카테고리 채움"
+  },
+  "Profile": {
+    "overview": "홈",
+    "dna": "DNA",
+    "history": "기록",
+    "referral": "초대"
   }
 }

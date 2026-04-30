@@ -308,6 +308,194 @@ export type Database = {
         }
         Relationships: []
       }
+      test_interactions: {
+        Row: {
+          choice_changed: boolean
+          choice_made: string
+          created_at: string
+          id: string
+          question_index: number
+          question_type: string
+          test_slug: string
+          time_spent_ms: number
+          user_id: string
+        }
+        Insert: {
+          choice_changed?: boolean
+          choice_made: string
+          created_at?: string
+          id?: string
+          question_index: number
+          question_type: string
+          test_slug: string
+          time_spent_ms: number
+          user_id: string
+        }
+        Update: {
+          choice_changed?: boolean
+          choice_made?: string
+          created_at?: string
+          id?: string
+          question_index?: number
+          question_type?: string
+          test_slug?: string
+          time_spent_ms?: number
+          user_id?: string
+        }
+        Relationships: []
+      }
+      user_progress: {
+        Row: {
+          created_at: string
+          current_streak: number
+          id: string
+          last_test_date: string | null
+          level: number
+          longest_streak: number
+          total_tests_taken: number
+          updated_at: string
+          user_id: string
+          xp: number
+        }
+        Insert: {
+          created_at?: string
+          current_streak?: number
+          id?: string
+          last_test_date?: string | null
+          level?: number
+          longest_streak?: number
+          total_tests_taken?: number
+          updated_at?: string
+          user_id: string
+          xp?: number
+        }
+        Update: {
+          created_at?: string
+          current_streak?: number
+          id?: string
+          last_test_date?: string | null
+          level?: number
+          longest_streak?: number
+          total_tests_taken?: number
+          updated_at?: string
+          user_id?: string
+          xp?: number
+        }
+        Relationships: []
+      }
+      badges: {
+        Row: {
+          category: string
+          condition_type: string
+          condition_value: number
+          credit_reward: number
+          description_en: string | null
+          description_ko: string | null
+          icon_emoji: string
+          id: string
+          name_en: string
+          name_ko: string
+          slug: string
+          sort_order: number
+          xp_reward: number
+        }
+        Insert: {
+          category: string
+          condition_type: string
+          condition_value: number
+          credit_reward?: number
+          description_en?: string | null
+          description_ko?: string | null
+          icon_emoji: string
+          id?: string
+          name_en: string
+          name_ko: string
+          slug: string
+          sort_order?: number
+          xp_reward?: number
+        }
+        Update: {
+          category?: string
+          condition_type?: string
+          condition_value?: number
+          credit_reward?: number
+          description_en?: string | null
+          description_ko?: string | null
+          icon_emoji?: string
+          id?: string
+          name_en?: string
+          name_ko?: string
+          slug?: string
+          sort_order?: number
+          xp_reward?: number
+        }
+        Relationships: []
+      }
+      user_badges: {
+        Row: {
+          badge_id: string
+          earned_at: string
+          id: string
+          user_id: string
+        }
+        Insert: {
+          badge_id: string
+          earned_at?: string
+          id?: string
+          user_id: string
+        }
+        Update: {
+          badge_id?: string
+          earned_at?: string
+          id?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_badges_badge_id_fkey"
+            columns: ["badge_id"]
+            isOneToOne: false
+            referencedRelation: "badges"
+            referencedColumns: ["id"]
+          }
+        ]
+      }
+      personality_dna: {
+        Row: {
+          category: string
+          id: string
+          result_label_en: string | null
+          result_label_ko: string | null
+          result_type_id: string
+          taken_at: string
+          test_slug: string
+          trait_scores: Json
+          user_id: string
+        }
+        Insert: {
+          category: string
+          id?: string
+          result_label_en?: string | null
+          result_label_ko?: string | null
+          result_type_id: string
+          taken_at?: string
+          test_slug: string
+          trait_scores?: Json
+          user_id: string
+        }
+        Update: {
+          category?: string
+          id?: string
+          result_label_en?: string | null
+          result_label_ko?: string | null
+          result_type_id?: string
+          taken_at?: string
+          test_slug?: string
+          trait_scores?: Json
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -327,6 +515,16 @@ export type Database = {
         Returns: Json
       }
       get_credit_balance: { Args: { p_user_id: string }; Returns: number }
+      update_user_progress: {
+        Args: {
+          p_user_id: string
+          p_xp_gained: number
+          p_action_type: string
+          p_test_slug?: string
+          p_test_category?: string
+        }
+        Returns: Json
+      }
     }
     Enums: {
       [_ in never]: never

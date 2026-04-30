@@ -15,7 +15,9 @@ import { useTestStore } from '@/store/testStore'
 import { Link } from '@/i18n/navigation'
 import { CREDIT_COSTS } from '@/types/billing'
 import { trackEvent } from '@/lib/ga4'
-import type { TestData, TestResult, PremiumResult, FeedbackCount, ToriMood } from '@/types'
+import { XPGainToast } from '@/components/gamification/XPGainToast'
+import { useUpdateProgress, useUpdateDna } from '@/hooks/useGamification'
+import type { TestData, TestResult, PremiumResult, FeedbackCount, ToriMood, GamificationUpdateResult } from '@/types'
 
 // ─── Types ─────────────────────────────────────────────────────
 
@@ -75,6 +77,12 @@ export function ConversationalResult({
   const hasPremium = !!premiumResult
 
   const skipAnimation = wasAlreadyShown(data.meta.slug, result.id)
+
+  // ─── Gamification Integration ──────────────────────────────
+  const { update: updateProgress } = useUpdateProgress()
+  const { update: updateDna } = useUpdateDna()
+  const [gamificationResult, setGamificationResult] = useState<GamificationUpdateResult | null>(null)
+  const gamificationTriggered = useRef(false)
 
   // Build message sequence
   const steps = useMemo<MessageStep[]>(() => {
@@ -198,7 +206,60 @@ export function ConversationalResult({
   const emojiDisplay = result.emojiCombo || result.emoji
   const theme = data.meta.theme
 
+  // ─── Trigger gamification + DNA update when conversation completes ──
+  useEffect(() => {
+    if (!allRevealed || gamificationTriggered.current) return
+    gamificationTriggered.current = true
+
+    // Fire-and-forget: update XP/badges
+    updateProgress({
+      action_type: 'test_complete',
+      test_slug: data.meta.slug,
+      test_category: data.meta.category,
+    }).then((res) => {
+      if (res.success && res.data) {
+        setGamificationResult(res.data)
+        trackEvent('xp_gained', {
+          test_slug: data.meta.slug,
+          xp: res.data.xp,
+          level: res.data.level,
+        })
+        if (res.data.level_up) {
+          trackEvent('level_up', { level: res.data.level })
+        }
+        for (const badge of res.data.new_badges) {
+          trackEvent('badge_earned', { feature: badge.slug })
+        }
+      }
+    }).catch(() => {
+      // Silently fail — gamification is non-critical
+    })
+
+    // Fire-and-forget: update DNA
+    updateDna({
+      test_slug: data.meta.slug,
+      result_type_id: result.id,
+    }).then((res) => {
+      if (res.success && !res.skipped) {
+        trackEvent('dna_updated', {
+          test_slug: data.meta.slug,
+          feature: res.category,
+        })
+      }
+    }).catch(() => {
+      // Silently fail
+    })
+  }, [allRevealed, data.meta.slug, data.meta.category, result.id, updateProgress, updateDna])
+
   return (
+    <>
+      {/* XP / Badge / Level-up Toast */}
+      <XPGainToast
+        result={gamificationResult}
+        locale={locale}
+        onDismiss={() => setGamificationResult(null)}
+      />
+
     <div
       ref={scrollRef}
       className="max-w-[480px] mx-auto px-4 py-6 min-h-screen flex flex-col"
@@ -288,6 +349,7 @@ export function ConversationalResult({
 
       <div ref={bottomRef} />
     </div>
+  </>
   )
 }
 
