@@ -142,8 +142,7 @@ export function ProfileClient({ locale, user }: Props) {
             )}
             {activeTab === 'referral' && (
               <ReferralTab
-                referralCode={user.referralCode}
-                locale={locale}
+                referralCode={user.referralCode ?? ''}
                 locale={locale}
               />
             )}
