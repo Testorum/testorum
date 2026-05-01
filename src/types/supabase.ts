@@ -1,6 +1,3 @@
-Need to install the following packages:
-supabase@2.98.0
-Ok to proceed? (y) 
 export type Json =
   | string
   | number
@@ -17,584 +14,527 @@ export type Database = {
   }
   public: {
     Tables: {
-      accuracy_votes: {
+      badges: {
         Row: {
-          created_at: string
-          fortune_id: string
+          category: string
+          condition_type: string
+          condition_value: number
+          credit_reward: number
+          description_en: string | null
+          description_ko: string | null
+          icon_emoji: string
           id: string
-          user_id: string
-          vote: boolean
+          name_en: string
+          name_ko: string
+          slug: string
+          sort_order: number
+          xp_reward: number
         }
         Insert: {
-          created_at?: string
-          fortune_id: string
+          category: string
+          condition_type: string
+          condition_value: number
+          credit_reward?: number
+          description_en?: string | null
+          description_ko?: string | null
+          icon_emoji: string
           id?: string
-          user_id: string
-          vote: boolean
+          name_en: string
+          name_ko: string
+          slug: string
+          sort_order?: number
+          xp_reward?: number
         }
         Update: {
-          created_at?: string
-          fortune_id?: string
+          category?: string
+          condition_type?: string
+          condition_value?: number
+          credit_reward?: number
+          description_en?: string | null
+          description_ko?: string | null
+          icon_emoji?: string
           id?: string
-          user_id?: string
-          vote?: boolean
-        }
-        Relationships: [
-          {
-            foreignKeyName: "accuracy_votes_fortune_id_fkey"
-            columns: ["fortune_id"]
-            isOneToOne: false
-            referencedRelation: "daily_fortunes"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "accuracy_votes_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "users"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      anonymous_trials: {
-        Row: {
-          created_at: string
-          fingerprint_hash: string
-          id: string
-          ip_address: unknown
-          locale: string | null
-          reading_data: Json | null
-          service_type: string
-          user_agent: string | null
-        }
-        Insert: {
-          created_at?: string
-          fingerprint_hash: string
-          id?: string
-          ip_address?: unknown
-          locale?: string | null
-          reading_data?: Json | null
-          service_type: string
-          user_agent?: string | null
-        }
-        Update: {
-          created_at?: string
-          fingerprint_hash?: string
-          id?: string
-          ip_address?: unknown
-          locale?: string | null
-          reading_data?: Json | null
-          service_type?: string
-          user_agent?: string | null
+          name_en?: string
+          name_ko?: string
+          slug?: string
+          sort_order?: number
+          xp_reward?: number
         }
         Relationships: []
       }
-      card_collection: {
+      comments: {
         Row: {
-          card_id: number
-          first_drawn_at: string
-          id: string
-          last_drawn_at: string
-          times_drawn: number
-          user_id: string
-        }
-        Insert: {
-          card_id: number
-          first_drawn_at?: string
-          id?: string
-          last_drawn_at?: string
-          times_drawn?: number
-          user_id: string
-        }
-        Update: {
-          card_id?: number
-          first_drawn_at?: string
-          id?: string
-          last_drawn_at?: string
-          times_drawn?: number
-          user_id?: string
-        }
-        Relationships: [
-          {
-            foreignKeyName: "card_collection_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "users"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      compatibility_readings: {
-        Row: {
-          created_at: string
-          id: string
-          interpretation: string
-          language: string
-          person1_day: number
-          person1_gender: string
-          person1_hour: number | null
-          person1_month: number
-          person1_year: number
-          person2_day: number
-          person2_gender: string
-          person2_hour: number | null
-          person2_month: number
-          person2_year: number
-          user_id: string
-        }
-        Insert: {
-          created_at?: string
-          id?: string
-          interpretation: string
-          language?: string
-          person1_day: number
-          person1_gender: string
-          person1_hour?: number | null
-          person1_month: number
-          person1_year: number
-          person2_day: number
-          person2_gender: string
-          person2_hour?: number | null
-          person2_month: number
-          person2_year: number
-          user_id: string
-        }
-        Update: {
-          created_at?: string
-          id?: string
-          interpretation?: string
-          language?: string
-          person1_day?: number
-          person1_gender?: string
-          person1_hour?: number | null
-          person1_month?: number
-          person1_year?: number
-          person2_day?: number
-          person2_gender?: string
-          person2_hour?: number | null
-          person2_month?: number
-          person2_year?: number
-          user_id?: string
-        }
-        Relationships: [
-          {
-            foreignKeyName: "compatibility_readings_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "users"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      daily_fortunes: {
-        Row: {
-          career_score: number | null
           content: string
           created_at: string
-          date: string
-          health_score: number | null
           id: string
-          language: string
-          love_score: number | null
-          luck_score: number | null
-          lucky_color: string | null
-          lucky_number: number | null
-          user_id: string
-          zodiac_sign: Database["public"]["Enums"]["zodiac_sign"]
+          result_id: string
+          test_slug: string
         }
         Insert: {
-          career_score?: number | null
           content: string
           created_at?: string
-          date?: string
-          health_score?: number | null
           id?: string
-          language?: string
-          love_score?: number | null
-          luck_score?: number | null
-          lucky_color?: string | null
-          lucky_number?: number | null
-          user_id: string
-          zodiac_sign: Database["public"]["Enums"]["zodiac_sign"]
+          result_id: string
+          test_slug: string
         }
         Update: {
-          career_score?: number | null
           content?: string
           created_at?: string
-          date?: string
-          health_score?: number | null
           id?: string
-          language?: string
-          love_score?: number | null
-          luck_score?: number | null
-          lucky_color?: string | null
-          lucky_number?: number | null
-          user_id?: string
-          zodiac_sign?: Database["public"]["Enums"]["zodiac_sign"]
-        }
-        Relationships: [
-          {
-            foreignKeyName: "daily_fortunes_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "users"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      image_access_log: {
-        Row: {
-          created_at: string
-          id: number
-          ip_address: unknown
-          path: string
-          referer: string | null
-          user_agent: string | null
-          user_id: string | null
-        }
-        Insert: {
-          created_at?: string
-          id?: never
-          ip_address?: unknown
-          path: string
-          referer?: string | null
-          user_agent?: string | null
-          user_id?: string | null
-        }
-        Update: {
-          created_at?: string
-          id?: never
-          ip_address?: unknown
-          path?: string
-          referer?: string | null
-          user_agent?: string | null
-          user_id?: string | null
+          result_id?: string
+          test_slug?: string
         }
         Relationships: []
       }
-      purchases: {
+      compare_sessions: {
         Row: {
-          amount_cents: number
+          completed_at: string | null
           created_at: string
-          currency: string
+          expires_at: string
           id: string
-          ls_order_id: string
-          purchase_type: Database["public"]["Enums"]["purchase_type"]
-          status: string
-          used_at: string | null
+          initiator_result_id: string
+          initiator_session_id: string
+          partner_result_id: string | null
+          partner_session_id: string | null
+          test_slug: string
+        }
+        Insert: {
+          completed_at?: string | null
+          created_at?: string
+          expires_at?: string
+          id?: string
+          initiator_result_id: string
+          initiator_session_id: string
+          partner_result_id?: string | null
+          partner_session_id?: string | null
+          test_slug: string
+        }
+        Update: {
+          completed_at?: string | null
+          created_at?: string
+          expires_at?: string
+          id?: string
+          initiator_result_id?: string
+          initiator_session_id?: string
+          partner_result_id?: string | null
+          partner_session_id?: string | null
+          test_slug?: string
+        }
+        Relationships: []
+      }
+      credit_transactions: {
+        Row: {
+          amount: number
+          balance_after: number
+          created_at: string
+          id: string
+          reason: string | null
+          type: string
           user_id: string
         }
         Insert: {
-          amount_cents: number
+          amount: number
+          balance_after: number
           created_at?: string
-          currency?: string
           id?: string
-          ls_order_id: string
-          purchase_type: Database["public"]["Enums"]["purchase_type"]
-          status?: string
-          used_at?: string | null
+          reason?: string | null
+          type: string
           user_id: string
         }
         Update: {
-          amount_cents?: number
+          amount?: number
+          balance_after?: number
           created_at?: string
-          currency?: string
           id?: string
-          ls_order_id?: string
-          purchase_type?: Database["public"]["Enums"]["purchase_type"]
-          status?: string
-          used_at?: string | null
+          reason?: string | null
+          type?: string
           user_id?: string
+        }
+        Relationships: []
+      }
+      credits: {
+        Row: {
+          balance: number
+          cap: number
+          created_at: string
+          frozen_at: string | null
+          id: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          balance?: number
+          cap?: number
+          created_at?: string
+          frozen_at?: string | null
+          id?: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          balance?: number
+          cap?: number
+          created_at?: string
+          frozen_at?: string | null
+          id?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      feedback: {
+        Row: {
+          created_at: string
+          emoji: string
+          id: string
+          result_id: string
+          test_slug: string
+        }
+        Insert: {
+          created_at?: string
+          emoji: string
+          id?: string
+          result_id: string
+          test_slug: string
+        }
+        Update: {
+          created_at?: string
+          emoji?: string
+          id?: string
+          result_id?: string
+          test_slug?: string
+        }
+        Relationships: []
+      }
+      lemonsqueezy_events: {
+        Row: {
+          event_id: string
+          event_type: string
+          id: string
+          processed_at: string
+        }
+        Insert: {
+          event_id: string
+          event_type: string
+          id?: string
+          processed_at?: string
+        }
+        Update: {
+          event_id?: string
+          event_type?: string
+          id?: string
+          processed_at?: string
+        }
+        Relationships: []
+      }
+      milestones: {
+        Row: {
+          credits_awarded: boolean
+          id: string
+          milestone_type: string
+          owner_id: string
+          reached_at: string
+          test_id: string
+        }
+        Insert: {
+          credits_awarded?: boolean
+          id?: string
+          milestone_type: string
+          owner_id: string
+          reached_at?: string
+          test_id: string
+        }
+        Update: {
+          credits_awarded?: boolean
+          id?: string
+          milestone_type?: string
+          owner_id?: string
+          reached_at?: string
+          test_id?: string
+        }
+        Relationships: []
+      }
+      payments: {
+        Row: {
+          amount_usd: number
+          created_at: string
+          id: string
+          lemonsqueezy_order_id: string | null
+          payment_type: string
+          status: string
+          user_id: string
+          variant_id: string | null
+        }
+        Insert: {
+          amount_usd: number
+          created_at?: string
+          id?: string
+          lemonsqueezy_order_id?: string | null
+          payment_type: string
+          status?: string
+          user_id: string
+          variant_id?: string | null
+        }
+        Update: {
+          amount_usd?: number
+          created_at?: string
+          id?: string
+          lemonsqueezy_order_id?: string | null
+          payment_type?: string
+          status?: string
+          user_id?: string
+          variant_id?: string | null
+        }
+        Relationships: []
+      }
+      personality_dna: {
+        Row: {
+          category: string
+          id: string
+          result_label_en: string | null
+          result_label_ko: string | null
+          result_type_id: string
+          taken_at: string
+          test_slug: string
+          trait_scores: Json
+          user_id: string
+        }
+        Insert: {
+          category: string
+          id?: string
+          result_label_en?: string | null
+          result_label_ko?: string | null
+          result_type_id: string
+          taken_at?: string
+          test_slug: string
+          trait_scores?: Json
+          user_id: string
+        }
+        Update: {
+          category?: string
+          id?: string
+          result_label_en?: string | null
+          result_label_ko?: string | null
+          result_type_id?: string
+          taken_at?: string
+          test_slug?: string
+          trait_scores?: Json
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string
+          display_name: string | null
+          id: string
+          lemonsqueezy_customer_id: string | null
+          referral_code: string | null
+          updated_at: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string
+          display_name?: string | null
+          id: string
+          lemonsqueezy_customer_id?: string | null
+          referral_code?: string | null
+          updated_at?: string
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string
+          display_name?: string | null
+          id?: string
+          lemonsqueezy_customer_id?: string | null
+          referral_code?: string | null
+          updated_at?: string
         }
         Relationships: []
       }
       referrals: {
         Row: {
+          activated_at: string | null
+          completed_at: string | null
+          converted_at: string | null
           created_at: string
+          credits_awarded: boolean
           id: string
-          points_awarded: number
+          referral_code: string
           referred_id: string
           referrer_id: string
+          status: string
         }
         Insert: {
+          activated_at?: string | null
+          completed_at?: string | null
+          converted_at?: string | null
           created_at?: string
+          credits_awarded?: boolean
           id?: string
-          points_awarded?: number
+          referral_code: string
           referred_id: string
           referrer_id: string
+          status?: string
         }
         Update: {
+          activated_at?: string | null
+          completed_at?: string | null
+          converted_at?: string | null
           created_at?: string
+          credits_awarded?: boolean
           id?: string
-          points_awarded?: number
+          referral_code?: string
           referred_id?: string
           referrer_id?: string
+          status?: string
         }
-        Relationships: [
-          {
-            foreignKeyName: "referrals_referred_id_fkey"
-            columns: ["referred_id"]
-            isOneToOne: true
-            referencedRelation: "users"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "referrals_referrer_id_fkey"
-            columns: ["referrer_id"]
-            isOneToOne: false
-            referencedRelation: "users"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      saju_readings: {
-        Row: {
-          birth_day: number
-          birth_hour: number | null
-          birth_month: number
-          birth_year: number
-          created_at: string
-          gender: string
-          id: string
-          interpretation: string
-          is_lunar: boolean
-          language: string
-          user_id: string
-        }
-        Insert: {
-          birth_day: number
-          birth_hour?: number | null
-          birth_month: number
-          birth_year: number
-          created_at?: string
-          gender: string
-          id?: string
-          interpretation: string
-          is_lunar?: boolean
-          language?: string
-          user_id: string
-        }
-        Update: {
-          birth_day?: number
-          birth_hour?: number | null
-          birth_month?: number
-          birth_year?: number
-          created_at?: string
-          gender?: string
-          id?: string
-          interpretation?: string
-          is_lunar?: boolean
-          language?: string
-          user_id?: string
-        }
-        Relationships: [
-          {
-            foreignKeyName: "saju_readings_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "users"
-            referencedColumns: ["id"]
-          },
-        ]
+        Relationships: []
       }
       subscriptions: {
         Row: {
-          amount: number
-          canceled_at: string | null
+          billing_interval: string | null
           created_at: string
-          currency: string
-          current_period_end: string
-          current_period_start: string
+          current_period_end: string | null
+          customer_portal_url: string | null
           id: string
-          plan: Database["public"]["Enums"]["subscription_plan"]
-          provider: Database["public"]["Enums"]["payment_provider"]
-          provider_customer_id: string | null
-          provider_subscription_id: string | null
-          status: Database["public"]["Enums"]["subscription_status"]
+          lemonsqueezy_subscription_id: string
+          plan: string
+          status: string
           updated_at: string
           user_id: string
+          variant_id: string
         }
         Insert: {
-          amount: number
-          canceled_at?: string | null
+          billing_interval?: string | null
           created_at?: string
-          currency?: string
-          current_period_end: string
-          current_period_start: string
+          current_period_end?: string | null
+          customer_portal_url?: string | null
           id?: string
-          plan: Database["public"]["Enums"]["subscription_plan"]
-          provider: Database["public"]["Enums"]["payment_provider"]
-          provider_customer_id?: string | null
-          provider_subscription_id?: string | null
-          status?: Database["public"]["Enums"]["subscription_status"]
+          lemonsqueezy_subscription_id: string
+          plan: string
+          status?: string
           updated_at?: string
           user_id: string
+          variant_id: string
         }
         Update: {
-          amount?: number
-          canceled_at?: string | null
+          billing_interval?: string | null
           created_at?: string
-          currency?: string
-          current_period_end?: string
-          current_period_start?: string
+          current_period_end?: string | null
+          customer_portal_url?: string | null
           id?: string
-          plan?: Database["public"]["Enums"]["subscription_plan"]
-          provider?: Database["public"]["Enums"]["payment_provider"]
-          provider_customer_id?: string | null
-          provider_subscription_id?: string | null
-          status?: Database["public"]["Enums"]["subscription_status"]
+          lemonsqueezy_subscription_id?: string
+          plan?: string
+          status?: string
           updated_at?: string
           user_id?: string
+          variant_id?: string
         }
-        Relationships: [
-          {
-            foreignKeyName: "subscriptions_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "users"
-            referencedColumns: ["id"]
-          },
-        ]
+        Relationships: []
       }
-      tarot_readings: {
+      test_interactions: {
         Row: {
-          card_positions: string[]
-          cards_drawn: number[]
+          choice_changed: boolean
+          choice_made: string
           created_at: string
           id: string
-          interpretation: string
-          is_premium: boolean
-          language: string
-          question: string | null
-          spread_type: string
+          question_index: number
+          question_type: string
+          test_slug: string
+          time_spent_ms: number
           user_id: string
         }
         Insert: {
-          card_positions?: string[]
-          cards_drawn: number[]
+          choice_changed?: boolean
+          choice_made: string
           created_at?: string
           id?: string
-          interpretation: string
-          is_premium?: boolean
-          language?: string
-          question?: string | null
-          spread_type?: string
+          question_index: number
+          question_type: string
+          test_slug: string
+          time_spent_ms: number
           user_id: string
         }
         Update: {
-          card_positions?: string[]
-          cards_drawn?: number[]
+          choice_changed?: boolean
+          choice_made?: string
           created_at?: string
           id?: string
-          interpretation?: string
-          is_premium?: boolean
-          language?: string
-          question?: string | null
-          spread_type?: string
+          question_index?: number
+          question_type?: string
+          test_slug?: string
+          time_spent_ms?: number
           user_id?: string
         }
-        Relationships: [
-          {
-            foreignKeyName: "tarot_readings_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "users"
-            referencedColumns: ["id"]
-          },
-        ]
+        Relationships: []
       }
-      usage_log: {
+      user_badges: {
         Row: {
-          action: string
-          count: number
-          created_at: string
-          date: string
+          badge_id: string
+          earned_at: string
           id: string
           user_id: string
         }
         Insert: {
-          action: string
-          count?: number
-          created_at?: string
-          date?: string
+          badge_id: string
+          earned_at?: string
           id?: string
           user_id: string
         }
         Update: {
-          action?: string
-          count?: number
-          created_at?: string
-          date?: string
+          badge_id?: string
+          earned_at?: string
           id?: string
           user_id?: string
         }
         Relationships: [
           {
-            foreignKeyName: "usage_log_user_id_fkey"
-            columns: ["user_id"]
+            foreignKeyName: "user_badges_badge_id_fkey"
+            columns: ["badge_id"]
             isOneToOne: false
-            referencedRelation: "users"
+            referencedRelation: "badges"
             referencedColumns: ["id"]
           },
         ]
       }
-      users: {
+      user_progress: {
         Row: {
-          birth_date: string | null
           created_at: string
-          display_name: string | null
-          email: string | null
+          current_streak: number
           id: string
-          language: string
-          ls_customer_id: string | null
-          lucky_points: number
-          referral_code: string | null
-          streak_current: number
-          streak_last_visit: string | null
-          streak_max: number
-          subscription_expires_at: string | null
-          subscription_plan: Database["public"]["Enums"]["subscription_plan"]
-          total_readings: number
+          last_test_date: string | null
+          level: number
+          longest_streak: number
+          total_tests_taken: number
           updated_at: string
-          zodiac_sign: Database["public"]["Enums"]["zodiac_sign"] | null
+          user_id: string
+          xp: number
         }
         Insert: {
-          birth_date?: string | null
           created_at?: string
-          display_name?: string | null
-          email?: string | null
-          id: string
-          language?: string
-          ls_customer_id?: string | null
-          lucky_points?: number
-          referral_code?: string | null
-          streak_current?: number
-          streak_last_visit?: string | null
-          streak_max?: number
-          subscription_expires_at?: string | null
-          subscription_plan?: Database["public"]["Enums"]["subscription_plan"]
-          total_readings?: number
+          current_streak?: number
+          id?: string
+          last_test_date?: string | null
+          level?: number
+          longest_streak?: number
+          total_tests_taken?: number
           updated_at?: string
-          zodiac_sign?: Database["public"]["Enums"]["zodiac_sign"] | null
+          user_id: string
+          xp?: number
         }
         Update: {
-          birth_date?: string | null
           created_at?: string
-          display_name?: string | null
-          email?: string | null
+          current_streak?: number
           id?: string
-          language?: string
-          ls_customer_id?: string | null
-          lucky_points?: number
-          referral_code?: string | null
-          streak_current?: number
-          streak_last_visit?: string | null
-          streak_max?: number
-          subscription_expires_at?: string | null
-          subscription_plan?: Database["public"]["Enums"]["subscription_plan"]
-          total_readings?: number
+          last_test_date?: string | null
+          level?: number
+          longest_streak?: number
+          total_tests_taken?: number
           updated_at?: string
-          zodiac_sign?: Database["public"]["Enums"]["zodiac_sign"] | null
+          user_id?: string
+          xp?: number
         }
         Relationships: []
       }
@@ -603,41 +543,37 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      apply_referral: {
-        Args: { p_code: string; p_referred_id: string }
+      activate_referral: { Args: { p_referred_id: string }; Returns: Json }
+      add_credits: {
+        Args: {
+          p_amount: number
+          p_desc?: string
+          p_type?: string
+          p_user_id: string
+        }
         Returns: Json
       }
-      generate_referral_code: { Args: { p_user_id: string }; Returns: string }
-      get_zodiac_sign: {
-        Args: { p_birth_date: string }
-        Returns: Database["public"]["Enums"]["zodiac_sign"]
+      cleanup_expired_compare_sessions: { Args: never; Returns: number }
+      convert_referral: { Args: { p_referred_id: string }; Returns: Json }
+      deduct_credits: {
+        Args: { p_amount: number; p_reason?: string; p_user_id: string }
+        Returns: Json
       }
-      increment_usage: {
-        Args: { p_action: string; p_user_id: string }
-        Returns: number
+      expire_stale_referrals: { Args: never; Returns: number }
+      get_credit_balance: { Args: { p_user_id: string }; Returns: number }
+      update_user_progress: {
+        Args: {
+          p_action_type: string
+          p_test_category?: string
+          p_test_slug?: string
+          p_user_id: string
+          p_xp_gained: number
+        }
+        Returns: Json
       }
-      show_limit: { Args: never; Returns: number }
-      show_trgm: { Args: { "": string }; Returns: string[] }
-      update_streak: { Args: { p_user_id: string }; Returns: Json }
     }
     Enums: {
-      payment_provider: "toss" | "stripe"
-      purchase_type: "tarot" | "saju" | "compat" | "wealth"
-      subscription_plan: "free" | "premium_monthly" | "premium_yearly"
-      subscription_status: "active" | "canceled" | "expired" | "past_due"
-      zodiac_sign:
-        | "aries"
-        | "taurus"
-        | "gemini"
-        | "cancer"
-        | "leo"
-        | "virgo"
-        | "libra"
-        | "scorpio"
-        | "sagittarius"
-        | "capricorn"
-        | "aquarius"
-        | "pisces"
+      [_ in never]: never
     }
     CompositeTypes: {
       [_ in never]: never
@@ -764,25 +700,6 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {
-      payment_provider: ["toss", "stripe"],
-      purchase_type: ["tarot", "saju", "compat", "wealth"],
-      subscription_plan: ["free", "premium_monthly", "premium_yearly"],
-      subscription_status: ["active", "canceled", "expired", "past_due"],
-      zodiac_sign: [
-        "aries",
-        "taurus",
-        "gemini",
-        "cancer",
-        "leo",
-        "virgo",
-        "libra",
-        "scorpio",
-        "sagittarius",
-        "capricorn",
-        "aquarius",
-        "pisces",
-      ],
-    },
+    Enums: {},
   },
 } as const
