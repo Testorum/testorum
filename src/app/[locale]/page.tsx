@@ -14,13 +14,42 @@ export default async function HomePage({ params }: Props) {
   const t = await getTranslations('Home')
   const tNav = await getTranslations('Nav')
   const tFooter = await getTranslations('Footer')
+  const tCat = await getTranslations('Categories')
 
   const slugs = getAllTestSlugs()
   const tests = await Promise.all(slugs.map((slug) => getTestData(slug, locale)))
   const validTests = tests.filter(Boolean)
 
+  // C-3: category 매핑 헬퍼 (동적 키 → next-intl 타입 호환)
+  const getCategoryLabel = (key: string) => {
+    try { return tCat(key as 'love') } catch { return key }
+  }
+
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#FAFAF8' }}>
+      {/* D-3: Schema.org WebApplication */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebApplication',
+            name: 'Testorum',
+            url: 'https://testorum.app',
+            applicationCategory: 'EntertainmentApplication',
+            operatingSystem: 'Web',
+            description: locale === 'ko'
+              ? '재미있는 심리 테스트로 진짜 나를 발견하세요'
+              : 'Discover who you really are with fun psychology tests',
+            inLanguage: [locale],
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD',
+            },
+          }),
+        }}
+      />
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Hero Section */}
         <div className="text-center mb-10">
@@ -72,7 +101,7 @@ export default async function HomePage({ params }: Props) {
                       {data!.meta.title}
                     </p>
                     <p className="text-xs mt-0.5" style={{ color: '#9B9B9B' }}>
-                      {locale === 'ko' ? '약' : '~'} {data!.meta.estimatedMinutes}{locale === 'ko' ? '분' : ' min'} · {data!.meta.category}
+                      {locale === 'ko' ? '약' : '~'} {data!.meta.estimatedMinutes}{locale === 'ko' ? '분' : ' min'} · {getCategoryLabel(data!.meta.category)}
                     </p>
                   </div>
                   {/* Arrow */}

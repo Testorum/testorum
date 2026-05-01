@@ -28,6 +28,7 @@
 import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { trackEvent } from '@/lib/ga4';
 
 interface CompareButtonProps {
   testSlug: string;
@@ -71,6 +72,7 @@ export function CompareButton({
       const data = await res.json();
       const fullUrl = `${window.location.origin}/${locale}${data.compare_url}`;
       setCompareUrl(fullUrl);
+      trackEvent('compare_created', { test_slug: testSlug });
     } catch {
       setError(t('createError'));
     } finally {

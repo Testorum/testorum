@@ -1,14 +1,17 @@
 import { ImageResponse } from 'next/og'
 import { getTestData } from '@/lib/tests'
-import { getTestDataRaw } from '@/lib/tests'
-import { calculateCompatibility } from '@/lib/compatibility'
 import { validateOgSlug, validateOgResult } from '@/lib/validation'
 import { logger } from '@/lib/logger'
 
 export const runtime = 'edge'
 
+const OG_TAGLINES: Record<string, string> = {
+  en: 'Discover who you really are',
+  ko: '진짜 나를 발견하세요',
+}
+
 /** 브랜드 기본 OG (검증 실패 / 데이터 없을 때 fallback) */
-function defaultOgImage() {
+function defaultOgImage(locale: string = 'en') {
   return new ImageResponse(
     (
       <div
@@ -29,7 +32,7 @@ function defaultOgImage() {
           Testorum
         </div>
         <div style={{ fontSize: 24, marginTop: 16, opacity: 0.9 }}>
-          Discover who you really are
+          {OG_TAGLINES[locale] ?? OG_TAGLINES.en}
         </div>
       </div>
     ),
@@ -48,16 +51,19 @@ export async function GET(request: Request) {
       return generateCompareOG(searchParams)
     }
 
+    // D-1: locale 파라미터 추가
+    const locale = searchParams.get('locale') === 'ko' ? 'ko' : 'en'
+
     // 입력값 검증
     const slug = validateOgSlug(searchParams.get('slug')) ?? 't01'
     const resultId = validateOgResult(searchParams.get('result')) ?? ''
 
-    const data = await getTestData(slug)
+    const data = await getTestData(slug, locale)
 
     // 테스트 데이터 없으면 기본 OG
     if (!data) {
       logger.warn('OG/route', 'Test data not found', { slug })
-      return defaultOgImage()
+      return defaultOgImage(locale)
     }
 
     const result = data.results.find((r) => r.id === resultId)

@@ -219,5 +219,14 @@
     "conversionReward": "친구 Pro 업그레이드",
     "totalEarned": "총 획득",
     "welcomeToast": "환영해! 친구 덕분에 크레딧 {credits}개 받았어! 🎁"
+  },
+  "Categories": {
+    "love": "연애",
+    "communication": "소통",
+    "work": "직장",
+    "social": "사회",
+    "money": "금전",
+    "personality": "성격",
+    "fun": "재미"
   }
 }

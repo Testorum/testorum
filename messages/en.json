@@ -219,5 +219,14 @@
     "conversionReward": "Friend upgrades to Pro",
     "totalEarned": "Total earned",
     "welcomeToast": "Welcome! You got {credits} bonus credits from a friend! 🎁"
+  },
+  "Categories": {
+    "love": "Love",
+    "communication": "Communication",
+    "work": "Work",
+    "social": "Social",
+    "money": "Money",
+    "personality": "Personality",
+    "fun": "Fun"
   }
 }

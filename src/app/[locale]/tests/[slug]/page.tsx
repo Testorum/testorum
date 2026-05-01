@@ -3,7 +3,7 @@ import { TestClient } from './TestClient'
 import { FocusModeWrapper } from '@/components/layout/FocusModeWrapper'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { getTranslations, setRequestLocale } from 'next-intl/server'
+import { setRequestLocale } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
 
 interface Props {
@@ -23,8 +23,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const data = await getTestData(slug, locale)
   if (!data) return {}
 
-  const t = await getTranslations({ locale, namespace: 'Meta' })
-
   return {
     title: `${data.meta.title} | Testorum`,
     description: data.meta.description,
@@ -38,6 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: data.meta.title,
       description: data.meta.description,
       locale: locale === 'ko' ? 'ko_KR' : 'en_US',
+      images: [{ url: `/api/og?slug=${slug}&locale=${locale}`, width: 1200, height: 630 }],
     },
   }
 }
@@ -49,6 +48,30 @@ export default async function TestPage({ params }: Props) {
   if (!data) notFound()
   return (
     <FocusModeWrapper accentColor={data.meta.theme.primary}>
+      {/* D-3: Schema.org Quiz */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Quiz',
+            name: data.meta.title,
+            description: data.meta.description,
+            url: `https://testorum.app/${locale}/tests/${slug}`,
+            inLanguage: locale,
+            educationalAlignment: {
+              '@type': 'AlignmentObject',
+              alignmentType: 'personality',
+              targetName: data.meta.category,
+            },
+            provider: {
+              '@type': 'Organization',
+              name: 'Testorum',
+              url: 'https://testorum.app',
+            },
+          }),
+        }}
+      />
       <TestClient data={data} locale={locale} />
     </FocusModeWrapper>
   )

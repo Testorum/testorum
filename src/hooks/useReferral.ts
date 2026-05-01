@@ -7,6 +7,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import type { ReferralStats } from '@/types';
+import { trackEvent } from '@/lib/ga4';
 
 interface UseReferralReturn {
   stats: ReferralStats | null;
@@ -90,6 +91,9 @@ export function useReferralClaim(): UseReferralClaimReturn {
       }
 
       const data = await res.json();
+      if (data.claimed) {
+        trackEvent('referral_claimed', { feature: 'referral' });
+      }
       return {
         claimed: data.claimed ?? false,
         credits: data.credits_received,

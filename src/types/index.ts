@@ -264,6 +264,7 @@ export interface GamificationState {
   progress: UserProgress | null
   badges: UserBadge[]
   allBadges: Badge[]
+  testDates?: string[]
 }
 
 // ─── 성격 DNA 프로필 ──────────────────────────────────────────
@@ -303,6 +304,8 @@ export type GA4EventName =
   | 'badge_earned'
   | 'dna_updated'
   | 'streak_milestone'
+  | 'compare_created'
+  | 'referral_claimed'
 
 export interface GA4EventParams {
   test_slug?: string

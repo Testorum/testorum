@@ -82,6 +82,28 @@ export async function POST(req: NextRequest) {
 
     const result = data as unknown as GamificationUpdateResult
 
+    // C-1: 테스트 완료 시 레퍼럴 활성화 체크 (total_tests_taken >= 3)
+    // activate_referral DB function 내부에서 조건 확인 + 중복 방지 처리
+    if (action_type === 'test_complete') {
+      try {
+        const { error: referralError } = await admin.rpc('activate_referral', {
+          p_referred_id: user.id,
+        })
+        if (referralError) {
+          // 레퍼럴 활성화 실패는 비치명적 — 로그만 남기고 메인 응답은 정상 반환
+          logger.warn('gamification/update', 'activate_referral failed', {
+            user_id: user.id,
+            error: referralError.message,
+          })
+        }
+      } catch (referralErr) {
+        logger.warn('gamification/update', 'activate_referral exception', {
+          user_id: user.id,
+          error: referralErr instanceof Error ? referralErr.message : 'Unknown',
+        })
+      }
+    }
+
     return NextResponse.json({
       success: true,
       ...result,

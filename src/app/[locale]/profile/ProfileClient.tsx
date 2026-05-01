@@ -265,7 +265,8 @@ function OverviewTab({
   const badges = gamification?.badges ?? []
   const allBadges = gamification?.allBadges ?? []
 
-  const testDates = progress?.last_test_date ? [progress.last_test_date] : []
+  // C-2: API에서 받은 실제 테스트 날짜 배열 사용
+  const testDates = gamification?.testDates ?? []
 
   return (
     <div className="flex flex-col gap-5">
@@ -346,6 +347,7 @@ function HistoryTab({
   locale: string
 }) {
   const isKo = locale === 'ko'
+  const tCat = useTranslations('Categories')
 
   if (loading) return <LoadingSkeleton />
 
@@ -378,7 +380,7 @@ function HistoryTab({
               {isKo ? entry.result_label_ko : entry.result_label_en}
             </p>
             <p className="text-[10px] text-gray-400 mt-0.5">
-              {entry.test_slug} · {entry.category} · {new Date(entry.taken_at).toLocaleDateString(isKo ? 'ko-KR' : 'en-US')}
+              {entry.test_slug} · {(() => { try { return tCat(entry.category as 'love') } catch { return entry.category } })()} · {new Date(entry.taken_at).toLocaleDateString(isKo ? 'ko-KR' : 'en-US')}
             </p>
           </div>
           <span className="text-gray-300 text-sm">→</span>

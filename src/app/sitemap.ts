@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const locales = routing.locales
   const testSlugs = getAllTestSlugs()
 
-  const staticPages = ['', '/about', '/privacy']
+  const staticPages = ['', '/about', '/privacy', '/pricing']
 
   const entries: MetadataRoute.Sitemap = []
 

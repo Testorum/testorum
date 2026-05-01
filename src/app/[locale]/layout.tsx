@@ -48,7 +48,7 @@ export async function generateMetadata({
     openGraph: {
       siteName: 'Testorum',
       locale: locale === 'ko' ? 'ko_KR' : 'en_US',
-      images: [{ url: '/tori/og.png', width: 300, height: 300 }],
+      images: [{ url: `/api/og?locale=${locale}`, width: 1200, height: 630 }],
       alternateLocale: routing.locales
         .filter((l) => l !== locale)
         .map((l) => (l === 'ko' ? 'ko_KR' : 'en_US')),
