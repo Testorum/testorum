@@ -4,7 +4,7 @@ import { PLAN_CONFIGS, type SubscriptionPlan } from '@/types/billing';
 // Referral conversion on first payment
 async function handleReferralConversion(userId: string) {
   try {
-    const { data } = await supabaseAdmin.rpc('convert_referral', {
+    const { data } = await (supabaseAdmin.rpc as any)('convert_referral', {
       p_referred_id: userId,
     });
     if (data?.converted) {
