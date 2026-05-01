@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useCallback } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslations } from 'next-intl'
@@ -58,35 +58,28 @@ export function ProfileClient({ locale, user }: Props) {
     trackEvent('test_complete', { feature: `profile_tab_${tab}` })
   }, [router])
 
+  const progress = gamification?.progress
+
   return (
-    <div className="max-w-[480px] mx-auto min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-white px-4 pt-6 pb-4 border-b border-gray-100">
+    <div className="max-w-5xl mx-auto min-h-screen bg-gray-50">
+      {/* ── Mobile Header ── */}
+      <div className="md:hidden bg-white px-4 pt-6 pb-4 border-b border-gray-100">
         <div className="flex items-center gap-3">
-          {/* Avatar */}
-          <div className="w-14 h-14 rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-white text-xl font-bold shadow-sm">
-            {user.avatarUrl
-              ? <img src={user.avatarUrl} alt="" className="w-full h-full rounded-full object-cover" />
-              : user.displayName.charAt(0).toUpperCase()
-            }
-          </div>
+          <UserAvatar user={user} />
           <div className="flex-1 min-w-0">
             <h1 className="text-lg font-extrabold text-gray-800 truncate" style={{ fontFamily: 'var(--font-display)' }}>
               {user.displayName}
             </h1>
             <p className="text-xs text-gray-400 truncate">{user.email}</p>
           </div>
-          {gamification?.progress && (
-            <UserLevelBadge
-              level={gamification.progress.level}
-              streak={gamification.progress.current_streak}
-            />
+          {progress && (
+            <UserLevelBadge level={progress.level} streak={progress.current_streak} />
           )}
         </div>
       </div>
 
-      {/* Tabs */}
-      <div className="bg-white border-b border-gray-100 px-2 flex">
+      {/* ── Mobile Tabs ── */}
+      <div className="md:hidden bg-white border-b border-gray-100 px-2 flex">
         {TABS.map((tab) => (
           <button
             key={tab.id}
@@ -109,8 +102,99 @@ export function ProfileClient({ locale, user }: Props) {
         ))}
       </div>
 
-      {/* Tab Content */}
-      <div className="px-4 py-5">
+      {/* ── Desktop 2-Column Layout ── */}
+      <div className="hidden md:flex gap-6 px-6 py-8">
+        {/* Sidebar */}
+        <aside className="w-72 shrink-0">
+          <div className="sticky top-8 flex flex-col gap-4">
+            {/* User Card */}
+            <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+              <div className="flex flex-col items-center text-center gap-3">
+                <UserAvatar user={user} size="lg" />
+                <div>
+                  <h1 className="text-lg font-extrabold text-gray-800" style={{ fontFamily: 'var(--font-display)' }}>
+                    {user.displayName}
+                  </h1>
+                  <p className="text-xs text-gray-400 mt-0.5">{user.email}</p>
+                </div>
+                {progress && (
+                  <UserLevelBadge level={progress.level} streak={progress.current_streak} />
+                )}
+              </div>
+              {progress && (
+                <div className="mt-4">
+                  <XPProgressBar level={progress.level} xp={progress.xp} />
+                </div>
+              )}
+            </div>
+
+            {/* Desktop Nav */}
+            <nav className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+              {TABS.map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => handleTabChange(tab.id)}
+                  className={`
+                    w-full flex items-center gap-3 px-4 py-3 text-sm font-semibold
+                    transition-colors border-l-3
+                    ${activeTab === tab.id
+                      ? 'text-gray-800 bg-gray-50 border-l-[3px] border-l-[#FF4F4F]'
+                      : 'text-gray-400 hover:text-gray-600 hover:bg-gray-50 border-l-[3px] border-l-transparent'
+                    }
+                  `}
+                >
+                  <span className="text-base">{tab.emoji}</span>
+                  <span>{isKo ? tab.labelKo : tab.labelEn}</span>
+                </button>
+              ))}
+            </nav>
+
+            {/* Streak (sidebar) */}
+            {progress && (
+              <div className="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm">
+                <StreakCounter
+                  streak={progress.current_streak}
+                  longestStreak={progress.longest_streak}
+                />
+              </div>
+            )}
+          </div>
+        </aside>
+
+        {/* Main Content */}
+        <main className="flex-1 min-w-0">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.2 }}
+            >
+              {activeTab === 'overview' && (
+                <OverviewTab
+                  gamification={gamification}
+                  loading={gamLoading}
+                  locale={locale}
+                  hideXPAndStreak
+                />
+              )}
+              {activeTab === 'dna' && (
+                <DnaTab dnaData={dnaData} loading={dnaLoading} locale={locale} />
+              )}
+              {activeTab === 'history' && (
+                <HistoryTab dnaData={dnaData} loading={dnaLoading} locale={locale} />
+              )}
+              {activeTab === 'referral' && (
+                <ReferralTab referralCode={user.referralCode ?? ''} locale={locale} />
+              )}
+            </motion.div>
+          </AnimatePresence>
+        </main>
+      </div>
+
+      {/* ── Mobile Tab Content ── */}
+      <div className="md:hidden px-4 py-5">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
@@ -120,35 +204,40 @@ export function ProfileClient({ locale, user }: Props) {
             transition={{ duration: 0.2 }}
           >
             {activeTab === 'overview' && (
-              <OverviewTab
-                gamification={gamification}
-                loading={gamLoading}
-                locale={locale}
-              />
+              <OverviewTab gamification={gamification} loading={gamLoading} locale={locale} />
             )}
             {activeTab === 'dna' && (
-              <DnaTab
-                dnaData={dnaData}
-                loading={dnaLoading}
-                locale={locale}
-              />
+              <DnaTab dnaData={dnaData} loading={dnaLoading} locale={locale} />
             )}
             {activeTab === 'history' && (
-              <HistoryTab
-                dnaData={dnaData}
-                loading={dnaLoading}
-                locale={locale}
-              />
+              <HistoryTab dnaData={dnaData} loading={dnaLoading} locale={locale} />
             )}
             {activeTab === 'referral' && (
-              <ReferralTab
-                referralCode={user.referralCode ?? ''}
-                locale={locale}
-              />
+              <ReferralTab referralCode={user.referralCode ?? ''} locale={locale} />
             )}
           </motion.div>
         </AnimatePresence>
       </div>
+    </div>
+  )
+}
+
+// ─── User Avatar ────────────────────────────────────────────────
+
+function UserAvatar({
+  user,
+  size = 'md',
+}: {
+  user: { displayName: string; avatarUrl: string | null }
+  size?: 'md' | 'lg'
+}) {
+  const sizeClass = size === 'lg' ? 'w-20 h-20 text-2xl' : 'w-14 h-14 text-xl'
+  return (
+    <div className={`${sizeClass} rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-white font-bold shadow-sm`}>
+      {user.avatarUrl
+        ? <img src={user.avatarUrl} alt="" className="w-full h-full rounded-full object-cover" />
+        : user.displayName.charAt(0).toUpperCase()
+      }
     </div>
   )
 }
@@ -159,10 +248,12 @@ function OverviewTab({
   gamification,
   loading,
   locale,
+  hideXPAndStreak = false,
 }: {
   gamification: ReturnType<typeof useProgress>['data']
   loading: boolean
   locale: string
+  hideXPAndStreak?: boolean
 }) {
   const t = useTranslations('Gamification')
 
@@ -174,22 +265,21 @@ function OverviewTab({
   const badges = gamification?.badges ?? []
   const allBadges = gamification?.allBadges ?? []
 
-  // Extract test dates from progress for StreakCalendar
-  // (In reality we'd query test_interactions but for now use last_test_date)
   const testDates = progress?.last_test_date ? [progress.last_test_date] : []
 
   return (
     <div className="flex flex-col gap-5">
       {progress ? (
         <>
-          <XPProgressBar
-            level={progress.level}
-            xp={progress.xp}
-          />
-          <StreakCounter
-            streak={progress.current_streak}
-            longestStreak={progress.longest_streak}
-          />
+          {!hideXPAndStreak && (
+            <>
+              <XPProgressBar level={progress.level} xp={progress.xp} />
+              <StreakCounter
+                streak={progress.current_streak}
+                longestStreak={progress.longest_streak}
+              />
+            </>
+          )}
           <StreakCalendar testDates={testDates} />
           <BadgeGrid
             allBadges={allBadges}
@@ -281,7 +371,7 @@ function HistoryTab({
         <Link
           key={entry.id}
           href={`/tests/${entry.test_slug}/result?r=${entry.result_type_id}`}
-          className="flex items-center gap-3 p-3 rounded-xl bg-white border border-gray-100 active:scale-[0.98] transition-all"
+          className="flex items-center gap-3 p-3 rounded-xl bg-white border border-gray-100 active:scale-[0.98] transition-all hover:shadow-sm"
         >
           <div className="flex-1 min-w-0">
             <p className="text-sm font-semibold text-gray-700 truncate">

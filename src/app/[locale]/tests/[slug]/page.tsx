@@ -1,5 +1,6 @@
 import { getTestData, getAllTestSlugs } from '@/lib/tests'
 import { TestClient } from './TestClient'
+import { FocusModeWrapper } from '@/components/layout/FocusModeWrapper'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
@@ -36,7 +37,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: data.meta.title,
       description: data.meta.description,
-      images: [`/api/og?slug=${slug}`],
       locale: locale === 'ko' ? 'ko_KR' : 'en_US',
     },
   }
@@ -47,5 +47,9 @@ export default async function TestPage({ params }: Props) {
   setRequestLocale(locale)
   const data = await getTestData(slug, locale)
   if (!data) notFound()
-  return <TestClient data={data} locale={locale} />
+  return (
+    <FocusModeWrapper accentColor={data.meta.theme.primary}>
+      <TestClient data={data} locale={locale} />
+    </FocusModeWrapper>
+  )
 }

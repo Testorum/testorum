@@ -263,7 +263,7 @@ export function ConversationalResult({
 
     <div
       ref={scrollRef}
-      className="max-w-[480px] mx-auto px-4 py-6 min-h-screen flex flex-col"
+      className="max-w-lg mx-auto px-4 py-6 min-h-screen flex flex-col"
       style={{ backgroundColor: theme.bg }}
     >
       {/* Skip button */}

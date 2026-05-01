@@ -182,7 +182,7 @@ export function TestClient({ data, locale }: Props) {
   const question = data.questions[currentIndex]
 
   return (
-    <div className="max-w-[480px] mx-auto">
+    <div className="max-w-lg mx-auto">
       {/* Tori intro (before first question) */}
       {showIntroTori && introTori && currentIndex === 0 && (
         <div className="px-4 pt-4 pb-2">

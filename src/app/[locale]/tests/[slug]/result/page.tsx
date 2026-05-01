@@ -1,6 +1,7 @@
 import { getTestData } from '@/lib/tests'
 import { notFound } from 'next/navigation'
 import { ResultClient } from './ResultClient'
+import { FocusModeWrapper } from '@/components/layout/FocusModeWrapper'
 import type { Metadata } from 'next'
 import { supabase } from '@/lib/supabase'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
@@ -66,11 +67,13 @@ export default async function ResultPage({ params, searchParams }: Props) {
   }
 
   return (
-    <ResultClient
-      data={data}
-      result={result}
-      initialCounts={counts}
-      locale={locale}
-    />
+    <FocusModeWrapper accentColor={data.meta.theme.primary}>
+      <ResultClient
+        data={data}
+        result={result}
+        initialCounts={counts}
+        locale={locale}
+      />
+    </FocusModeWrapper>
   )
 }

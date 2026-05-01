@@ -73,45 +73,50 @@ export function DNAProfile({ profile, locale }: Props) {
         </p>
       </div>
 
-      {/* Radar Chart */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-        className="w-full aspect-square max-w-[320px] mx-auto"
-      >
-        <ResponsiveContainer width="100%" height="100%">
-          <RadarChart data={radarData} cx="50%" cy="50%" outerRadius="75%">
-            <PolarGrid stroke="#e5e7eb" />
-            <PolarAngleAxis
-              dataKey="category"
-              tick={{ fill: '#6b7280', fontSize: 10, fontWeight: 600 }}
-            />
-            <Radar
-              dataKey="value"
-              stroke="#8b5cf6"
-              fill="#8b5cf6"
-              fillOpacity={0.25}
-              strokeWidth={2}
-            />
-          </RadarChart>
-        </ResponsiveContainer>
-      </motion.div>
+      {/* Desktop: Radar left + Cards right / Mobile: stacked */}
+      <div className="flex flex-col md:flex-row md:gap-8 md:items-start">
+        {/* Radar Chart */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="w-full aspect-square max-w-[320px] mx-auto md:mx-0 md:sticky md:top-8 md:shrink-0"
+        >
+          <ResponsiveContainer width="100%" height="100%">
+            <RadarChart data={radarData} cx="50%" cy="50%" outerRadius="75%">
+              <PolarGrid stroke="#e5e7eb" />
+              <PolarAngleAxis
+                dataKey="category"
+                tick={{ fill: '#6b7280', fontSize: 10, fontWeight: 600 }}
+              />
+              <Radar
+                dataKey="value"
+                stroke="#8b5cf6"
+                fill="#8b5cf6"
+                fillOpacity={0.25}
+                strokeWidth={2}
+              />
+            </RadarChart>
+          </ResponsiveContainer>
+        </motion.div>
 
-      {/* Category Cards */}
-      <div className="flex flex-col gap-3">
-        {DNA_CATEGORIES.map((cat) => {
-          const catProfile = profileMap.get(cat.id) ?? null
-          return (
-            <DNACategoryCard
-              key={cat.id}
-              category={cat}
-              data={catProfile}
-              locale={locale}
-              suggestedTestSlug={CATEGORY_TEST_MAP[cat.id]}
-            />
-          )
-        })}
+        {/* Category Cards — 1col mobile / 2col desktop */}
+        <div className="flex-1 min-w-0 mt-5 md:mt-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {DNA_CATEGORIES.map((cat) => {
+              const catProfile = profileMap.get(cat.id) ?? null
+              return (
+                <DNACategoryCard
+                  key={cat.id}
+                  category={cat}
+                  data={catProfile}
+                  locale={locale}
+                  suggestedTestSlug={CATEGORY_TEST_MAP[cat.id]}
+                />
+              )
+            })}
+          </div>
+        </div>
       </div>
 
       {/* Cross-analysis (premium) */}
