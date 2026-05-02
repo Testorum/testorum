@@ -179,7 +179,7 @@
     },
     {
       "id": 3,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "When a conflict comes up,\nhow do you prefer to resolve it?"
@@ -395,7 +395,7 @@
     },
     {
       "id": 6,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "When making a big decision,\nwhat do you rely on most?"

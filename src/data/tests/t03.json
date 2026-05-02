@@ -182,7 +182,7 @@
     },
     {
       "id": 3,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "You're swamped with work\nbut a text just came in. What now?"
@@ -399,7 +399,7 @@
     },
     {
       "id": 6,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "A text comes in at 3 AM.\nWhat do you do?"

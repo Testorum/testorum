@@ -108,7 +108,7 @@
     },
     {
       "id": 2,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "The meeting has been dragging on\nfor over 30 minutes. You..."
@@ -325,7 +325,7 @@
     },
     {
       "id": 5,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "Lunchtime!\nWhat's your usual routine?"

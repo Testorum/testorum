@@ -109,7 +109,7 @@
     },
     {
       "id": 2,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "You found something amazing\nbut it's way over budget. You..."
@@ -323,7 +323,7 @@
     },
     {
       "id": 5,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "A friend asks to borrow money.\nYour honest reaction?"
@@ -540,7 +540,7 @@
     },
     {
       "id": 8,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "Convenience store coffee (1500 won)\nvs café coffee (6000 won)?"

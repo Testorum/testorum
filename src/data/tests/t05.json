@@ -186,7 +186,7 @@
     },
     {
       "id": 3,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "When someone you care about\nis going through a hard time?"
@@ -472,7 +472,7 @@
     },
     {
       "id": 7,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "If you had to name\nyour biggest weakness in love..."

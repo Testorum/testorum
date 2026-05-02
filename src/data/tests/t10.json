@@ -108,7 +108,7 @@
     },
     {
       "id": 2,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "Someone is telling you about\ntheir terrible day. You..."
@@ -323,7 +323,7 @@
     },
     {
       "id": 5,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "Watching a really sad movie.\nWhat happens to you?"
@@ -539,7 +539,7 @@
     },
     {
       "id": 8,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "Can you precisely name\nwhat you're feeling right now?"

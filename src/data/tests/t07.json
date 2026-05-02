@@ -176,7 +176,7 @@
     },
     {
       "id": 3,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "After a big fight,\nwho reaches out first?"
@@ -395,7 +395,7 @@
     },
     {
       "id": 6,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "When a group conflict breaks out,\nhow do you usually handle it?"

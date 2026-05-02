@@ -108,7 +108,7 @@
     },
     {
       "id": 2,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "You're not even official yet\nbut they say 'You're my everything'"
@@ -395,7 +395,7 @@
     },
     {
       "id": 6,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "They keep posting cozy photos\nwith other people on social media"

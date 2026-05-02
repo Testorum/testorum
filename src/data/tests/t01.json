@@ -112,7 +112,7 @@
     },
     {
       "id": 2,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "When it comes to texting your crush,\nwhat's your pattern?"
@@ -260,7 +260,7 @@
     },
     {
       "id": 4,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "When it comes to confessing,\nwhat's your style?"
@@ -556,7 +556,7 @@
     },
     {
       "id": 8,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "What happens to you\naround your crush?"

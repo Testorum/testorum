@@ -179,7 +179,7 @@
     },
     {
       "id": 3,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "How well did you remember\nanniversaries and special dates?"
@@ -470,7 +470,7 @@
     },
     {
       "id": 7,
-      "type": "choice",
+      "type": "text_choice",
       "locale_data": {
         "en": {
           "text": "Looking back at your relationships,\nhow much did you change for them?"
