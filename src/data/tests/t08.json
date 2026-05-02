@@ -26,74 +26,156 @@
   },
   "scoring": {
     "type": "accumulate",
-    "dimensions": ["saver", "splurge", "invest", "treat", "split"]
+    "dimensions": [
+      "saver",
+      "splurge",
+      "invest",
+      "treat",
+      "split"
+    ]
   },
   "questions": [
     {
       "id": 1,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "Payday just hit.\nFirst thing you do?" },
-        "ko": { "text": "월급이 들어왔다!\n가장 먼저 하는 건?" }
+        "en": {
+          "text": "Payday just hit!\nWhat's your very first move?"
+        },
+        "ko": {
+          "text": "월급이 들어왔다!\n가장 먼저 하는 건?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Transfer savings immediately" },
-            "ko": { "text": "바로 저축 계좌로 이체" }
+            "en": {
+              "text": "Transfer a set amount into savings before I spend a single won"
+            },
+            "ko": {
+              "text": "쓰기 전에 정해둔 금액부터 저축 계좌로 이체한다"
+            }
           },
-          "emoji": "🏦",
-          "scores": { "saver": 3 }
+          "emoji": null,
+          "scores": {
+            "saver": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Treat myself to something nice" },
-            "ko": { "text": "나를 위한 쇼핑 시작" }
+            "en": {
+              "text": "Open up my shopping cart — this month's haul is ready to go"
+            },
+            "ko": {
+              "text": "장바구니 열고 이번 달 쇼핑 리스트를 실행한다"
+            }
           },
-          "emoji": "🛍️",
-          "scores": { "splurge": 2, "treat": 1 }
+          "emoji": null,
+          "scores": {
+            "splurge": 2,
+            "treat": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Check my investment portfolio" },
-            "ko": { "text": "투자 포트폴리오 확인" }
+            "en": {
+              "text": "Check my investment portfolio and see where to put the money"
+            },
+            "ko": {
+              "text": "투자 포트폴리오 확인하고 어디에 넣을지 계산한다"
+            }
           },
-          "emoji": "📈",
-          "scores": { "invest": 3 }
+          "emoji": null,
+          "scores": {
+            "invest": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Buy dinner for friends" },
-            "ko": { "text": "친구들한테 밥 쏜다" }
+            "en": {
+              "text": "Hit up my friends to celebrate and buy them a good dinner"
+            },
+            "ko": {
+              "text": "친구들한테 연락해서 밥 한턱 쏘겠다고 약속 잡는다"
+            }
           },
-          "emoji": "🍽️",
-          "scores": { "treat": 2, "split": 1 }
+          "emoji": null,
+          "scores": {
+            "treat": 2,
+            "split": 1
+          }
         }
       ]
     },
     {
       "id": 2,
-      "type": "binary",
+      "type": "choice",
       "locale_data": {
-        "en": { "text": "You find something you love\nbut it's way over budget" },
-        "ko": { "text": "마음에 드는 게 있는데\n예산을 한참 초과한다" }
+        "en": {
+          "text": "You found something amazing\nbut it's way over budget. You..."
+        },
+        "ko": {
+          "text": "마음에 쏙 드는 게 있는데\n예산을 한참 초과한다면?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Walk away, no exceptions" },
-            "ko": { "text": "미련 없이 돌아선다" }
+            "en": {
+              "text": "Walk away without looking back — budget is budget period"
+            },
+            "ko": {
+              "text": "미련 없이 돌아선다 예산은 예산이다 원칙이 있다"
+            }
           },
-          "emoji": "🚶",
-          "scores": { "saver": 3 }
+          "emoji": null,
+          "scores": {
+            "saver": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "YOLO — life is short" },
-            "ko": { "text": "인생은 한 번 — 지른다" }
+            "en": {
+              "text": "Life is short — I buy it now and figure out the rest later"
+            },
+            "ko": {
+              "text": "인생은 한 번뿐이다 일단 지르고 나머지는 나중에 생각한다"
+            }
           },
-          "emoji": "🔥",
-          "scores": { "splurge": 3 }
+          "emoji": null,
+          "scores": {
+            "splurge": 3
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Calculate if buying this could somehow be a smart investment"
+            },
+            "ko": {
+              "text": "이게 투자 가치가 있는지 냉정하게 계산해본다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "invest": 2,
+            "saver": 1
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Save up gradually and buy it when the time is right"
+            },
+            "ko": {
+              "text": "당장은 참고 돈 모아서 적절한 타이밍에 산다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "saver": 2,
+            "split": 1
+          }
         }
       ]
     },
@@ -101,41 +183,69 @@
       "id": 3,
       "type": "image_grid",
       "locale_data": {
-        "en": { "text": "You just got an unexpected bonus.\nWhere does it go?" },
-        "ko": { "text": "갑자기 보너스가 들어왔다!\n어디에 쓸까?" }
+        "en": {
+          "text": "Surprise bonus just dropped!\nWhat do you do with it?"
+        },
+        "ko": {
+          "text": "갑자기 보너스가 들어왔다!\n어디에 쓸까?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Emergency fund" },
-            "ko": { "text": "비상금 저축" }
+            "en": {
+              "text": "Straight into my emergency savings fund without any hesitation"
+            },
+            "ko": {
+              "text": "고민 없이 비상금 계좌에 바로 넣어둔다"
+            }
           },
-          "emoji": "🏦",
-          "scores": { "saver": 3 }
+          "emoji": null,
+          "scores": {
+            "saver": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Shopping spree" },
-            "ko": { "text": "쇼핑 폭탄" }
+            "en": {
+              "text": "Finally time for that shopping spree I've been holding back on"
+            },
+            "ko": {
+              "text": "참고 있던 쇼핑 리스트를 한 번에 폭발시킨다"
+            }
           },
-          "emoji": "🛍️",
-          "scores": { "splurge": 3 }
+          "emoji": null,
+          "scores": {
+            "splurge": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Stocks or crypto" },
-            "ko": { "text": "주식이나 코인" }
+            "en": {
+              "text": "Research the best investment opportunity and put it to work"
+            },
+            "ko": {
+              "text": "수익률 좋은 투자처 찾아서 돈이 돈을 벌게 한다"
+            }
           },
-          "emoji": "📊",
-          "scores": { "invest": 3 }
+          "emoji": null,
+          "scores": {
+            "invest": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Gift for someone" },
-            "ko": { "text": "소중한 사람 선물" }
+            "en": {
+              "text": "Buy thoughtful gifts for the people I love the most"
+            },
+            "ko": {
+              "text": "소중한 사람들한테 평소에 사주고 싶었던 선물을 산다"
+            }
           },
-          "emoji": "🎁",
-          "scores": { "treat": 3 }
+          "emoji": null,
+          "scores": {
+            "treat": 3
+          }
         }
       ]
     },
@@ -143,67 +253,144 @@
       "id": 4,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "Splitting the bill at dinner.\nYou prefer to..." },
-        "ko": { "text": "밥값 정산할 때\n나는 보통?" }
+        "en": {
+          "text": "Splitting the bill after a meal.\nWhat's your style?"
+        },
+        "ko": {
+          "text": "밥값 정산할 때\n나는 보통 어떻게 해?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Venmo request down to the cent" },
-            "ko": { "text": "1원 단위까지 정확히 나눈다" }
+            "en": {
+              "text": "Calculate exactly how much each person owes down to the won"
+            },
+            "ko": {
+              "text": "각자 먹은 만큼 1원 단위까지 정확하게 나눈다"
+            }
           },
-          "emoji": "🧮",
-          "scores": { "saver": 2, "split": 1 }
+          "emoji": null,
+          "scores": {
+            "saver": 2,
+            "split": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "I'll just cover it all" },
-            "ko": { "text": "그냥 내가 다 쏜다" }
+            "en": {
+              "text": "I'll just cover everything — putting it on my card is easier"
+            },
+            "ko": {
+              "text": "그냥 내가 다 쏜다 계산하는 거 자체가 귀찮다"
+            }
           },
-          "emoji": "💳",
-          "scores": { "treat": 3 }
+          "emoji": null,
+          "scores": {
+            "treat": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Rough split is fine" },
-            "ko": { "text": "대충 나누면 됨" }
+            "en": {
+              "text": "Just split it evenly and call it a day — close enough is fine"
+            },
+            "ko": {
+              "text": "대충 엔빵하면 된다 정확할 필요까지는 없다"
+            }
           },
-          "emoji": "🤷",
-          "scores": { "split": 3 }
+          "emoji": null,
+          "scores": {
+            "split": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Take turns treating each other" },
-            "ko": { "text": "번갈아가며 사는 스타일" }
+            "en": {
+              "text": "We take turns treating each other and it all evens out over time"
+            },
+            "ko": {
+              "text": "이번엔 내가 다음엔 네가 번갈아가며 사는 스타일"
+            }
           },
-          "emoji": "🔄",
-          "scores": { "split": 2, "treat": 1 }
+          "emoji": null,
+          "scores": {
+            "split": 2,
+            "treat": 1
+          }
         }
       ]
     },
     {
       "id": 5,
-      "type": "binary",
+      "type": "choice",
       "locale_data": {
-        "en": { "text": "A friend asks to borrow money.\nYour honest reaction?" },
-        "ko": { "text": "친구가 돈을 빌려달라고 한다.\n솔직한 반응은?" }
+        "en": {
+          "text": "A friend asks to borrow money.\nYour honest reaction?"
+        },
+        "ko": {
+          "text": "친구가 돈을 빌려달라고 한다\n솔직한 나의 반응은?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Sure, but I need it back by X date" },
-            "ko": { "text": "빌려주되 기한은 정한다" }
+            "en": {
+              "text": "Sure but I need a clear deadline for when you'll pay it back"
+            },
+            "ko": {
+              "text": "빌려주되 언제까지 갚을 건지 기한은 확실히 정한다"
+            }
           },
-          "emoji": "📅",
-          "scores": { "split": 2, "saver": 1 }
+          "emoji": null,
+          "scores": {
+            "split": 2,
+            "saver": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Take it, don't worry about it" },
-            "ko": { "text": "그냥 줘버린다 신경 쓰지 마" }
+            "en": {
+              "text": "Just take it — don't even worry about paying me back honestly"
+            },
+            "ko": {
+              "text": "그냥 가져 갚을 생각 말고 편하게 써라"
+            }
           },
-          "emoji": "💝",
-          "scores": { "treat": 3 }
+          "emoji": null,
+          "scores": {
+            "treat": 3
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I say yes but inside I'm already worrying about my own finances"
+            },
+            "ko": {
+              "text": "빌려주긴 하는데 속으로 내 잔고가 걱정되기 시작한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "saver": 2,
+            "split": 1
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I suggest other options first like a side gig or a small loan"
+            },
+            "ko": {
+              "text": "다른 방법은 없는지 먼저 물어보고 최후에 빌려준다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "invest": 1,
+            "saver": 2
+          }
         }
       ]
     },
@@ -211,41 +398,71 @@
       "id": 6,
       "type": "image_grid",
       "locale_data": {
-        "en": { "text": "What does 'financial freedom'\nmean to you?" },
-        "ko": { "text": "'경제적 자유'가\n나에게 의미하는 것은?" }
+        "en": {
+          "text": "What does 'financial freedom'\nmean to you?"
+        },
+        "ko": {
+          "text": "경제적 자유가\n나에게 의미하는 건?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Never worry about money" },
-            "ko": { "text": "돈 걱정 없는 삶" }
+            "en": {
+              "text": "Never having to stress about money or unexpected expenses again"
+            },
+            "ko": {
+              "text": "돈 걱정 없이 마음 편하게 사는 안정적인 삶"
+            }
           },
-          "emoji": "🏖️",
-          "scores": { "saver": 2, "invest": 1 }
+          "emoji": null,
+          "scores": {
+            "saver": 2,
+            "invest": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Buy whatever I want" },
-            "ko": { "text": "원하는 거 다 사기" }
+            "en": {
+              "text": "Being able to buy anything I want whenever I want without limits"
+            },
+            "ko": {
+              "text": "원하는 거 가격 안 보고 다 살 수 있는 상태"
+            }
           },
-          "emoji": "💎",
-          "scores": { "splurge": 3 }
+          "emoji": null,
+          "scores": {
+            "splurge": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Passive income covering expenses" },
-            "ko": { "text": "투자 수익으로 생활비 충당" }
+            "en": {
+              "text": "Passive income covering all my bills so I never have to work again"
+            },
+            "ko": {
+              "text": "투자 수익만으로 생활비가 충당되는 상태"
+            }
           },
-          "emoji": "📊",
-          "scores": { "invest": 3 }
+          "emoji": null,
+          "scores": {
+            "invest": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Give generously to others" },
-            "ko": { "text": "주변 사람들에게 베풀기" }
+            "en": {
+              "text": "Having enough to be generous with the people around me always"
+            },
+            "ko": {
+              "text": "주변 사람들한테 넉넉하게 베풀 수 있는 여유"
+            }
           },
-          "emoji": "🤲",
-          "scores": { "treat": 2, "split": 1 }
+          "emoji": null,
+          "scores": {
+            "treat": 2,
+            "split": 1
+          }
         }
       ]
     },
@@ -253,67 +470,144 @@
       "id": 7,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "You check your bank balance and\nit's lower than expected. You..." },
-        "ko": { "text": "통장 잔고가 생각보다\n적다. 나는?" }
+        "en": {
+          "text": "Your bank balance is lower\nthan expected. What do you do?"
+        },
+        "ko": {
+          "text": "통장 잔고가 생각보다\n적을 때 나의 반응은?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Panic and start budgeting hardcore" },
-            "ko": { "text": "당장 가계부 쓰고 절약 모드" }
+            "en": {
+              "text": "Panic mode — start a budget spreadsheet and cut all unnecessary spending"
+            },
+            "ko": {
+              "text": "바로 가계부 쓰면서 불필요한 지출 전면 차단한다"
+            }
           },
-          "emoji": "😱",
-          "scores": { "saver": 3 }
+          "emoji": null,
+          "scores": {
+            "saver": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Oh well, next month will be better" },
-            "ko": { "text": "뭐 다음 달 월급 들어오겠지" }
+            "en": {
+              "text": "Oh well — next paycheck will fix it so why stress about it now"
+            },
+            "ko": {
+              "text": "다음 달 월급 들어오면 되겠지 하고 크게 신경 안 쓴다"
+            }
           },
-          "emoji": "🤷",
-          "scores": { "splurge": 2, "split": 1 }
+          "emoji": null,
+          "scores": {
+            "splurge": 2,
+            "split": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Analyze where the money went" },
-            "ko": { "text": "어디에 썼는지 분석부터" }
+            "en": {
+              "text": "Analyze every transaction to figure out exactly where it all went"
+            },
+            "ko": {
+              "text": "어디에 얼마나 썼는지 내역을 하나하나 분석해본다"
+            }
           },
-          "emoji": "🔍",
-          "scores": { "invest": 2, "saver": 1 }
+          "emoji": null,
+          "scores": {
+            "invest": 2,
+            "saver": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Probably spent it on others tbh" },
-            "ko": { "text": "아마 남한테 쓴 거일 듯" }
+            "en": {
+              "text": "Probably spent most of it on others — sounds about right for me"
+            },
+            "ko": {
+              "text": "아마 남한테 쓴 거일 거다 나는 원래 그렇다"
+            }
           },
-          "emoji": "😅",
-          "scores": { "treat": 3 }
+          "emoji": null,
+          "scores": {
+            "treat": 3
+          }
         }
       ]
     },
     {
       "id": 8,
-      "type": "binary",
+      "type": "choice",
       "locale_data": {
-        "en": { "text": "Convenience store coffee ($1.50)\nvs specialty café ($6)?" },
-        "ko": { "text": "편의점 커피 (1500원)\nvs 카페 커피 (6000원)?" }
+        "en": {
+          "text": "Convenience store coffee (1500 won)\nvs café coffee (6000 won)?"
+        },
+        "ko": {
+          "text": "편의점 커피 1500원\nvs 카페 커피 6000원?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Convenience store, obviously" },
-            "ko": { "text": "당연히 편의점" }
+            "en": {
+              "text": "Convenience store every time — coffee is coffee no matter where"
+            },
+            "ko": {
+              "text": "당연히 편의점이다 커피에 네 배를 쓸 이유가 없다"
+            }
           },
-          "emoji": "🏪",
-          "scores": { "saver": 3 }
+          "emoji": null,
+          "scores": {
+            "saver": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Life's too short for bad coffee" },
-            "ko": { "text": "인생은 짧고 커피는 맛있어야지" }
+            "en": {
+              "text": "Life's too short for bad coffee — I'm going to the café always"
+            },
+            "ko": {
+              "text": "인생은 짧고 커피는 맛있어야 한다 카페 간다"
+            }
           },
-          "emoji": "☕",
-          "scores": { "splurge": 2, "treat": 1 }
+          "emoji": null,
+          "scores": {
+            "splurge": 2,
+            "treat": 1
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I calculate cost per day over a year and make the rational choice"
+            },
+            "ko": {
+              "text": "연간으로 계산해보고 합리적인 선택을 한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "invest": 2,
+            "saver": 1
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "If I'm alone it's convenience store but with friends I'll treat café"
+            },
+            "ko": {
+              "text": "혼자면 편의점인데 친구랑이면 카페 가서 사준다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "treat": 2,
+            "split": 1
+          }
         }
       ]
     }
@@ -323,106 +617,171 @@
       "id": "saver",
       "locale_data": {
         "en": {
-          "title": "The Iron Vault",
+          "title": "My Balance Is My Pride",
           "description": "Your savings account is your pride and joy. Every purchase goes through a mental cost-benefit analysis. Financially safe? Absolutely. Might miss out on some joy? Also yes.",
-          "tags": ["frugal", "disciplined", "secure"],
-          "compatibility": "The Generous Giver"
+          "tags": [
+            "frugal",
+            "disciplined",
+            "secure"
+          ],
+          "compatibility": "My Money Goes to You"
         },
         "ko": {
-          "title": "철벽 저축러",
+          "title": "통장 잔고가 곧 자존심",
           "description": "통장 잔고가 곧 정신 건강인 타입! 모든 소비에 비용 대비 효율을 따져요. 재정적으로 안정적이지만 가끔은 자신에게 투자하는 것도 필요해요!",
-          "tags": ["절약형", "규율적", "안정적"],
-          "compatibility": "베풀기 대장형"
+          "tags": [
+            "절약형",
+            "규율적",
+            "안정적"
+          ],
+          "compatibility": "쓸 땐 남한테 쓴다"
         }
       },
       "emoji": "🏦",
-      "emojiCombo": "🏦💪📊"
+      "emojiCombo": "🏦"
     },
     {
       "id": "splurge",
       "locale_data": {
         "en": {
-          "title": "The YOLO Spender",
+          "title": "Spend Now Worry Never",
           "description": "Money is meant to be spent — on experiences, on things that bring joy, on living fully. Your Instagram looks amazing. Your savings account? Let's not talk about that.",
-          "tags": ["spontaneous", "experiential", "bold"],
-          "compatibility": "The Iron Vault"
+          "tags": [
+            "spontaneous",
+            "experiential",
+            "bold"
+          ],
+          "compatibility": "My Balance Is My Pride"
         },
         "ko": {
-          "title": "욜로 소비러",
+          "title": "쓸 때 쓰는 게 인생",
           "description": "돈은 쓸 때 써야지! 경험과 즐거움에 투자하는 타입이에요. 인스타는 화려하지만 통장은... 일단 즐기고 보는 스타일이니까 저축 습관 조금만 들여봐요!",
-          "tags": ["즉흥적", "경험 중시", "대담함"],
-          "compatibility": "철벽 저축러"
+          "tags": [
+            "즉흥적",
+            "경험 중시",
+            "대담함"
+          ],
+          "compatibility": "통장 잔고가 곧 자존심"
         }
       },
       "emoji": "💸",
-      "emojiCombo": "💸🎉🛍️"
+      "emojiCombo": "💸"
     },
     {
       "id": "invest",
       "locale_data": {
         "en": {
-          "title": "The Strategic Investor",
+          "title": "Make Money Work for Me",
           "description": "You don't just save — you make money work for you. ROI is always on your mind. You might bore your friends talking about compound interest, but who'll retire first?",
-          "tags": ["strategic", "analytical", "future-focused"],
-          "compatibility": "The YOLO Spender"
+          "tags": [
+            "strategic",
+            "analytical",
+            "future-focused"
+          ],
+          "compatibility": "Spend Now Worry Never"
         },
         "ko": {
-          "title": "전략적 투자러",
+          "title": "돈이 일하게 만든다",
           "description": "저축은 기본이고 돈이 돈을 벌게 하는 타입! 복리와 ROI가 입에 달고 사는 스타일이에요. 친구들이 지루해할 수 있지만 누가 먼저 은퇴할지는 뻔하죠?",
-          "tags": ["전략적", "분석형", "미래 지향"],
-          "compatibility": "욜로 소비러"
+          "tags": [
+            "전략적",
+            "분석형",
+            "미래 지향"
+          ],
+          "compatibility": "쓸 때 쓰는 게 인생"
         }
       },
       "emoji": "📈",
-      "emojiCombo": "📈🧠💰"
+      "emojiCombo": "📈"
     },
     {
       "id": "treat",
       "locale_data": {
         "en": {
-          "title": "The Generous Giver",
+          "title": "My Money Goes to You",
           "description": "Your love language is gift-giving and picking up the check. Making others happy with money brings you more joy than spending on yourself. Just don't go broke being kind.",
-          "tags": ["generous", "warm", "selfless"],
-          "compatibility": "The Strategic Investor"
+          "tags": [
+            "generous",
+            "warm",
+            "selfless"
+          ],
+          "compatibility": "Make Money Work for Me"
         },
         "ko": {
-          "title": "베풀기 대장형",
+          "title": "쓸 땐 남한테 쓴다",
           "description": "사랑 표현 = 선물 & 밥 사주기인 타입! 남에게 쓸 때가 가장 행복해요. 따뜻한 성격이지만 나를 위한 소비도 잊지 말고 챙기세요!",
-          "tags": ["관대함", "따뜻함", "이타적"],
-          "compatibility": "전략적 투자러"
+          "tags": [
+            "관대함",
+            "따뜻함",
+            "이타적"
+          ],
+          "compatibility": "돈이 일하게 만든다"
         }
       },
       "emoji": "🎁",
-      "emojiCombo": "🎁💝☕"
+      "emojiCombo": "🎁"
     },
     {
       "id": "split",
       "locale_data": {
         "en": {
-          "title": "The Fair Splitter",
+          "title": "Fair and Square Always",
           "description": "Fairness is your financial philosophy. You believe in equal shares and balanced give-and-take. No freeloaders on your watch — but sometimes spontaneity beats spreadsheets.",
-          "tags": ["fair", "balanced", "practical"],
-          "compatibility": "The Iron Vault"
+          "tags": [
+            "fair",
+            "balanced",
+            "practical"
+          ],
+          "compatibility": "My Balance Is My Pride"
         },
         "ko": {
-          "title": "공평파형",
+          "title": "공평하게 가자 우리",
           "description": "공정한 정산이 곧 건강한 관계라고 믿는 타입! 기브 앤 테이크의 균형을 중시해요. 합리적이지만 가끔은 계산 없이 베푸는 것도 관계의 윤활유예요!",
-          "tags": ["공정함", "균형감", "합리적"],
-          "compatibility": "철벽 저축러"
+          "tags": [
+            "공정함",
+            "균형감",
+            "합리적"
+          ],
+          "compatibility": "통장 잔고가 곧 자존심"
         }
       },
       "emoji": "⚖️",
-      "emojiCombo": "⚖️🤝💳"
+      "emojiCombo": "⚖️"
     }
   ],
   "dna_mapping": {
     "category": "money",
     "traits": {
-      "saver": { "discipline": 0.9, "risk_tolerance": 0.2, "generosity": 0.3, "planning": 0.8 },
-      "splurge": { "discipline": 0.2, "risk_tolerance": 0.8, "generosity": 0.5, "planning": 0.2 },
-      "invest": { "discipline": 0.7, "risk_tolerance": 0.7, "generosity": 0.3, "planning": 0.9 },
-      "treat": { "discipline": 0.3, "risk_tolerance": 0.4, "generosity": 0.9, "planning": 0.3 },
-      "split": { "discipline": 0.6, "risk_tolerance": 0.3, "generosity": 0.5, "planning": 0.7 }
+      "saver": {
+        "discipline": 0.9,
+        "risk_tolerance": 0.2,
+        "generosity": 0.3,
+        "planning": 0.8
+      },
+      "splurge": {
+        "discipline": 0.2,
+        "risk_tolerance": 0.8,
+        "generosity": 0.5,
+        "planning": 0.2
+      },
+      "invest": {
+        "discipline": 0.7,
+        "risk_tolerance": 0.7,
+        "generosity": 0.3,
+        "planning": 0.9
+      },
+      "treat": {
+        "discipline": 0.3,
+        "risk_tolerance": 0.4,
+        "generosity": 0.9,
+        "planning": 0.3
+      },
+      "split": {
+        "discipline": 0.6,
+        "risk_tolerance": 0.3,
+        "generosity": 0.5,
+        "planning": 0.7
+      }
     }
   }
 }

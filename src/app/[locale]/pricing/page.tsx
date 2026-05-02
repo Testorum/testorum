@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useLocale } from 'next-intl';
 import PricingCard from '@/components/billing/PricingCard';
 import { CREDIT_COSTS } from '@/types/billing';
 import { useCheckout } from '@/hooks/useBilling';
@@ -21,6 +22,7 @@ export default function PricingPage() {
   const [currentPlan, setCurrentPlan] = useState<SubscriptionPlan | null>(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const { createCheckout, loading: checkoutLoading } = useCheckout();
+  const locale = useLocale();
   const [creditError, setCreditError] = useState<string | null>(null);
 
   // Check login + current plan
@@ -46,7 +48,7 @@ export default function PricingPage() {
   const handleBuyCreditPack = async () => {
     setCreditError(null);
     if (!isLoggedIn) {
-      window.location.href = '/login?redirect=/pricing';
+      window.location.href = `/${locale}/login?redirect=/${locale}/pricing`;
       return;
     }
     const result = await createCheckout({ type: 'credit_pack' });

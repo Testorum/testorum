@@ -42,7 +42,15 @@ export function resolveResult(
     const winner = Object.entries(stats).reduce((a, b) =>
       b[1] > a[1] ? b : a
     )
-    return winner[0]
+    const topDimension = winner[0]
+
+    // dimensionToResult 매핑이 있으면 변환 (e.g. charm → bard)
+    if (testData.scoring.dimensionToResult?.[topDimension]) {
+      return testData.scoring.dimensionToResult[topDimension]
+    }
+
+    // 매핑 없으면 dimension 이름을 그대로 반환 (fallback)
+    return topDimension
   }
   return scoreAccumulate(answers, testData)
 }

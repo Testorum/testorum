@@ -163,7 +163,7 @@ export function PaywallGate({
                 {t('signUpDesc')}
               </p>
               <a
-                href="/login"
+                href={`/${locale}/login`}
                 className="inline-block px-6 py-3 rounded-full font-semibold text-sm text-white transition-transform active:scale-[0.97]"
                 style={{ backgroundColor: primaryColor }}
               >

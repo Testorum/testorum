@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { ResultClient } from './ResultClient'
 import { FocusModeWrapper } from '@/components/layout/FocusModeWrapper'
 import type { Metadata } from 'next'
-import { supabase } from '@/lib/supabase'
+import { createSupabaseServer } from '@/lib/supabase-server'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
 
@@ -36,7 +36,7 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
     },
     openGraph: {
       title,
-      images: [`/api/og?slug=${slug}&result=${r ?? ''}`],
+      images: [`/api/og?slug=${slug}&result=${r ?? ''}&locale=${locale}`],
       locale: locale === 'ko' ? 'ko_KR' : 'en_US',
     },
   }
@@ -53,7 +53,9 @@ export default async function ResultPage({ params, searchParams }: Props) {
   const result = data.results.find((res) => res.id === resultId)
   if (!result) notFound()
 
-  const { data: feedback } = await supabase
+  const supabase = await createSupabaseServer()
+  // feedback_counts is a view/table not reflected in generated Database types
+  const { data: feedback } = await (supabase as any)
     .from('feedback_counts')
     .select('*')
     .eq('test_slug', slug)

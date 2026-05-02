@@ -51,6 +51,8 @@ export type ScoringType = 'accumulate' | 'max' | 'rpg'
 export interface ScoringConfig {
   type: ScoringType
   dimensions?: string[]
+  /** RPG 전용: dimension name → result ID 매핑 (e.g. charm → bard) */
+  dimensionToResult?: Record<string, string>
 }
 
 // ─── 테스트 데이터 (JSON) ────────────────────────────────────

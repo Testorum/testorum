@@ -6,6 +6,7 @@ import { routing } from '@/i18n/routing'
 import localFont from 'next/font/local'
 import '../globals.css'
 import { LocaleSwitcher } from '@/components/LocaleSwitcher'
+import { AuthButton } from '@/components/auth/AuthButton'
 import Script from 'next/script'
 import LemonSqueezyScript from '@/components/billing/LemonSqueezyScript';
 
@@ -136,8 +137,9 @@ export default async function LocaleLayout({
       </head>
       <body className="bg-background text-foreground antialiased">
         <NextIntlClientProvider messages={messages}>
-          {/* Floating Language Switcher */}
-          <div className="fixed top-3 right-3 z-50">
+          {/* Floating Header: Auth + Language */}
+          <div className="fixed top-3 right-3 z-50 flex items-center gap-2">
+            <AuthButton />
             <LocaleSwitcher />
           </div>
           {children}

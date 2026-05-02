@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo, useId } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { ToriMessage } from '@/components/tori/ToriMessage'
@@ -77,7 +77,8 @@ export function ConversationalResult({
   const hasStats = isRPG && Object.keys(rpgStats).length > 0
   const hasPremium = !!premiumResult
 
-  const skipAnimation = wasAlreadyShown(data.meta.slug, result.id)
+  // SSR-safe: always false on first render, checked in useEffect below
+  const skipAnimationRef = useRef(false)
 
   // ─── Gamification Integration ──────────────────────────────
   const { update: updateProgress } = useUpdateProgress()
@@ -165,18 +166,31 @@ export function ConversationalResult({
     return s
   }, [result, hasStats, hasPremium, isKo])
 
-  // Visible step index
-  const [visibleCount, setVisibleCount] = useState(skipAnimation ? steps.length : 0)
-  const [isTyping, setIsTyping] = useState(!skipAnimation)
-  const [skipped, setSkipped] = useState(skipAnimation)
+  // Visible step index — always start at 0 for SSR hydration match
+  const [visibleCount, setVisibleCount] = useState(0)
+  const [isTyping, setIsTyping] = useState(true)
+  const [skipped, setSkipped] = useState(false)
   const scrollRef = useRef<HTMLDivElement>(null)
   const bottomRef = useRef<HTMLDivElement>(null)
+  // SSR-safe stable session ID for compare button
+  const reactId = useId()
+  const sessionIdRef = useRef<string>(reactId.replace(/:/g, ''))
+
+  // Check sessionStorage AFTER mount to avoid hydration mismatch
+  useEffect(() => {
+    if (wasAlreadyShown(data.meta.slug, result.id)) {
+      skipAnimationRef.current = true
+      setVisibleCount(steps.length)
+      setIsTyping(false)
+      setSkipped(true)
+    }
+  }, [data.meta.slug, result.id, steps.length])
 
   // Progressive reveal
   useEffect(() => {
     if (skipped || visibleCount >= steps.length) {
       setIsTyping(false)
-      if (!skipAnimation) markAsShown(data.meta.slug, result.id)
+      if (!skipAnimationRef.current) markAsShown(data.meta.slug, result.id)
       return
     }
 
@@ -186,7 +200,7 @@ export function ConversationalResult({
     }, nextStep.delay)
 
     return () => clearTimeout(timer)
-  }, [visibleCount, steps, skipped, skipAnimation, data.meta.slug, result.id])
+  }, [visibleCount, steps, skipped, data.meta.slug, result.id])
 
   // Auto-scroll
   useEffect(() => {
@@ -336,7 +350,7 @@ export function ConversationalResult({
 
             <CompareButton
               testSlug={data.meta.slug}
-              sessionId={`${data.meta.slug}_${result.id}_${Date.now()}`}
+              sessionId={`${data.meta.slug}_${result.id}_${sessionIdRef.current}`}
               resultId={result.id}
               locale={locale}
             />

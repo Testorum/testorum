@@ -26,48 +26,84 @@
   },
   "scoring": {
     "type": "accumulate",
-    "dimensions": ["warm", "cool", "funny", "sad", "mystery"]
+    "dimensions": [
+      "warm",
+      "cool",
+      "funny",
+      "sad",
+      "mystery"
+    ]
   },
   "questions": [
     {
       "id": 1,
       "type": "image_grid",
       "locale_data": {
-        "en": { "text": "In the relationship,\nyou were mostly the..." },
-        "ko": { "text": "연애할 때 나는 주로\n어떤 역할이었나요?" }
+        "en": {
+          "text": "What role did you usually play\nin your past relationships?"
+        },
+        "ko": {
+          "text": "연애할 때 나는 주로\n어떤 역할이었어?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Caretaker" },
-            "ko": { "text": "챙겨주는 역할" }
+            "en": {
+              "text": "The one who always took care of everything for my partner"
+            },
+            "ko": {
+              "text": "이것저것 다 챙겨주는 든든한 보호자 역할이었다"
+            }
           },
-          "emoji": "🤗",
-          "scores": { "warm": 3 }
+          "emoji": null,
+          "scores": {
+            "warm": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Vibe maker" },
-            "ko": { "text": "분위기 메이커" }
+            "en": {
+              "text": "The mood maker who kept things fun and entertaining"
+            },
+            "ko": {
+              "text": "분위기를 띄우고 웃기게 만드는 에너지 담당이었다"
+            }
           },
-          "emoji": "🎉",
-          "scores": { "funny": 3 }
+          "emoji": null,
+          "scores": {
+            "funny": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Emotional one" },
-            "ko": { "text": "감성 담당" }
+            "en": {
+              "text": "The emotional and sentimental one in the relationship"
+            },
+            "ko": {
+              "text": "감성적인 분위기를 만들고 깊은 대화를 이끌었다"
+            }
           },
-          "emoji": "🌙",
-          "scores": { "mystery": 2, "sad": 1 }
+          "emoji": null,
+          "scores": {
+            "mystery": 2,
+            "sad": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "The chill one" },
-            "ko": { "text": "챙김받는 역할" }
+            "en": {
+              "text": "The relaxed one who let my partner take the lead mostly"
+            },
+            "ko": {
+              "text": "여유롭게 상대한테 맡기고 편하게 따라가는 편이었다"
+            }
           },
-          "emoji": "😎",
-          "scores": { "cool": 2, "sad": 1 }
+          "emoji": null,
+          "scores": {
+            "cool": 2,
+            "sad": 1
+          }
         }
       ]
     },
@@ -75,67 +111,143 @@
       "id": 2,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "After a fight, you usually..." },
-        "ko": { "text": "싸웠을 때 나는?" }
+        "en": {
+          "text": "When you had a fight\nwith your partner, what did you do?"
+        },
+        "ko": {
+          "text": "연인과 싸웠을 때\n나의 반응은 주로?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Apologize first and fix things" },
-            "ko": { "text": "먼저 사과하고 해결하려 했다" }
+            "en": {
+              "text": "I always apologized first and tried to fix things right away"
+            },
+            "ko": {
+              "text": "내가 먼저 사과하고 빨리 풀어보려고 노력했다"
+            }
           },
-          "emoji": "🕊️",
-          "scores": { "warm": 3 }
+          "emoji": null,
+          "scores": {
+            "warm": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Pull back until things cool down" },
-            "ko": { "text": "화 풀릴 때까지 거리 뒀다" }
+            "en": {
+              "text": "I pulled back and gave us both space until things cooled down"
+            },
+            "ko": {
+              "text": "서로 거리를 두고 감정이 가라앉을 때까지 기다렸다"
+            }
           },
-          "emoji": "🧊",
-          "scores": { "cool": 3 }
+          "emoji": null,
+          "scores": {
+            "cool": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Try to joke my way out of it" },
-            "ko": { "text": "웃기게 분위기 풀려 했다" }
+            "en": {
+              "text": "I cracked jokes to lighten the mood and break the tension"
+            },
+            "ko": {
+              "text": "농담으로 분위기를 풀어보려고 했다 웃기면 해결된다고 믿었다"
+            }
           },
-          "emoji": "😂",
-          "scores": { "funny": 3 }
+          "emoji": null,
+          "scores": {
+            "funny": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Cried a lot honestly" },
-            "ko": { "text": "많이 울었다" }
+            "en": {
+              "text": "I ended up crying a lot and couldn't control my emotions"
+            },
+            "ko": {
+              "text": "감정 조절이 안 돼서 결국 많이 울었다"
+            }
           },
-          "emoji": "😢",
-          "scores": { "sad": 3 }
+          "emoji": null,
+          "scores": {
+            "sad": 3
+          }
         }
       ]
     },
     {
       "id": 3,
-      "type": "binary",
+      "type": "choice",
       "locale_data": {
-        "en": { "text": "Anniversaries and special dates —\nhow did you handle them?" },
-        "ko": { "text": "기념일이나 이벤트를\n얼마나 챙겼나요?" }
+        "en": {
+          "text": "How well did you remember\nanniversaries and special dates?"
+        },
+        "ko": {
+          "text": "기념일이나 이벤트를\n나는 얼마나 잘 챙겼어?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Never missed one" },
-            "ko": { "text": "아주 꼼꼼히 챙겼다" }
+            "en": {
+              "text": "I planned everything perfectly down to the last detail every time"
+            },
+            "ko": {
+              "text": "디테일 하나까지 꼼꼼하게 준비하는 편이었다"
+            }
           },
-          "emoji": "🎁",
-          "scores": { "warm": 2, "funny": 1 }
+          "emoji": null,
+          "scores": {
+            "warm": 2,
+            "funny": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Honestly forgot sometimes" },
-            "ko": { "text": "깜빡하는 편이었다" }
+            "en": {
+              "text": "I tried my best but sometimes forgot or got the date mixed up"
+            },
+            "ko": {
+              "text": "나름 챙기려 했는데 가끔 까먹거나 날짜를 헷갈렸다"
+            }
           },
-          "emoji": "💨",
-          "scores": { "cool": 1, "mystery": 2 }
+          "emoji": null,
+          "scores": {
+            "funny": 1,
+            "sad": 1
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I honestly forgot more often than I'd like to admit"
+            },
+            "ko": {
+              "text": "솔직히 깜빡하는 경우가 더 많았다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "cool": 1,
+            "mystery": 2
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I thought showing love daily matters more than special dates"
+            },
+            "ko": {
+              "text": "기념일보다 평소에 잘하는 게 더 중요하다고 생각했다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "cool": 2,
+            "mystery": 1
+          }
         }
       ]
     },
@@ -143,41 +255,72 @@
       "id": 4,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "When your partner was going\nthrough a hard time..." },
-        "ko": { "text": "전 애인이 힘들 때 나는?" }
+        "en": {
+          "text": "When your ex was going through\na rough time, what did you do?"
+        },
+        "ko": {
+          "text": "전 애인이 힘들어할 때\n나는 어떻게 했어?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Dropped everything to be there" },
-            "ko": { "text": "달려가서 옆에 있어줬다" }
+            "en": {
+              "text": "I dropped everything and rushed over to be by their side"
+            },
+            "ko": {
+              "text": "하던 일 다 제쳐두고 달려가서 옆에 있어줬다"
+            }
           },
-          "emoji": "🏃",
-          "scores": { "warm": 3 }
+          "emoji": null,
+          "scores": {
+            "warm": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Listened without judging" },
-            "ko": { "text": "말 잘 들어줬다" }
+            "en": {
+              "text": "I listened to everything without judging or giving advice"
+            },
+            "ko": {
+              "text": "조언보다 일단 끝까지 들어주는 게 먼저라고 생각했다"
+            }
           },
-          "emoji": "👂",
-          "scores": { "warm": 2, "sad": 1 }
+          "emoji": null,
+          "scores": {
+            "warm": 2,
+            "sad": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Helped find practical solutions" },
-            "ko": { "text": "해결책을 같이 찾았다" }
+            "en": {
+              "text": "I helped them think through the problem and find real solutions"
+            },
+            "ko": {
+              "text": "같이 해결책을 찾아보면서 실질적으로 도와줬다"
+            }
           },
-          "emoji": "🔧",
-          "scores": { "cool": 2, "funny": 1 }
+          "emoji": null,
+          "scores": {
+            "cool": 2,
+            "funny": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Gave them space" },
-            "ko": { "text": "개인 시간이 필요하다고 판단했다" }
+            "en": {
+              "text": "I gave them space because they needed time to process alone"
+            },
+            "ko": {
+              "text": "혼자만의 시간이 필요할 거라 판단하고 기다려줬다"
+            }
           },
-          "emoji": "🌌",
-          "scores": { "cool": 2, "mystery": 1 }
+          "emoji": null,
+          "scores": {
+            "cool": 2,
+            "mystery": 1
+          }
         }
       ]
     },
@@ -185,41 +328,72 @@
       "id": 5,
       "type": "image_grid",
       "locale_data": {
-        "en": { "text": "How often did you\nreach out first?" },
-        "ko": { "text": "연락 빈도는 어땠나요?" }
+        "en": {
+          "text": "How often did you\nreach out to each other?"
+        },
+        "ko": {
+          "text": "연인과의 연락 빈도는\n어떤 편이었어?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Always me" },
-            "ko": { "text": "항상 내가 먼저" }
+            "en": {
+              "text": "I was always the one who texted first throughout the day"
+            },
+            "ko": {
+              "text": "항상 내가 먼저 연락해서 하루 종일 대화했다"
+            }
           },
-          "emoji": "📱",
-          "scores": { "warm": 2, "sad": 1 }
+          "emoji": null,
+          "scores": {
+            "warm": 2,
+            "sad": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "50/50" },
-            "ko": { "text": "비슷하게 주고받음" }
+            "en": {
+              "text": "We texted back and forth pretty evenly throughout the day"
+            },
+            "ko": {
+              "text": "서로 비슷하게 주고받으면서 균형이 맞았다"
+            }
           },
-          "emoji": "⚖️",
-          "scores": { "cool": 2 }
+          "emoji": null,
+          "scores": {
+            "cool": 2
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "They texted more" },
-            "ko": { "text": "상대방이 더 많이 함" }
+            "en": {
+              "text": "They reached out way more than I did if I'm being honest"
+            },
+            "ko": {
+              "text": "솔직히 상대가 나보다 훨씬 더 많이 연락했다"
+            }
           },
-          "emoji": "🤷",
-          "scores": { "cool": 1, "mystery": 2 }
+          "emoji": null,
+          "scores": {
+            "cool": 1,
+            "mystery": 2
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Rare texts but great in person" },
-            "ko": { "text": "연락은 적어도 만나면 잘 통함" }
+            "en": {
+              "text": "Texting was rare but we really clicked whenever we met up"
+            },
+            "ko": {
+              "text": "연락은 적어도 만나면 잘 통해서 문제없었다"
+            }
           },
-          "emoji": "✨",
-          "scores": { "mystery": 2, "funny": 1 }
+          "emoji": null,
+          "scores": {
+            "mystery": 2,
+            "funny": 1
+          }
         }
       ]
     },
@@ -227,67 +401,143 @@
       "id": 6,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "At the very end,\nwhat was your last impression?" },
-        "ko": { "text": "헤어질 때 마지막 모습은?" }
+        "en": {
+          "text": "When the relationship ended,\nhow did you handle it?"
+        },
+        "ko": {
+          "text": "연애가 끝날 때\n나의 마지막 모습은?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Tried to end things on good terms" },
-            "ko": { "text": "좋게 마무리하려 노력했다" }
+            "en": {
+              "text": "I tried really hard to end things on the best terms possible"
+            },
+            "ko": {
+              "text": "마지막까지 좋게 마무리하려고 최선을 다했다"
+            }
           },
-          "emoji": "🤝",
-          "scores": { "warm": 3 }
+          "emoji": null,
+          "scores": {
+            "warm": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Accepted it calmly" },
-            "ko": { "text": "담담하게 받아들였다" }
+            "en": {
+              "text": "I accepted it calmly and moved on without too much drama"
+            },
+            "ko": {
+              "text": "담담하게 받아들이고 크게 요동 없이 정리했다"
+            }
           },
-          "emoji": "🧘",
-          "scores": { "cool": 3 }
+          "emoji": null,
+          "scores": {
+            "cool": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Cried my eyes out" },
-            "ko": { "text": "많이 울었다" }
+            "en": {
+              "text": "I cried so much that I couldn't function for a while"
+            },
+            "ko": {
+              "text": "한동안 일상이 안 될 정도로 많이 울었다"
+            }
           },
-          "emoji": "💧",
-          "scores": { "sad": 3 }
+          "emoji": null,
+          "scores": {
+            "sad": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Laughed in disbelief" },
-            "ko": { "text": "어이없게 웃었다" }
+            "en": {
+              "text": "I laughed in disbelief because it all felt so surreal to me"
+            },
+            "ko": {
+              "text": "믿기지가 않아서 어이없게 웃음이 나왔다"
+            }
           },
-          "emoji": "😅",
-          "scores": { "funny": 2, "mystery": 1 }
+          "emoji": null,
+          "scores": {
+            "funny": 2,
+            "mystery": 1
+          }
         }
       ]
     },
     {
       "id": 7,
-      "type": "binary",
+      "type": "choice",
       "locale_data": {
-        "en": { "text": "During the relationship,\nhow much did you change?" },
-        "ko": { "text": "연애하면서 나는\n얼마나 변했나요?" }
+        "en": {
+          "text": "Looking back at your relationships,\nhow much did you change for them?"
+        },
+        "ko": {
+          "text": "연애하면서 나는\n얼마나 변했다고 생각해?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Changed a lot for them" },
-            "ko": { "text": "상대 맞춰 많이 변했다" }
+            "en": {
+              "text": "I changed a lot — I always adjusted myself to fit my partner"
+            },
+            "ko": {
+              "text": "상대에 맞춰서 나 자신을 많이 바꿨던 것 같다"
+            }
           },
-          "emoji": "🔄",
-          "scores": { "warm": 1, "sad": 2 }
+          "emoji": null,
+          "scores": {
+            "warm": 1,
+            "sad": 2
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Stayed pretty much the same" },
-            "ko": { "text": "별로 안 변했다" }
+            "en": {
+              "text": "I stayed pretty much the same — my core never really shifted"
+            },
+            "ko": {
+              "text": "크게 변하지 않았다 나는 원래 이런 사람이다"
+            }
           },
-          "emoji": "🪨",
-          "scores": { "cool": 3 }
+          "emoji": null,
+          "scores": {
+            "cool": 3
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I grew as a person and learned things I'm grateful for now"
+            },
+            "ko": {
+              "text": "좋은 쪽으로 성장했다 배운 게 많은 연애였다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "funny": 1,
+            "warm": 1
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I lost parts of myself and I'm still figuring out who I am"
+            },
+            "ko": {
+              "text": "나다움을 잃어버렸고 아직도 되찾는 중이다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "sad": 2,
+            "mystery": 1
+          }
         }
       ]
     }
@@ -297,106 +547,171 @@
       "id": "warm",
       "locale_data": {
         "en": {
-          "title": "Remembered as the Warm One",
+          "title": "The Warmth I Still Miss",
           "description": "Your ex thinks about you and feels a pang of 'I had someone really special.' You gave more than most — and they know it, even if they didn't say it enough.",
-          "tags": ["caring", "warm", "selfless"],
-          "compatibility": "Remembered as the Cool One"
+          "tags": [
+            "caring",
+            "warm",
+            "selfless"
+          ],
+          "compatibility": "Cool but Unforgettable"
         },
         "ko": {
-          "title": "따뜻한 사람으로 기억됨",
+          "title": "그리운 온기",
           "description": "전 애인 기억 속에서 당신은 따뜻하고 다정한 사람이에요. '그 사람은 진짜 나를 많이 아껴줬는데'라는 말을 들을 타입이에요. 이런 사람 다시 만나기 힘들다는 걸 전 애인도 알고 있을 거예요.",
-          "tags": ["다정함", "따뜻함", "배려"],
-          "compatibility": "쿨한 사람으로 기억됨"
+          "tags": [
+            "다정함",
+            "따뜻함",
+            "배려"
+          ],
+          "compatibility": "쿨했지만 아쉬웠던 사람"
         }
       },
       "emoji": "🌻",
-      "emojiCombo": "🌻💛🤗"
+      "emojiCombo": "🌻"
     },
     {
       "id": "cool",
       "locale_data": {
         "en": {
-          "title": "Remembered as the Cool One",
+          "title": "Cool but Unforgettable",
           "description": "Your ex remembers someone composed and independent. 'They had it together' — even if inside you were falling apart sometimes. That poise left an impression.",
-          "tags": ["composed", "independent", "mature"],
-          "compatibility": "Remembered as the Warm One"
+          "tags": [
+            "composed",
+            "independent",
+            "mature"
+          ],
+          "compatibility": "The Warmth I Still Miss"
         },
         "ko": {
-          "title": "쿨한 사람으로 기억됨",
+          "title": "쿨했지만 아쉬웠던 사람",
           "description": "전 애인 기억 속에서 당신은 멋있고 독립적인 사람이에요. '참 어른스러웠는데'라는 말을 들을 타입이에요. 가끔 차갑게 느꼈을 수 있지만 그 여유로움이 매력이었을 거예요.",
-          "tags": ["쿨함", "독립적", "어른스러움"],
-          "compatibility": "따뜻한 사람으로 기억됨"
+          "tags": [
+            "쿨함",
+            "독립적",
+            "어른스러움"
+          ],
+          "compatibility": "그리운 온기"
         }
       },
       "emoji": "😎",
-      "emojiCombo": "😎🧊✨"
+      "emojiCombo": "😎"
     },
     {
       "id": "funny",
       "locale_data": {
         "en": {
-          "title": "Remembered as the Fun One",
+          "title": "Still Makes Me Smile",
           "description": "Your ex smiles when they think of you. 'We laughed so much back then.' You made hard days bearable and boring days memorable. That's a rare gift.",
-          "tags": ["humor", "bright", "energy"],
-          "compatibility": "Remembered as the Mysterious One"
+          "tags": [
+            "humor",
+            "bright",
+            "energy"
+          ],
+          "compatibility": "The One I Never Figured Out"
         },
         "ko": {
-          "title": "재밌는 사람으로 기억됨",
+          "title": "웃음이 떠오르는 사람",
           "description": "전 애인 기억 속에서 당신은 항상 웃음을 주는 사람이에요. '그때 진짜 많이 웃었는데'라는 말을 들을 타입이에요. 힘들 때도 웃게 만들어준 소중한 사람으로 기억될 거예요.",
-          "tags": ["유머", "밝음", "에너지"],
-          "compatibility": "신비로운 사람으로 기억됨"
+          "tags": [
+            "유머",
+            "밝음",
+            "에너지"
+          ],
+          "compatibility": "알다가도 모를 사람"
         }
       },
       "emoji": "😄",
-      "emojiCombo": "😄🎪🌈"
+      "emojiCombo": "😄"
     },
     {
       "id": "sad",
       "locale_data": {
         "en": {
-          "title": "Remembered with Guilt",
+          "title": "Sorry and Thank You",
           "description": "Your ex carries a little guilt about you. 'I should have treated them better.' You tried so hard — maybe too hard. Next time, love someone who matches your energy.",
-          "tags": ["devoted", "emotional", "pure"],
-          "compatibility": "Remembered as the Fun One"
+          "tags": [
+            "devoted",
+            "emotional",
+            "pure"
+          ],
+          "compatibility": "Still Makes Me Smile"
         },
         "ko": {
-          "title": "안쓰러운 사람으로 기억됨",
+          "title": "미안해 그리고 고마워",
           "description": "전 애인 기억 속에서 당신은 많이 노력했던 사람이에요. '내가 더 잘해줬어야 했는데'라는 미안함과 함께 기억될 타입이에요. 이제는 당신을 위한 연애를 해보세요!",
-          "tags": ["노력파", "감성적", "순수함"],
-          "compatibility": "재밌는 사람으로 기억됨"
+          "tags": [
+            "노력파",
+            "감성적",
+            "순수함"
+          ],
+          "compatibility": "웃음이 떠오르는 사람"
         }
       },
       "emoji": "🥺",
-      "emojiCombo": "🥺💔🌧️"
+      "emojiCombo": "🥺"
     },
     {
       "id": "mystery",
       "locale_data": {
         "en": {
-          "title": "Remembered as the Mysterious One",
+          "title": "The One I Never Figured Out",
           "description": "Your ex still can't figure you out. 'I never fully understood what they were thinking.' That enigma keeps you in their mind rent-free, honestly.",
-          "tags": ["enigmatic", "unique", "deep"],
-          "compatibility": "Remembered with Guilt"
+          "tags": [
+            "enigmatic",
+            "unique",
+            "deep"
+          ],
+          "compatibility": "Sorry and Thank You"
         },
         "ko": {
-          "title": "신비로운 사람으로 기억됨",
+          "title": "알다가도 모를 사람",
           "description": "전 애인 기억 속에서 당신은 끝까지 파악이 안 됐던 사람이에요. '아직도 그 사람이 뭘 생각했는지 모르겠어'라는 말을 들을 타입이에요. 그 신비로움이 오래도록 기억될 거예요.",
-          "tags": ["신비로움", "독특함", "깊이"],
-          "compatibility": "안쓰러운 사람으로 기억됨"
+          "tags": [
+            "신비로움",
+            "독특함",
+            "깊이"
+          ],
+          "compatibility": "미안해 그리고 고마워"
         }
       },
       "emoji": "🌙",
-      "emojiCombo": "🌙🔮💫"
+      "emojiCombo": "🌙"
     }
   ],
   "dna_mapping": {
     "category": "love",
     "traits": {
-      "warm": { "directness": 0.7, "patience": 0.8, "emotional_openness": 0.9, "strategic_thinking": 0.3 },
-      "cool": { "directness": 0.5, "patience": 0.6, "emotional_openness": 0.3, "strategic_thinking": 0.7 },
-      "funny": { "directness": 0.6, "patience": 0.5, "emotional_openness": 0.7, "strategic_thinking": 0.4 },
-      "sad": { "directness": 0.3, "patience": 0.9, "emotional_openness": 0.9, "strategic_thinking": 0.2 },
-      "mystery": { "directness": 0.2, "patience": 0.5, "emotional_openness": 0.3, "strategic_thinking": 0.6 }
+      "warm": {
+        "directness": 0.7,
+        "patience": 0.8,
+        "emotional_openness": 0.9,
+        "strategic_thinking": 0.3
+      },
+      "cool": {
+        "directness": 0.5,
+        "patience": 0.6,
+        "emotional_openness": 0.3,
+        "strategic_thinking": 0.7
+      },
+      "funny": {
+        "directness": 0.6,
+        "patience": 0.5,
+        "emotional_openness": 0.7,
+        "strategic_thinking": 0.4
+      },
+      "sad": {
+        "directness": 0.3,
+        "patience": 0.9,
+        "emotional_openness": 0.9,
+        "strategic_thinking": 0.2
+      },
+      "mystery": {
+        "directness": 0.2,
+        "patience": 0.5,
+        "emotional_openness": 0.3,
+        "strategic_thinking": 0.6
+      }
     }
   }
 }

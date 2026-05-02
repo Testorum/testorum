@@ -1,6 +1,7 @@
 'use client';
 
 import { useBilling } from '@/hooks/useBilling';
+import { useLocale } from 'next-intl';
 import CreditBalance from '@/components/billing/CreditBalance';
 import ManageSubscription from '@/components/billing/ManageSubscription';
 import TransactionHistory from '@/components/billing/TransactionHistory';
@@ -8,6 +9,7 @@ import BuyCreditPack from '@/components/billing/BuyCreditPack';
 
 export default function BillingPage() {
   const { data, loading, error } = useBilling();
+  const locale = useLocale();
 
   if (loading) {
     return (
@@ -29,7 +31,7 @@ export default function BillingPage() {
       <div className="mx-auto max-w-3xl px-4 py-16 text-center">
         <p className="text-sm text-red-500">{error ?? 'Failed to load billing data'}</p>
         <a
-          href="/login?redirect=/billing"
+          href={`/${locale}/login?redirect=/${locale}/billing`}
           className="mt-4 inline-block text-sm text-indigo-500 hover:underline"
         >
           Sign in to view billing

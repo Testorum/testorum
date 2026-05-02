@@ -46,7 +46,10 @@ export default function PricingCard({
     setError(null);
 
     if (!isLoggedIn) {
-      window.location.href = '/login?redirect=/pricing';
+      // Detect locale from current path
+      const pathLocale = window.location.pathname.split('/')[1] || 'en';
+      const locale = ['en', 'ko'].includes(pathLocale) ? pathLocale : 'en';
+      window.location.href = `/${locale}/login?redirect=/${locale}/pricing`;
       return;
     }
 

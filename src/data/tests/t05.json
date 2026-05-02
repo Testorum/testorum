@@ -26,48 +26,91 @@
   },
   "scoring": {
     "type": "rpg",
-    "dimensions": ["charm", "empathy", "courage", "patience", "humor"]
+    "dimensions": [
+      "charm",
+      "empathy",
+      "courage",
+      "patience",
+      "humor"
+    ],
+    "dimensionToResult": {
+      "charm": "bard",
+      "empathy": "paladin",
+      "courage": "warrior",
+      "patience": "mage",
+      "humor": "rogue"
+    }
   },
   "questions": [
     {
       "id": 1,
       "type": "image_grid",
       "locale_data": {
-        "en": { "text": "Around your crush,\nyou become..." },
-        "ko": { "text": "좋아하는 사람 앞에서\n나는?" }
+        "en": {
+          "text": "When you're in front of someone you like,\nwhat happens to you?"
+        },
+        "ko": {
+          "text": "좋아하는 사람 앞에 서면\n나한테 무슨 일이 생겨?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Extra charming" },
-            "ko": { "text": "평소보다 더 빛남" }
+            "en": {
+              "text": "I light up — suddenly I'm extra charming without even trying"
+            },
+            "ko": {
+              "text": "평소보다 더 빛나고 자연스럽게 매력이 올라간다"
+            }
           },
-          "emoji": "✨",
-          "scores": { "charm": 3, "courage": 1 }
+          "emoji": null,
+          "scores": {
+            "charm": 3,
+            "courage": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Attentive listener" },
-            "ko": { "text": "상대 감정부터 살핌" }
+            "en": {
+              "text": "My focus shifts entirely to how they're feeling in the moment"
+            },
+            "ko": {
+              "text": "상대 표정부터 감정까지 먼저 살피게 된다"
+            }
           },
-          "emoji": "👂",
-          "scores": { "empathy": 3 }
+          "emoji": null,
+          "scores": {
+            "empathy": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Bold approach" },
-            "ko": { "text": "용기 내서 다가감" }
+            "en": {
+              "text": "I gather my courage and take the first step no matter what"
+            },
+            "ko": {
+              "text": "떨려도 용기 내서 먼저 다가간다"
+            }
           },
-          "emoji": "💪",
-          "scores": { "courage": 3 }
+          "emoji": null,
+          "scores": {
+            "courage": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Nervous chatterbox" },
-            "ko": { "text": "긴장해서 말이 많아짐" }
+            "en": {
+              "text": "I get nervous and start talking way more than I normally would"
+            },
+            "ko": {
+              "text": "긴장해서 말이 많아지고 쓸데없는 농담을 던진다"
+            }
           },
-          "emoji": "🗣️",
-          "scores": { "humor": 2, "charm": 1 }
+          "emoji": null,
+          "scores": {
+            "humor": 2,
+            "charm": 1
+          }
         }
       ]
     },
@@ -75,67 +118,142 @@
       "id": 2,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "What matters most in love?" },
-        "ko": { "text": "연애에서 가장 중요하게\n생각하는 것은?" }
+        "en": {
+          "text": "What matters the most\nto you in a relationship?"
+        },
+        "ko": {
+          "text": "연애에서 제일\n중요하다고 생각하는 건?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Mutual attraction and spark" },
-            "ko": { "text": "서로 끌리는 매력" }
+            "en": {
+              "text": "That undeniable spark and mutual attraction between us"
+            },
+            "ko": {
+              "text": "서로한테 끌리는 케미와 설레는 매력이 있어야 한다"
+            }
           },
-          "emoji": "💫",
-          "scores": { "charm": 3 }
+          "emoji": null,
+          "scores": {
+            "charm": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Deep understanding and empathy" },
-            "ko": { "text": "깊은 이해와 공감" }
+            "en": {
+              "text": "Deep understanding where we truly get each other's feelings"
+            },
+            "ko": {
+              "text": "서로를 깊이 이해하고 마음으로 공감해주는 관계"
+            }
           },
-          "emoji": "🫂",
-          "scores": { "empathy": 3 }
+          "emoji": null,
+          "scores": {
+            "empathy": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Honest expression and confessions" },
-            "ko": { "text": "솔직한 표현과 고백" }
+            "en": {
+              "text": "Being brave enough to express how I honestly feel about us"
+            },
+            "ko": {
+              "text": "숨기지 않고 솔직하게 마음을 표현할 수 있는 용기"
+            }
           },
-          "emoji": "💌",
-          "scores": { "courage": 3 }
+          "emoji": null,
+          "scores": {
+            "courage": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Fun times and laughter" },
-            "ko": { "text": "즐거운 시간과 웃음" }
+            "en": {
+              "text": "Sharing laughs and making every single moment fun together"
+            },
+            "ko": {
+              "text": "함께 있으면 항상 웃게 되는 즐거운 시간들"
+            }
           },
-          "emoji": "😆",
-          "scores": { "humor": 3 }
+          "emoji": null,
+          "scores": {
+            "humor": 3
+          }
         }
       ]
     },
     {
       "id": 3,
-      "type": "binary",
+      "type": "choice",
       "locale_data": {
-        "en": { "text": "Your partner is having\na rough day. You..." },
-        "ko": { "text": "상대방이 힘들어할 때\n나는?" }
+        "en": {
+          "text": "When someone you care about\nis going through a hard time?"
+        },
+        "ko": {
+          "text": "좋아하는 사람이\n힘들어하고 있다면 나는?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Stay by their side quietly" },
-            "ko": { "text": "말없이 곁에 있어준다" }
+            "en": {
+              "text": "I stay quietly by their side without saying a word if needed"
+            },
+            "ko": {
+              "text": "아무 말 없이 조용히 옆에서 함께 있어준다"
+            }
           },
-          "emoji": "🤍",
-          "scores": { "empathy": 3, "patience": 1 }
+          "emoji": null,
+          "scores": {
+            "empathy": 3,
+            "patience": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Make them laugh no matter what" },
-            "ko": { "text": "웃기게 만들어 기분 전환시킨다" }
+            "en": {
+              "text": "I try to make them laugh and shift their mood to something lighter"
+            },
+            "ko": {
+              "text": "웃기게 만들어서 기분을 전환시켜주려고 한다"
+            }
           },
-          "emoji": "🤡",
-          "scores": { "humor": 3 }
+          "emoji": null,
+          "scores": {
+            "humor": 3
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I give them space and wait patiently until they're ready to talk"
+            },
+            "ko": {
+              "text": "준비될 때까지 기다려주고 시간을 넉넉히 준다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "patience": 2,
+            "empathy": 1
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I directly ask what's wrong and try to help solve the problem"
+            },
+            "ko": {
+              "text": "무슨 일인지 직접 물어보고 같이 해결하려고 한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "courage": 2,
+            "charm": 1
+          }
         }
       ]
     },
@@ -143,41 +261,70 @@
       "id": 4,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "During the talking stage,\nyour go-to strategy?" },
-        "ko": { "text": "썸 단계에서 나는\n주로?" }
+        "en": {
+          "text": "During the talking stage,\nwhat do you usually focus on?"
+        },
+        "ko": {
+          "text": "썸 단계에서 나는\n주로 뭘 하고 있어?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Show off my best qualities" },
-            "ko": { "text": "나의 매력을 어필한다" }
+            "en": {
+              "text": "Showing off my best qualities so they can't help but like me"
+            },
+            "ko": {
+              "text": "내가 가진 매력을 최대한 어필하는 데 집중한다"
+            }
           },
-          "emoji": "💎",
-          "scores": { "charm": 3 }
+          "emoji": null,
+          "scores": {
+            "charm": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Learn everything about them" },
-            "ko": { "text": "상대의 취향을 파악한다" }
+            "en": {
+              "text": "Learning their preferences and remembering every little detail"
+            },
+            "ko": {
+              "text": "상대 취향을 파악하고 작은 것까지 기억해둔다"
+            }
           },
-          "emoji": "🔍",
-          "scores": { "empathy": 2, "patience": 1 }
+          "emoji": null,
+          "scores": {
+            "empathy": 2,
+            "patience": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Confess first" },
-            "ko": { "text": "먼저 고백한다" }
+            "en": {
+              "text": "I don't wait around — I go ahead and confess my feelings first"
+            },
+            "ko": {
+              "text": "오래 끌지 않고 내 마음을 먼저 고백해버린다"
+            }
           },
-          "emoji": "🎯",
-          "scores": { "courage": 3 }
+          "emoji": null,
+          "scores": {
+            "courage": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Be the funniest person around" },
-            "ko": { "text": "재밌는 사람이 되려 한다" }
+            "en": {
+              "text": "Being the funniest person in the room so they enjoy being around me"
+            },
+            "ko": {
+              "text": "같이 있으면 재밌는 사람이 되려고 노력한다"
+            }
           },
-          "emoji": "🎪",
-          "scores": { "humor": 3 }
+          "emoji": null,
+          "scores": {
+            "humor": 3
+          }
         }
       ]
     },
@@ -185,41 +332,70 @@
       "id": 5,
       "type": "image_grid",
       "locale_data": {
-        "en": { "text": "When conflict arises\nin a relationship..." },
-        "ko": { "text": "연애 중 갈등이 생기면?" }
+        "en": {
+          "text": "When conflict arises\nin your relationship, you..."
+        },
+        "ko": {
+          "text": "연애 중에 갈등이 생기면\n나는 어떻게 해?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Charm my way out" },
-            "ko": { "text": "매력으로 전환" }
+            "en": {
+              "text": "I use my charm to smooth things over and shift the mood"
+            },
+            "ko": {
+              "text": "분위기를 전환시켜서 자연스럽게 넘기려 한다"
+            }
           },
-          "emoji": "😏",
-          "scores": { "charm": 2, "humor": 1 }
+          "emoji": null,
+          "scores": {
+            "charm": 2,
+            "humor": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "See their side first" },
-            "ko": { "text": "상대 입장 먼저" }
+            "en": {
+              "text": "I try to understand their perspective before defending mine"
+            },
+            "ko": {
+              "text": "내 입장보다 상대 입장을 먼저 이해하려 한다"
+            }
           },
-          "emoji": "🤝",
-          "scores": { "empathy": 3 }
+          "emoji": null,
+          "scores": {
+            "empathy": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Talk it out now" },
-            "ko": { "text": "바로 대화 해결" }
+            "en": {
+              "text": "I bring it up directly and talk it through on the spot"
+            },
+            "ko": {
+              "text": "미루지 않고 바로 대화로 해결하려고 한다"
+            }
           },
-          "emoji": "💬",
-          "scores": { "courage": 3 }
+          "emoji": null,
+          "scores": {
+            "courage": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Wait till it cools" },
-            "ko": { "text": "감정 가라앉길 기다림" }
+            "en": {
+              "text": "I give us both time to cool down before addressing anything"
+            },
+            "ko": {
+              "text": "감정이 가라앉을 때까지 서로 시간을 갖는다"
+            }
           },
-          "emoji": "🧊",
-          "scores": { "patience": 3 }
+          "emoji": null,
+          "scores": {
+            "patience": 3
+          }
         }
       ]
     },
@@ -227,67 +403,140 @@
       "id": 6,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "Your ideal first date?" },
-        "ko": { "text": "데이트 코스를 고른다면?" }
+        "en": {
+          "text": "If you could pick\nthe perfect date, it would be..."
+        },
+        "ko": {
+          "text": "이상적인 데이트 코스를\n고른다면?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Aesthetic café or fancy dinner" },
-            "ko": { "text": "분위기 좋은 감성 카페/레스토랑" }
+            "en": {
+              "text": "A stunning aesthetic café or a romantic candlelit dinner"
+            },
+            "ko": {
+              "text": "분위기 좋은 감성 카페나 조명 예쁜 레스토랑"
+            }
           },
-          "emoji": "🍷",
-          "scores": { "charm": 3 }
+          "emoji": null,
+          "scores": {
+            "charm": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Whatever they enjoy most" },
-            "ko": { "text": "상대가 좋아하는 곳" }
+            "en": {
+              "text": "Whatever my partner enjoys — their happiness comes first"
+            },
+            "ko": {
+              "text": "상대가 좋아하는 곳이면 어디든 좋다"
+            }
           },
-          "emoji": "💝",
-          "scores": { "empathy": 3, "patience": 1 }
+          "emoji": null,
+          "scores": {
+            "empathy": 3,
+            "patience": 1
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Something adventurous and new" },
-            "ko": { "text": "새로운 액티비티 도전" }
+            "en": {
+              "text": "Something adventurous and new that we've never tried before"
+            },
+            "ko": {
+              "text": "한 번도 안 해본 새로운 액티비티에 도전한다"
+            }
           },
-          "emoji": "🏄",
-          "scores": { "courage": 3 }
+          "emoji": null,
+          "scores": {
+            "courage": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Escape room or comedy show" },
-            "ko": { "text": "웃긴 체험/방탈출" }
+            "en": {
+              "text": "An escape room or comedy show where we can laugh nonstop"
+            },
+            "ko": {
+              "text": "방탈출이나 코미디 공연처럼 같이 웃을 수 있는 곳"
+            }
           },
-          "emoji": "🎭",
-          "scores": { "humor": 3 }
+          "emoji": null,
+          "scores": {
+            "humor": 3
+          }
         }
       ]
     },
     {
       "id": 7,
-      "type": "binary",
+      "type": "choice",
       "locale_data": {
-        "en": { "text": "Your biggest weakness\nin love is..." },
-        "ko": { "text": "연애에서 내 약점은?" }
+        "en": {
+          "text": "If you had to name\nyour biggest weakness in love..."
+        },
+        "ko": {
+          "text": "연애에서 나의\n가장 큰 약점을 고르자면?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Craving attention too much" },
-            "ko": { "text": "관심받고 싶어한다" }
+            "en": {
+              "text": "I need constant attention and it stresses me when I don't get it"
+            },
+            "ko": {
+              "text": "관심을 받고 싶어하고 못 받으면 불안해진다"
+            }
           },
-          "emoji": "👑",
-          "scores": { "charm": 2 }
+          "emoji": null,
+          "scores": {
+            "charm": 2
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "Putting their feelings over mine" },
-            "ko": { "text": "내 감정보다 상대 감정 우선" }
+            "en": {
+              "text": "I always put their feelings first and forget about my own"
+            },
+            "ko": {
+              "text": "내 감정보다 상대 감정을 우선해서 지치게 된다"
+            }
           },
-          "emoji": "🫠",
-          "scores": { "empathy": 2 }
+          "emoji": null,
+          "scores": {
+            "empathy": 2
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I rush things and sometimes push too hard too fast"
+            },
+            "ko": {
+              "text": "너무 빨리 진행하려다 상대를 부담스럽게 만든다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "courage": 2
+          }
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I keep things light and avoid deep emotional conversations"
+            },
+            "ko": {
+              "text": "무거운 대화를 피하고 웃음으로 넘기려 한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "humor": 2
+          }
         }
       ]
     },
@@ -295,41 +544,69 @@
       "id": 8,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "The proudest moment\nin your love life?" },
-        "ko": { "text": "연애에서 가장 뿌듯할 때는?" }
+        "en": {
+          "text": "The proudest moment\nyou've had in a relationship?"
+        },
+        "ko": {
+          "text": "연애하면서\n가장 뿌듯했던 순간은?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "When they said I made their heart race" },
-            "ko": { "text": "상대가 나한테 설렌다고 할 때" }
+            "en": {
+              "text": "When they told me I made their heart race just by being there"
+            },
+            "ko": {
+              "text": "나만 보면 설렌다는 말을 들었을 때"
+            }
           },
-          "emoji": "💓",
-          "scores": { "charm": 3 }
+          "emoji": null,
+          "scores": {
+            "charm": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "When they opened up about everything" },
-            "ko": { "text": "상대가 나한테 마음 털어놓을 때" }
+            "en": {
+              "text": "When they opened up about everything because they trusted me"
+            },
+            "ko": {
+              "text": "나한테 속마음을 전부 털어놓을 만큼 믿어줬을 때"
+            }
           },
-          "emoji": "🫶",
-          "scores": { "empathy": 3 }
+          "emoji": null,
+          "scores": {
+            "empathy": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "When my confession actually worked" },
-            "ko": { "text": "먼저 고백해서 사귀게 됐을 때" }
+            "en": {
+              "text": "When my bold confession actually worked and we started dating"
+            },
+            "ko": {
+              "text": "용기 내서 먼저 고백했는데 사귀게 됐을 때"
+            }
           },
-          "emoji": "🏆",
-          "scores": { "courage": 3 }
+          "emoji": null,
+          "scores": {
+            "courage": 3
+          }
         },
         {
           "locale_data": {
-            "en": { "text": "When we couldn't stop laughing" },
-            "ko": { "text": "배꼽 잡고 웃은 날" }
+            "en": {
+              "text": "When we laughed so hard together that we completely lost track of time"
+            },
+            "ko": {
+              "text": "같이 배꼽 잡고 웃다가 시간 가는 줄 몰랐을 때"
+            }
           },
-          "emoji": "🤣",
-          "scores": { "humor": 3 }
+          "emoji": null,
+          "scores": {
+            "humor": 3
+          }
         }
       ]
     }
@@ -339,106 +616,171 @@
       "id": "warrior",
       "locale_data": {
         "en": {
-          "title": "Charge-In Warrior",
+          "title": "Hesitate and You Lose",
           "description": "Your Courage stat is maxed out! You go straight for it when you like someone. High confession success rate — but you might startle them with your intensity. Try leveling up Charm!",
-          "tags": ["bold", "brave", "leader"],
-          "compatibility": "Empathy Mage"
+          "tags": [
+            "bold",
+            "brave",
+            "leader"
+          ],
+          "compatibility": "The Patient Enchanter"
         },
         "ko": {
-          "title": "직진 워리어",
+          "title": "망설이면 지는 거다",
           "description": "용기(courage) 스탯이 MAX인 당신! 좋아하면 바로 돌진하는 직진형 연애러예요. 고백 성공률은 높지만 가끔 상대방이 놀랄 수 있어요. 매력도를 조금 더 올려보세요!",
-          "tags": ["직진", "용기", "리더형"],
-          "compatibility": "공감 마법사"
+          "tags": [
+            "직진",
+            "용기",
+            "리더형"
+          ],
+          "compatibility": "기다림의 마법사"
         }
       },
       "emoji": "⚔️",
-      "emojiCombo": "⚔️🔥💥"
+      "emojiCombo": "⚔️"
     },
     {
       "id": "mage",
       "locale_data": {
         "en": {
-          "title": "Empathy Mage",
+          "title": "The Patient Enchanter",
           "description": "Your Empathy stat is off the charts! You read your partner's heart like a spell book. The ideal partner material — just don't forget to express your own feelings too.",
-          "tags": ["empathetic", "understanding", "caring"],
-          "compatibility": "Charm Bard"
+          "tags": [
+            "empathetic",
+            "understanding",
+            "caring"
+          ],
+          "compatibility": "Charm Is My Superpower"
         },
         "ko": {
-          "title": "공감 마법사",
+          "title": "기다림의 마법사",
           "description": "공감(empathy) 스탯이 MAX인 당신! 상대방 마음을 읽는 능력이 탁월해요. 연애에서 최고의 파트너지만 가끔은 본인 감정도 표현해보세요!",
-          "tags": ["공감능력", "이해심", "배려"],
-          "compatibility": "매력 바드"
+          "tags": [
+            "공감능력",
+            "이해심",
+            "배려"
+          ],
+          "compatibility": "매력이 곧 무기"
         }
       },
       "emoji": "🔮",
-      "emojiCombo": "🔮💜🌟"
+      "emojiCombo": "🔮"
     },
     {
       "id": "bard",
       "locale_data": {
         "en": {
-          "title": "Charm Bard",
+          "title": "Charm Is My Superpower",
           "description": "Your Charm stat is legendary! You light up every room and people are drawn to you naturally. They fall first — every time. Just make sure the substance matches the sparkle.",
-          "tags": ["magnetic", "charismatic", "captivating"],
-          "compatibility": "Patience Paladin"
+          "tags": [
+            "magnetic",
+            "charismatic",
+            "captivating"
+          ],
+          "compatibility": "I'll Be on Your Side"
         },
         "ko": {
-          "title": "매력 바드",
+          "title": "매력이 곧 무기",
           "description": "매력(charm) 스탯이 MAX인 당신! 어디서든 빛나는 존재감의 소유자예요. 상대방이 먼저 반하는 타입이지만 내실도 같이 키워봐요!",
-          "tags": ["매력적", "존재감", "카리스마"],
-          "compatibility": "인내 팔라딘"
+          "tags": [
+            "매력적",
+            "존재감",
+            "카리스마"
+          ],
+          "compatibility": "네 편이 되어줄게"
         }
       },
       "emoji": "🎭",
-      "emojiCombo": "🎭👑💫"
+      "emojiCombo": "🎭"
     },
     {
       "id": "paladin",
       "locale_data": {
         "en": {
-          "title": "Patience Paladin",
+          "title": "I'll Be on Your Side",
           "description": "Your Patience stat is unbreakable! A master of the long game — your partner trusts you unconditionally. Just don't hold everything in until you explode.",
-          "tags": ["patient", "steady", "trustworthy"],
-          "compatibility": "Humor Rogue"
+          "tags": [
+            "patient",
+            "steady",
+            "trustworthy"
+          ],
+          "compatibility": "Laughter Fixes Everything"
         },
         "ko": {
-          "title": "인내 팔라딘",
+          "title": "네 편이 되어줄게",
           "description": "인내(patience) 스탯이 MAX인 당신! 기다림과 배려의 달인이에요. 장기전에 강하고 상대방이 믿고 의지하는 타입이에요. 다만 너무 참지는 말아요!",
-          "tags": ["인내심", "안정감", "신뢰"],
-          "compatibility": "유머 로그"
+          "tags": [
+            "인내심",
+            "안정감",
+            "신뢰"
+          ],
+          "compatibility": "웃음으로 다 해결"
         }
       },
       "emoji": "🛡️",
-      "emojiCombo": "🛡️⏳🤍"
+      "emojiCombo": "🛡️"
     },
     {
       "id": "rogue",
       "locale_data": {
         "en": {
-          "title": "Humor Rogue",
+          "title": "Laughter Fixes Everything",
           "description": "Your Humor stat is maxed out! You turn every situation into a good time. Best vibe-setter in any relationship — but sometimes a serious moment won't hurt.",
-          "tags": ["funny", "bright", "mood-maker"],
-          "compatibility": "Charge-In Warrior"
+          "tags": [
+            "funny",
+            "bright",
+            "mood-maker"
+          ],
+          "compatibility": "Hesitate and You Lose"
         },
         "ko": {
-          "title": "유머 로그",
+          "title": "웃음으로 다 해결",
           "description": "유머(humor) 스탯이 MAX인 당신! 함께 있으면 항상 웃음이 넘치는 타입이에요. 최고의 분위기 메이커지만 진지한 순간도 만들어보세요!",
-          "tags": ["유머", "밝음", "분위기메이커"],
-          "compatibility": "직진 워리어"
+          "tags": [
+            "유머",
+            "밝음",
+            "분위기메이커"
+          ],
+          "compatibility": "망설이면 지는 거다"
         }
       },
       "emoji": "🃏",
-      "emojiCombo": "🃏😂🎪"
+      "emojiCombo": "🃏"
     }
   ],
   "dna_mapping": {
     "category": "love",
     "traits": {
-      "warrior": { "directness": 0.9, "patience": 0.3, "emotional_openness": 0.6, "strategic_thinking": 0.5 },
-      "mage": { "directness": 0.4, "patience": 0.7, "emotional_openness": 0.9, "strategic_thinking": 0.5 },
-      "bard": { "directness": 0.7, "patience": 0.4, "emotional_openness": 0.7, "strategic_thinking": 0.6 },
-      "paladin": { "directness": 0.3, "patience": 0.9, "emotional_openness": 0.5, "strategic_thinking": 0.4 },
-      "rogue": { "directness": 0.6, "patience": 0.4, "emotional_openness": 0.6, "strategic_thinking": 0.3 }
+      "warrior": {
+        "directness": 0.9,
+        "patience": 0.3,
+        "emotional_openness": 0.6,
+        "strategic_thinking": 0.5
+      },
+      "mage": {
+        "directness": 0.4,
+        "patience": 0.7,
+        "emotional_openness": 0.9,
+        "strategic_thinking": 0.5
+      },
+      "bard": {
+        "directness": 0.7,
+        "patience": 0.4,
+        "emotional_openness": 0.7,
+        "strategic_thinking": 0.6
+      },
+      "paladin": {
+        "directness": 0.3,
+        "patience": 0.9,
+        "emotional_openness": 0.5,
+        "strategic_thinking": 0.4
+      },
+      "rogue": {
+        "directness": 0.6,
+        "patience": 0.4,
+        "emotional_openness": 0.6,
+        "strategic_thinking": 0.3
+      }
     }
   }
 }

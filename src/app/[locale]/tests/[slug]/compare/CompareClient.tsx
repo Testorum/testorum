@@ -126,7 +126,37 @@ export default function CompareClient({
     );
   }
 
-  // --- Waiting for partner ---
+  // --- Waiting: Friend arrived via shared link → show "Take the Test" ---
+  if (status === 'waiting' && fromSessionId) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[60vh] gap-6 px-4">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ type: 'spring', stiffness: 200 }}
+          className="text-6xl"
+        >
+          🎉
+        </motion.div>
+        <h2 className="text-xl font-bold text-center">{t('friendInviteTitle')}</h2>
+        <p className="text-sm text-muted-foreground text-center max-w-xs">
+          {t('friendInviteDesc')}
+        </p>
+        <motion.button
+          whileHover={{ scale: 1.04 }}
+          whileTap={{ scale: 0.96 }}
+          onClick={() =>
+            router.push(`/${locale}/tests/${slug}?from=${fromSessionId}`)
+          }
+          className="px-8 py-3 rounded-full bg-primary text-primary-foreground font-bold text-base shadow-md"
+        >
+          {t('friendTakeTest')} 🚀
+        </motion.button>
+      </div>
+    );
+  }
+
+  // --- Waiting: Initiator waiting for partner ---
   if (status === 'waiting') {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] gap-6 px-4">

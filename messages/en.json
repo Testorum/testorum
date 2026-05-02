@@ -202,7 +202,10 @@
     "shareTitle": "Testorum — Compare results!",
     "shareText": "Take this test and let's compare our results! 🔥",
     "premiumFeature": "Detailed Compatibility Analysis",
-    "detailedAnalysis": "Deep Analysis"
+    "detailedAnalysis": "Deep Analysis",
+    "friendInviteTitle": "Your friend sent you a test!",
+    "friendInviteDesc": "Take the same test to see your compatibility!",
+    "friendTakeTest": "Take the Test"
   },
   "Referral": {
     "yourCode": "Your referral code",
@@ -228,5 +231,15 @@
     "money": "Money",
     "personality": "Personality",
     "fun": "Fun"
+  },
+  "Login": {
+    "title": "Sign in to Testorum",
+    "subtitle": "Log in to save results and unlock features!",
+    "googleButton": "Continue with Google",
+    "signingIn": "Signing in...",
+    "or": "or",
+    "continueWithout": "Continue without signing in",
+    "privacyNote": "By signing in, you agree to our Privacy Policy. We only store your email and display name.",
+    "genericError": "Something went wrong. Please try again."
   }
 }

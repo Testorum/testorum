@@ -1,5 +1,6 @@
 import createMiddleware from 'next-intl/middleware';
 import { NextRequest, NextResponse } from 'next/server';
+import { createServerClient } from '@supabase/ssr';
 
 // ─── Config ───
 const locales = ['en', 'ko'] as const;
@@ -53,8 +54,8 @@ const CSP_DIRECTIVES = [
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob: https:",
   "font-src 'self'",
-  "connect-src 'self' https://*.supabase.co https://analytics.google.com https://pagead2.googlesyndication.com https://www.google-analytics.com",
-  "frame-src https://pagead2.googlesyndication.com https://tpc.googlesyndication.com",
+  "connect-src 'self' https://*.supabase.co https://analytics.google.com https://pagead2.googlesyndication.com https://www.google-analytics.com https://accounts.google.com",
+  "frame-src https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://accounts.google.com https://*.supabase.co",
   "frame-ancestors 'none'",
 ].join('; ');
 
@@ -81,8 +82,40 @@ const intlMiddleware = createMiddleware({
   localeDetection: true, // Accept-Language based
 });
 
+// ─── Supabase Session Refresh ───
+// Refreshes the Supabase auth token on every request to keep sessions alive
+async function refreshSupabaseSession(
+  request: NextRequest,
+  response: NextResponse
+): Promise<NextResponse> {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+  if (!supabaseUrl || !supabaseAnonKey) {
+    return response;
+  }
+
+  const supabase = createServerClient(supabaseUrl, supabaseAnonKey, {
+    cookies: {
+      getAll() {
+        return request.cookies.getAll();
+      },
+      setAll(cookiesToSet) {
+        cookiesToSet.forEach(({ name, value, options }) => {
+          response.cookies.set(name, value, options);
+        });
+      },
+    },
+  });
+
+  // getUser() triggers a token refresh if the session is about to expire
+  await supabase.auth.getUser();
+
+  return response;
+}
+
 // ─── Main Middleware ───
-export default function proxy(request: NextRequest) {
+export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // === API Route Handling ===
@@ -103,9 +136,10 @@ export default function proxy(request: NextRequest) {
       );
     }
 
-    // API routes pass through with security headers only
+    // API routes: security headers + Supabase session refresh
     const response = NextResponse.next();
-    return applySecurityHeaders(response);
+    const refreshed = await refreshSupabaseSession(request, response);
+    return applySecurityHeaders(refreshed);
   }
 
   // === Referral Detection ===
@@ -124,9 +158,10 @@ export default function proxy(request: NextRequest) {
     return applySecurityHeaders(refResponse);
   }
 
-  // === Page Routes: next-intl + Security Headers ===
+  // === Page Routes: next-intl + Security Headers + Supabase session refresh ===
   const response = intlMiddleware(request);
-  return applySecurityHeaders(response);
+  const refreshed = await refreshSupabaseSession(request, response);
+  return applySecurityHeaders(refreshed);
 }
 
 export const config = {
