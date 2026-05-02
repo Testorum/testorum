@@ -7,12 +7,15 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useLocale } from 'next-intl';
+import { usePathname, useSearchParams } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { createClient } from '@/lib/supabase';
 import type { User } from '@supabase/supabase-js';
 
 export function AuthButton() {
   const locale = useLocale();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -62,9 +65,12 @@ export function AuthButton() {
 
   // Not logged in → login button
   if (!user) {
+    const currentUrl = searchParams.toString()
+      ? `${pathname}?${searchParams.toString()}`
+      : pathname;
     return (
       <a
-        href={`/${locale}/login`}
+        href={`/${locale}/login?redirect=${encodeURIComponent(currentUrl)}`}
         className="flex items-center gap-1.5 rounded-full bg-[#FF4F4F] px-3.5 py-1.5 text-xs font-semibold text-white shadow-sm transition-transform active:scale-95 hover:brightness-110"
       >
         <svg

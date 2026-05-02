@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, type ReactNode } from 'react'
+import { usePathname, useSearchParams } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { useBilling, useDeductCredits, useCheckout } from '@/hooks/useBilling'
@@ -34,6 +35,13 @@ export function PaywallGate({
   const { createCheckout, loading: checkoutLoading } = useCheckout()
   const [gateState, setGateState] = useState<GateState>('locked')
   const [errorMsg, setErrorMsg] = useState<string | null>(null)
+
+  // Build redirect URL to return to current page after login
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+  const currentUrl = searchParams.toString()
+    ? `${pathname}?${searchParams.toString()}`
+    : pathname
 
   const primaryColor = theme?.primary || '#FF4F4F'
   const isKo = locale === 'ko'
@@ -163,7 +171,7 @@ export function PaywallGate({
                 {t('signUpDesc')}
               </p>
               <a
-                href={`/${locale}/login`}
+                href={`/${locale}/login?redirect=${encodeURIComponent(currentUrl)}`}
                 className="inline-block px-6 py-3 rounded-full font-semibold text-sm text-white transition-transform active:scale-[0.97]"
                 style={{ backgroundColor: primaryColor }}
               >

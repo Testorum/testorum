@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
@@ -139,7 +140,9 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           {/* Floating Header: Auth + Language */}
           <div className="fixed top-3 right-3 z-50 flex items-center gap-2">
-            <AuthButton />
+            <Suspense fallback={<div className="h-9 w-9 rounded-full bg-[#1A1A1A]/5 animate-pulse" />}>
+              <AuthButton />
+            </Suspense>
             <LocaleSwitcher />
           </div>
           {children}
