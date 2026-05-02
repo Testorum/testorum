@@ -44,3 +44,4 @@ supabase/.temp/
 fix-build/
 src/.next/
 supabase/.temp/
+.env*.local
