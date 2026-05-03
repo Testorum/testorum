@@ -35,7 +35,7 @@ export function ReferralTab({ referralCode, locale }: ReferralTabProps) {
   const lang = locale === 'ko' ? 'ko' : 'en';
   const { stats, isLoading } = useReferral();
   const [copied, setCopied] = useState(false);
-  const [showGuide, setShowGuide] = useState(false);
+  const [showGuide, setShowGuide] = useState(true);
 
   const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : 'https://testorum.app'}?ref=${referralCode}`;
 
