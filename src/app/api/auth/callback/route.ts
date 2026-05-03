@@ -1,11 +1,11 @@
 // ============================================================
 // src/app/api/auth/callback/route.ts
 // Google OAuth 콜백 — code ↔ session 교환
+// Supabase 공식 권장 패턴: redirect response에 직접 쿠키 설정
 // ============================================================
 
 import { NextRequest, NextResponse } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
-import { cookies } from 'next/headers';
 
 export async function GET(request: NextRequest) {
   const { searchParams, origin } = new URL(request.url);
@@ -27,7 +27,6 @@ export async function GET(request: NextRequest) {
     return NextResponse.redirect(new URL('/en/login?error=no_code', origin));
   }
 
-  const cookieStore = await cookies();
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
@@ -36,23 +35,30 @@ export async function GET(request: NextRequest) {
     return NextResponse.redirect(new URL('/en/login?error=config', origin));
   }
 
+  // Ensure `next` is a relative path (prevent open redirect)
+  const safePath = next.startsWith('/') ? next : '/';
+
+  // 1) Create the redirect response FIRST
+  const redirectUrl = new URL(safePath, origin);
+  const response = NextResponse.redirect(redirectUrl);
+
+  // 2) Create Supabase client that reads cookies from request
+  //    and writes cookies directly to the redirect response
   const supabase = createServerClient(supabaseUrl, supabaseAnonKey, {
     cookies: {
       getAll() {
-        return cookieStore.getAll();
+        return request.cookies.getAll();
       },
       setAll(cookiesToSet) {
-        try {
-          cookiesToSet.forEach(({ name, value, options }) => {
-            cookieStore.set(name, value, options);
-          });
-        } catch {
-          // Cookie setting may fail in certain contexts — handled by middleware
-        }
+        cookiesToSet.forEach(({ name, value, options }) => {
+          // Set on the redirect response — this is the key fix
+          response.cookies.set(name, value, options);
+        });
       },
     },
   });
 
+  // 3) Exchange code for session — this triggers setAll with session cookies
   const { error } = await supabase.auth.exchangeCodeForSession(code);
 
   if (error) {
@@ -62,9 +68,6 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  // Determine redirect path
-  // Ensure `next` is a relative path (prevent open redirect)
-  const safePath = next.startsWith('/') ? next : '/';
-
-  return NextResponse.redirect(new URL(safePath, origin));
+  // 4) Return the response with cookies attached
+  return response;
 }
