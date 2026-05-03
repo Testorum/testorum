@@ -94,6 +94,8 @@ export default function PricingCard({
       <div className="mt-4 flex items-baseline gap-1">
         {isFree ? (
           <span className="text-4xl font-bold text-gray-900 dark:text-white">Free</span>
+        ) : noYearly && interval === 'yearly' ? (
+          <span className="text-lg font-bold text-gray-400 dark:text-gray-500">Monthly only</span>
         ) : (
           <>
             <span className="text-4xl font-bold text-gray-900 dark:text-white">
@@ -146,13 +148,15 @@ export default function PricingCard({
       {/* CTA */}
       <button
         onClick={handleSubscribe}
-        disabled={isFree || isCurrent || loading}
+        disabled={isFree || isCurrent || loading || (noYearly && interval === 'yearly')}
         className={`
           mt-6 w-full rounded-lg px-4 py-2.5 text-sm font-medium transition-colors
           ${isCurrent
             ? 'cursor-default bg-gray-100 text-gray-500 dark:bg-gray-800 dark:text-gray-400'
             : isFree
             ? 'cursor-default bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-300'
+            : noYearly && interval === 'yearly'
+            ? 'cursor-default bg-gray-100 text-gray-400 dark:bg-gray-800 dark:text-gray-500'
             : isPopular
             ? 'bg-indigo-500 text-white hover:bg-indigo-600 disabled:opacity-60'
             : 'bg-gray-900 text-white hover:bg-gray-800 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100 disabled:opacity-60'
@@ -165,6 +169,8 @@ export default function PricingCard({
           ? 'Current Plan'
           : isFree
           ? 'Free Forever'
+          : noYearly && interval === 'yearly'
+          ? 'Switch to Monthly'
           : `Get ${config.name}`}
       </button>
 

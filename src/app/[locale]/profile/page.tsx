@@ -4,6 +4,15 @@ import { setRequestLocale } from 'next-intl/server'
 import { ProfileClient } from './ProfileClient'
 import type { Metadata } from 'next'
 
+function generateReferralCode(): string {
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  let code = 'TS-';
+  for (let i = 0; i < 6; i++) {
+    code += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
+  return code;
+}
+
 interface Props {
   params: Promise<{ locale: string }>
 }
@@ -38,6 +47,21 @@ export default async function ProfilePage({ params }: Props) {
     .eq('id', user.id)
     .single()
 
+  // Fallback: generate referral_code if null
+  let referralCode = profileData?.referral_code ?? null
+  if (!referralCode) {
+    const newCode = generateReferralCode()
+    const { error: updateErr } = await supabase
+      .from('profiles')
+      .upsert(
+        { id: user.id, referral_code: newCode },
+        { onConflict: 'id', ignoreDuplicates: false }
+      )
+    if (!updateErr) {
+      referralCode = newCode
+    }
+  }
+
   return (
     <ProfileClient
       locale={locale}
@@ -46,7 +70,7 @@ export default async function ProfilePage({ params }: Props) {
         email: user.email ?? '',
         displayName: profileData?.display_name ?? user.email?.split('@')[0] ?? 'User',
         avatarUrl: profileData?.avatar_url ?? null,
-        referralCode: profileData?.referral_code ?? null,
+        referralCode: referralCode,
       }}
     />
   )

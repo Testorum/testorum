@@ -45,3 +45,5 @@ fix-build/
 src/.next/
 supabase/.temp/
 .env*.local
+
+*.sql

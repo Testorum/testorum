@@ -6,6 +6,16 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
+import { createClient } from '@supabase/supabase-js';
+
+function generateReferralCode(): string {
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; // 혼동 문자 제외 (0/O, 1/I)
+  let code = 'TS-';
+  for (let i = 0; i < 6; i++) {
+    code += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
+  return code;
+}
 
 export async function GET(request: NextRequest) {
   const { searchParams, origin } = new URL(request.url);
@@ -66,6 +76,47 @@ export async function GET(request: NextRequest) {
     return NextResponse.redirect(
       new URL(`/en/login?error=${encodeURIComponent(error.message)}`, origin)
     );
+  }
+
+  // 3.5) Ensure profile exists with referral_code (multi-layer defense)
+  try {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (user) {
+      const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+      if (supabaseUrl && serviceKey) {
+        const admin = createClient(supabaseUrl, serviceKey);
+        const { data: existing } = await admin
+          .from('profiles')
+          .select('referral_code')
+          .eq('id', user.id)
+          .single();
+
+        if (!existing?.referral_code) {
+          // Generate unique referral code (retry on collision)
+          let code = generateReferralCode();
+          let attempts = 0;
+          while (attempts < 5) {
+            const { error: upsertErr } = await admin
+              .from('profiles')
+              .upsert(
+                {
+                  id: user.id,
+                  referral_code: code,
+                  display_name: existing ? undefined : (user.user_metadata?.full_name ?? user.email?.split('@')[0] ?? 'User'),
+                },
+                { onConflict: 'id', ignoreDuplicates: false }
+              );
+            if (!upsertErr) break;
+            // referral_code unique constraint collision — regenerate
+            code = generateReferralCode();
+            attempts++;
+          }
+        }
+      }
+    }
+  } catch (profileErr) {
+    // Non-critical — log and continue
+    console.error('[auth/callback] Profile upsert error:', profileErr);
   }
 
   // 4) Return the response with cookies attached

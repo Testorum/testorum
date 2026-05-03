@@ -184,6 +184,13 @@ export function ReferralTab({ referralCode, locale }: ReferralTabProps) {
         </div>
       )}
 
+      {/* 보상 요약 (항상 노출) — #8 */}
+      <div className="rounded-2xl bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20 px-4 py-3 text-center">
+        <p className="text-sm font-bold" style={{ color: '#FF4F4F' }}>
+          🎁 {lang === 'ko' ? '5명 초대하면 Pro 1개월 무료!' : 'Invite 5 friends → 1 month Pro free!'}
+        </p>
+      </div>
+
       {/* 보상 가이드 (접기/펼치기) */}
       <div className="rounded-2xl bg-card border border-border overflow-hidden">
         <button

@@ -226,29 +226,37 @@ export function ConversationalResult({
     if (!allRevealed || gamificationTriggered.current) return
     gamificationTriggered.current = true
 
-    // Fire-and-forget: update XP/badges
-    updateProgress({
-      action_type: 'test_complete',
-      test_slug: data.meta.slug,
-      test_category: data.meta.category,
-    }).then((res) => {
-      if (res.success && res.data) {
-        setGamificationResult(res.data)
-        trackEvent('xp_gained', {
-          test_slug: data.meta.slug,
-          xp: res.data.xp,
-          level: res.data.level,
-        })
-        if (res.data.level_up) {
-          trackEvent('level_up', { level: res.data.level })
+    // #4 Fix: Client-side XP dedup — skip if already granted this session
+    const xpKey = `xp_granted_${data.meta.slug}`
+    let skipXp = false
+    try { skipXp = sessionStorage.getItem(xpKey) === '1' } catch {}
+
+    if (!skipXp) {
+      // Fire-and-forget: update XP/badges
+      updateProgress({
+        action_type: 'test_complete',
+        test_slug: data.meta.slug,
+        test_category: data.meta.category,
+      }).then((res) => {
+        if (res.success && res.data) {
+          try { sessionStorage.setItem(xpKey, '1') } catch {}
+          setGamificationResult(res.data)
+          trackEvent('xp_gained', {
+            test_slug: data.meta.slug,
+            xp: res.data.xp,
+            level: res.data.level,
+          })
+          if (res.data.level_up) {
+            trackEvent('level_up', { level: res.data.level })
+          }
+          for (const badge of res.data.new_badges) {
+            trackEvent('badge_earned', { feature: badge.slug })
+          }
         }
-        for (const badge of res.data.new_badges) {
-          trackEvent('badge_earned', { feature: badge.slug })
-        }
-      }
-    }).catch(() => {
-      // Silently fail — gamification is non-critical
-    })
+      }).catch(() => {
+        // Silently fail — gamification is non-critical
+      })
+    }
 
     // Fire-and-forget: update DNA
     updateDna({

@@ -1,6 +1,7 @@
 import { getTestData } from '@/lib/tests'
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import { ResultClient } from './ResultClient'
+import { ResultFallback } from './ResultFallback'
 import { FocusModeWrapper } from '@/components/layout/FocusModeWrapper'
 import type { Metadata } from 'next'
 import { createSupabaseServer } from '@/lib/supabase-server'
@@ -51,7 +52,18 @@ export default async function ResultPage({ params, searchParams }: Props) {
 
   const resultId = r ?? ''
   const result = data.results.find((res) => res.id === resultId)
-  if (!result) notFound()
+
+  // #1 Fix: r 파라미터 없거나 유효하지 않으면 fallback UI 표시
+  if (!result) {
+    return (
+      <ResultFallback
+        testTitle={data.meta.title}
+        slug={slug}
+        locale={locale}
+        accentColor={data.meta.theme.primary}
+      />
+    )
+  }
 
   const supabase = await createSupabaseServer()
   // feedback_counts is a view/table not reflected in generated Database types

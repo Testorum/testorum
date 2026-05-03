@@ -14,6 +14,7 @@ import { Link } from '@/i18n/navigation'
 import { useProgress, useDnaProfile } from '@/hooks/useGamification'
 import { trackEvent } from '@/lib/ga4'
 import { ReferralTab } from './ReferralTab'
+import { ProfileEditModal } from './ProfileEditModal'
 import type { DnaProfileByCategory, PersonalityDnaEntry } from '@/types'
 
 // ─── Types ──────────────────────────────────────────────────────
@@ -40,7 +41,7 @@ const TABS: Array<{ id: TabId; emoji: string; labelEn: string; labelKo: string }
 
 // ─── Component ──────────────────────────────────────────────────
 
-export function ProfileClient({ locale, user }: Props) {
+export function ProfileClient({ locale, user: initialUser }: Props) {
   const t = useTranslations('Profile')
   const isKo = locale === 'ko'
   const searchParams = useSearchParams()
@@ -48,6 +49,8 @@ export function ProfileClient({ locale, user }: Props) {
 
   const initialTab = (searchParams.get('tab') as TabId) || 'overview'
   const [activeTab, setActiveTab] = useState<TabId>(initialTab)
+  const [showEditModal, setShowEditModal] = useState(false)
+  const [user, setUser] = useState(initialUser)
 
   const { data: gamification, loading: gamLoading } = useProgress()
   const { data: dnaData, loading: dnaLoading } = useDnaProfile()
@@ -58,6 +61,10 @@ export function ProfileClient({ locale, user }: Props) {
     trackEvent('test_complete', { feature: `profile_tab_${tab}` })
   }, [router])
 
+  const handleProfileSaved = useCallback((name: string, avatar: string | null) => {
+    setUser((prev) => ({ ...prev, displayName: name, avatarUrl: avatar }))
+  }, [])
+
   const progress = gamification?.progress
 
   return (
@@ -65,13 +72,22 @@ export function ProfileClient({ locale, user }: Props) {
       {/* ── Mobile Header ── */}
       <div className="md:hidden bg-white px-4 pt-6 pb-4 border-b border-gray-100">
         <div className="flex items-center gap-3">
-          <UserAvatar user={user} />
+          <button onClick={() => setShowEditModal(true)} className="active:scale-95 transition-transform">
+            <UserAvatar user={user} />
+          </button>
           <div className="flex-1 min-w-0">
             <h1 className="text-lg font-extrabold text-gray-800 truncate" style={{ fontFamily: 'var(--font-display)' }}>
               {user.displayName}
             </h1>
             <p className="text-xs text-gray-400 truncate">{user.email}</p>
           </div>
+          <button
+            onClick={() => setShowEditModal(true)}
+            className="shrink-0 w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:bg-gray-200 transition-colors"
+            aria-label={isKo ? '프로필 수정' : 'Edit profile'}
+          >
+            ✏️
+          </button>
           {progress && (
             <UserLevelBadge level={progress.level} streak={progress.current_streak} />
           )}
@@ -110,13 +126,21 @@ export function ProfileClient({ locale, user }: Props) {
             {/* User Card */}
             <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
               <div className="flex flex-col items-center text-center gap-3">
-                <UserAvatar user={user} size="lg" />
+                <button onClick={() => setShowEditModal(true)} className="active:scale-95 transition-transform">
+                  <UserAvatar user={user} size="lg" />
+                </button>
                 <div>
                   <h1 className="text-lg font-extrabold text-gray-800" style={{ fontFamily: 'var(--font-display)' }}>
                     {user.displayName}
                   </h1>
                   <p className="text-xs text-gray-400 mt-0.5">{user.email}</p>
                 </div>
+                <button
+                  onClick={() => setShowEditModal(true)}
+                  className="text-xs text-gray-400 hover:text-gray-600 transition-colors"
+                >
+                  {isKo ? '프로필 수정' : 'Edit Profile'}
+                </button>
                 {progress && (
                   <UserLevelBadge level={progress.level} streak={progress.current_streak} />
                 )}
@@ -218,6 +242,16 @@ export function ProfileClient({ locale, user }: Props) {
           </motion.div>
         </AnimatePresence>
       </div>
+
+      {/* Profile Edit Modal — #7 */}
+      <ProfileEditModal
+        isOpen={showEditModal}
+        onClose={() => setShowEditModal(false)}
+        currentName={user.displayName}
+        currentAvatar={user.avatarUrl}
+        locale={locale}
+        onSaved={handleProfileSaved}
+      />
     </div>
   )
 }
@@ -287,6 +321,16 @@ function OverviewTab({
             earnedBadges={badges}
             locale={locale}
           />
+          {/* #9: Take new test CTA */}
+          <div className="pt-2">
+            <Link
+              href="/tests"
+              className="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-bold text-white active:scale-95 transition-all"
+              style={{ backgroundColor: '#FF4F4F' }}
+            >
+              {locale === 'ko' ? '새 테스트 해보기' : 'Take a new test'}
+            </Link>
+          </div>
         </>
       ) : (
         <EmptyState
@@ -295,7 +339,7 @@ function OverviewTab({
             ? '아직 테스트를 안 해봤어! 첫 테스트를 해볼까?'
             : "You haven't taken any tests yet! Want to start?"
           }
-          ctaHref="/"
+          ctaHref="/tests"
           ctaLabel={locale === 'ko' ? '테스트 하러 가기' : 'Take a test'}
         />
       )}
@@ -326,7 +370,7 @@ function DnaTab({
           ? 'DNA 프로필이 아직 비어있어! 테스트를 하면 채워져'
           : 'Your DNA profile is empty! Take tests to fill it up'
         }
-        ctaHref="/"
+        ctaHref="/tests"
         ctaLabel={locale === 'ko' ? '테스트 하러 가기' : 'Take a test'}
       />
     )
@@ -361,7 +405,7 @@ function HistoryTab({
           ? '아직 기록이 없어! 테스트를 하면 여기에 쌓여'
           : 'No history yet! Your test results will appear here'
         }
-        ctaHref="/"
+        ctaHref="/tests"
         ctaLabel={isKo ? '테스트 하러 가기' : 'Take a test'}
       />
     )

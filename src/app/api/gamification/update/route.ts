@@ -64,12 +64,28 @@ export async function POST(req: NextRequest) {
     }
 
     const xpGained = XP_MAP[action_type as GamificationActionType]
+    const admin = getSupabaseAdmin()
+
+    // #4 Fix: XP dedup — test_complete 시 이미 완료한 테스트면 XP 0 부여
+    let finalXp = xpGained
+    if (action_type === 'test_complete' && test_slug) {
+      const { data: existingDna } = await admin
+        .from('personality_dna')
+        .select('id')
+        .eq('user_id', user.id)
+        .eq('test_slug', test_slug as string)
+        .limit(1)
+
+      if (existingDna && existingDna.length > 0) {
+        // 이미 완료한 테스트 — XP 0으로 설정 (스트릭/카운트 업데이트는 유지)
+        finalXp = 0
+      }
+    }
 
     // Call pg function via admin (SECURITY DEFINER handles badge inserts)
-    const admin = getSupabaseAdmin()
     const { data, error } = await admin.rpc('update_user_progress', {
       p_user_id: user.id,
-      p_xp_gained: xpGained,
+      p_xp_gained: finalXp,
       p_action_type: action_type as string,
       p_test_slug: (test_slug as string) ?? null,
       p_test_category: (test_category as string) ?? null,
