@@ -989,7 +989,7 @@
       "locale_data": {
         "en": {
           "title": "I Lead from the Front",
-          "description": "You lead by example and decisive action. When things are unclear, you're the one who steps forward and says 'follow me.' Your confidence isn't arrogance — it's earned clarity. You see the path and you take it. Blind spot? You might move so fast that your team can't keep up, or feel unheard.",
+          "description": "You don't wait for permission to lead — you just do it. When a room full of people is spiraling into confusion, you're the one who cuts through the noise with a clear direction. It's not that you need control. It's that you physically cannot sit there watching things fall apart when you already see the answer.\n\nWhen a project stalls, you're the first to say \"okay here's what we're doing.\" In group settings, people naturally look at you before making a move — even when nobody appointed you as the leader. You've taken charge of situations that weren't even your responsibility, just because nobody else was stepping up. Decisions come fast for you. While others are still weighing pros and cons, you've already picked a lane and started moving.\n\nPeople trust you in a crisis. When everything's falling apart, your energy gets sharper, not scattered. You're the person others call when they need someone to just handle it — no hand-holding, no drama, just results. Your confidence isn't arrogance — it's earned clarity. You see the path and you take it.\n\nHere's the thing though — your speed can intimidate people. Sometimes what feels like decisiveness to you feels like steamrolling to them. You might miss good ideas because you've already moved past the discussion phase. Learning to pause — not because you're wrong, but because others need to catch up — is your real unlock.\n\nI don't follow the path. I set it.",
           "tags": [
             "decisive",
             "action-first",
@@ -999,7 +999,7 @@
         },
         "ko": {
           "title": "앞에서 이끈다",
-          "description": "모범과 결단력으로 이끄는 사람이야. 불확실할 때 앞으로 나서서 '따라와'라고 말하지. 너의 자신감은 오만이 아니라 경험으로 얻은 선명함이야. 사각지대는 너무 빨리 가서 팀이 못 따라오거나 목소리를 못 낼 수 있다는 거.",
+          "description": "넌 허락을 기다리지 않아 — 그냥 해. 사람들이 우왕좌왕할 때 넌 이미 방향을 잡고 있거든. 통제욕이 아니라 답이 보이는데 가만히 있을 수가 없는 거야.\n\n프로젝트가 멈추면 \"자 이렇게 간다\" 먼저 말하는 게 너고 그룹에서 아무도 리더를 정하지 않았는데 사람들이 슬쩍 너를 보면서 눈치를 살펴. 네 일도 아닌데 아무도 안 나서니까 네가 나선 적도 꽤 있을걸? 결정도 빨라서 남들이 장단점 따질 때 넌 이미 움직이고 있어.\n\n위기 상황에서 너한테 연락이 오는 이유가 있어. 혼란 속에서 네 집중력은 흐트러지는 게 아니라 오히려 날카로워지거든. 너의 자신감은 오만이 아니라 경험으로 얻은 선명함이야. 보이면 가는 사람.\n\n근데 네 속도가 다른 사람한텐 압박일 수 있어. 네가 보기엔 결단력인데 상대방한텐 밀어붙이는 걸로 느껴질 수 있거든. 이미 지나간 토론에서 좋은 아이디어를 놓칠 수도 있고. 잠깐 멈추는 건 틀려서가 아니라 같이 가려고 하는 거야 — 그걸 알면 진짜 리더가 돼.\n\n길을 따르는 게 아니라 길을 만드는 사람",
           "tags": [
             "결단력",
             "행동 우선",
@@ -1021,7 +1021,7 @@
       "locale_data": {
         "en": {
           "title": "I Lead by Listening",
-          "description": "Your leadership starts with understanding. You don't command — you create conditions where people feel safe enough to do their best work. You lead by caring, by asking, by being the person everyone trusts. Blind spot? Being liked can become more important than being effective, and hard calls might get delayed.",
+          "description": "You lead by making everyone around you better — and half the time, people don't even realize you're the one steering. You're not interested in being the loudest voice. You're interested in making sure the right voice gets heard. Your leadership shows up in questions, not commands.\n\nYou're the one who notices when someone in the group hasn't spoken yet and makes space for them. In meetings, you're tracking the emotional temperature of the room while everyone else is focused on the agenda. When someone on your team is struggling, you don't just throw solutions at them — you sit with them long enough to figure out what they actually need. You remember details others forget. Their concerns from three weeks ago? You followed up.\n\nPeople open up to you in ways they don't with other leaders. You create conditions where people feel safe enough to do their best work — it's not a technique, it's just how you operate. Teams under your influence tend to have less drama and more honest communication. You're the leader people choose, not the one they're assigned.\n\nBut here's your blind spot: you sometimes put everyone else's needs so far ahead of your own that you burn out quietly. People assume you're fine because you never complain. You might also avoid necessary confrontation because you don't want to disrupt the harmony you've built. Sometimes the kindest thing a leader can do is be direct — even when it's uncomfortable.\n\nI don't raise my voice. I raise the people around me.",
           "tags": [
             "empathic",
             "people-first",
@@ -1031,7 +1031,7 @@
         },
         "ko": {
           "title": "들으면서 이끈다",
-          "description": "리더십이 이해에서 시작해. 명령하지 않아 — 사람들이 최고의 일을 할 만큼 안전하다고 느끼는 조건을 만들어. 챙기고 물어보고 모두가 신뢰하는 사람이 됨으로써 이끌지. 사각지대는 호감이 효과보다 중요해질 수 있고 어려운 결정이 미뤄질 수 있다는 거.",
+          "description": "넌 주변 사람을 성장시키면서 이끄는 타입이야. 근데 재밌는 건 사람들이 네가 이끌고 있다는 걸 반도 못 알아챈다는 거야. 가장 큰 목소리를 내는 것보단 필요한 목소리가 들리게 만드는 데 관심이 있거든.\n\n그룹에서 아직 말 못 한 사람한테 슬쩍 자리를 만들어주는 게 너야. 다른 사람들이 안건에 집중할 때 넌 방 안의 감정 온도를 읽고 있어. 팀원이 힘들어하면 해결책을 던지는 게 아니라 옆에 앉아서 진짜 뭐가 필요한지 파악하는 사람이야. 3주 전에 누가 걱정했던 거 기억하고 물어봐주는 것도 너야.\n\n사람들이 다른 리더한텐 안 하는 말을 너한텐 해. 안전한 공간을 의식적으로 만드는 게 아니라 그냥 네 존재 자체가 그래. 배정된 리더가 아니라 선택받는 리더 타입이야.\n\n근데 남을 챙기느라 네가 조용히 타고 있을 수 있어. 넌 불평을 안 하니까 주변에서 괜찮은 줄 알거든. 갈등을 피하는 것도 주의점인데 때로는 직접적으로 말하는 게 진짜 배려야. 좋은 사람이 되는 것보다 필요한 사람이 되는 걸 택해봐.\n\n목소리를 높이는 게 아니라 사람을 높이는 사람",
           "tags": [
             "공감형",
             "사람 우선",
@@ -1053,7 +1053,7 @@
       "locale_data": {
         "en": {
           "title": "I Build the Machine",
-          "description": "You don't just lead people — you design systems where the right outcomes happen naturally. You think in structures, processes, and long-term sustainability. Your team runs smoothly even when you're not in the room. Blind spot? Systems can feel cold. Sometimes what people need isn't a better process — it's a leader who sits with them in the mess.",
+          "description": "You don't just solve problems — you build systems so the problem never comes back. While everyone else is putting out today's fire, you're quietly redesigning the building so fires can't start. Your brain doesn't think in tasks. It thinks in structures, patterns, and long games.\n\nYou're the one who looks at a messy process and immediately sees where the bottleneck is. You probably have a spreadsheet or a doc somewhere that nobody asked you to make but that somehow became essential. When plans fail, you don't panic — you pull out the backup plan you made two weeks ago. In group work, you're the one connecting dots that nobody else sees. \"If we do X now, Y breaks in three months\" — that's just how your mind works.\n\nPeople come to you when they need a plan that actually works. Not a vibe, not a direction — a real, step-by-step, thought-through plan. You design systems where the right outcomes happen naturally. Your team runs smoothly even when you're not in the room, and that's not an accident — it's your architecture.\n\nYour blind spot? You can over-engineer things. Not everything needs a system. Sometimes the messy, fast, imperfect solution is the right one, and you struggle to accept that. You might also come across as cold or detached when you're actually just deep in problem-solving mode. Letting people see your thinking process — not just the final answer — builds more trust than any perfect system.\n\nI don't play the game. I design it.",
           "tags": [
             "systematic",
             "architect",
@@ -1063,7 +1063,7 @@
         },
         "ko": {
           "title": "시스템을 만든다",
-          "description": "사람만 이끄는 게 아니라 올바른 결과가 자연스럽게 나오는 시스템을 설계해. 구조 프로세스 장기 지속가능성으로 생각하지. 네가 방에 없어도 팀이 매끄럽게 돌아가. 사각지대는 시스템이 차갑게 느껴질 수 있다는 거. 때로는 더 나은 프로세스가 아니라 혼돈 속에 같이 앉아줄 리더가 필요해.",
+          "description": "넌 문제를 푸는 게 아니라 그 문제가 다시 안 생기게 시스템을 만드는 타입이야. 다른 사람들이 오늘 불 끄느라 바쁠 때 넌 애초에 불이 안 나는 구조를 설계하고 있어. 할 일 단위가 아니라 구조와 패턴 단위로 생각하는 사람.\n\n 엉망인 프로세스를 보면 병목이 어딘지 바로 보이지? 아무도 안 시켰는데 네가 만든 문서가 어느새 팀의 핵심 자료가 되어 있을걸. 계획이 틀어져도 당황 안 해 — 2주 전에 만들어둔 백업 플랜이 있으니까. \"지금 이거 하면 3개월 뒤에 저게 터진다\" 이런 연결고리를 보는 게 너야.\n\n사람들이 진짜 돌아가는 계획이 필요할 때 너를 찾아. 올바른 결과가 자연스럽게 나오는 시스템을 설계하거든. 네가 방에 없어도 팀이 매끄럽게 돌아가는 건 우연이 아니라 네가 만든 구조 덕이야.\n\n근데 가끔 과설계해. 모든 게 시스템이 필요한 건 아닌데 지저분하고 빠른 해결책을 못 받아들일 때가 있어. 생각 과정 없이 결론만 보여주면 차갑게 느껴질 수도 있으니까 중간 과정도 같이 공유해봐. 완벽한 시스템보다 보여주는 사고 과정이 더 큰 신뢰를 만들어.\n\n게임을 하는 게 아니라 게임을 설계하는 사람",
           "tags": [
             "체계적",
             "설계자",
@@ -1085,7 +1085,7 @@
       "locale_data": {
         "en": {
           "title": "I Light the Fire",
-          "description": "You lead through energy and vision. People follow you not because of your title but because your passion is contagious. You see possibilities where others see walls, and your belief becomes their belief. Blind spot? Inspiration without execution is just a speech. Make sure the vision has a plan underneath it, or the fire burns bright and dies fast.",
+          "description": "You lead with energy. When you walk into a room and start talking about what's possible, people start believing it too — even if five minutes ago they were ready to quit. You don't manage people. You ignite them. Your superpower isn't the plan; it's the feeling you create that the plan is worth fighting for.\n\nYou're the one who turns a boring Monday standup into a moment that actually matters. When morale drops, people look at you — not for a spreadsheet, but for a reason to keep going. You see potential in people before they see it in themselves, and you say exactly the right thing at the right time. You probably give the best pep talks in your circle.\n\nYour passion is genuinely contagious. Teams around you move faster, dream bigger, and take risks they wouldn't normally take. You see possibilities where others see walls, and your belief becomes their belief. People follow you not because of your title but because they don't want to miss what's happening.\n\nBut here's what you might not see: energy without structure eventually fizzles. You can paint the most incredible vision, but if there's no plan to back it up, people start losing faith — not in the dream, but in the execution. You might also dismiss people who think slower or more cautiously. Learning to pair your fire with follow-through is what separates a motivational speaker from a real leader.\n\nI don't push people forward. I make them want to run.",
           "tags": [
             "visionary",
             "energizing",
@@ -1095,7 +1095,7 @@
         },
         "ko": {
           "title": "불을 붙인다",
-          "description": "에너지와 비전으로 이끌어. 직함 때문이 아니라 열정이 전염되니까 따르는 거야. 다른 사람이 벽을 볼 때 가능성을 보고 너의 믿음이 그들의 믿음이 되지. 사각지대는 실행 없는 영감은 그냥 연설이라는 거. 비전 아래 계획이 있는지 확인해 — 아니면 불이 밝게 타다 빨리 꺼져.",
+          "description": "넌 에너지로 이끄는 사람이야. 네가 가능성을 이야기하기 시작하면 5분 전까지 포기하려던 사람들도 \"해볼까?\" 하게 돼. 사람을 관리하는 게 아니라 점화하는 거야. 네 힘은 계획이 아니라 그 계획이 싸울 만한 가치가 있다는 느낌을 만드는 데 있어.\n\n지루한 월요일 회의를 의미 있는 순간으로 바꾸는 게 너야. 사기가 떨어지면 사람들이 너를 봐 — 보고서를 원하는 게 아니라 계속할 이유를 원하니까. 본인도 모르는 잠재력을 네가 먼저 발견해주고 딱 맞는 타이밍에 딱 맞는 말을 해서 \"나도 할 수 있겠다\"라고 느끼게 만들어.\n\n열정이 진짜로 전염돼. 네 주변 팀은 더 빠르게 움직이고 더 크게 꿈꾸고 평소라면 안 했을 도전도 해. 다른 사람이 벽을 볼 때 넌 가능성을 보고 네 믿음이 그들의 믿음이 되거든. 의무감이 아니라 거기 있고 싶어서 따르는 거야.\n\n근데 구조 없는 에너지는 결국 꺼져. 아무리 멋진 비전을 보여줘도 실행 계획이 없으면 사람들이 꿈이 아니라 실현 가능성을 의심하기 시작해. 천천히 신중하게 생각하는 사람을 답답해하지 않도록 주의하고 영감에 실행력을 붙이면 그때 연설가가 아니라 진짜 리더가 되는 거야.\n\n밀어서 가게 하는 게 아니라 뛰고 싶게 만드는 사람",
           "tags": [
             "비전형",
             "에너지",

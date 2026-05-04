@@ -989,7 +989,7 @@
       "locale_data": {
         "en": {
           "title": "Solar Panel — Always Charging",
-          "description": "People ARE your energy source. You don't just tolerate social time — you need it to function. Alone too long and you start wilting. In a crowd? You bloom. Your blind spot? You might not recognize your own depletion until you crash. Even solar panels need nighttime.",
+          "description": "People ARE your energy source. Not in a cute metaphorical way — literally. You walk into a crowded party drained from the week and somehow walk out fully recharged. Alone time doesn't refresh you. It just makes you restless until you find someone to talk to.\n\nYou're the one who texts the group chat at 10 PM asking who's still up. At a dinner party, you're the last to leave — and honestly a little sad when it ends. You start conversations with strangers not because you're trying to network but because silence in an elevator feels physically uncomfortable. If plans get cancelled, your first move is finding replacement plans, not enjoying the free evening.\n\nPeople gravitate to you because your social energy creates momentum. You're the one who keeps friend groups alive — organizing, reaching out, making sure nobody drifts too far. Without you, half the people in your circle probably wouldn't still be in touch.\n\nHere's what you might miss though: you can't always tell the difference between being energized and being overstimulated. You run so hot socially that by the time you notice you're depleted, you're already crashing. People assume you're always fine because you're always \"on.\" Learning to recharge before you hit empty — not after — is the move. Even solar panels need nighttime.\n\nI don't recharge alone. I recharge with you.",
           "tags": [
             "extroverted",
             "people-powered",
@@ -999,7 +999,7 @@
         },
         "ko": {
           "title": "태양광 패널 — 항상 충전 중",
-          "description": "사람이 에너지원이야. 사교 시간을 견디는 게 아니라 기능하려면 필요해. 혼자 너무 오래면 시들기 시작하지. 사람 속에서? 활짝 핀다. 사각지대는 바닥날 때까지 자기 소진을 못 알아챌 수 있다는 거. 태양광 패널도 밤이 필요해.",
+          "description": "사람이 에너지원이야. 비유가 아니라 진짜로. 한 주 내내 지쳐서 파티에 갔는데 나올 땐 완충돼 있어. 혼자 있는 시간이 충전이 아니라 누군가와 이야기할 사람을 찾을 때까지 안절부절하게 만들거든.\n\n밤 10시에 단톡방에 \"아직 깨어 있는 사람?\" 보내는 게 너야. 모임에서 제일 늦게 가고 끝나면 살짝 아쉬워해. 엘리베이터에서 모르는 사람한테 말 거는 건 네트워킹이 아니라 침묵이 물리적으로 불편해서야. 약속 취소되면 빈 저녁을 즐기는 게 아니라 대체 약속을 찾아.\n\n네 사교 에너지가 모멘텀을 만드니까 사람들이 모여. 친구 그룹을 살려두는 사람이 너야 — 연락하고 모으고 너무 멀어지지 않게 잡아주는 역할. 너 없으면 지금 연락하는 사람 절반은 이미 끊겼을걸.\n\n근데 에너지 넘치는 거랑 과부하 걸린 거 구분을 잘 못 해. 항상 \"온\" 상태니까 주변에서 괜찮은 줄 알거든. 바닥나고 나서가 아니라 바닥나기 전에 충전하는 법을 배우는 게 핵심이야. 태양광 패널도 밤이 필요해.\n\n혼자 충전하는 게 아니라 너랑 있으면 충전되는 사람",
           "tags": [
             "외향적",
             "사람 에너지",
@@ -1021,7 +1021,7 @@
       "locale_data": {
         "en": {
           "title": "Hybrid Engine — Selective Spark",
-          "description": "You're not an introvert or an extrovert — you're a highly tuned filter. The RIGHT people charge you instantly; the wrong ones drain you in minutes. You don't need more social time — you need better social time. Quality over quantity is your operating system. Blind spot? Being too selective can shrink your world.",
+          "description": "You're not an introvert or an extrovert — you're a highly tuned filter. The RIGHT people charge you instantly; the wrong ones drain you in minutes. You don't need more social time. You need better social time. Quality over quantity isn't just a preference — it's your entire operating system.\n\nYou can be the life of the party with your close friends and completely silent in a room full of strangers — same day, same energy level, totally different outputs. You read social situations fast and decide in seconds whether this is \"my kind of energy\" or \"I need to leave.\" Group chats with twenty people? Muted. A three-hour call with your best friend? Not long enough. You probably have a small inner circle that would be shocked at how social you can actually be.\n\nYour selectiveness is a superpower. The people you DO let in get the full, undiluted version of you — and they know it's rare. Your friendships tend to be deep rather than wide. You're the person people call for real conversations, not small talk.\n\nBut being too selective can shrink your world without you noticing. You might write off people or situations too quickly because the vibe wasn't instant. Not every meaningful connection starts with a spark — some of the best ones are slow burns. Staying open a little longer before you decide isn't lowering your standards. It's expanding your range.\n\nI don't need more people. I need the right ones.",
           "tags": [
             "selective",
             "quality-focused",
@@ -1031,7 +1031,7 @@
         },
         "ko": {
           "title": "하이브리드 엔진 — 선택적 스파크",
-          "description": "내향도 외향도 아니야 — 정교하게 조율된 필터야. 맞는 사람은 즉시 충전시키고 안 맞는 사람은 몇 분 만에 방전시켜. 더 많은 사교 시간이 아니라 더 나은 사교 시간이 필요해. 사각지대는 너무 선택적이면 세상이 좁아질 수 있다는 거.",
+          "description": "내향도 외향도 아니야 — 정교하게 조율된 필터야. 맞는 사람은 즉시 충전시키고 안 맞는 사람은 몇 분 만에 방전시켜. 더 많은 사교 시간이 아니라 더 나은 사교 시간이 필요한 사람이야.\n\n친한 사람들이랑 있으면 분위기 메이커인데 모르는 사람 가득한 방에선 완전 조용해 — 같은 날 같은 에너지인데 결과물이 완전 달라. \"내 에너지인가 아닌가\" 몇 초 만에 판단해. 20명짜리 단톡? 음소거. 베프랑 3시간 통화? 부족해. 네 소수의 이너서클은 네가 얼마나 사교적일 수 있는지 알면 놀랄걸.\n\n네가 들여보내는 사람은 희석 안 된 풀버전의 너를 만나거든 — 그게 얼마나 귀한 건지 그 사람들은 알아. 친구가 넓은 게 아니라 깊은 타입이야.\n\n근데 너무 선택적이면 세상이 좁아져. 첫 느낌이 안 왔다고 사람이나 상황을 너무 빨리 쳐낼 수 있어. 의미 있는 인연이 다 첫눈에 오는 건 아니거든 — 천천히 타오르는 관계가 최고일 때도 있어. 기준을 낮추는 게 아니라 범위를 넓히는 거야.\n\n더 많은 사람이 아니라 맞는 사람이 필요한 사람",
           "tags": [
             "선택적",
             "질 중심",
@@ -1053,7 +1053,7 @@
       "locale_data": {
         "en": {
           "title": "Reserve Tank — Deep and Slow",
-          "description": "Your battery is smaller but it powers something deeper. You don't need a lot of people — you need the right ones, in the right dose. Small groups, meaningful conversation, and comfortable silence are your sweet spot. Blind spot? Protecting your energy can become avoiding connection. The discomfort of stretching socially sometimes leads to the richest experiences.",
+          "description": "Your battery is smaller — but it powers something deeper. You don't need a lot of people. You need the right ones, in the right dose, at the right time. Small groups, meaningful conversation, and comfortable silence are your sweet spot. A whole weekend alone? That's not loneliness. That's maintenance.\n\nYou're the one who shows up to the party, has two really good conversations, and quietly slips out before the energy shifts. In group settings, you observe more than you speak — but when you do speak, people listen because you've actually thought about what you're saying. You probably have a few friendships that are years deep but look nothing like how friendship is \"supposed\" to look on social media.\n\nPeople who know you well understand that your quietness isn't distance — it's focus. You give rare, undivided attention, and the people who receive it feel genuinely seen. You bring depth to every connection you choose to invest in.\n\nHere's your blind spot: protecting your energy can slowly become avoiding connection entirely. You might turn down invitations so often that people stop asking. The discomfort of stretching socially sometimes leads to the richest experiences you wouldn't have found in your comfort zone. Not every worthwhile thing feels comfortable going in.\n\nI don't need a crowd. I need depth.",
           "tags": [
             "selective",
             "small-dose",
@@ -1063,7 +1063,7 @@
         },
         "ko": {
           "title": "비축 탱크 — 깊고 느리게",
-          "description": "배터리가 작지만 더 깊은 걸 동력으로 삼아. 많은 사람이 필요 없어 — 맞는 사람이 맞는 용량으로 필요해. 소그룹 의미 있는 대화 편한 침묵이 스윗 스팟이지. 사각지대는 에너지 보호가 연결 회피가 될 수 있다는 거. 사회적으로 늘어나는 불편함이 때로는 가장 풍부한 경험으로 이어져.",
+          "description": "배터리가 작지만 더 깊은 걸 동력으로 삼아. 많은 사람이 필요 없어 — 맞는 사람이 맞는 용량으로 맞는 타이밍에 필요해. 소그룹 의미 있는 대화 편한 침묵이 스윗 스팟이야. 주말 내내 혼자? 외로움이 아니라 필수 정비 시간이야.\n\n파티에 가서 진짜 좋은 대화 두 번 하고 분위기 바뀌기 전에 슬쩍 빠지는 게 너야. 그룹에서 말보다 관찰이 많은데 막상 말하면 사람들이 귀 기울여 — 진짜 생각하고 말하니까. SNS에서 보이는 우정과는 다르지만 몇 년째 깊은 친구가 있을걸.\n\n널 잘 아는 사람은 네 조용함이 거리가 아니라 집중이라는 걸 알아. 드물지만 온전한 관심을 주고 그걸 받는 사람은 진심으로 자기가 보인다고 느껴.\n\n근데 에너지 보호가 연결 회피로 변할 수 있어. 거절을 너무 자주 하면 아예 안 부르게 돼. 사회적으로 늘어나는 불편함이 때로는 안전지대에서 절대 못 찾았을 가장 풍부한 경험으로 이어져. 가치 있는 모든 게 처음부터 편한 건 아니거든.\n\n많은 사람이 아니라 깊이가 필요한 사람",
           "tags": [
             "선택적",
             "소량",
@@ -1085,7 +1085,7 @@
       "locale_data": {
         "en": {
           "title": "Deep Well — Slow to Surface",
-          "description": "You live in your inner world and surface when the conditions are exactly right. It's not that you dislike people — it's that most social contexts aren't designed for how you connect. You need warmth, depth, and zero performance pressure. Blind spot? Waiting for perfect conditions means missing good-enough ones. Sometimes connection requires jumping in before you're ready.",
+          "description": "You live in your inner world — and honestly, it's a pretty rich place to be. You surface when the conditions are exactly right: warmth, depth, zero performance pressure, and people who don't need you to be \"on.\" It's not that you dislike people. It's that most social contexts aren't designed for how you connect.\n\nYou're the friend who takes three days to reply to a text but when you do, it's a full paragraph that actually addresses what the person said. You'd rather have one real conversation a week than ten surface-level ones. Networking events feel like a punishment designed specifically for you. But put you in a quiet room with someone who wants to talk about something real? You could go for hours.\n\nWhen people finally get to know the real you, they're often surprised by how warm and funny and present you are. You're not cold — you're just selective about where you spend your limited social currency. The people you choose get a version of you that most people never see.\n\nHere's the thing you might resist hearing: waiting for perfect conditions means missing good-enough ones. Not every connection needs to start in your ideal setting. Sometimes you have to meet the world halfway — show up to the thing you don't feel like attending, stay ten minutes longer than you planned. The most unexpected connections happen when you surface before you're fully ready.\n\nI don't come to the surface often. But when I do, it's worth the wait.",
           "tags": [
             "introverted",
             "inner-world",
@@ -1095,7 +1095,7 @@
         },
         "ko": {
           "title": "깊은 우물 — 천천히 올라온다",
-          "description": "내면 세계에 살면서 조건이 정확히 맞을 때 올라오는 사람이야. 사람이 싫은 게 아니라 대부분의 사교 맥락이 네가 연결하는 방식에 맞게 설계되지 않은 거야. 따뜻함 깊이 제로 연기 압박이 필요해. 사각지대는 완벽한 조건을 기다리면 괜찮은 조건을 놓친다는 거. 때로는 준비되기 전에 뛰어드는 게 연결이야.",
+          "description": "내면 세계에 살고 있어 — 솔직히 거기 꽤 풍요로운 곳이야. 조건이 딱 맞을 때만 올라와: 따뜻함 깊이 제로 연기 압박 그리고 너한테 \"온\" 상태를 요구하지 않는 사람. 사람이 싫은 게 아니라 대부분의 사교 상황이 네가 연결하는 방식에 맞게 만들어지지 않은 거야.\n\n답장 3일 걸리는데 보내면 상대가 한 말을 진짜로 다루는 한 문단짜리인 그 친구가 너야. 일주일에 진짜 대화 하나가 표면적 대화 열 개보다 낫다고 생각해. 네트워킹 이벤트는 너를 위해 설계된 형벌 같지? 근데 조용한 방에서 진짜 이야기를 하고 싶은 사람이랑 있으면 몇 시간이고 가능해.\n\n진짜 너를 알게 된 사람은 네가 얼마나 따뜻하고 재밌고 현재에 집중하는지 놀라. 차가운 게 아니라 제한된 사교 에너지를 어디에 쓸지 선택하는 거야.\n\n근데 이건 듣기 싫을 수도 있어 — 완벽한 조건을 기다리면 괜찮은 조건을 놓쳐. 모든 인연이 네 이상적인 세팅에서 시작할 필요는 없거든. 가기 싫은 자리에 나가보고 예정보다 10분 더 있어보고 — 가장 뜻밖의 연결은 준비되기 전에 올라왔을 때 생겨.\n\n자주 올라오진 않아. 근데 올라오면 기다린 보람이 있는 사람",
           "tags": [
             "내향적",
             "내면 세계",

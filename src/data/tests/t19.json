@@ -989,7 +989,7 @@
       "locale_data": {
         "en": {
           "title": "I Make Everyone Laugh",
-          "description": "Your humor is social glue. You read a room and know exactly what will crack everyone up. Your jokes pull people together rather than push anyone out. Laughter isn't just fun for you — it's how you build trust, break tension, and create belonging. Blind spot? You might suppress your real feelings behind the comedy. Not every moment needs a laugh track.",
+          "description": "Your humor is social glue — it pulls people together instead of pushing anyone out. You walk into a tense room and somehow find the thing that makes everyone exhale. It's not that you're always cracking jokes. It's that you instinctively know what a room needs to hear to relax, and you deliver it perfectly.\n\nYou read a group and know exactly what will crack everyone up. At dinner with people who just met, you're the one who breaks the ice so naturally that nobody realizes it was awkward thirty seconds ago. Your timing isn't calculated — it's felt. You don't prepare material. You react to what's happening in real time, and that's what makes it land. Laughter isn't just fun for you. It's how you build trust, break tension, and create belonging.\n\nPeople want you around because you make every situation lighter without making it shallow. You can be funny at a funeral in a way that actually helps people grieve. That's rare. Your humor creates safety — people lower their guard around you because they know you're never punching down.\n\nHere's what you might not notice: you sometimes hide behind the comedy. When something actually hurts, your first instinct is to make a joke instead of sitting with the feeling. The people closest to you might wonder if they ever get the version of you that isn't performing. Not every moment needs a laugh track — sometimes the bravest thing is letting the silence sit.\n\nI don't just make people laugh. I make them feel like they belong.",
           "tags": [
             "social-glue",
             "inclusive",
@@ -999,7 +999,7 @@
         },
         "ko": {
           "title": "모두를 웃긴다",
-          "description": "너의 유머는 사회적 접착제야. 분위기를 읽고 모두를 웃길 걸 정확히 알아. 농담이 사람을 모으지 밀어내지 않아. 사각지대는 코미디 뒤에 진짜 감정을 숨길 수 있다는 거. 모든 순간에 웃음 트랙이 필요하진 않아.",
+          "description": "너의 유머는 사회적 접착제야 — 사람을 모으지 밀어내지 않아. 긴장된 방에 들어가서 어떻게든 모두가 숨을 내쉬게 만드는 걸 찾거든. 항상 농담을 치는 게 아니라 방이 뭘 들어야 편해지는지 본능적으로 알고 딱 맞게 전달하는 거야.\n\n처음 만난 사람들 사이에서 아이스브레이킹을 너무 자연스럽게 해서 30초 전이 어색했다는 걸 아무도 모르게 만들어. 타이밍이 계산이 아니라 감각이야. 준비된 소재가 아니라 실시간 반응이라서 더 터지는 거야.\n\n네가 있으면 모든 상황이 가벼워지는데 얕아지진 않아. 장례식에서도 사람들이 슬퍼하는 걸 도와주는 방식으로 웃길 수 있는 사람이야. 네 유머는 안전함을 만들어 — 절대 약자를 깎아내리지 않으니까.\n\n근데 가끔 코미디 뒤에 숨어. 진짜 아플 때 감정이랑 앉아 있는 대신 농담부터 나오거든. 가까운 사람들은 연기 안 하는 너를 본 적이 있는지 궁금할 수 있어. 모든 순간에 웃음이 필요하진 않아 — 가끔은 침묵을 두는 게 가장 용감한 거야.\n\n웃기는 게 아니라 소속감을 느끼게 하는 사람",
           "tags": [
             "사교 접착제",
             "포용적",
@@ -1021,7 +1021,7 @@
       "locale_data": {
         "en": {
           "title": "I Laugh at the Chaos",
-          "description": "Your humor is a survival tool. When things get dark, absurd, or overwhelming, you find the funny — not to minimize, but to metabolize. You've turned some of your worst experiences into your best material. Blind spot? Others might not be ready to laugh at something you've already processed. Timing matters even when the joke is genuinely healing.",
+          "description": "Your humor is a survival tool — and one of the best ones ever built. When things get dark, absurd, or overwhelming, you find the funny. Not to minimize what's happening, but to metabolize it. You've turned some of your worst experiences into your best material, and honestly? That takes a kind of strength most people don't have.\n\nYou're the one who makes a joke five minutes after getting terrible news — not because you don't care, but because laughing is how you process. In crisis mode, while everyone else is frozen or panicking, you say the thing that's so inappropriately perfect that the whole room cracks. Dark humor isn't your brand. It's your coping mechanism, your defense system, and sometimes your therapy all in one.\n\nPeople who get your humor REALLY get it — and they love you for it. You make the unbearable bearable. You've probably helped friends get through breakups, job losses, and family drama just by making them laugh when they thought they couldn't. There's a reason people come to you in their worst moments.\n\nBut here's the edge you walk: others might not be ready to laugh at something you've already processed. Your timing is usually impeccable, but occasionally you're three stages ahead of someone else's grief. And sometimes the joke IS the avoidance. If humor is always your first response to pain, ask yourself whether you're processing it or just performing the processing.\n\nLife handed me lemons. I turned them into a comedy special.",
           "tags": [
             "coping-humor",
             "absurdist",
@@ -1031,7 +1031,7 @@
         },
         "ko": {
           "title": "혼돈에서 웃는다",
-          "description": "유머가 생존 도구야. 어둡거나 황당하거나 압도적일 때 웃길 걸 찾아 — 축소하려는 게 아니라 소화하려고. 최악의 경험을 최고의 소재로 바꿔놨지. 사각지대는 네가 이미 처리한 걸 다른 사람은 아직 웃을 준비가 안 됐을 수 있다는 거.",
+          "description": "유머가 생존 도구야 — 그것도 꽤 잘 만들어진. 어둡거나 황당하거나 압도적일 때 웃길 걸 찾아. 축소하려는 게 아니라 소화하려고. 최악의 경험을 최고의 소재로 바꿔놨고 솔직히 그건 대부분이 가지지 못한 종류의 강인함이야.\n\n나쁜 소식 듣고 5분 만에 농담하는 게 너야 — 신경 안 써서가 아니라 웃는 게 소화하는 방식이니까. 위기 상황에서 다들 얼어 있거나 패닉할 때 부적절하게 완벽한 한 마디를 해서 방 전체를 터뜨려. 블랙유머가 브랜드가 아니라 대처 메커니즘이자 방어 시스템이자 가끔 치료까지 겸하는 거야.\n\n네 유머를 이해하는 사람은 진짜로 이해해 — 그래서 너를 좋아하는 거야. 견딜 수 없는 걸 견딜 만하게 만들거든. 이별이나 해고나 집안 문제에서 웃을 수 없을 것 같을 때 웃게 해준 적 있을걸.\n\n근데 이건 조심해야 해 — 네가 이미 처리한 걸 상대방은 아직 웃을 준비가 안 됐을 수 있어. 다른 사람 슬픔보다 세 단계 앞서 있을 때가 가끔 있거든. 그리고 농담 자체가 회피일 수도 있어. 아플 때 첫 반응이 항상 유머라면 소화하고 있는 건지 소화하는 척 연기하고 있는 건지 한 번 봐봐.\n\n인생이 레몬을 줬는데 코미디 스페셜을 만들어버린 사람",
           "tags": [
             "대처 유머",
             "부조리",
@@ -1053,7 +1053,7 @@
       "locale_data": {
         "en": {
           "title": "I Craft the Perfect Line",
-          "description": "Your humor is precision-engineered. You don't just say funny things — you build them. Setup, timing, word choice, delivery — it's all calculated for maximum impact. Your jokes land because you've thought about exactly why they're funny. Blind spot? Overthinking humor can kill spontaneity. Sometimes the funniest thing is the unplanned thing.",
+          "description": "Your humor is precision-engineered. You don't just say funny things — you build them. Setup, timing, word choice, delivery — it's all calculated for maximum impact. Your jokes land because you've thought about exactly why they're funny. Other people throw spaghetti at the wall. You place each noodle with tweezers.\n\nYou're the one who drops a perfectly structured one-liner twenty minutes into a conversation and gets the biggest laugh of the night. You probably edit your texts before sending them to make the joke tighter. In group chats, your messages get the most reactions because every word earned its spot. You notice comedy in patterns, contradictions, and structure that other people walk right past.\n\nPeople quote your jokes back to you weeks later — that's how you know they landed. Your humor has replay value because it's built to last, not just to get a quick reaction. You're the person friends call a \"wordsmith\" or say \"you should do standup\" even though you'd probably hate the spotlight.\n\nHere's your blind spot: overthinking humor can kill spontaneity. You might hold back a decent joke because it's only 80% polished, and by the time you've perfected it, the moment has passed. Not everything needs to be a crafted bit. Sometimes the funniest thing is the unplanned, messy, imperfect thing that falls out of your mouth — and learning to let those fly is how you level up.\n\nI don't tell jokes. I engineer them.",
           "tags": [
             "crafted",
             "precision",
@@ -1063,7 +1063,7 @@
         },
         "ko": {
           "title": "완벽한 한 줄을 만든다",
-          "description": "유머가 정밀 설계돼 있어. 웃긴 말을 하는 게 아니라 만드는 거야. 셋업 타이밍 단어 선택 전달 — 최대 임팩트를 위해 다 계산돼 있지. 사각지대는 유머를 과잉 분석하면 즉흥성이 죽을 수 있다는 거. 가끔 가장 웃긴 건 계획 없는 거야.",
+          "description": "유머가 정밀 설계돼 있어. 웃긴 말을 하는 게 아니라 만드는 거야. 셋업 타이밍 단어 선택 전달 — 최대 임팩트를 위해 다 계산돼 있지. 다른 사람이 벽에 스파게티를 던질 때 넌 면 하나하나를 핀셋으로 놓는 타입이야.\n\n대화 시작 20분쯤에 완벽하게 구조화된 한 줄을 떨어뜨려서 그날 밤 최고의 웃음을 가져가는 게 너야. 보내기 전에 농담을 더 조이려고 메시지를 수정할걸? 단톡에서 네 메시지가 리액션 제일 많은 건 모든 단어가 자리를 차지할 자격이 있어서야. 패턴 모순 구조에서 다른 사람이 그냥 지나치는 코미디를 발견하는 사람이야.\n\n사람들이 몇 주 후에 네 농담을 인용해 — 제대로 박혔다는 증거지. 네 유머는 빠른 반응이 아니라 오래가게 만들어졌으니까 리플레이 가치가 있어. \"너 스탠드업 해야 해\"라는 말 들어봤을 텐데 정작 스포트라이트는 싫어할 타입이지.\n\n근데 유머를 과잉 분석하면 즉흥성이 죽어. 80%만 완성된 농담을 참다가 완벽하게 다듬었을 땐 이미 타이밍이 지나간 적 있을걸. 모든 게 설계된 비트일 필요는 없어. 가끔 가장 웃긴 건 계획 없이 입에서 떨어진 지저분하고 불완전한 그거야 — 그걸 날려보내는 법을 배우면 레벨이 올라가.\n\n농담을 하는 게 아니라 설계하는 사람",
           "tags": [
             "설계형",
             "정밀",
@@ -1085,7 +1085,7 @@
       "locale_data": {
         "en": {
           "title": "I Keep Them Guessing",
-          "description": "Your humor is quiet, unexpected, and devastatingly well-timed. You're not the loudest person in the room but when you speak, people listen — and then lose it. Your deadpan delivery and left-field observations make people wonder if you're joking right up until they're crying laughing. Blind spot? Dry humor can read as coldness to people who don't know you. Sometimes a warm setup helps the punchline land softer.",
+          "description": "Your humor is quiet, unexpected, and devastatingly well-timed. You're not the loudest person in the room — you might even be the quietest. But when you speak, something happens. People lean in, process for half a second, and then absolutely lose it. Your deadpan delivery is so clean that people genuinely can't tell if you're joking until they're already laughing.\n\nYou're the one who says something under your breath that the person next to you catches and can't stop laughing about for the next ten minutes. Your observations come from left field — angles nobody else was looking at. You find absurdity in things people accepted as normal, and you point it out so casually that it hits twice as hard. In group settings, the funniest moments often come from you, and nobody saw them coming.\n\nPeople who know you well consider you secretly the funniest person they know. You don't compete for airtime, which makes every joke you do tell feel like an event. Your humor rewards attention — if you're not paying close attention, you'll miss it entirely, and that exclusivity makes it funnier for those who catch it.\n\nHere's what to watch for: dry humor can read as coldness or dismissiveness to people who don't know you well. They might not realize you're joking, or think you're being rude. A tiny signal — a half-smile, a slight pause before delivery — can help newcomers tune to your frequency without diluting what makes your style work.\n\nI don't try to be funny. It just lands that way.",
           "tags": [
             "deadpan",
             "unexpected",
@@ -1095,7 +1095,7 @@
         },
         "ko": {
           "title": "갸우뚱하게 한다",
-          "description": "유머가 조용하고 예상 못하고 파괴적으로 타이밍이 좋아. 방에서 가장 시끄러운 사람이 아닌데 말하면 사람들이 듣고 — 그리고 무너져. 데드팬 전달과 뜬금없는 관찰이 농담인지 아닌지 궁금하게 만들다가 결국 빵 터뜨려. 사각지대는 건조한 유머가 널 모르는 사람에겐 차가움으로 읽힐 수 있다는 거.",
+          "description": "유머가 조용하고 예상 못하고 파괴적으로 타이밍이 좋아. 방에서 가장 시끄러운 사람이 아니야 — 오히려 가장 조용할 수도 있어. 근데 말하면 뭔가가 일어나. 사람들이 반 초 처리하고 나서 완전 무너져. 데드팬 전달이 너무 깔끔해서 이미 웃고 있을 때까지 농담인지 진담인지 구분을 못 해.\n\n옆 사람만 들리게 뭔가를 중얼거리는데 그 사람이 잡고 10분 동안 웃음을 못 멈추는 게 너야. 아무도 안 보던 각도에서 관찰이 들어와. 사람들이 당연하게 받아들인 것에서 부조리를 발견하고 너무 덤덤하게 말해서 두 배로 강하게 때려. 그룹에서 가장 웃긴 순간이 너한테서 나오는데 아무도 예상 못 해.\n\n널 잘 아는 사람은 비밀리에 아는 사람 중 제일 웃긴 사람이라고 생각해. 발언권을 두고 경쟁 안 하니까 한 마디 할 때마다 이벤트가 돼. 집중 안 하면 놓치는 유머라서 잡는 사람한테는 더 웃기거든.\n\n근데 드라이한 유머가 널 모르는 사람에겐 차갑거나 무시하는 걸로 읽힐 수 있어. 농담인 줄도 모르거나 무례하다고 생각할 수 있거든. 살짝 미소 짓기 전달 전 짧은 멈춤 같은 작은 신호가 새로운 사람을 네 주파수에 맞춰줄 수 있어 — 스타일을 희석시키지 않으면서.\n\n웃기려고 하는 게 아니야. 그냥 그렇게 떨어지는 사람",
           "tags": [
             "데드팬",
             "예상 불가",
