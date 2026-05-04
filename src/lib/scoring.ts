@@ -216,6 +216,74 @@ function calculateTPMResult(selectedOptions: OptionScores[]): TPMResult {
 }
 
 // ============================================================
+// RESOLVE RESULT — Bridge between TestClient and TPM engine
+// ============================================================
+// Maps user's selected answers → axis directions → matching result ID
+//
+// TestClient calls: resolveResult(testData, selectedAnswers)
+// Returns: result ID string (e.g., "A", "warrior", "bard")
+
+interface TPMProfile {
+  drive: string;
+  process: string;
+  compass: string;
+}
+
+interface ResultWithTPM {
+  id: string;
+  tpm_profile?: TPMProfile;
+}
+
+interface TestDataLike {
+  results: ResultWithTPM[];
+}
+
+function resolveResult(
+  testData: TestDataLike,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  answers: { scores: any }[]
+): string {
+  // 1. Extract OptionScores from each answer
+  //    Runtime shape: { drive: { direction, weight }, process: {...}, compass: {...} }
+  const optionScores: OptionScores[] = answers.map((a) => a.scores as OptionScores);
+
+  // 2. Calculate TPM result (axis directions)
+  const tpm = calculateTPMResult(optionScores);
+  const drive = tpm.axes.drive.direction;
+  const process = tpm.axes.process.direction;
+  const compass = tpm.axes.compass.direction;
+
+  // 3. Find matching result by tpm_profile
+  const match = testData.results.find((r) => {
+    const p = r.tpm_profile;
+    if (!p) return false;
+    return p.drive === drive && p.process === process && p.compass === compass;
+  });
+
+  if (match) return match.id;
+
+  // 4. Fallback: if no exact match (shouldn't happen with correct data),
+  //    find closest match by most axes matching
+  let bestMatch = testData.results[0];
+  let bestScore = 0;
+
+  for (const r of testData.results) {
+    const p = r.tpm_profile;
+    if (!p) continue;
+    let score = 0;
+    if (p.drive === drive) score++;
+    if (p.process === process) score++;
+    if (p.compass === compass) score++;
+    if (score > bestScore) {
+      bestScore = score;
+      bestMatch = r;
+    }
+  }
+
+  return bestMatch?.id ?? testData.results[0]?.id ?? 'unknown';
+}
+
+// ============================================================
 // EXAMPLES
 // ============================================================
 
@@ -261,4 +329,4 @@ Example 3: Very balanced (sub type = diagonal opposite)
 //   - Example: Torch(IPB) most likely sub = Spark(IPS), Architect(IRB), Empath(OPB)
 //              Torch(IPB) rarest sub = Sentinel(ORS) — all 3 axes flipped
 
-export { calculateTPMResult, type TPMResult, type TPMType };
+export { calculateTPMResult, resolveResult, type TPMResult, type TPMType };

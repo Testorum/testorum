@@ -17,7 +17,8 @@ export function LocaleSwitcher() {
 
     const handleChange = (newLocale: string) => {
         // 쿠키에 선호 언어 저장 (next-intl이 NEXT_LOCALE 쿠키 자동 인식)
-        document.cookie = `NEXT_LOCALE=${newLocale};path=/;max-age=31536000;SameSite=Lax`;
+        const secure = window.location.protocol === 'https:' ? ';Secure' : '';
+        document.cookie = `NEXT_LOCALE=${newLocale};path=/;max-age=31536000;SameSite=Lax${secure}`;
         router.replace(pathname, { locale: newLocale as Locale });
     };
 

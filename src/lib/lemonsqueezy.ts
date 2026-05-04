@@ -1,4 +1,5 @@
 import { lemonSqueezySetup } from '@lemonsqueezy/lemonsqueezy.js';
+import { timingSafeEqual } from 'crypto';
 
 /**
  * LemonSqueezy SDK configuration.
@@ -37,6 +38,8 @@ export function configureLemonSqueezy() {
 
 /**
  * Verify LemonSqueezy webhook signature.
+ * Uses constant-time comparison to prevent timing attacks.
+ *
  * @param rawBody - The raw request body as string
  * @param signature - The X-Signature header value
  * @returns true if signature is valid
@@ -66,7 +69,16 @@ export async function verifyWebhookSignature(
     .map((b) => b.toString(16).padStart(2, '0'))
     .join('');
 
-  return digest === signature;
+  // ── Constant-time comparison (prevents timing side-channel attacks) ──
+  try {
+    return timingSafeEqual(
+      Buffer.from(digest, 'utf-8'),
+      Buffer.from(signature, 'utf-8')
+    );
+  } catch {
+    // Length mismatch throws — always invalid
+    return false;
+  }
 }
 
 /** Resolved store ID from env */

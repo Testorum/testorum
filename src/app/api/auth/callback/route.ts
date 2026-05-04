@@ -17,6 +17,20 @@ function generateReferralCode(): string {
   return code;
 }
 
+/**
+ * Map internal Supabase/OAuth errors to safe client-facing codes.
+ * Prevents leaking internal state (DB config, token details) via URL params.
+ */
+function toSafeErrorCode(error: string | undefined): string {
+  if (!error) return 'unknown';
+  const lower = error.toLowerCase();
+  if (lower.includes('expired') || lower.includes('timeout')) return 'session_expired';
+  if (lower.includes('invalid') || lower.includes('malformed')) return 'invalid_request';
+  if (lower.includes('denied') || lower.includes('cancel')) return 'access_denied';
+  if (lower.includes('rate') || lower.includes('limit')) return 'rate_limited';
+  return 'auth_failed';
+}
+
 export async function GET(request: NextRequest) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get('code');
@@ -28,7 +42,7 @@ export async function GET(request: NextRequest) {
   if (errorParam) {
     console.error('[auth/callback] OAuth error:', errorParam, errorDesc);
     return NextResponse.redirect(
-      new URL(`/en/login?error=${encodeURIComponent(errorDesc || errorParam)}`, origin)
+      new URL(`/en/login?error=${toSafeErrorCode(errorDesc || errorParam)}`, origin)
     );
   }
 
@@ -74,7 +88,7 @@ export async function GET(request: NextRequest) {
   if (error) {
     console.error('[auth/callback] Session exchange error:', error.message);
     return NextResponse.redirect(
-      new URL(`/en/login?error=${encodeURIComponent(error.message)}`, origin)
+      new URL(`/en/login?error=${toSafeErrorCode(error.message)}`, origin)
     );
   }
 
