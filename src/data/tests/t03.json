@@ -850,7 +850,7 @@
       "locale_data": {
         "en": {
           "title": "Instant Reply Machine",
-          "description": "You reply faster than WiFi connects. Leaving someone on read? Not in your vocabulary. Though you might stress when others don't match your speed.",
+          "description": "Your phone buzzes and your thumbs are already moving. Three seconds, maybe five — that's your window. You don't understand people who \"saw the notification but will reply later.\" Later? The conversation is happening NOW. Leaving someone on read feels physically uncomfortable to you, like an itch you can't not scratch.\n\nThis goes beyond texting speed. You're the group chat's heartbeat — the one who keeps conversations alive when everyone else lets them die at \"lol.\" You reply to stories, you double-text without shame, and you've never once strategically waited before responding to seem less eager. You answer emails within minutes, respond to comments in real time, and your \"typing...\" indicator is basically a permanent fixture. If a friend sends a crisis text at 2 AM, your reply timestamp is 2:01 AM.\n\nThe beauty of this is that people always know they can reach you. You make others feel heard instantly, and in an age where everyone's performing unavailability, your responsiveness is genuinely comforting. You're reliable in the most fundamental way — you show up, every time, without making people wait and wonder.\n\nThe thing to watch: your instant replies can set expectations that drain you. People get used to your speed and start feeling entitled to it. A reply that takes an hour becomes suspicious. You accidentally train everyone around you to expect immediate access, and then you have no breathing room. It's okay to be fast — but make sure your speed comes from wanting to connect, not from anxiety about disconnecting.\n\nI reply before you put your phone down.",
           "tags": [
             "instant",
             "eager",
@@ -860,7 +860,7 @@
         },
         "ko": {
           "title": "알림 뜨면 즉시 답장",
-          "description": "카톡 오면 0.1초 안에 답장하는 타입이에요. 읽씹은 나의 사전에 없어요. 상대방이 답장 느리면 불안해지는 경향이 있어요. 카톡 중독 테스트도 한번 해보세요 ㅋㅋ",
+          "description": "알림 뜨면 손가락이 이미 움직이고 있어. 3초 아니면 5초 안에 답장 완료. \"봤는데 나중에 답할게\"라는 개념 자체를 이해 못 해. 나중에? 대화는 지금 일어나고 있는데? 읽씹하는 건 물리적으로 불편해 안 긁을 수 없는 가려움 같은 거야\n\n단순히 답장 속도 문제가 아니야. 단톡방의 심장박동이 바로 너야 — 다른 사람들이 \"ㅋㅋ\"에서 대화를 죽일 때 넌 살려놓는 쪽이지. 스토리에 반응하고 더블텍스트 부끄러움 없이 보내고 덜 적극적으로 보이려고 전략적으로 답장 늦춘 적 단 한 번도 없어. 새벽 2시에 급한 카톡이 오면 네 답장 타임스탬프는 2시 1분이야\n\n이게 매력인 게 사람들이 너한테 항상 연락 닿는다는 걸 알아. 모두가 바쁜 척 연기하는 시대에 네 즉각적인 반응이 진짜 위안이 돼. 가장 기본적인 의미에서 믿을 수 있는 사람이야 — 기다리고 궁금해하게 안 만들고 매번 거기 있으니까\n\n조심할 건 네 즉답이 기대치를 만든다는 거야. 사람들이 네 속도에 익숙해지면 한 시간 걸린 답장이 의심스러워져. 모든 사람에게 즉시 접근 가능하다는 기대를 훈련시켜 놓으면 네 숨 쉴 공간이 없어져. 빠른 건 좋은데 그 속도가 연결하고 싶어서인지 단절이 불안해서인지는 구별해봐\n\n네가 폰 내려놓기 전에 답장 완료",
           "tags": [
             "즉답",
             "열정적",
@@ -882,7 +882,7 @@
       "locale_data": {
         "en": {
           "title": "Replies at My Own Pace",
-          "description": "You take your time, and that's totally valid. You think before you type — quality over speed. Just know your friends are refreshing the chat waiting for you.",
+          "description": "You see the notification. You acknowledge its existence. And then you continue doing whatever you were doing, because the message will still be there in twenty minutes, or an hour, or honestly tomorrow morning. You're not ignoring anyone — you're just not available on demand. Your phone is a tool, not a leash.\n\nYour texting rhythm is distinctly yours. You read messages when they arrive but reply when you're ready — when you have the mental space to actually say something worth reading. You hate the feeling of firing off a half-baked response just because someone's waiting. So you take your time, and your replies tend to be more thoughtful because of it. You might send three paragraphs at 11 PM about something someone mentioned at noon. The delay isn't disinterest; it's processing.\n\nThis approach has real advantages. You rarely send texts you regret. You don't get sucked into the anxious back-and-forth that drains most people's energy. Your conversations have substance because you bring your whole attention when you do show up, not the fragmented scraps between tasks. People who know you well understand that a slow reply from you is still a real reply.\n\nThe blind spot: your pace reads differently to different people. To you, a four-hour gap is normal breathing room. To someone anxious, it's four hours of wondering what they did wrong. You don't owe anyone constant access, but acknowledging that your silence carries meaning — even unintended meaning — is the kind thing to do. Sometimes a quick \"thinking about this, will reply properly later\" bridges the gap without compromising your rhythm.\n\nI'll reply — just not on your schedule.",
           "tags": [
             "thoughtful",
             "chill",
@@ -892,7 +892,7 @@
         },
         "ko": {
           "title": "답장은 여유 있게",
-          "description": "답장이 늦는 게 나쁜 게 아니에요. 생각 정리하고 제대로 된 답장을 보내는 타입이에요. 상대방이 답장 빨리 원하면 갈등이 생길 수 있어요.",
+          "description": "알림 봤어. 존재를 인지했어. 그리고 하던 거 계속 해. 어차피 메시지는 20분 뒤에도 한 시간 뒤에도 솔직히 내일 아침에도 거기 있을 거니까. 무시하는 게 아니야 — 주문형으로 대기하는 건 안 할 뿐이야. 폰은 도구지 목줄이 아니거든\n\n네 답장 리듬은 확실히 네 거야. 메시지는 오면 읽는데 답장은 준비됐을 때 해 — 제대로 된 말을 할 정신적 여유가 있을 때. 누가 기다린다고 대충 보내는 느낌이 싫어서 시간을 들이고 그 대신 답장에 내용이 있어. 낮 12시에 한 말에 대해 밤 11시에 세 문단짜리 답장 보내는 타입이지. 느린 건 관심 없는 게 아니라 소화 중인 거야\n\n이 방식에 장점이 있어. 후회할 메시지를 거의 안 보내. 에너지 빼는 불안한 핑퐁에 빨려 들어가지도 않아. 네가 대화에 나타날 때는 전체 집중을 가져오니까 대화에 깊이가 있어. 널 아는 사람은 느린 답장도 진짜 답장이라는 걸 이해해\n\n조심할 건 네 속도가 사람마다 다르게 읽힌다는 거야. 너한테 4시간은 정상적인 호흡인데 불안한 사람한테는 \"내가 뭘 잘못했지\" 의 4시간이야. 항상 접속해있을 의무는 없지만 네 침묵이 의도 없이도 의미를 만든다는 걸 인식하는 게 배려지. \"생각 중이야 나중에 제대로 답할게\" 한 줄이면 네 리듬 안 깨고 다리를 놓을 수 있어\n\n답장은 해 근데 네 타이밍에는 안 맞출 거야",
           "tags": [
             "신중함",
             "여유",
@@ -914,7 +914,7 @@
       "locale_data": {
         "en": {
           "title": "Read: 3:42 PM",
-          "description": "You read it, you registered it, you moved on. No malice — you just don't feel the need to reply to everything. Your friends' anxiety says otherwise though.",
+          "description": "You've read the message. You know exactly what it says. You might even know what you want to say back. And yet — the reply sits unwritten, hovering somewhere between intention and action, while you go about your day with the quiet confidence of someone who will get to it when the moment feels right. Read receipts are on, and you genuinely don't care.\n\nThis isn't laziness or disrespect; it's more like emotional budgeting. You've figured out that not every message deserves an immediate reaction, and that replying when you're not in the right headspace usually makes things worse, not better. So you read, absorb, and let the response form naturally. Some messages get replied to in minutes because you felt like it. Others wait days. The algorithm is entirely internal and entirely yours.\n\nThe upside is that you protect your mental energy fiercely. You never feel chained to conversations, and your replies — when they come — tend to land exactly right because they weren't forced. People who understand you appreciate that a response from you means you actually wanted to respond, not that you felt obligated. That makes every reply carry weight.\n\nThe uncomfortable truth: what feels like healthy detachment to you can feel like rejection to someone else. When they see \"read\" and no reply, their brain fills the silence with the worst possible story. You don't owe anyone instant access to your attention, but being aware of the gap between your intent and their experience is important. The read receipt doesn't explain your reasons — it just confirms you chose silence.\n\nRead at 3:42 PM. Replied when I felt like it.",
           "tags": [
             "independent",
             "unbothered",
@@ -924,7 +924,7 @@
         },
         "ko": {
           "title": "확인은 했는데 답장은 내 맘",
-          "description": "읽고 답장 안 하는 게 습관인 타입이에요. 악의는 없지만 상대방 마음은 타들어가고 있어요. 가끔은 짧게라도 반응해주면 관계가 훨씬 편해져요!",
+          "description": "메시지 읽었어. 뭐라고 했는지 정확히 알아. 뭐라고 답할지도 아마 알아. 근데 답장은 의도와 행동 사이 어딘가에 미완성으로 떠 있고 넌 적절한 순간이 올 때까지 일상을 살아. 읽음 표시 켜져 있고 그거에 대해 진심으로 신경 안 써\n\n게으른 거도 아니고 무례한 것도 아니야 — 감정 에너지 관리에 가까워. 모든 메시지가 즉각 반응을 받을 필요는 없다는 걸 파악한 거야. 맞는 기분이 아닐 때 답장하면 보통 더 나빠지거든. 그래서 읽고 흡수하고 반응이 자연스럽게 만들어지게 놔둬. 어떤 건 몇 분 만에 답하고 어떤 건 며칠 걸려. 그 알고리즘은 완전히 내부적이고 완전히 네 거야\n\n장점은 정신적 에너지를 철저하게 보호한다는 거야. 대화에 묶여있는 느낌이 안 들고 답장이 왔을 때는 억지가 아니라 진짜 하고 싶어서 한 거라서 정확히 맞는 말이 돼. 널 이해하는 사람은 네 답장 하나하나에 무게가 있다는 걸 알아\n\n불편한 진실은 네가 건강한 거리두기라고 느끼는 게 상대에겐 거부로 느껴질 수 있다는 거야. \"읽음\" 찍히고 답 없으면 상대 머리는 그 침묵을 최악의 시나리오로 채워. 네 주의력에 대한 즉각 접근권은 아무에게도 빚진 거 아닌데 네 의도와 상대의 경험 사이 간극은 인식해야 해. 읽음 표시는 네 이유를 설명 안 해 — 침묵을 선택했다는 것만 확인해줘\n\n읽음 3시 42분. 답장은 내키면 함",
           "tags": [
             "읽씹",
             "독립적",
@@ -946,7 +946,7 @@
       "locale_data": {
         "en": {
           "title": "Sticker Speaks Louder",
-          "description": "Words? Overrated. You let emojis and stickers do the talking. Every chat with you is a visual experience. Your sticker collection is probably worth more than your savings.",
+          "description": "Why type three sentences when one perfectly chosen sticker captures the entire vibe? You've evolved past the limitations of text-based communication and entered the visual era. Your sticker collection is curated with the precision of an art gallery, and you can express sympathy, sarcasm, excitement, and existential dread all without typing a single word.\n\nYour chat history is a collage. Where others write paragraphs, you send a reaction image that says more than words ever could. You have a go-to sticker for every emotional state: the specific cat meme for mild annoyance, the animated GIF for uncontrollable laughter, the niche sticker nobody else has for that feeling when someone cancels plans and you're secretly relieved. You don't just use stickers as decoration — they ARE your language. You've had entire meaningful conversations using nothing but images and emojis.\n\nThis visual communication style has real strengths. You defuse tension better than most people because a well-timed sticker can break awkwardness that words would only make worse. You create warmth instantly. Conversations with you feel light and playful, even when the topic isn't. You've mastered the art of saying something serious with a funny wrapper.\n\nThe limitation shows up when depth is required. Some conversations need actual words — a friend going through a breakup, a serious misunderstanding, a moment where someone needs to hear you articulate what you feel, not approximate it with a cartoon bear hugging a heart. The sticker fills the space but sometimes the space needs to stay open long enough for real words to arrive.\n\nOne sticker. A thousand words.",
           "tags": [
             "expressive",
             "creative",
@@ -956,7 +956,7 @@
         },
         "ko": {
           "title": "이모티콘이 곧 언어",
-          "description": "텍스트보다 이모티콘이 더 자연스러운 타입이에요. 감정 표현이 풍부하고 대화가 항상 밝아요. 카카오 이모티콘 구독은 필수겠죠?",
+          "description": "세 문장 칠 거를 완벽한 스티커 하나가 다 표현하는데 왜 타이핑을 해? 넌 텍스트 커뮤니케이션의 한계를 넘어서 비주얼 시대로 진입한 사람이야. 스티커 컬렉션이 미술관 큐레이션 수준이고 공감도 비꼼도 신남도 실존적 허무도 글자 하나 안 치고 전달할 수 있어\n\n네 채팅 기록은 콜라주야. 남들이 문단을 쓸 때 넌 말보다 정확한 리액션 이미지를 보내지. 모든 감정 상태에 맞는 스티커가 있어 — 가벼운 짜증용 고양이밈 특정 웃음용 움짤 약속 취소됐을 때 속으로 안도하는 그 느낌용 니치 스티커까지. 스티커를 장식으로 쓰는 게 아니라 스티커가 곧 네 언어야. 이미지랑 이모지만으로 의미 있는 대화를 한 적 있을 거야\n\n이 비주얼 소통 방식에 진짜 강점이 있어. 텐션을 누구보다 잘 풀어. 말로 하면 더 어색해질 상황을 적절한 타이밍의 스티커가 해결하거든. 순간적으로 따뜻함을 만들어내고 너랑 대화하면 주제가 무거워도 분위기가 가벼워. 진지한 말을 재밌는 포장으로 하는 기술을 마스터한 거지\n\n한계는 깊이가 필요할 때 나와. 어떤 대화는 진짜 말이 필요해 — 친구가 이별했을 때나 심각한 오해가 있을 때나 상대가 네 진심을 말로 듣고 싶은 순간에 하트 안고 있는 만화 곰으로는 안 돼. 스티커가 공간을 채우지만 때로는 진짜 말이 도착할 때까지 공간을 비워둬야 해\n\n스티커 하나에 천 마디를 담아",
           "tags": [
             "이모티콘",
             "감성적",
@@ -978,7 +978,7 @@
       "locale_data": {
         "en": {
           "title": "Why Type When I Can Talk",
-          "description": "Why type when you can talk? Texts feel impersonal to you — hearing someone's voice is where real connection happens. Old soul energy.",
+          "description": "Your thumbs are perfectly functional, but your voice is faster, richer, and honestly just better at carrying what you actually mean. While the rest of the world is crafting carefully worded texts, you're sending voice notes that capture tone, laughter, pauses, and the exact way you sigh when you're pretending to be annoyed but actually find something hilarious.\n\nYou're the person whose voice messages routinely exceed two minutes, who calls when a text chain gets too long, and who has genuinely wondered why anyone would type \"hahaha\" when they could just actually laugh. For you, communication isn't just about transferring information — it's about transferring energy. A text that says \"I miss you\" is fine. Your voice saying it? That hits completely different, and you know it.\n\nThis is your superpower in relationships. You create intimacy through sound in a way that text never replicates. People feel closer to you after a voice note than after twenty text exchanges because they're hearing YOU — your rhythm, your warmth, the way your voice drops when you're being serious. In a digital world that strips communication down to characters, you put the human back in.\n\nThe blind spot: your preference can feel like an imposition. Not everyone wants to listen to a three-minute voice note while they're on the subway or in a meeting. Some people genuinely process better through text. When you default to voice regardless of context, it can feel like you're choosing your comfort over theirs. Meeting people in their preferred medium isn't a compromise — it's the same emotional intelligence that makes your voice notes so good in the first place.\n\nHear me out — literally.",
           "tags": [
             "analog",
             "personal",
@@ -988,7 +988,7 @@
         },
         "ko": {
           "title": "타이핑보다 목소리",
-          "description": "카톡보다 목소리가 더 편한 타입이에요. 텍스트로 감정 전달이 어렵다고 느껴요. 아날로그 감성의 소유자로 통화 한 번에 오해가 다 풀리는 스타일이에요.",
+          "description": "손가락은 잘 작동하는데 목소리가 더 빠르고 더 풍부하고 솔직히 네가 진짜 뜻하는 바를 더 잘 전달해. 세상이 신중하게 텍스트를 고르는 동안 넌 톤이랑 웃음이랑 짜증난 척하면서 사실 웃기다고 느끼는 그 한숨까지 다 담긴 음성메시지를 보내고 있어\n\n넌 음성메시지가 정기적으로 2분을 넘기고 텍스트가 길어지면 전화로 전환하고 \"ㅋㅋㅋ\"를 왜 치냐 그냥 웃으면 되지 하고 진지하게 의문을 가져본 적 있는 사람이야. 너한테 소통은 정보 전달이 아니라 에너지 전달이야. \"보고 싶어\" 문자도 괜찮은데 네 목소리로 말하면? 차원이 달라 그리고 넌 그걸 알아\n\n이게 관계에서 네 초능력이야. 소리로 친밀감을 만들어내는데 그건 텍스트가 절대 못 따라 해. 문자 스무 번보다 음성메시지 한 번 듣고 나서 사람들이 너를 더 가깝게 느껴. 네 리듬 네 따뜻함 진지해질 때 목소리 톤이 내려가는 그 느낌을 직접 듣고 있으니까. 소통을 글자로 줄여버리는 디지털 세상에서 넌 거기에 사람을 다시 넣는 거야\n\n조심할 건 네 선호가 상대에겐 부담이 될 수 있다는 거야. 지하철에서나 회의 중에 3분짜리 음성메시지 듣고 싶은 사람이 다는 아니야. 진짜 텍스트로 더 잘 소화하는 사람도 있어. 상황 상관없이 음성으로만 가면 네 편의를 선택한 거지 상대 배려가 아니야. 상대의 선호 매체에 맞춰주는 것도 네 음성메시지를 특별하게 만드는 감성 지능의 일부야\n\n들어봐 — 진짜로",
           "tags": [
             "통화선호",
             "감성적",

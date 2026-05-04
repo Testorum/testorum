@@ -964,7 +964,7 @@
       "locale_data": {
         "en": {
           "title": "My Balance Is My Pride",
-          "description": "Your savings account is your pride and joy. Every purchase goes through a mental cost-benefit analysis. Financially safe? Absolutely. Might miss out on some joy? Also yes.",
+          "description": "There's a specific feeling you get when you check your bank balance and the number is higher than last month — a quiet, private satisfaction that hits harder than any purchase ever could. You don't save because you're scared of spending. You save because that growing number represents something money can't buy: security, options, and the freedom to never be trapped by circumstances.\n\nYour spending habits have a filter that most people lack. Before you buy something, a mental calculator runs: do I need this, what's the cost-per-use, will I regret this in a week, is there a cheaper version that works just as well? You compare prices across three stores, wait for sales on things others buy impulsively, and genuinely enjoy the feeling of walking out of a store having bought nothing. Your cart abandonment rate is probably legendary.\n\nThis discipline gives you something rare — genuine financial peace. While others live paycheck to paycheck surrounded by things they bought to feel better, you have a cushion that lets you sleep at night. You can quit a bad job, handle an emergency, or take an opportunity because you have the runway. That's not stinginess. That's power.\n\nThe thing to examine: saving can become hoarding if the number in your account starts mattering more than what it can do for your life. If you can't enjoy a meal without calculating the markup, if every purchase triggers guilt, if you'd rather have money in the bank than memories in your head — the saving has stopped serving you and started controlling you. Money is a tool, and the best tools are the ones you actually use.\n\nMy savings speak louder than my spending.",
           "tags": [
             "frugal",
             "disciplined",
@@ -974,7 +974,7 @@
         },
         "ko": {
           "title": "통장 잔고가 곧 자존심",
-          "description": "통장 잔고가 곧 정신 건강인 타입! 모든 소비에 비용 대비 효율을 따져요. 재정적으로 안정적이지만 가끔은 자신에게 투자하는 것도 필요해요!",
+          "description": "통장 잔고 확인했는데 지난달보다 높을 때의 그 느낌 — 어떤 쇼핑보다 세게 오는 조용하고 개인적인 만족감. 쓰는 게 무서워서 모으는 게 아니야. 커지는 숫자가 돈으로 못 사는 것을 대표하니까 — 안전감 선택지 상황에 갇히지 않을 자유\n\n네 소비 습관에는 대부분한테 없는 필터가 있어. 뭔가 사기 전에 멘탈 계산기가 돌아가 — 이거 필요한가 사용당 비용이 얼마지 일주일 후에 후회할까 똑같이 되는 더 싼 버전 있나. 세 군데 비교하고 남들이 충동구매할 걸 세일 기다리고 아무것도 안 사고 매장 나올 때 진심으로 뿌듯해. 장바구니 이탈률이 전설적일 거야\n\n이 절제가 드문 걸 줘 — 진짜 재정적 평화. 남들이 기분 좋으려고 산 것들에 둘러싸여 월급날까지 버틸 때 넌 밤에 잘 수 있게 해주는 쿠션이 있어. 나쁜 직장 그만둘 수 있고 비상 상황 대응할 수 있고 기회를 잡을 수 있어 여유가 있으니까. 구두쇠가 아니야 파워야\n\n점검할 건 저축이 쌓기로 변할 수 있다는 거야 — 계좌의 숫자가 그 돈으로 할 수 있는 것보다 중요해지면. 밥 먹으면서 마진 계산 안 할 수 없거나 모든 구매가 죄책감을 일으키거나 기억보다 통장 잔고가 더 중요하다면 — 저축이 널 위해 봉사하는 걸 멈추고 널 통제하기 시작한 거야. 돈은 도구고 최고의 도구는 실제로 쓰는 거야\n\n잔고가 곧 자신감",
           "tags": [
             "절약형",
             "규율적",
@@ -996,7 +996,7 @@
       "locale_data": {
         "en": {
           "title": "Spend Now Worry Never",
-          "description": "Money is meant to be spent — on experiences, on things that bring joy, on living fully. Your Instagram looks amazing. Your savings account? Let's not talk about that.",
+          "description": "Money exists to be spent — that's not irresponsibility, it's philosophy. You work hard, you earn it, and you believe life is too short to drink bad coffee, wear uncomfortable shoes, or skip the experience because the price tag made you flinch. Tomorrow isn't promised, but tonight's dinner reservation is.\n\nYour relationship with money is visceral and immediate. You see something beautiful, useful, or exciting, and the gap between wanting it and owning it is measured in seconds, not deliberation cycles. You're the person who upgrades the hotel room because the view is worth it, who buys the round for the whole table, and who treats retail therapy as actual therapy — because sometimes a new purchase genuinely does make the day better. Your shopping cart has never once been abandoned.\n\nThe beauty of this approach: you accumulate experiences and pleasures that save-first people often miss entirely. You've eaten the meal, taken the trip, worn the outfit, and lived the story that cautious people only planned. Your life has texture and richness that comes from saying yes when the safe answer was no.\n\nThe reality check: spending without a floor eventually creates a floor — it's just much lower and much harder than the one you could've built intentionally. The credit card statement arrives the same way every month, whether or not the happiness from last week's purchase is still there. If spending is how you cope with stress, boredom, or sadness, then the purchases aren't treats — they're band-aids on a wound that money can't heal. Spend freely, but make sure you're spending from abundance, not from avoidance.\n\nMoney comes back — moments don't.",
           "tags": [
             "spontaneous",
             "experiential",
@@ -1006,7 +1006,7 @@
         },
         "ko": {
           "title": "쓸 때 쓰는 게 인생",
-          "description": "돈은 쓸 때 써야지! 경험과 즐거움에 투자하는 타입이에요. 인스타는 화려하지만 통장은... 일단 즐기고 보는 스타일이니까 저축 습관 조금만 들여봐요!",
+          "description": "돈은 쓰라고 있는 거야 — 무책임이 아니라 철학이야. 열심히 벌었고 인생은 안 좋은 커피 마시고 불편한 신발 신고 가격표 보고 주눅 들어서 경험을 놓치기엔 너무 짧아. 내일은 약속 못 하지만 오늘 저녁 예약은 돼 있어\n\n돈과의 관계가 즉각적이야. 예쁘거나 유용하거나 신나는 걸 보면 원하는 것과 소유하는 것 사이의 간격이 숙고가 아니라 초 단위야. 전망이 가치 있으니까 호텔 업그레이드하고 테이블 전체 한턱 내고 쇼핑 테라피를 실제 테라피로 여기는 사람이야 — 진짜로 새 물건이 하루를 낫게 만들 때가 있으니까. 장바구니를 이탈한 적이 단 한 번도 없어\n\n이 방식의 아름다움은 저축 우선 사람들이 아예 놓치는 경험과 즐거움을 쌓는다는 거야. 그 밥을 먹었고 그 여행을 갔고 그 옷을 입었고 신중한 사람들이 계획만 한 이야기를 살았어. 안전한 답이 아니오인 곳에서 예스를 말해서 생긴 질감과 풍부함이 네 삶에 있어\n\n현실 체크는 바닥 없이 쓰면 결국 바닥이 생긴다는 거야 — 의도적으로 만들 수 있었던 것보다 훨씬 낮고 딱딱한 바닥이. 카드 명세서는 지난주 구매의 행복이 남아있든 없든 매달 같은 방식으로 와. 쓰는 게 스트레스나 지루함이나 슬픔의 대처법이면 그 구매는 선물이 아니라 돈이 못 치유하는 상처의 반창고야. 자유롭게 써 근데 회피가 아니라 풍요에서 쓰고 있는지 확인해\n\n돈은 돌아와 — 순간은 안 돌아와",
           "tags": [
             "즉흥적",
             "경험 중시",
@@ -1028,7 +1028,7 @@
       "locale_data": {
         "en": {
           "title": "Make Money Work for Me",
-          "description": "You don't just save — you make money work for you. ROI is always on your mind. You might bore your friends talking about compound interest, but who'll retire first?",
+          "description": "You don't just earn money — you put it to work like an employee that never sleeps. Every dollar in your account has a job assignment: this one's in an index fund, that one's earning interest, the other one's waiting for a dip in something you've been watching. While most people think of money as something to have or spend, you think of it as something to multiply.\n\nYour financial life has a dashboard quality to it. You check your portfolio the way some people check social media — not obsessively, but with genuine interest in how the numbers are moving. You understand compound interest not as a textbook concept but as a personal religion. You've calculated what your savings will be worth in 20 years, and that number motivates you more than any luxury purchase could. You probably read financial news for fun, have opinions on interest rate decisions, and have explained dollar-cost averaging to at least three friends who didn't ask.\n\nThis mindset is powerful because it scales. You're building something that grows while you sleep — wealth that doesn't require you to trade hours for dollars indefinitely. Among your peers, you'll likely reach financial freedom earliest, not because you earned the most, but because you deployed what you earned the smartest.\n\nThe caution: when every decision is an investment calculation, you can lose the ability to simply enjoy money. Spending on a vacation feels like \"opportunity cost.\" Buying something beautiful feels wasteful when the money could be compounding. If your portfolio is growing but your life feels increasingly optimized and joyless, the math is technically right but the formula is wrong. Returns on investment matter — but so do returns on living.\n\nMy money doesn't sleep — and neither does my plan.",
           "tags": [
             "strategic",
             "analytical",
@@ -1038,7 +1038,7 @@
         },
         "ko": {
           "title": "돈이 일하게 만든다",
-          "description": "저축은 기본이고 돈이 돈을 벌게 하는 타입! 복리와 ROI가 입에 달고 사는 스타일이에요. 친구들이 지루해할 수 있지만 누가 먼저 은퇴할지는 뻔하죠?",
+          "description": "넌 돈을 버는 게 아니라 절대 안 자는 직원처럼 일을 시켜. 계좌의 모든 돈에 업무가 할당돼 있어 — 이건 인덱스 펀드에 저건 이자를 벌고 있고 나머지는 주시 중인 것의 하락을 기다리고 있지. 대부분이 돈을 가지거나 쓰는 것으로 생각할 때 넌 불리는 것으로 생각해\n\n네 재무 생활은 대시보드 느낌이야. 포트폴리오를 남들이 SNS 보듯 확인해 — 강박은 아닌데 숫자가 어떻게 움직이는지 진짜 흥미가 있어. 복리를 교과서 개념이 아니라 개인 종교로 이해하고 있지. 20년 후 저축이 얼마가 되는지 계산해봤고 그 숫자가 어떤 명품보다 동기 부여가 돼. 아마 재미로 금융 뉴스 읽고 금리 결정에 의견 있고 안 물어본 친구 최소 세 명한테 적립식 투자를 설명한 적 있을 거야\n\n이 마인드셋이 강력한 건 확장되기 때문이야. 네가 자는 동안 자라는 걸 짓고 있어 — 영원히 시간을 돈으로 바꿀 필요 없는 부. 또래 중에 재정적 자유에 가장 먼저 도달할 텐데 가장 많이 벌어서가 아니라 번 걸 가장 똑똑하게 배치했기 때문이야\n\n주의할 건 모든 결정이 투자 계산이 되면 돈을 단순히 즐기는 능력을 잃을 수 있다는 거야. 휴가가 \"기회비용\"이 되고 예쁜 걸 사는 게 복리 돌릴 수 있는데 낭비처럼 느껴져. 포트폴리오는 자라는데 삶은 점점 최적화되고 기쁨이 없어지면 수학은 맞는데 공식이 틀린 거야. 투자 수익도 중요한데 삶의 수익도 중요해\n\n내 돈은 안 자 — 내 계획도 안 자",
           "tags": [
             "전략적",
             "분석형",
@@ -1060,7 +1060,7 @@
       "locale_data": {
         "en": {
           "title": "My Money Goes to You",
-          "description": "Your love language is gift-giving and picking up the check. Making others happy with money brings you more joy than spending on yourself. Just don't go broke being kind.",
+          "description": "The best thing about having money, in your world, is watching someone else enjoy it. You're the person who picks up the bill before anyone reaches for it, who sends surprise gifts \"just because,\" and who genuinely experiences more pleasure buying something for someone else than buying it for yourself. Generosity isn't a performance for you — it's a reflex.\n\nYour spending patterns tell a story about your values. You don't buy things to impress people; you buy things for people because seeing their reaction gives you a specific kind of joy that self-spending can't replicate. You remember offhand comments — \"I've always wanted to try that restaurant,\" \"that jacket is nice\" — and quietly file them for later. Your gift-giving isn't generic. It's precise, personal, and often arrives at exactly the moment someone needed to feel valued.\n\nThis generosity creates bonds that money alone can't buy. The people in your life feel genuinely cared for in a tangible way. You express love through resource-sharing in a world that mostly hoards, and that creates a circle of reciprocity and goodwill that enriches your life far beyond any dollar amount.\n\nThe risk: generosity without boundaries becomes depletion. If you're always the one who pays, you attract people who expect you to pay — and the relationship becomes transactional in exactly the way you were trying to avoid. There's also a version of this where giving is easier than receiving, where you'd rather be the generous one than the vulnerable one who admits they need something. Make sure your generosity flows from fullness, not from a need to be needed.\n\nSeeing you smile costs me nothing — even when it costs me everything.",
           "tags": [
             "generous",
             "warm",
@@ -1070,7 +1070,7 @@
         },
         "ko": {
           "title": "쓸 땐 남한테 쓴다",
-          "description": "사랑 표현 = 선물 & 밥 사주기인 타입! 남에게 쓸 때가 가장 행복해요. 따뜻한 성격이지만 나를 위한 소비도 잊지 말고 챙기세요!",
+          "description": "네 세계에서 돈이 있는 것의 가장 좋은 점은 다른 사람이 그걸 즐기는 걸 보는 거야. 아무도 손 뻗기 전에 계산서 잡고 \"그냥\"이라며 깜짝 선물 보내고 자기한테 사는 것보다 남한테 사는 게 진심으로 더 즐거운 사람이야. 관대함이 퍼포먼스가 아니라 반사야\n\n네 소비 패턴이 가치관을 말해줘. 사람들한테 인상 주려고 사는 게 아니라 상대 반응을 보는 데서 자기 소비로는 복제 불가능한 특정 기쁨을 얻으니까 사람들을 위해 사는 거야. 한마디를 기억해 — \"저 식당 가보고 싶었는데\" \"저 자켓 괜찮다\" — 조용히 저장해뒀다가 나중에 써. 네 선물은 뻔하지 않아. 정확하고 개인적이고 대부분 상대가 가치 있다고 느낄 필요가 있던 딱 그 순간에 도착해\n\n이 관대함이 돈으로 못 사는 유대를 만들어. 네 주변 사람들이 실체적으로 케어받는다고 느껴. 대부분이 쌓아놓는 세상에서 자원을 나눔으로 사랑을 표현하고 그게 어떤 금액도 넘어서는 호혜와 선의의 순환을 만들어\n\n위험은 경계 없는 관대함이 고갈이 된다는 거야. 항상 네가 내면 네가 내길 기대하는 사람을 끌어당기고 관계가 네가 피하려던 바로 그 거래적인 것이 돼. 주는 게 받는 것보다 쉬운 버전도 있어 — 뭔가 필요하다고 인정하는 취약한 쪽보다 관대한 쪽이 되고 싶은 거. 관대함이 충만에서 나오는지 필요받고 싶은 필요에서 나오는지 확인해\n\n네 웃음이 내겐 공짜야 — 얼마가 들어도",
           "tags": [
             "관대함",
             "따뜻함",
@@ -1092,7 +1092,7 @@
       "locale_data": {
         "en": {
           "title": "Fair and Square Always",
-          "description": "Fairness is your financial philosophy. You believe in equal shares and balanced give-and-take. No freeloaders on your watch — but sometimes spontaneity beats spreadsheets.",
+          "description": "You believe that money should never complicate relationships — and the best way to ensure that is to keep things clean, clear, and perfectly balanced. You split the bill not because you're cheap but because you've seen what uneven financial dynamics do to friendships and partnerships. Clarity is kindness, and you practice it religiously.\n\nYour approach to shared expenses is almost algorithmic in its precision. You use payment splitting apps. You remember who paid last time. You calculate tips to the cent and divide group dinners by exactly what each person ordered. When someone says \"don't worry about it,\" you worry about it — because accepting generosity you haven't reciprocated feels like carrying an invisible debt, and invisible debts ruin things.\n\nThe strength of this is real: nobody ever resents you over money. Your friendships are free from the silent scorekeeping that poisons so many relationships. Everything is transparent, everything is fair, and nobody wakes up feeling taken advantage of. In a world where money drama ends friendships, yours survive because you removed the drama.\n\nThe limitation: fairness taken to the extreme can feel transactional. When you Venmo request your partner for half a coffee, or insist on splitting a birthday dinner to the cent, the message landing isn't \"I value fairness\" — it's \"I'm keeping score.\" There's a difference between being equitable and being rigid, and the people closest to you might wish you'd occasionally let the math be a little messy. Sometimes the most generous thing you can do is let someone else be generous without immediately balancing the ledger.\n\nFair isn't cold — it's how I care.",
           "tags": [
             "fair",
             "balanced",
@@ -1102,7 +1102,7 @@
         },
         "ko": {
           "title": "공평하게 가자 우리",
-          "description": "공정한 정산이 곧 건강한 관계라고 믿는 타입! 기브 앤 테이크의 균형을 중시해요. 합리적이지만 가끔은 계산 없이 베푸는 것도 관계의 윤활유예요!",
+          "description": "넌 돈이 관계를 복잡하게 만들면 안 된다고 믿고 그걸 보장하는 최고의 방법은 깔끔하고 명확하고 완벽하게 균형 잡는 거라고 생각해. 더치페이 하는 게 인색해서가 아니라 불균형한 재정 관계가 우정과 파트너십에 뭘 하는지 봤기 때문이야. 명확함이 친절이고 넌 그걸 종교적으로 실천해\n\n공동 비용에 대한 접근이 거의 알고리즘적으로 정밀해. 정산 앱 쓰고 지난번 누가 냈는지 기억하고 팁을 원 단위까지 계산하고 단체 식사를 각자 시킨 것 정확히로 나눠. 누가 \"신경 쓰지 마\"라고 하면 신경 쓰여 — 갚지 않은 관대함을 받으면 보이지 않는 빚을 지는 느낌이고 보이지 않는 빚이 관계를 망치거든\n\n이것의 강점은 확실해 — 아무도 돈 때문에 널 원망하지 않아. 우정이 많은 관계를 좀먹는 무언의 점수 매기기에서 자유로워. 모든 게 투명하고 공정하고 아무도 이용당한 느낌으로 일어나지 않아. 돈 문제가 우정을 끝내는 세상에서 네 것은 살아남아 — 드라마를 제거했으니까\n\n한계는 공정함이 극단으로 가면 거래적으로 느껴질 수 있다는 거야. 파트너한테 커피 반값을 송금 요청하거나 생일 회식을 원 단위까지 나누자고 고집하면 전달되는 메시지가 \"공정함을 중시해\"가 아니라 \"점수 매기고 있어\"야. 공평한 것과 경직된 건 다르고 가까운 사람들은 가끔 수학이 좀 어수선해도 괜찮으면 하고 바랄 수 있어. 때로는 가장 관대한 행동이 상대가 관대할 수 있게 해주고 즉시 장부를 맞추지 않는 거야\n\n공평한 게 차가운 게 아니야 — 내가 챙기는 방식이야",
           "tags": [
             "공정함",
             "균형감",

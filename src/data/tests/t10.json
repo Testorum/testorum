@@ -26,66 +26,126 @@
   },
   "scoring": {
     "type": "tpm",
-    "axes": ["drive", "process", "compass"]
+    "axes": [
+      "drive",
+      "process",
+      "compass"
+    ]
   },
   "questions": [
     {
       "id": 1,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "A friend suddenly goes quiet\nin the group chat. You..." },
-        "ko": { "text": "친구가 갑자기\n단톡에서 조용해졌다" }
+        "en": {
+          "text": "A friend suddenly goes quiet\nin the group chat. You..."
+        },
+        "ko": {
+          "text": "친구가 갑자기\n단톡에서 조용해졌다"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "I'd think about why — did something happen recently that might explain it?" },
-            "ko": { "text": "최근에 무슨 일 있었나 원인을 먼저 생각해본다" }
+            "en": {
+              "text": "I'd think about why — did something happen recently that might explain it?"
+            },
+            "ko": {
+              "text": "최근에 무슨 일 있었나 원인을 먼저 생각해본다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 2 },
-            "compass": { "direction": "self", "weight": 1 },
-            "drive": { "direction": "observe", "weight": 1 }
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            }
           },
           "rationale": "Causal reasoning before action (Prism) + independent analytical stance (Self) + waiting to understand (Observe)"
         },
         {
           "locale_data": {
-            "en": { "text": "I'd feel something's off right away and DM them to check in" },
-            "ko": { "text": "뭔가 느낌이 와서 바로 개인 메시지로 안부를 묻는다" }
+            "en": {
+              "text": "I'd feel something's off right away and DM them to check in"
+            },
+            "ko": {
+              "text": "뭔가 느낌이 와서 바로 개인 메시지로 안부를 묻는다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 2 },
-            "compass": { "direction": "bond", "weight": 1 },
-            "drive": { "direction": "ignite", "weight": 1 }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            }
           },
           "rationale": "Intuitive emotional detection (Pulse) + other-oriented care (Bond) + immediate outreach (Ignite)"
         },
         {
           "locale_data": {
-            "en": { "text": "I'd give them space — sometimes people just need to step back for a bit" },
-            "ko": { "text": "가끔은 혼자 있고 싶을 때가 있으니까 공간을 준다" }
+            "en": {
+              "text": "I'd give them space — sometimes people just need to step back for a bit"
+            },
+            "ko": {
+              "text": "가끔은 혼자 있고 싶을 때가 있으니까 공간을 준다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 1 },
-            "compass": { "direction": "bond", "weight": 2 },
-            "drive": { "direction": "observe", "weight": 1 }
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            }
           },
           "rationale": "Reasoned restraint (Prism) + other's needs prioritized over own curiosity (Bond) + patient non-intervention (Observe)"
         },
         {
           "locale_data": {
-            "en": { "text": "I'd just drop a message in the group — 'yo where'd you go? miss you'" },
-            "ko": { "text": "단톡에 '야 어디 간 거야 보고 싶다' 그냥 툭 던진다" }
+            "en": {
+              "text": "I'd just drop a message in the group — 'yo where'd you go? miss you'"
+            },
+            "ko": {
+              "text": "단톡에 '야 어디 간 거야 보고 싶다' 그냥 툭 던진다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 1 },
-            "compass": { "direction": "self", "weight": 1 },
-            "drive": { "direction": "ignite", "weight": 2 }
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            }
           },
           "rationale": "Spontaneous emotional expression (Pulse) + authentic self-expression style (Self) + immediate action (Ignite)"
         }
@@ -95,59 +155,115 @@
       "id": 2,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "Someone is telling you about\ntheir terrible day. You..." },
-        "ko": { "text": "누군가 최악의 하루에 대해\n얘기하고 있다" }
+        "en": {
+          "text": "Someone is telling you about\ntheir terrible day. You..."
+        },
+        "ko": {
+          "text": "누군가 최악의 하루에 대해\n얘기하고 있다"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "I'd help them put words to it — 'sounds like you're more disappointed than angry'" },
-            "ko": { "text": "'화난 거보다 실망한 거 아닌가' 감정에 이름을 붙여준다" }
+            "en": {
+              "text": "I'd help them put words to it — 'sounds like you're more disappointed than angry'"
+            },
+            "ko": {
+              "text": "'화난 거보다 실망한 거 아닌가' 감정에 이름을 붙여준다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 2 },
-            "compass": { "direction": "bond", "weight": 1 },
-            "drive": { "direction": "ignite", "weight": 1 }
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            }
           },
           "rationale": "Emotion-labeling skill (Prism) + directed at other's clarity (Bond) + active verbal intervention (Ignite)"
         },
         {
           "locale_data": {
-            "en": { "text": "I'd pick up on the vibe before they even finish — sometimes I just know" },
-            "ko": { "text": "말 다 안 해도 분위기로 느껴진다 — 그냥 아는 거" }
+            "en": {
+              "text": "I'd pick up on the vibe before they even finish — sometimes I just know"
+            },
+            "ko": {
+              "text": "말 다 안 해도 분위기로 느껴진다 — 그냥 아는 거"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 2 },
-            "compass": { "direction": "bond", "weight": 1 },
-            "drive": { "direction": "observe", "weight": 1 }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            }
           },
           "rationale": "Pre-verbal emotional attunement (Pulse) + attuned to other's state (Bond) + receptive listening (Observe)"
         },
         {
           "locale_data": {
-            "en": { "text": "I'd hold back my own reaction and focus on being a steady presence for them" },
-            "ko": { "text": "내 반응은 참고 그 사람한테 안정적인 존재가 되는 데 집중한다" }
+            "en": {
+              "text": "I'd hold back my own reaction and focus on being a steady presence for them"
+            },
+            "ko": {
+              "text": "내 반응은 참고 그 사람한테 안정적인 존재가 되는 데 집중한다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 1 },
-            "compass": { "direction": "bond", "weight": 2 },
-            "drive": { "direction": "observe", "weight": 1 }
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            }
           },
           "rationale": "Self-regulation over expression (Prism) + other-serving emotional labor (Bond) + contained supportive presence (Observe)"
         },
         {
           "locale_data": {
-            "en": { "text": "I'd jump right in — 'NO WAY that happened!' or 'I'd be SO mad'" },
-            "ko": { "text": "'진짜?! 그런 일이?!' 하면서 바로 같이 반응한다" }
+            "en": {
+              "text": "I'd jump right in — 'NO WAY that happened!' or 'I'd be SO mad'"
+            },
+            "ko": {
+              "text": "'진짜?! 그런 일이?!' 하면서 바로 같이 반응한다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 2 },
-            "compass": { "direction": "self", "weight": 1 },
-            "drive": { "direction": "ignite", "weight": 1 }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            }
           },
           "rationale": "Spontaneous emotional mirroring (Pulse) + authentic self-expression (Self) + immediate verbal engagement (Ignite)"
         }
@@ -157,59 +273,115 @@
       "id": 3,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "They say 'I'm fine' but\nyou can tell something's wrong" },
-        "ko": { "text": "'괜찮아'라고 하는데\n뭔가 아닌 게 느껴진다" }
+        "en": {
+          "text": "They say 'I'm fine' but\nyou can tell something's wrong"
+        },
+        "ko": {
+          "text": "'괜찮아'라고 하는데\n뭔가 아닌 게 느껴진다"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "I'd gently probe — 'you seem quieter than usual, is it work or something else?'" },
-            "ko": { "text": "'평소보다 조용한데 회사 일이야 다른 거야?' 구체적으로 물어본다" }
+            "en": {
+              "text": "I'd gently probe — 'you seem quieter than usual, is it work or something else?'"
+            },
+            "ko": {
+              "text": "'평소보다 조용한데 회사 일이야 다른 거야?' 구체적으로 물어본다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 2 },
-            "compass": { "direction": "bond", "weight": 1 },
-            "drive": { "direction": "ignite", "weight": 1 }
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            }
           },
           "rationale": "Specific diagnostic questioning (Prism) + care-motivated probing (Bond) + active inquiry (Ignite)"
         },
         {
           "locale_data": {
-            "en": { "text": "I'd sense it in their eyes and voice — the words don't match the energy" },
-            "ko": { "text": "눈이랑 목소리에서 바로 느낀다 — 말이랑 에너지가 안 맞잖아" }
+            "en": {
+              "text": "I'd sense it in their eyes and voice — the words don't match the energy"
+            },
+            "ko": {
+              "text": "눈이랑 목소리에서 바로 느낀다 — 말이랑 에너지가 안 맞잖아"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 2 },
-            "compass": { "direction": "bond", "weight": 1 },
-            "drive": { "direction": "observe", "weight": 1 }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            }
           },
           "rationale": "Non-verbal cue reading (Pulse) + other-attuned perception (Bond) + observation without intervention (Observe)"
         },
         {
           "locale_data": {
-            "en": { "text": "I'd let it go for now but create a comfortable moment later where they might open up" },
-            "ko": { "text": "지금은 넘어가고 나중에 편한 타이밍에 자연스럽게 열리게 한다" }
+            "en": {
+              "text": "I'd let it go for now but create a comfortable moment later where they might open up"
+            },
+            "ko": {
+              "text": "지금은 넘어가고 나중에 편한 타이밍에 자연스럽게 열리게 한다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 1 },
-            "compass": { "direction": "bond", "weight": 2 },
-            "drive": { "direction": "observe", "weight": 1 }
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            }
           },
           "rationale": "Strategic timing (Prism) + environment-crafting for other (Bond) + patient waiting (Observe)"
         },
         {
           "locale_data": {
-            "en": { "text": "I'd call it out — 'you're clearly NOT fine, just say it'" },
-            "ko": { "text": "'아니 확실히 괜찮은 거 아니잖아 그냥 말해' 직접 찌른다" }
+            "en": {
+              "text": "I'd call it out — 'you're clearly NOT fine, just say it'"
+            },
+            "ko": {
+              "text": "'아니 확실히 괜찮은 거 아니잖아 그냥 말해' 직접 찌른다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 1 },
-            "compass": { "direction": "self", "weight": 1 },
-            "drive": { "direction": "ignite", "weight": 2 }
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            }
           },
           "rationale": "Gut-driven confrontation (Pulse) + direct authentic style (Self) + immediate action to break pretense (Ignite)"
         }
@@ -219,58 +391,111 @@
       "id": 4,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "When you're feeling angry,\nwhat's your usual process?" },
-        "ko": { "text": "화가 날 때\n보통 어떻게 하는 편이야?" }
+        "en": {
+          "text": "When you're feeling angry,\nwhat's your usual process?"
+        },
+        "ko": {
+          "text": "화가 날 때\n보통 어떻게 하는 편이야?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "I trace back — what exactly triggered this? Is it anger or actually fear or hurt?" },
-            "ko": { "text": "뭐가 정확히 촉발했는지 찾는다 — 진짜 화인지 아니면 두려움인지 상처인지" }
+            "en": {
+              "text": "I trace back — what exactly triggered this? Is it anger or actually fear or hurt?"
+            },
+            "ko": {
+              "text": "뭐가 정확히 촉발했는지 찾는다 — 진짜 화인지 아니면 두려움인지 상처인지"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 2 },
-            "compass": { "direction": "self", "weight": 2 }
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
           },
           "rationale": "Root-cause emotional analysis (Prism) + deep self-examination (Self)"
         },
         {
           "locale_data": {
-            "en": { "text": "I check if it's even mine — sometimes I pick up tension from people around me" },
-            "ko": { "text": "내 감정인지 확인한다 — 가끔 주변 사람의 긴장감이 옮아온 거일 때가 있어서" }
+            "en": {
+              "text": "I check if it's even mine — sometimes I pick up tension from people around me"
+            },
+            "ko": {
+              "text": "내 감정인지 확인한다 — 가끔 주변 사람의 긴장감이 옮아온 거일 때가 있어서"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 2 },
-            "compass": { "direction": "bond", "weight": 1 },
-            "drive": { "direction": "observe", "weight": 1 }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            }
           },
           "rationale": "Emotional absorption awareness (Pulse) + other-originated emotion check (Bond) + reflective self-scan (Observe)"
         },
         {
           "locale_data": {
-            "en": { "text": "I take a breath and give myself time — I deal with it once the heat passes" },
-            "ko": { "text": "일단 숨 쉬고 시간을 둔다 — 열기가 지나간 다음에 처리한다" }
+            "en": {
+              "text": "I take a breath and give myself time — I deal with it once the heat passes"
+            },
+            "ko": {
+              "text": "일단 숨 쉬고 시간을 둔다 — 열기가 지나간 다음에 처리한다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 1 },
-            "compass": { "direction": "self", "weight": 1 },
-            "drive": { "direction": "observe", "weight": 2 }
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            }
           },
           "rationale": "Deliberate cool-down strategy (Prism) + self-management (Self) + controlled delay (Observe)"
         },
         {
           "locale_data": {
-            "en": { "text": "I let it out — rant to a friend, blast music, or just say what's on my mind" },
-            "ko": { "text": "어떻게든 내보낸다 — 친구한테 풀거나 음악 틀거나 그냥 할 말 한다" }
+            "en": {
+              "text": "I let it out — rant to a friend, blast music, or just say what's on my mind"
+            },
+            "ko": {
+              "text": "어떻게든 내보낸다 — 친구한테 풀거나 음악 틀거나 그냥 할 말 한다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 2 },
-            "compass": { "direction": "self", "weight": 1 },
-            "drive": { "direction": "ignite", "weight": 1 }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            }
           },
           "rationale": "Emotion-out processing (Pulse) + authentic self-expression (Self) + immediate release (Ignite)"
         }
@@ -280,57 +505,107 @@
       "id": 5,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "Watching a really sad movie.\nWhat happens to you?" },
-        "ko": { "text": "진짜 슬픈 영화를 보고 있다\n어떻게 되는 편이야?" }
+        "en": {
+          "text": "Watching a really sad movie.\nWhat happens to you?"
+        },
+        "ko": {
+          "text": "진짜 슬픈 영화를 보고 있다\n어떻게 되는 편이야?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "I notice exactly when the emotion hits — was it the dialogue? the music? the character's choice?" },
-            "ko": { "text": "정확히 어느 순간 감정이 오는지 알아챈다 — 대사 때문? 음악? 캐릭터의 선택?" }
+            "en": {
+              "text": "I notice exactly when the emotion hits — was it the dialogue? the music? the character's choice?"
+            },
+            "ko": {
+              "text": "정확히 어느 순간 감정이 오는지 알아챈다 — 대사 때문? 음악? 캐릭터의 선택?"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 2 },
-            "compass": { "direction": "self", "weight": 2 }
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
           },
           "rationale": "Meta-cognitive emotional analysis (Prism) + self-awareness of internal triggers (Self)"
         },
         {
           "locale_data": {
-            "en": { "text": "I feel what the characters feel so deeply that it stays with me for hours" },
-            "ko": { "text": "캐릭터 감정이 그대로 전해져서 영화 끝나고도 몇 시간 동안 남아있다" }
+            "en": {
+              "text": "I feel what the characters feel so deeply that it stays with me for hours"
+            },
+            "ko": {
+              "text": "캐릭터 감정이 그대로 전해져서 영화 끝나고도 몇 시간 동안 남아있다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 2 },
-            "compass": { "direction": "bond", "weight": 2 }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
           },
           "rationale": "Deep emotional absorption (Pulse) + character-merging empathy (Bond)"
         },
         {
           "locale_data": {
-            "en": { "text": "I feel it coming but I can choose whether to let it out or hold it together" },
-            "ko": { "text": "감정이 올라오는 걸 느끼지만 표현할지 참을지 내가 고른다" }
+            "en": {
+              "text": "I feel it coming but I can choose whether to let it out or hold it together"
+            },
+            "ko": {
+              "text": "감정이 올라오는 걸 느끼지만 표현할지 참을지 내가 고른다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 2 },
-            "compass": { "direction": "bond", "weight": 1 },
-            "drive": { "direction": "observe", "weight": 1 }
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            }
           },
           "rationale": "Emotion-regulation choice (Prism) + social context awareness (Bond) + controlled response (Observe)"
         },
         {
           "locale_data": {
-            "en": { "text": "I cry without holding back — if I feel it, I feel it, no filter" },
-            "ko": { "text": "참지 않고 울어버린다 — 느끼면 느끼는 거지 필터가 없음" }
+            "en": {
+              "text": "I cry without holding back — if I feel it, I feel it, no filter"
+            },
+            "ko": {
+              "text": "참지 않고 울어버린다 — 느끼면 느끼는 거지 필터가 없음"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 2 },
-            "compass": { "direction": "self", "weight": 1 },
-            "drive": { "direction": "ignite", "weight": 1 }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            }
           },
           "rationale": "Unfiltered emotional flow (Pulse) + authentic self-expression (Self) + immediate release without restraint (Ignite)"
         }
@@ -340,58 +615,111 @@
       "id": 6,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "A coworker takes credit\nfor your idea. You..." },
-        "ko": { "text": "동료가 네 아이디어를\n자기 거라고 한다" }
+        "en": {
+          "text": "A coworker takes credit\nfor your idea. You..."
+        },
+        "ko": {
+          "text": "동료가 네 아이디어를\n자기 거라고 한다"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "I'd separate the emotions — there's injustice, frustration, and ego. Each needs different handling" },
-            "ko": { "text": "감정을 분리한다 — 부당함 짜증 자존심 각각 다르게 다뤄야 하니까" }
+            "en": {
+              "text": "I'd separate the emotions — there's injustice, frustration, and ego. Each needs different handling"
+            },
+            "ko": {
+              "text": "감정을 분리한다 — 부당함 짜증 자존심 각각 다르게 다뤄야 하니까"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 2 },
-            "compass": { "direction": "self", "weight": 2 }
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
           },
           "rationale": "Emotion differentiation and labeling (Prism) + introspective self-processing (Self)"
         },
         {
           "locale_data": {
-            "en": { "text": "I'd read the room — did others notice? That tells me more than confronting right now" },
-            "ko": { "text": "주변 반응을 읽는다 — 다른 사람들도 눈치챘나? 그게 지금 따지는 것보다 정보가 많다" }
+            "en": {
+              "text": "I'd read the room — did others notice? That tells me more than confronting right now"
+            },
+            "ko": {
+              "text": "주변 반응을 읽는다 — 다른 사람들도 눈치챘나? 그게 지금 따지는 것보다 정보가 많다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 1 },
-            "compass": { "direction": "bond", "weight": 1 },
-            "drive": { "direction": "observe", "weight": 2 }
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            }
           },
           "rationale": "Social atmosphere reading (Pulse) + collective awareness scan (Bond) + strategic observation (Observe)"
         },
         {
           "locale_data": {
-            "en": { "text": "I'd feel the frustration but wait for a strategic moment to set the record straight" },
-            "ko": { "text": "짜증나지만 기록을 바로잡을 전략적 타이밍을 기다린다" }
+            "en": {
+              "text": "I'd feel the frustration but wait for a strategic moment to set the record straight"
+            },
+            "ko": {
+              "text": "짜증나지만 기록을 바로잡을 전략적 타이밍을 기다린다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 1 },
-            "compass": { "direction": "self", "weight": 1 },
-            "drive": { "direction": "observe", "weight": 2 }
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            }
           },
           "rationale": "Strategic restraint (Prism) + self-interest protection (Self) + timing-conscious delay (Observe)"
         },
         {
           "locale_data": {
-            "en": { "text": "I'd speak up right then — 'actually that was my idea, glad you liked it though'" },
-            "ko": { "text": "'아 그거 내 아이디어인데 마음에 들었나 보다' 그 자리에서 말한다" }
+            "en": {
+              "text": "I'd speak up right then — 'actually that was my idea, glad you liked it though'"
+            },
+            "ko": {
+              "text": "'아 그거 내 아이디어인데 마음에 들었나 보다' 그 자리에서 말한다"
+            }
           },
           "emoji": null,
           "scores": {
-            "drive": { "direction": "ignite", "weight": 2 },
-            "process": { "direction": "pulse", "weight": 1 },
-            "compass": { "direction": "self", "weight": 1 }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
           },
           "rationale": "Immediate verbal action (Ignite) + instinctive claim response (Pulse) + self-advocacy (Self)"
         }
@@ -401,58 +729,111 @@
       "id": 7,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "After a tough conversation,\nwhat do you usually do?" },
-        "ko": { "text": "힘든 대화가 끝난 후\n보통 어떻게 하는 편이야?" }
+        "en": {
+          "text": "After a tough conversation,\nwhat do you usually do?"
+        },
+        "ko": {
+          "text": "힘든 대화가 끝난 후\n보통 어떻게 하는 편이야?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "I replay it analytically — what did I actually feel, and what were they really saying?" },
-            "ko": { "text": "분석적으로 복기한다 — 내가 실제로 느낀 건 뭐고 상대가 진짜 한 말은 뭔지" }
+            "en": {
+              "text": "I replay it analytically — what did I actually feel, and what were they really saying?"
+            },
+            "ko": {
+              "text": "분석적으로 복기한다 — 내가 실제로 느낀 건 뭐고 상대가 진짜 한 말은 뭔지"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 2 },
-            "compass": { "direction": "self", "weight": 1 },
-            "drive": { "direction": "observe", "weight": 1 }
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            }
           },
           "rationale": "Post-hoc emotional/logical analysis (Prism) + self-reflection focus (Self) + retrospective processing (Observe)"
         },
         {
           "locale_data": {
-            "en": { "text": "I tune into the emotional residue — how did we both leave that conversation feeling?" },
-            "ko": { "text": "감정의 잔여물에 집중한다 — 그 대화 끝나고 서로 어떤 기분이었을까" }
+            "en": {
+              "text": "I tune into the emotional residue — how did we both leave that conversation feeling?"
+            },
+            "ko": {
+              "text": "감정의 잔여물에 집중한다 — 그 대화 끝나고 서로 어떤 기분이었을까"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 2 },
-            "compass": { "direction": "bond", "weight": 2 }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
           },
           "rationale": "Emotional atmosphere sensing (Pulse) + mutual impact awareness (Bond)"
         },
         {
           "locale_data": {
-            "en": { "text": "I reset — take a walk, do something grounding, and come back with fresh eyes" },
-            "ko": { "text": "리셋한다 — 산책하거나 땅 밟는 뭔가 하고 새 눈으로 돌아온다" }
+            "en": {
+              "text": "I reset — take a walk, do something grounding, and come back with fresh eyes"
+            },
+            "ko": {
+              "text": "리셋한다 — 산책하거나 땅 밟는 뭔가 하고 새 눈으로 돌아온다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 1 },
-            "drive": { "direction": "observe", "weight": 2 },
-            "compass": { "direction": "self", "weight": 1 }
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
           },
           "rationale": "Deliberate regulation strategy (Prism) + active disengagement for recovery (Observe) + self-care priority (Self)"
         },
         {
           "locale_data": {
-            "en": { "text": "I text my best friend everything immediately — I need to process it out loud" },
-            "ko": { "text": "친한 친구한테 바로 전부 풀어놓는다 — 소리 내서 처리해야 정리가 된다" }
+            "en": {
+              "text": "I text my best friend everything immediately — I need to process it out loud"
+            },
+            "ko": {
+              "text": "친한 친구한테 바로 전부 풀어놓는다 — 소리 내서 처리해야 정리가 된다"
+            }
           },
           "emoji": null,
           "scores": {
-            "drive": { "direction": "ignite", "weight": 2 },
-            "process": { "direction": "pulse", "weight": 1 },
-            "compass": { "direction": "self", "weight": 1 }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
           },
           "rationale": "Immediate externalization (Ignite) + verbal-emotional processing (Pulse) + self-processing priority (Self)"
         }
@@ -462,57 +843,107 @@
       "id": 8,
       "type": "text_choice",
       "locale_data": {
-        "en": { "text": "Can you precisely name\nwhat you're feeling right now?" },
-        "ko": { "text": "지금 느끼는 감정을\n정확히 말할 수 있어?" }
+        "en": {
+          "text": "Can you precisely name\nwhat you're feeling right now?"
+        },
+        "ko": {
+          "text": "지금 느끼는 감정을\n정확히 말할 수 있어?"
+        }
       },
       "options": [
         {
           "locale_data": {
-            "en": { "text": "Always — I could map it: 60% content, 20% mildly anxious, 20% curious" },
-            "ko": { "text": "항상 가능 — 만족 60% 약간 불안 20% 호기심 20% 이렇게 그릴 수 있다" }
+            "en": {
+              "text": "Always — I could map it: 60% content, 20% mildly anxious, 20% curious"
+            },
+            "ko": {
+              "text": "항상 가능 — 만족 60% 약간 불안 20% 호기심 20% 이렇게 그릴 수 있다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 3 },
-            "compass": { "direction": "self", "weight": 1 }
+            "process": {
+              "direction": "prism",
+              "weight": 3
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
           },
           "rationale": "Peak emotion granularity and labeling (Prism ×3) + self-knowledge expertise (Self)"
         },
         {
           "locale_data": {
-            "en": { "text": "More like I pick up vibes — my own and everyone around me — it's all blended" },
-            "ko": { "text": "내 거랑 주변 사람 거랑 다 섞여서 느껴진다 — 분위기 전체가 오는 느낌" }
+            "en": {
+              "text": "More like I pick up vibes — my own and everyone around me — it's all blended"
+            },
+            "ko": {
+              "text": "내 거랑 주변 사람 거랑 다 섞여서 느껴진다 — 분위기 전체가 오는 느낌"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 2 },
-            "compass": { "direction": "bond", "weight": 2 }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
           },
           "rationale": "Ambient emotional sensing (Pulse) + boundary-blurred empathic absorption (Bond)"
         },
         {
           "locale_data": {
-            "en": { "text": "I know the general zone — but I choose which feelings to engage with and which to shelve" },
-            "ko": { "text": "대충 어디쯤인지는 아는데 어떤 감정에 반응할지는 내가 고른다" }
+            "en": {
+              "text": "I know the general zone — but I choose which feelings to engage with and which to shelve"
+            },
+            "ko": {
+              "text": "대충 어디쯤인지는 아는데 어떤 감정에 반응할지는 내가 고른다"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "prism", "weight": 2 },
-            "compass": { "direction": "self", "weight": 1 },
-            "drive": { "direction": "observe", "weight": 1 }
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            }
           },
           "rationale": "Selective emotion-engagement (Prism) + self-directed filtering (Self) + controlled restraint (Observe)"
         },
         {
           "locale_data": {
-            "en": { "text": "I know how I feel but the name comes later — I feel it first, label it second" },
-            "ko": { "text": "느끼는 건 확실한데 이름은 나중에 붙여진다 — 먼저 느끼고 다음에 정리" }
+            "en": {
+              "text": "I know how I feel but the name comes later — I feel it first, label it second"
+            },
+            "ko": {
+              "text": "느끼는 건 확실한데 이름은 나중에 붙여진다 — 먼저 느끼고 다음에 정리"
+            }
           },
           "emoji": null,
           "scores": {
-            "process": { "direction": "pulse", "weight": 2 },
-            "compass": { "direction": "self", "weight": 1 },
-            "drive": { "direction": "ignite", "weight": 1 }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            },
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            }
           },
           "rationale": "Experience-first emotional processing (Pulse) + self-centered feeling (Self) + immediacy over reflection (Ignite)"
         }
@@ -530,14 +961,22 @@
       "locale_data": {
         "en": {
           "title": "I Name Every Feeling",
-          "description": "Your emotional vocabulary is a precision instrument. Where most people feel 'bad,' you distinguish between disappointed, frustrated, betrayed, and let down — and you know why the difference matters. You can map your internal landscape with the accuracy of a cartographer. Your strength is clarity: when you understand what you feel, you can communicate it, process it, and move through it. Your blind spot? Sometimes naming becomes a substitute for feeling. Analysis is powerful but it's not the same as sitting in the emotion. Let yourself be messy sometimes — not everything needs a label to be real.",
-          "tags": ["precision", "self-aware", "articulate"],
+          "description": "While most people say \"I feel bad,\" you say \"I feel a specific kind of disappointed frustration that's mixed with a little bit of embarrassment and the faintest trace of relief.\" You don't do vague emotions. Every feeling that moves through you gets identified, categorized, and named with a precision that would make a therapist weep with joy.\n\nThis emotional vocabulary shows up everywhere. You're the friend who helps others figure out what they're actually feeling — \"you're not angry, you're hurt and the anger is protecting it\" — and who journalizes with the specificity of a lab report. You distinguish between lonely and alone, between jealous and envious, between anxious and excited. Your inner world isn't a blur; it's a catalog.\n\nThe power of naming is enormous. Emotions that are named lose their ability to overwhelm. When you can say \"this is grief mixed with guilt\" instead of just drowning in an undefined darkness, you've already started processing it. You give yourself and others a handle on experiences that would otherwise feel unmanageable. You turn emotional chaos into something navigable.\n\nThe edge to watch: naming can become intellectualizing. If you're so busy labeling every feeling that you forget to actually feel it — if the catalog becomes a way to keep emotions at arm's length rather than letting them land — you've traded depth for precision. Sometimes the healthiest response to a feeling isn't to name it. It's to let it exist unnamed and messy for a while, trusting that clarity will come after you've let yourself be in it, not above it.\n\nI don't just feel it — I know exactly what it is.",
+          "tags": [
+            "precision",
+            "self-aware",
+            "articulate"
+          ],
           "compatibility": "I Read the Room"
         },
         "ko": {
           "title": "감정에 이름을 붙인다",
-          "description": "너의 감정 어휘력은 정밀한 도구야. 대부분의 사람이 '기분 나쁘다'로 퉁칠 때 너는 실망 짜증 배신감 서운함을 구분하고 그 차이가 왜 중요한지 알아. 내면의 지형을 지도 그리듯 정확하게 파악할 수 있는 능력이지. 네 강점은 선명함이야 — 뭘 느끼는지 알면 소통할 수 있고 처리할 수 있고 지나갈 수 있으니까. 사각지대는 이름 붙이기가 느끼기를 대신할 때가 있다는 거야. 분석은 강력하지만 감정 속에 가만히 앉아있는 거랑은 다르거든. 가끔은 지저분해도 괜찮아 — 모든 게 이름이 있어야 진짜인 건 아니니까.",
-          "tags": ["정밀", "자기인식", "언어화"],
+          "description": "대부분이 \"기분 안 좋아\"라고 할 때 넌 \"약간의 당혹감이 섞인 특정한 종류의 실망스러운 좌절감인데 거기에 아주 희미한 안도감이 살짝 있어\"라고 말해. 모호한 감정 같은 건 안 해. 너를 지나가는 모든 감정이 식별되고 분류되고 상담사가 감격의 눈물 흘릴 정밀도로 이름 붙여져\n\n이 감정 어휘력이 어디서나 드러나. 남들이 실제로 뭘 느끼는지 알아내는 걸 도와주는 친구야 — \"화난 게 아니라 상처받은 건데 분노가 그걸 보호하고 있는 거야\" — 그리고 실험 보고서 수준의 구체성으로 일기를 써. 외로운 것과 혼자인 것의 차이 질투와 부러움의 차이 불안과 설렘의 차이를 구별해. 내면이 흐릿한 게 아니라 카탈로그야\n\n이름 붙이기의 힘은 엄청나. 이름이 붙은 감정은 압도하는 능력을 잃어. 정의 안 된 어둠에 빠지는 대신 \"이건 죄책감이 섞인 슬픔\"이라고 말할 수 있으면 이미 처리를 시작한 거야. 안 그러면 감당 불가로 느껴질 경험에 너와 다른 사람들에게 손잡이를 줘. 감정적 혼란을 항해 가능한 것으로 바꿔\n\n조심할 건 이름 붙이기가 지성화가 될 수 있다는 거야. 모든 감정에 라벨 붙이느라 바빠서 실제로 느끼는 걸 잊으면 — 카탈로그가 감정을 착지시키는 대신 팔 길이로 유지하는 방법이 되면 — 깊이를 정밀도와 교환한 거야. 때로는 가장 건강한 반응이 이름 붙이는 게 아니야. 이름 없이 지저분하게 잠시 존재하게 놔두면서 위에서가 아니라 안에 있은 후에 명확함이 올 거라고 믿는 거야\n\n그냥 느끼는 게 아니라 정확히 뭔지 알아",
+          "tags": [
+            "정밀",
+            "자기인식",
+            "언어화"
+          ],
           "compatibility": "공기를 읽는다"
         }
       },
@@ -554,14 +993,22 @@
       "locale_data": {
         "en": {
           "title": "I Read the Room",
-          "description": "You walk into a room and immediately know the temperature. Who's tense, who's hiding something, who just had a fight — you sense it all without a single word being exchanged. Your emotional antenna picks up signals others don't even know they're sending. Your strength is attunement: people feel genuinely seen and understood around you, often before they've explained anything. Your blind spot? Those antennas don't have an off switch. You absorb other people's emotional weather, and sometimes you forget to check whether what you're feeling is actually yours. Shielding isn't selfish — it's survival.",
-          "tags": ["intuitive", "attuned", "empathic"],
+          "description": "You walk into a room and within seconds, you've already mapped the emotional landscape. Who's tense, who's pretending to be fine, who's one comment away from either tears or an outburst — you see it all, effortlessly, the way a musician hears when an instrument is slightly out of tune. This isn't a learned skill. It's how your brain has always processed the world: people first, data second.\n\nThis radar works in real time. You adjust your tone mid-sentence because you sensed the other person's energy shift. You know when a meeting is about to go sideways and subtly redirect before it does. You're the person who texts \"are you okay?\" at exactly the moment someone needed to hear it — not because they told you something was wrong, but because you felt the frequency change. People find you uncannily perceptive, and honestly, you find it strange that others don't notice what's so obvious to you.\n\nYour superpower makes you the emotional infrastructure of every group you're in. People feel safe around you because you meet them where they are without being asked. You prevent crises that never get credit because they never escalated. You're the reason conversations stay productive and relationships survive rough patches.\n\nThe cost: reading every room means you never fully turn off. You absorb emotional data constantly — from strangers on the subway, coworkers in a meeting, friends at dinner — and it accumulates. You can become so attuned to others' emotions that you lose track of your own. The room-reader who never pauses to read their own room eventually burns out. Your perception is a gift, but it needs boundaries — because the most important room to read is the one inside you.\n\nI felt the shift before you said a word.",
+          "tags": [
+            "intuitive",
+            "attuned",
+            "empathic"
+          ],
           "compatibility": "I Name Every Feeling"
         },
         "ko": {
           "title": "공기를 읽는다",
-          "description": "방에 들어가면 온도를 바로 알아. 누가 긴장했는지 누가 숨기는 게 있는지 누가 방금 싸웠는지 — 한 마디 없이 다 느껴진다. 네 감정 안테나는 다른 사람이 자기도 모르게 보내는 신호까지 잡아내지. 네 강점은 공명이야 — 사람들이 네 옆에 있으면 말하기 전에 이미 이해받는다고 느껴. 사각지대는 그 안테나에 끄기 버튼이 없다는 거야. 다른 사람의 감정 날씨를 흡수하다가 지금 느끼는 게 진짜 네 건지 잊을 때가 있거든. 차단이 이기적인 게 아니야 — 생존이야.",
-          "tags": ["직관적", "공명", "감정이입"],
+          "description": "방에 들어가면 몇 초 안에 이미 감정 지형도를 그려. 누가 긴장했고 누가 괜찮은 척하고 누가 한마디면 울거나 폭발할지 — 다 보여 힘 안 들이고. 음악가가 악기가 살짝 어긋난 걸 듣는 것처럼. 배운 스킬이 아니야 네 뇌가 세상을 처리하는 방식이 항상 이랬어 — 사람 먼저 데이터 나중\n\n이 레이더가 실시간으로 작동해. 문장 중간에 톤을 조절하는 건 상대의 에너지 변화를 감지해서야. 회의가 옆으로 갈 걸 알고 그 전에 미묘하게 방향을 틀어. 누군가가 딱 필요한 순간에 \"괜찮아?\" 문자를 보내는 사람인데 — 뭔가 잘못됐다고 말해서가 아니라 주파수 변화를 느꼈기 때문이야. 사람들이 널 소름끼치게 관찰력 좋다고 하는데 솔직히 넌 다른 사람들이 이렇게 뻔한 걸 못 보는 게 이상해\n\n네 초능력이 속한 모든 그룹의 감정 인프라를 만들어. 사람들이 네 곁에서 안전하다고 느끼는 건 부탁 없이도 그들이 있는 곳에서 만나주니까. 터지지 않아서 공로를 인정받지 못하는 위기를 예방해. 대화가 생산적으로 유지되고 관계가 힘든 시기를 견디는 이유가 너야\n\n비용은 모든 방을 읽으면 완전히 꺼지는 법이 없다는 거야. 지하철 모르는 사람에게서도 회의 동료에게서도 저녁 친구에게서도 감정 데이터를 끊임없이 흡수하고 그게 쌓여. 남의 감정에 너무 맞춰져서 자기 감정을 놓칠 수 있어. 자기 방을 안 읽는 방 읽는 사람은 결국 번아웃이야. 관찰력이 선물인데 경계가 필요해 — 읽어야 할 가장 중요한 방은 네 안에 있으니까\n\n말하기 전에 변화를 느꼈어",
+          "tags": [
+            "직관적",
+            "공명",
+            "감정이입"
+          ],
           "compatibility": "감정에 이름을 붙인다"
         }
       },
@@ -578,14 +1025,22 @@
       "locale_data": {
         "en": {
           "title": "I Keep My Cool",
-          "description": "You're the emotional thermostat of every room you're in. When others are spiraling, you stay grounded. When tension rises, you're the one who keeps things from boiling over. You feel everything — you just choose when and how to let it show. Your strength is composure: you create emotional safety for the people around you, and your measured responses prevent unnecessary escalation. Your blind spot? Regulation can quietly become suppression. If you never let the heat reach the surface, the pressure builds underneath. Keeping your cool is a skill — just make sure there's a valve somewhere.",
-          "tags": ["composed", "stabilizing", "strategic"],
+          "description": "Chaos erupts and everyone panics — except you. Not because you don't feel the pressure, but because something in your nervous system processes threats differently: where others spike, you steady. It's like having an internal thermostat that kicks in precisely when everyone else's breaks down. You don't suppress emotions. You regulate them in real time, keeping yourself functional when the temperature rises.\n\nThis shows up in every high-pressure moment. You're the person with the calm voice during the crisis, the steady hand during the argument, the one who says \"okay, here's what we do\" while everyone else is still processing that something went wrong. You de-escalate by existing. Your body language, your tone, your refusal to match someone else's panic — it all communicates safety, and people instinctively follow your lead because regulated nervous systems are contagious.\n\nYour strength is that you're genuinely reliable under pressure. Not performatively calm — actually calm. This makes you the person everyone turns to in a crisis, the one trusted with bad news, the one who holds it together so others can afford to fall apart. In relationships, you're the stabilizer — the emotional ground wire that keeps everything from short-circuiting.\n\nThe blind spot: being the calm one can become being the numb one if you're not careful. If you regulate so consistently that you never let emotions reach full volume — never cry at the movie, never scream into a pillow, never let yourself feel the earthquake instead of just managing it — you're not regulating. You're suppressing, and suppression has a different long-term cost. Your coolness is a gift, but make sure it's a choice, not a cage.\n\nStorm outside — still water in here.",
+          "tags": [
+            "composed",
+            "stabilizing",
+            "strategic"
+          ],
           "compatibility": "I Let It Out"
         },
         "ko": {
           "title": "일단 진정하고 본다",
-          "description": "네가 있는 방의 감정 온도 조절기 같은 존재야. 다른 사람이 흔들릴 때 너는 단단하게 서 있고 긴장이 올라갈 때 끓어넘치지 않게 잡아주는 사람이지. 다 느끼는데 언제 어떻게 보여줄지를 고르는 거야. 네 강점은 침착함이야 — 주변 사람들에게 감정적 안전감을 만들어주고 네 절제된 반응이 불필요한 충돌을 막아줘. 사각지대는 조절이 언제부턴가 억압이 될 수 있다는 거야. 열기를 표면까지 안 올리면 아래서 압력이 쌓이거든. 침착한 건 스킬이야 — 어딘가에 밸브는 있는지 확인해줘.",
-          "tags": ["침착", "안정감", "전략적"],
+          "description": "혼란이 터지고 모두가 당황해 — 너만 빼고. 압박을 못 느껴서가 아니라 네 신경계가 위협을 다르게 처리하니까 — 남들이 치솟을 때 넌 안정돼. 다른 사람의 온도 조절기가 다 고장 날 때 정확히 작동하는 내부 서모스탯 같은 거야. 감정을 억누르는 게 아니라 실시간으로 조절해서 온도가 올라갈 때도 기능을 유지해\n\n모든 고압 순간에서 드러나. 위기 때 차분한 목소리의 사람이고 논쟁 때 흔들리지 않는 손이고 남들이 아직 뭐가 잘못됐는지 처리하는 동안 \"좋아 이렇게 하자\" 말하는 사람이야. 존재로 디에스컬레이션해. 바디랭귀지 톤 상대의 패닉에 맞추기를 거부하는 것 — 전부가 안전을 전달하고 사람들이 본능적으로 네 리드를 따라 — 조절된 신경계가 전염되니까\n\n강점은 압박 아래서 진짜 믿을 수 있다는 거야. 연기하는 침착이 아니라 실제 침착. 그래서 위기에 모두가 찾는 사람이고 나쁜 소식을 맡겨도 되는 사람이고 다른 사람이 무너져도 되게끔 버텨주는 사람이야. 관계에서 넌 안정화 장치야 — 모든 게 합선되지 않게 막는 감정 접지선\n\n사각지대는 침착한 사람이 무감각한 사람이 될 수 있다는 거야. 너무 일관되게 조절해서 감정이 풀 볼륨에 도달한 적이 없으면 — 영화에서 안 울고 베개에 소리 안 지르고 지진을 관리하는 대신 느끼게 놔둔 적이 없으면 — 조절이 아니야 억압이고 억압은 장기적 비용이 달라. 네 쿨함이 선물인데 선택인지 감옥인지는 확인해\n\n밖은 폭풍 — 안은 잔잔한 물",
+          "tags": [
+            "침착",
+            "안정감",
+            "전략적"
+          ],
           "compatibility": "느끼면 바로 표현한다"
         }
       },
@@ -602,14 +1057,22 @@
       "locale_data": {
         "en": {
           "title": "I Let It Out",
-          "description": "What you feel is what people get — no filter, no delay. Your emotional expression is instant and authentic, and people know exactly where they stand with you. You laugh loudly, cry freely, and when something pisses you off, the room knows. Your strength is authenticity: in a world full of curated reactions, you're the real thing. People trust your responses because there's zero gap between feeling and expression. Your blind spot? Timing. Raw honesty is a gift, but not every moment can hold it. Learning to choose your moment doesn't make you fake — it makes you effective.",
-          "tags": ["authentic", "spontaneous", "unfiltered"],
+          "description": "You feel something and the world knows about it — not because you're performing, but because your emotional system has a direct pipeline to the surface. Happy? Your whole face rearranges. Angry? Your voice shifts before you even decide to speak. Sad? The tears are already there, uninvited but honest. You experience emotions at full volume, and your body broadcasts them in real time with zero delay.\n\nThis expressiveness shapes every interaction. You're the person whose face gives away the answer before their mouth does. Your laugh fills rooms. Your frustration fills rooms too. People always know where they stand with you because your emotional state is readable from across the street. You don't do poker face — you do HD, surround sound, live-streamed emotional transparency.\n\nThe gift of this is authenticity that most people can only envy. You create spaces where others feel permission to be real because you go first. When you cry, you give other people permission to cry. When you celebrate, you amplify the joy in the room by a factor of ten. You are the emotional catalyst — the person whose openness unlocks everyone else's.\n\nThe vulnerability: unfiltered expression can overwhelm people and situations. When every emotion arrives at full intensity, others may brace instead of connect. Your anger might shut down a conversation that needed to stay open. Your sadness might become the center of a moment that belonged to someone else. The goal isn't to dim your signal. It's to develop a volume knob — not to silence yourself, but to choose when to be at full blast and when half-volume serves you better.\n\nWhat I feel — you'll know. Always.",
+          "tags": [
+            "authentic",
+            "spontaneous",
+            "unfiltered"
+          ],
           "compatibility": "I Keep My Cool"
         },
         "ko": {
           "title": "느끼면 바로 표현한다",
-          "description": "느끼는 게 곧 보이는 거야 — 필터도 딜레이도 없음. 감정 표현이 즉각적이고 진짜여서 사람들이 네 옆에서 내가 어디 서 있는지 정확히 알아. 크게 웃고 편하게 울고 짜증나면 방 안이 다 알지. 네 강점은 진정성이야 — 다들 반응을 큐레이팅하는 세상에서 너는 진짜거든. 느낌과 표현 사이에 갭이 제로라서 네 반응을 사람들이 믿어. 사각지대는 타이밍이야. 날 것의 솔직함은 선물인데 모든 순간이 그걸 받아들일 준비가 되어있진 않거든. 순간을 고르는 게 가식이 아니야 — 효과적인 거야.",
-          "tags": ["진정성", "즉각적", "필터 없음"],
+          "description": "뭔가 느끼면 세상이 알아 — 연기해서가 아니라 네 감정 시스템이 표면까지 직통 파이프라인이 있으니까. 행복하면 얼굴 전체가 재배치돼. 화나면 말하기로 결정하기도 전에 목소리가 변해. 슬프면 눈물이 이미 거기 있어 초대 안 했는데 솔직하게. 감정을 풀 볼륨으로 경험하고 몸이 지연 없이 실시간으로 방송해\n\n이 표현력이 모든 상호작용을 만들어. 입이 대답하기 전에 얼굴이 이미 답을 줘버리는 사람이야. 웃음이 방을 채워 좌절도 방을 채워. 사람들이 항상 네 상태를 아는 게 감정 상태가 길 건너에서도 읽히니까. 포커페이스 같은 건 안 해 — HD 서라운드 사운드 실시간 스트리밍 감정 투명성을 해\n\n이것의 선물은 대부분이 부러워만 할 수 있는 진정성이야. 네가 먼저 가니까 남들도 진짜 모습이어도 된다고 느끼는 공간을 만들어. 네가 울면 다른 사람에게 울어도 된다는 허가를 줘. 네가 축하하면 방의 기쁨을 열 배로 증폭시켜. 감정적 촉매야 — 네 개방성이 다른 모두의 잠금을 풀어\n\n취약점은 필터 없는 표현이 사람과 상황을 압도할 수 있다는 거야. 모든 감정이 최대 강도로 도착하면 다른 사람이 연결 대신 방어 자세를 취할 수 있어. 네 분노가 열려있어야 하는 대화를 닫아버릴 수도 있고 네 슬픔이 다른 사람의 순간에서 중심이 될 수도 있어. 신호를 줄이라는 게 아니야 볼륨 노브를 만드는 거야 — 자신을 침묵시키는 게 아니라 풀 볼륨일 때와 반으로 줄이는 게 나을 때를 선택하는 거\n\n내가 느끼면 — 알게 돼. 항상",
+          "tags": [
+            "진정성",
+            "즉각적",
+            "필터 없음"
+          ],
           "compatibility": "일단 진정하고 본다"
         }
       },

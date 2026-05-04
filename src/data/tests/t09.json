@@ -846,7 +846,7 @@
       "locale_data": {
         "en": {
           "title": "Fire and Stars Are All I Need",
-          "description": "You crave raw, unfiltered experiences. Nature over screens, instinct over analysis. You'd thrive around a campfire sharing stories under the stars. Born in the wrong millennium, honestly.",
+          "description": "Strip away the WiFi, the notifications, the noise — and you'd be perfectly fine. More than fine, actually. You crave something raw and elemental that modern life has polished away: fire you built yourself, silence that isn't interrupted by a ringtone, nights where the only light comes from stars you can actually see. You're not anti-technology. You're pro-something older and deeper.\n\nThis shows up in how you live, even inside modern constraints. You're drawn to camping, hiking, open water — anything that puts you closer to the version of the world that existed before concrete covered it. You probably prefer cooking over a flame to a microwave, value physical strength and endurance, and feel most alive when your body is doing something primal: running, swimming, building, climbing. Comfort zones bore you. Survival zones wake you up.\n\nYour aesthetic sense gravitates toward the unprocessed: natural materials, earth tones, handmade over manufactured, imperfection over polish. You find beauty in weathered wood, exposed stone, the smell of rain on dirt. In a world obsessed with optimization, you're drawn to things that simply exist without trying.\n\nThe tension: you romanticize simplicity from inside a complex world. The \"fire and stars\" life sounds perfect until you remember antibiotics, plumbing, and the ability to call for help. Your challenge isn't rejecting modernity — it's finding the elemental within it. A morning run at sunrise, a meal cooked slowly, a night with the phone off. You don't need to go back in time. You need to bring that energy forward.\n\nI was born in the wrong century — and I mean it.",
           "tags": [
             "primal",
             "nature-lover",
@@ -856,7 +856,7 @@
         },
         "ko": {
           "title": "불 피우고 하늘 보고",
-          "description": "가공되지 않은 날것의 경험을 갈망하는 타입! 스크린보다 자연 속에서 빛나요. 모닥불 아래 이야기 나누는 게 진정한 행복인 사람 — 솔직히 태어난 시대가 잘못됐어요ㅋㅋ",
+          "description": "와이파이 빼고 알림 빼고 소음 빼면 — 넌 완전히 괜찮아. 사실 그 이상이야. 현대 생활이 깎아낸 날것의 원초적인 뭔가를 갈망해 — 직접 피운 불 벨소리에 안 끊기는 정적 진짜 볼 수 있는 별빛만 있는 밤. 기술이 싫은 게 아니야 더 오래되고 깊은 무언가를 원하는 거야\n\n현대적 제약 안에서도 이게 드러나. 캠핑 하이킹 야외 물 — 콘크리트가 덮기 전의 세계에 더 가까이 가는 모든 것에 끌려. 아마 전자레인지보다 불 위에서 요리하는 걸 선호하고 신체적 힘과 지구력을 중시하고 몸이 원초적인 걸 할 때 가장 살아있다고 느껴 — 달리기 수영 만들기 오르기. 편안한 영역은 지루해 생존 영역이 깨워줘\n\n네 미학은 가공 안 된 것으로 기울어 — 자연 소재 어스 톤 공장제보다 수공예 완벽보다 불완전. 풍화된 나무와 노출된 돌과 흙에 내리는 비 냄새에서 아름다움을 찾아. 최적화에 집착하는 세상에서 넌 노력 없이 그냥 존재하는 것들에 끌려\n\n텐션은 복잡한 세상 안에서 단순함을 낭만화한다는 거야. \"불과 별\" 라이프가 완벽하게 들리는데 항생제랑 수도랑 도움 요청 능력을 떠올려보면. 과제는 현대성을 거부하는 게 아니라 그 안에서 원초적인 것을 찾는 거야. 일출에 달리기 천천히 요리한 식사 폰 끈 밤. 과거로 갈 필요 없어 그 에너지를 앞으로 가져오면 돼\n\n잘못된 세기에 태어났어 — 진심으로",
           "tags": [
             "원시적",
             "자연인",
@@ -878,7 +878,7 @@
       "locale_data": {
         "en": {
           "title": "Old Soul Deep Thinker",
-          "description": "You belong in a toga discussing the meaning of life. Wisdom, art, and deep conversations are your oxygen. Modern small talk physically pains you.",
+          "description": "You've always felt like your thoughts belong to a different century — one that valued contemplation over content, wisdom over information, and depth over speed. While the world around you is optimized for quick takes and hot reactions, your mind works in slow arcs: you think before you speak, you consider before you act, and you've never understood the rush to have an opinion on everything immediately.\n\nYour interests probably lean toward things with history and weight. Philosophy, ancient literature, classical music, traditional craftsmanship, religious or spiritual traditions — not because they're trendy (they're decidedly not) but because they offer something modern culture doesn't: a sense that some ideas have been tested across centuries and survived. You'd rather read one old book deeply than skim ten new ones.\n\nYour aesthetic is understated permanence. You value things that age well: leather that develops patina, buildings with stone foundations, relationships built over years instead of weeks. You're suspicious of anything that moves too fast or promises too much. In a disposable culture, you're drawn to what endures.\n\nThe friction: depth can become isolation. When everyone around you is moving at modern speed and you're processing at ancient pace, the gap can feel lonely. Not wrong — but lonely. People might read your contemplative nature as aloofness, your selectiveness as snobbery, your preference for the timeless as inability to engage with the present. The goal isn't to speed up. It's to find your people — the ones who also believe that the best things in life aren't new.\n\nSome things are better old — including me.",
           "tags": [
             "wise",
             "philosophical",
@@ -888,7 +888,7 @@
         },
         "ko": {
           "title": "철학자의 피가 흐른다",
-          "description": "토가 입고 인생의 의미를 논해야 할 사람! 지혜와 예술과 깊은 대화가 산소인 타입이에요. 현대의 스몰토크가 물리적 고통이에요.",
+          "description": "네 생각은 항상 다른 세기에 속하는 느낌이었어 — 콘텐츠보다 사색을 정보보다 지혜를 속도보다 깊이를 중시하던 시대. 세상이 빠른 의견과 즉각 반응에 최적화돼 있을 때 네 머리는 느린 곡선으로 움직여 — 말하기 전에 생각하고 행동하기 전에 고려하고 모든 것에 즉시 의견을 가져야 하는 조급함을 이해한 적이 없어\n\n관심사가 아마 역사와 무게가 있는 쪽이야. 철학 고전 문학 클래식 음악 전통 장인 정신 종교나 영적 전통 — 트렌디해서가 아니라 현대 문화가 못 주는 걸 주니까. 어떤 아이디어가 수세기에 걸쳐 검증되고 살아남았다는 감각. 새 책 열 권 훑느니 옛 책 한 권 깊이 읽겠어\n\n네 미학은 절제된 영속성이야. 세월을 잘 타는 것을 가치 있게 여겨 — 파티나가 생기는 가죽 돌 기초의 건물 주가 아니라 년에 걸쳐 쌓인 관계. 너무 빨리 움직이거나 너무 많이 약속하는 건 의심해. 일회용 문화에서 넌 지속하는 것에 끌려\n\n마찰은 깊이가 고립이 될 수 있다는 거야. 주변이 현대 속도로 움직이고 넌 고대 속도로 처리하면 그 간극이 외로울 수 있어. 틀린 건 아닌데 외로워. 사람들이 네 사색을 냉담으로 선별을 잘난 체로 시간을 초월한 것에 대한 선호를 현재와 교류 못 하는 것으로 읽을 수 있거든. 빨라질 필요 없어 네 사람들을 찾으면 돼 — 인생에서 가장 좋은 것은 새것이 아니라고 같이 믿는 사람들\n\n어떤 것은 오래된 게 낫다 — 나 포함",
           "tags": [
             "현명함",
             "철학적",
@@ -910,7 +910,7 @@
       "locale_data": {
         "en": {
           "title": "Adventure Is Calling",
-          "description": "Honor, loyalty, and a good quest — that's your vibe. You value face-to-face connections and acts of courage. Somewhere a castle is missing its knight.",
+          "description": "You live for the quest. Not the metaphorical kind that LinkedIn posts are about — the real kind, where the path is uncertain, the stakes are personal, and the only way forward is through. Something in you is wired for adventure, for narrative, for the feeling that your life should read like a story worth telling around a campfire.\n\nThis plays out everywhere. You're drawn to travel that involves getting lost, challenges that test your limits, and decisions that scare you a little because the fear means it matters. You'd rather fail spectacularly at something meaningful than succeed quietly at something safe. Your weekends aren't about relaxation — they're about the next experience, the next discovery, the next story to add to the collection.\n\nYour aesthetic sense is dramatic and romantic: castles over condos, forests over parks, handwritten letters over texts. You find modern life a little too sanitized, a little too predictable, a little too concerned with safety margins. You're not reckless — but you understand that the best things in life usually live just past the edge of comfortable.\n\nThe tension: not everything is a quest, and not every day can be an adventure. The mundane parts of life — paying bills, maintaining routines, showing up consistently without a dramatic soundtrack — are boring to you but essential to everyone around you. If you chase novelty so hard that stability feels like a cage, you'll have incredible stories but shaky foundations. The real adventure isn't always the dramatic one. Sometimes it's the courage to stay ordinary for a while.\n\nEvery day should be worth a story.",
           "tags": [
             "adventurous",
             "loyal",
@@ -920,7 +920,7 @@
         },
         "ko": {
           "title": "모험을 떠나야 해",
-          "description": "명예와 충성과 멋진 모험이 삶의 원동력! 대면 관계와 용기 있는 행동을 중시하는 타입이에요. 어딘가에 당신을 기다리는 성이 있을 거예요.",
+          "description": "넌 퀘스트를 위해 사는 사람이야. 링크드인에서 말하는 비유적인 거 말고 — 진짜로 길이 불확실하고 판돈이 개인적이고 앞으로 가는 유일한 방법이 통과인 그런 거. 네 안에 모험과 서사와 내 인생은 캠프파이어에서 말할 만한 이야기여야 한다는 느낌에 연결된 뭔가가 있어\n\n이게 어디서든 드러나. 길 잃는 여행에 끌리고 한계를 시험하는 도전에 끌리고 좀 무섭지만 무서운 게 중요하다는 뜻인 결정에 끌려. 안전한 것에서 조용히 성공하느니 의미 있는 것에서 화려하게 실패하겠어. 주말이 휴식이 아니라 다음 경험 다음 발견 다음 이야기야\n\n미학이 드라마틱하고 로맨틱해 — 아파트보다 성 공원보다 숲 문자보다 손편지. 현대 생활이 좀 너무 소독됐고 너무 예측 가능하고 너무 안전 마진에 신경 쓴다고 느껴. 무모한 건 아닌데 인생에서 가장 좋은 것들이 보통 편안함의 경계 바로 너머에 산다는 걸 이해해\n\n텐션은 모든 게 퀘스트가 아니고 매일이 모험일 수는 없다는 거야. 삶의 평범한 부분들 — 고지서 내기 루틴 유지 드라마틱한 사운드트랙 없이 꾸준히 나타나기 — 너한텐 지루하지만 주변 모두에겐 필수야. 새로움을 너무 쫓아서 안정이 감옥처럼 느껴지면 멋진 이야기는 있지만 기반이 흔들려. 진짜 모험은 항상 드라마틱한 게 아니야 때로는 한동안 평범하게 있을 용기야\n\n매일이 이야기가 될 가치가 있어야 해",
           "tags": [
             "모험적",
             "충성스러움",
@@ -942,7 +942,7 @@
       "locale_data": {
         "en": {
           "title": "They Don't Make 'Em Like Before",
-          "description": "Vinyl records, handwritten letters, slow dances — you live for the aesthetic of a simpler time. The 60s-80s energy runs through your veins. Born too late, but making it work.",
+          "description": "You have a deep, almost physical nostalgia for a time you might not have even lived through. Something about the past — whether it's the '60s, the '80s, or even just ten years ago — feels more real, more textured, more honest than whatever this current era is doing. You're not naive about the past's problems. You just feel in your bones that something essential was lost along the way.\n\nThis shapes your taste in everything. Your music library skews older. Your fashion pulls from previous decades. You prefer film photography to digital, vinyl to streaming, handwritten to typed. You probably own something your grandparent would recognize and use it regularly — a record player, a cast iron pan, a manual coffee grinder. You curate your life like a vintage shop: each object chosen for character, not convenience.\n\nYour sensibility is warm, tactile, and deliberately analog. You value craftsmanship, longevity, and the kind of beauty that comes from things being made by hands instead of algorithms. In a world rushing toward the next thing, you find richness in looking back.\n\nThe friction: nostalgia can become a hiding place. If the past always feels better than the present, it might not be because the past was actually better — it might be because the present is harder to sit with. Romanticizing what was can prevent you from building what could be. The things you love about the past — the intentionality, the craftsmanship, the slower pace — aren't locked in a time capsule. You can bring them into today. The goal isn't to live in the past. It's to live in the present with the past's best values.\n\nThe old ways hit different — and I'm keeping them.",
           "tags": [
             "nostalgic",
             "artistic",
@@ -952,7 +952,7 @@
         },
         "ko": {
           "title": "옛날 게 다 좋았어",
-          "description": "LP판과 손편지와 슬로우 댄스의 미학! 60~80년대 감성이 핏줄에 흐르는 타입이에요. 늦게 태어났지만 빈티지 감성으로 현재를 살아가는 중!",
+          "description": "살아보지도 않았을 수 있는 시대에 대한 깊고 거의 물리적인 향수가 있어. 과거의 뭔가가 — 60년대든 80년대든 그냥 10년 전이든 — 지금 이 시대보다 더 진짜 같고 더 질감이 있고 더 정직하게 느껴져. 과거의 문제를 모르는 게 아니야 그냥 뼈로 느끼는 거야 뭔가 본질적인 게 사라졌다는 걸\n\n이게 모든 취향을 만들어. 음악 라이브러리가 옛날 쪽으로 기울고 패션이 이전 시대에서 가져오고 디지털보다 필름 사진을 스트리밍보다 바이닐을 타이핑보다 손글씨를 선호해. 아마 할아버지 할머니가 알아볼 물건을 갖고 있고 정기적으로 써 — 턴테이블 무쇠팬 수동 커피 그라인더. 네 삶을 빈티지 숍처럼 큐레이팅해 — 편의가 아니라 캐릭터로 고른 물건들\n\n감성이 따뜻하고 촉각적이고 의도적으로 아날로그야. 장인 정신과 수명과 알고리즘이 아니라 손으로 만들어져서 오는 아름다움을 중시해. 다음 것으로 달려가는 세상에서 넌 뒤를 돌아보는 데서 풍요를 찾아\n\n마찰은 향수가 도피처가 될 수 있다는 거야. 과거가 항상 현재보다 좋게 느껴지면 과거가 실제로 더 좋아서가 아니라 현재가 더 견디기 어려워서일 수 있어. 이전을 낭만화하면 될 수 있는 것을 만드는 걸 막아. 과거에서 좋아하는 것들 — 의도성 장인 정신 느린 속도 — 은 타임캡슐에 갇혀있지 않아. 오늘로 가져올 수 있어. 과거에 사는 게 아니라 과거의 최고의 가치와 함께 현재를 사는 거야\n\n옛것이 다르게 와닿아 — 지킬 거야",
           "tags": [
             "노스탤지아",
             "예술적",
@@ -974,7 +974,7 @@
       "locale_data": {
         "en": {
           "title": "Less Is Always More",
-          "description": "You're perfectly calibrated to the now. Efficient, connected, and aesthetically clean. You optimize everything — from your morning routine to your notification settings.",
+          "description": "You look at the modern world and see exactly what you want: clean lines, smart systems, and the elegant efficiency of things designed to work without unnecessary drama. While others romanticize the past or fantasize about the future, you're perfectly calibrated for right now. This era, with all its tools and options and streamlined design philosophy, is where you thrive.\n\nYour aesthetic is intentional minimalism. Not the empty, cold kind — the kind where everything present is there because it earned its place. Your space is curated, your wardrobe is capsule, your digital life is organized, and your tolerance for clutter — physical or emotional — is remarkably low. You believe that removing the unnecessary reveals the essential, and you apply this principle to everything from your apartment to your relationships.\n\nYou're drawn to functionality as beauty. A well-designed app, an efficient workflow, a conversation that gets to the point without twenty minutes of preamble — these things genuinely satisfy you. You appreciate when things work seamlessly, and you're quietly frustrated when they don't. Your standard for design, in all its forms, is higher than most people's because you've trained your eye to notice what most people ignore.\n\nThe limitation: minimalism as a lifestyle can become minimalism as avoidance. If you strip away everything that's messy, complicated, or inefficient, you might also strip away everything that's deeply human. The best relationships are cluttered. The most meaningful experiences are inefficient. If your life looks perfect but feels hollow, you've optimized for the wrong variable. Sometimes the mess is the point.\n\nSimplicity isn't boring — it's the ultimate flex.",
           "tags": [
             "efficient",
             "current",
@@ -984,7 +984,7 @@
         },
         "ko": {
           "title": "심플이 최고다",
-          "description": "현재에 완벽히 최적화된 타입! 효율적이고 연결되어 있으며 미니멀한 미학을 추구해요. 모닝 루틴부터 알림 설정까지 전부 최적화하는 스타일!",
+          "description": "넌 현대 세상을 보면서 정확히 원하는 걸 봐 — 깔끔한 라인 스마트한 시스템 불필요한 드라마 없이 작동하도록 설계된 것의 우아한 효율성. 남들이 과거를 낭만화하거나 미래를 상상할 때 넌 딱 지금에 완벽하게 맞춰져 있어. 모든 도구와 옵션과 정돈된 디자인 철학이 있는 이 시대가 네가 활기를 띄는 곳이야\n\n미학이 의도적인 미니멀리즘이야. 비어있고 차가운 종류가 아니라 있는 모든 것이 자기 자리를 벌어서 있는 종류. 공간은 큐레이팅 됐고 옷장은 캡슐이고 디지털 라이프는 정리됐고 어수선함에 대한 내성이 — 물리적이든 감정적이든 — 놀랍도록 낮아. 불필요한 걸 제거하면 본질이 드러난다고 믿고 이 원칙을 집에서 관계까지 모든 것에 적용해\n\n기능성을 아름다움으로 느껴. 잘 설계된 앱 효율적인 워크플로우 20분 서론 없이 요점에 도달하는 대화 — 이런 것들이 진심으로 만족을 줘. 매끄럽게 작동할 때 고마워하고 안 그러면 조용히 답답해해. 디자인에 대한 기준이 모든 형태에서 대부분보다 높아 — 대부분이 무시하는 걸 알아채도록 눈을 훈련시켰거든\n\n한계는 라이프스타일로서의 미니멀리즘이 회피로서의 미니멀리즘이 될 수 있다는 거야. 지저분하고 복잡하고 비효율적인 걸 다 걷어내면 깊이 인간적인 것도 같이 걷어낼 수 있어. 최고의 관계는 어수선해. 가장 의미 있는 경험은 비효율적이야. 삶이 완벽해 보이는데 공허하게 느껴지면 잘못된 변수에 최적화한 거야. 때로는 어수선함이 포인트야\n\n심플이 지루한 게 아니야 — 궁극의 플렉스야",
           "tags": [
             "효율적",
             "현재 지향",
@@ -1006,7 +1006,7 @@
       "locale_data": {
         "en": {
           "title": "Probably From the Future",
-          "description": "You're already living in 2040. AI, space travel, digital everything — you embrace what's next before most people even hear about it. Just don't forget to touch grass sometimes.",
+          "description": "You look at the world and see what it could be — not what it is, but what it should become if it tried harder. While everyone else is navigating the present, your mind is already running simulations of next year, next decade, next paradigm. You're the person who gets excited about emerging tech before it hits mainstream, who sees patterns forming before others notice, and who gets impatient with the gap between what's possible and what exists.\n\nThis future-orientation shapes everything. Your interests lean toward the cutting edge: AI, space exploration, biotech, new economic models, whatever's just over the horizon. You're probably an early adopter — first to try new platforms, new tools, new ways of doing things that your friends will adopt two years later and act like they discovered. You get energy from possibility the way other people get energy from nostalgia.\n\nYour aesthetic is forward-looking: sleek, functional, sometimes a little cold by design. You're drawn to things that feel ahead of their time — technology that anticipates needs, architecture that reimagines space, ideas that challenge how things have always been done. You'd rather be uncomfortably early than comfortably late.\n\nThe friction: living in the future means you sometimes struggle with the present. If you're always anticipating what's next, you might not fully experience what's now. The people around you aren't on your timeline, and what reads as visionary to you can read as dismissive to them — like the current moment isn't good enough to hold your attention. The future needs builders who are present enough to lay bricks today, not just draft blueprints for tomorrow.\n\nThe future needs me — so I went ahead.",
           "tags": [
             "visionary",
             "tech-forward",
@@ -1016,7 +1016,7 @@
         },
         "ko": {
           "title": "미래에서 왔을지도",
-          "description": "이미 2040년을 살고 있는 타입! AI와 우주여행과 디지털 세상을 남들보다 먼저 받아들여요. 다만 가끔은 풀밭에 나가서 풀이라도 만져보세요ㅋㅋ",
+          "description": "넌 세상을 보면서 현재가 아니라 될 수 있는 것을 봐 — 더 노력하면 되어야 하는 것을. 다들 현재를 살 때 네 머리는 이미 내년 다음 10년 다음 패러다임의 시뮬레이션을 돌리고 있어. 메인스트림에 오기 전에 떠오르는 기술에 흥분하고 남들이 알아채기 전에 패턴을 보고 가능한 것과 존재하는 것의 간극에 참을성이 없는 사람이야\n\n이 미래 지향성이 모든 걸 만들어. 관심사가 최첨단으로 기울어 — AI 우주탐사 바이오테크 새로운 경제 모델 지평선 너머에 있는 것들. 아마 얼리 어답터지 — 친구들이 2년 후에 채택하고 자기가 발견한 것처럼 구는 새 플랫폼과 도구와 방법을 먼저 써봐. 남들이 향수에서 에너지를 얻듯 넌 가능성에서 에너지를 얻어\n\n미학이 미래지향적이야 — 매끈하고 기능적이고 의도적으로 좀 차가운. 시대를 앞서간 느낌의 것에 끌려 — 필요를 예측하는 기술 공간을 재상상하는 건축 항상 해오던 방식에 도전하는 아이디어. 편하게 늦느니 불편하게 빠르겠어\n\n마찰은 미래에 사는 건 현재에서 고전한다는 거야. 항상 다음을 예측하고 있으면 지금을 충분히 경험 못 할 수 있어. 주변 사람들이 네 타임라인에 있지 않고 너한텐 비전인 게 그들에겐 무시로 읽힐 수 있어 — 현재가 네 관심을 잡기에 충분하지 않다는 것처럼. 미래는 내일의 청사진만 그리는 사람이 아니라 오늘 벽돌을 놓을 만큼 현재에 있는 건설자가 필요해\n\n미래가 날 필요로 해서 — 먼저 갔어",
           "tags": [
             "선구자",
             "테크 지향",

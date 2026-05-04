@@ -976,7 +976,7 @@
       "locale_data": {
         "en": {
           "title": "Hesitate and You Lose",
-          "description": "Your Courage stat is maxed out! You go straight for it when you like someone. High confession success rate — but you might startle them with your intensity. Try leveling up Charm!",
+          "description": "You love like you're charging into battle — full commitment, no half-measures, and absolutely no waiting around for the \"right moment\" because every moment you feel something is the right moment. When your heart decides, your body follows. There's no committee meeting, no risk assessment, no three-day waiting period. You see what you want and you move toward it with a directness that either thrills people or terrifies them.\n\nIn relationships, you're the one who defines the pace. You escalate faster than most — first to say how you feel, first to make plans, first to introduce them to your friends. You don't understand the concept of \"taking things slow\" because to you, slow feels like dishonesty. If the connection is real, why pretend it isn't? Your love has momentum, and people either match your speed or watch you disappear ahead of them.\n\nThis warrior energy is magnetic. You eliminate the ambiguity that drives most people crazy during the early stages of dating. With you, nobody wonders where they stand. Your commitment is loud, visible, and unambiguous, and for the right person, that's the most attractive thing in the world.\n\nThe risk is that speed and intensity can overwhelm someone who needs space to feel safe. Not everyone interprets urgency as passion — some read it as pressure. And when you move at combat speed, you can miss subtle signals that the other person needs you to downshift. The warrior's hardest skill isn't the charge. It's the pause.\n\nFull speed ahead — hearts don't wait.",
           "tags": [
             "bold",
             "brave",
@@ -986,7 +986,7 @@
         },
         "ko": {
           "title": "망설이면 지는 거다",
-          "description": "용기(courage) 스탯이 MAX인 당신! 좋아하면 바로 돌진하는 직진형 연애러예요. 고백 성공률은 높지만 가끔 상대방이 놀랄 수 있어요. 매력도를 조금 더 올려보세요!",
+          "description": "넌 전투에 돌격하듯 사랑해 — 올인이고 반만 거는 법 없고 \"적절한 타이밍\" 같은 건 기다리지 않아. 뭔가 느끼는 매 순간이 적절한 타이밍이니까. 마음이 결정하면 몸이 따라가. 회의도 없고 리스크 평가도 없어. 원하는 걸 보면 그쪽으로 움직이는데 그 직선적인 에너지가 사람을 설레게 하거나 겁먹게 하거나 둘 중 하나야\n\n관계에서 넌 속도를 정하는 사람이야. 대부분보다 빨리 진전시켜 — 먼저 감정 표현하고 먼저 계획 잡고 먼저 친구들한테 소개해. \"천천히 알아가자\"라는 개념을 이해 못 해 느린 건 솔직하지 못한 거 같거든. 연결이 진짜면 왜 아닌 척하냐는 거지. 네 사랑에는 추진력이 있고 상대는 네 속도에 맞추거나 앞서가는 널 지켜보거나야\n\n이 전사 에너지가 자석이야. 초반 썸에서 대부분을 미치게 하는 모호함을 없애줘. 너랑 있으면 아무도 내가 어디 서 있는지 궁금해하지 않아. 네 헌신은 크고 눈에 보이고 명확해서 맞는 사람한테는 세상에서 가장 매력적인 거야\n\n위험은 속도와 강도가 공간이 필요한 사람을 압도할 수 있다는 거야. 모든 사람이 급한 걸 열정으로 읽지는 않아 — 압박으로 읽는 사람도 있어. 전투 속도로 움직이면 상대가 속도 줄여달라는 미묘한 신호를 놓칠 수 있거든. 전사의 가장 어려운 스킬은 돌격이 아니야 멈춤이야\n\n전속력 전진 — 마음은 안 기다려",
           "tags": [
             "직진",
             "용기",
@@ -1008,7 +1008,7 @@
       "locale_data": {
         "en": {
           "title": "The Patient Enchanter",
-          "description": "Your Empathy stat is off the charts! You read your partner's heart like a spell book. The ideal partner material — just don't forget to express your own feelings too.",
+          "description": "You don't cast your spell all at once — you let it build, layer by layer, until the other person is completely enchanted and can't quite pinpoint when it happened. Your approach to love is strategic patience. Not passivity, not hesitation — patience. You understand that the deepest connections aren't rushed into existence. They're cultivated.\n\nIn relationships, you're the person who creates intimacy through accumulation. A meaningful conversation here, a perfectly timed gesture there, a moment of vulnerability that you placed like a chess piece. You don't flood someone with attention — you create a slow, steady gravitational pull that draws them in so gradually they think it was their idea. By the time they realize how deeply they're invested, the spell is already complete.\n\nThis patience gives you a rare advantage. Your relationships tend to have stronger foundations because nothing was forced. The other person chose you freely, at their own pace, which means their commitment comes from genuine desire rather than being swept up in a current. You build castles while others build campfires.\n\nThe shadow side: strategic patience can mask fear of rejection. If you never fully extend yourself, you never fully risk being turned away. There's a version of your patience that's actually self-protection — controlling the pace so carefully that you're never the one exposed. Magic requires risk. At some point, the enchanter has to step out from behind the spells and show their actual face.\n\nPatience isn't passive — it's precision.",
           "tags": [
             "empathetic",
             "understanding",
@@ -1018,7 +1018,7 @@
         },
         "ko": {
           "title": "기다림의 마법사",
-          "description": "공감(empathy) 스탯이 MAX인 당신! 상대방 마음을 읽는 능력이 탁월해요. 연애에서 최고의 파트너지만 가끔은 본인 감정도 표현해보세요!",
+          "description": "넌 마법을 한 번에 안 걸어 — 층층이 쌓아서 상대가 완전히 빠졌는데 언제 그렇게 됐는지 본인도 모르게 만들어. 네 사랑 방식은 전략적 인내야. 수동적인 것도 망설임도 아닌 진짜 인내. 가장 깊은 연결은 급하게 만들어지지 않는다는 걸 알고 있어. 가꿔지는 거지\n\n관계에서 넌 축적으로 친밀감을 만드는 사람이야. 여기서 의미 있는 대화 하나 저기서 완벽한 타이밍의 제스처 하나 체스 말처럼 배치한 취약한 순간 하나. 관심을 쏟아붓지 않고 느리고 꾸준한 중력을 만들어서 상대가 자기 생각인 줄 알 정도로 자연스럽게 끌려오게 해. 얼마나 깊이 들어와 있는지 깨달았을 때 마법은 이미 완성돼 있어\n\n이 인내가 드문 장점을 줘. 네 관계는 기반이 더 단단한 편이야 억지로 된 게 없으니까. 상대가 자기 속도로 자유롭게 널 선택했으니 헌신이 흐름에 휩쓸린 게 아니라 진짜 원해서인 거야. 남들이 캠프파이어 피울 때 넌 성을 짓고 있어\n\n그림자 면은 전략적 인내가 거절의 두려움을 숨기고 있을 수 있다는 거야. 완전히 내밀지 않으면 완전히 거절당할 일도 없거든. 네 인내의 어떤 버전은 실은 자기 보호야 — 속도를 너무 조심스럽게 통제해서 절대 노출되는 쪽이 안 되는 거. 마법에는 리스크가 필요해. 어느 순간 마법사가 주문 뒤에서 나와서 진짜 얼굴을 보여줘야 해\n\n인내는 수동이 아니야 정밀한 거야",
           "tags": [
             "공감능력",
             "이해심",
@@ -1040,7 +1040,7 @@
       "locale_data": {
         "en": {
           "title": "Charm Is My Superpower",
-          "description": "Your Charm stat is legendary! You light up every room and people are drawn to you naturally. They fall first — every time. Just make sure the substance matches the sparkle.",
+          "description": "You walk into a room and the room tilts slightly in your direction. It's not about looks — it's energy. You have an almost musical quality to how you connect with people: rhythm in your conversation, melody in your humor, and a sense of timing that makes every interaction feel like it was choreographed by someone who really knows what they're doing.\n\nIn relationships, your charm operates on multiple frequencies. You know how to make someone feel like the only person in a crowded room. You remember what makes them laugh and deploy it at exactly the right moment. You're fluent in compliments that don't feel like flattery — specific, genuine observations that make people feel seen in a way they didn't expect. A raised eyebrow, a well-placed pause, the exact right thing said at the exact right time — this is your native language.\n\nThe power of this is obvious: people fall for you. Not just romantically — friends, colleagues, strangers at parties. You create connection effortlessly, and that ease is its own form of magnetism. People want to be around you because being around you feels good, simple as that.\n\nThe risk: charm that comes this naturally can become a substitute for depth. If you can make anyone feel special, the word \"special\" starts losing meaning — for them and for you. There's a version of this skill where you're constantly performing connection without actually experiencing it. The bard who plays for every audience eventually forgets what their own music sounds like. Your challenge isn't attracting people. It's choosing one and giving them the version of you that isn't performing.\n\nI don't try to be charming — it just happens.",
           "tags": [
             "magnetic",
             "charismatic",
@@ -1050,7 +1050,7 @@
         },
         "ko": {
           "title": "매력이 곧 무기",
-          "description": "매력(charm) 스탯이 MAX인 당신! 어디서든 빛나는 존재감의 소유자예요. 상대방이 먼저 반하는 타입이지만 내실도 같이 키워봐요!",
+          "description": "넌 방에 들어가면 방이 살짝 네 쪽으로 기울어. 외모가 아니라 에너지야. 사람과 연결되는 방식에 음악적인 뭔가가 있어 — 대화에 리듬이 있고 유머에 멜로디가 있고 모든 상호작용이 진짜 잘하는 사람이 안무한 것 같은 타이밍 감각이 있어\n\n관계에서 네 매력은 여러 주파수로 작동해. 붐비는 방에서 상대를 유일한 사람처럼 느끼게 하는 법을 알아. 뭐가 웃기는지 기억해놓고 딱 맞는 순간에 사용하지. 아첨 같지 않은 칭찬에 능숙해 — 상대가 기대 못 한 방식으로 보여졌다고 느끼게 하는 구체적이고 진짜인 관찰. 눈썹 올리기 적절한 멈춤 딱 맞는 타이밍의 딱 맞는 말 — 이게 네 모국어야\n\n이것의 위력은 명확해 — 사람들이 빠져. 연애뿐 아니라 친구도 동료도 파티의 낯선 사람도. 노력 없이 연결을 만들고 그 자연스러움 자체가 자력이야. 네 곁에 있으면 기분 좋으니까 사람들이 곁에 있고 싶어해 그게 다야\n\n위험은 이렇게 자연스러운 매력이 깊이의 대체물이 될 수 있다는 거야. 누구든 특별하게 느끼게 할 수 있으면 \"특별\"이라는 단어가 의미를 잃기 시작해 — 상대한테도 너한테도. 연결을 연기하면서 실제로는 경험하지 않는 버전이 있을 수 있거든. 모든 관객에게 연주하는 바드는 자기 음악이 어떤 소리인지 잊어버려. 네 과제는 사람을 끄는 게 아니야 한 사람을 골라서 연기하지 않는 너를 주는 거야\n\n매력적이려고 한 게 아닌데 그냥 돼",
           "tags": [
             "매력적",
             "존재감",
@@ -1072,7 +1072,7 @@
       "locale_data": {
         "en": {
           "title": "I'll Be on Your Side",
-          "description": "Your Patience stat is unbreakable! A master of the long game — your partner trusts you unconditionally. Just don't hold everything in until you explode.",
+          "description": "You love by protecting. Not in a controlling way — in the way that makes someone realize, maybe for the first time, what it feels like to have someone genuinely in their corner. You're the partner who steps forward when things get hard, who stays when leaving would be easier, and who treats your person's problems like they're your own because in your mind, they are.\n\nIn relationships, you're the emotional anchor. When your partner has a terrible day, you don't just listen — you create a plan, offer solutions, and sometimes just physically position yourself between them and whatever's hurting them. You carry emotional weight that isn't yours because watching someone you love struggle while you stand idle feels unbearable. Your loyalty isn't conditional — it's structural. It's not something you decide to give; it's how you're built.\n\nThis devotion is profoundly powerful. In a world of situationships and hedged bets, you're the rare person who goes all in and means it. Your partner never has to wonder if you'll show up — the question is irrelevant because you're already there. That kind of security is the foundation of every great relationship.\n\nThe blind spot: protecting someone can become managing them. If you're always stepping in, your partner never develops their own resilience. And if your identity is built on being the protector, you might struggle when they don't need protecting — or worse, when you're the one who needs help. The paladin's real test isn't whether they can fight for someone. It's whether they can put the shield down long enough to be vulnerable themselves.\n\nI protect what I love — that's not negotiable.",
           "tags": [
             "patient",
             "steady",
@@ -1082,7 +1082,7 @@
         },
         "ko": {
           "title": "네 편이 되어줄게",
-          "description": "인내(patience) 스탯이 MAX인 당신! 기다림과 배려의 달인이에요. 장기전에 강하고 상대방이 믿고 의지하는 타입이에요. 다만 너무 참지는 말아요!",
+          "description": "넌 지켜주는 것으로 사랑해. 컨트롤이 아니라 — 누군가가 진짜 내 편인 게 어떤 느낌인지 어쩌면 처음으로 알게 해주는 방식으로. 힘들 때 앞에 나서는 사람이고 떠나는 게 쉬울 때 남는 사람이고 상대의 문제를 자기 문제처럼 다루는 사람이야 — 네 머릿속에서는 실제로 그러니까\n\n관계에서 넌 감정적 닻이야. 상대가 최악의 하루를 보내면 듣기만 하는 게 아니라 계획을 세우고 해결책을 제시하고 때로는 물리적으로 그 사람과 고통 사이에 서. 네 것이 아닌 감정적 무게를 지는 건 사랑하는 사람이 힘든데 가만히 있는 게 견딜 수 없기 때문이야. 네 충성은 조건부가 아니야 — 구조적이야. 주기로 결정하는 게 아니라 네가 만들어진 방식이야\n\n이 헌신이 엄청나게 강력해. 상황만 즐기고 보험 드는 세상에서 넌 올인하고 진심인 드문 사람이야. 상대가 네가 나타날지 궁금해할 필요가 없어 — 이미 거기 있으니까. 그런 안전감이 모든 좋은 관계의 기반이야\n\n사각지대는 보호가 관리가 될 수 있다는 거야. 네가 항상 나서면 상대가 자기 회복력을 키울 기회가 없어져. 정체성이 보호자 위에 세워져 있으면 보호할 게 없을 때 흔들리거나 — 더 안 좋은 건 — 네가 도움이 필요할 때 어떻게 해야 할지 모르게 돼. 팔라딘의 진짜 시험은 누군가를 위해 싸울 수 있느냐가 아니야. 방패를 내려놓고 자기가 취약해질 수 있느냐야\n\n내가 사랑하는 건 내가 지켜 — 협상 불가",
           "tags": [
             "인내심",
             "안정감",
@@ -1104,7 +1104,7 @@
       "locale_data": {
         "en": {
           "title": "Laughter Fixes Everything",
-          "description": "Your Humor stat is maxed out! You turn every situation into a good time. Best vibe-setter in any relationship — but sometimes a serious moment won't hurt.",
+          "description": "You approach love the way a rogue approaches a dungeon — with agility, improvisation, and the firm belief that if things go sideways, you can charm your way out. Seriousness makes you itchy. Heavy emotional conversations feel like traps. Your instinct is to keep things light, keep moving, and keep laughing, because as long as everyone's laughing, nothing is really broken.\n\nIn relationships, you're the one who turns a fight into a joke before it escalates, who responds to \"we need to talk\" with a meme that's so perfectly timed it actually diffuses the tension, and who makes even mundane moments — waiting in line, stuck in traffic, assembling furniture — feel like an adventure. You bring spontaneity and playfulness that keeps relationships from getting stale. Date nights with you are never boring because you don't do boring.\n\nThis is a genuine gift. You remind people that love should be fun. In a world that treats relationships like serious business requiring constant maintenance, you prove that the strongest bonds are often built on shared joy, inside jokes, and the willingness to be silly together. Laughter is your love language, and it's more effective than most people realize.\n\nThe catch: not everything can be laughed away. When your partner needs you to sit with them in sadness — to just be present without deflecting, without performing, without fixing — your instinct to lighten the mood can feel like minimizing their pain. The rogue's growth edge isn't learning to be funnier. It's learning that sometimes the bravest thing you can do is stop being funny and just be there.\n\nLife's too short for boring love.",
           "tags": [
             "funny",
             "bright",
@@ -1114,7 +1114,7 @@
         },
         "ko": {
           "title": "웃음으로 다 해결",
-          "description": "유머(humor) 스탯이 MAX인 당신! 함께 있으면 항상 웃음이 넘치는 타입이에요. 최고의 분위기 메이커지만 진지한 순간도 만들어보세요!",
+          "description": "넌 로그가 던전에 접근하듯 사랑에 접근해 — 민첩하게 즉흥적으로 그리고 일이 틀어지면 매력으로 빠져나올 수 있다는 확신으로. 진지함이 근질거려. 무거운 감정 대화가 함정처럼 느껴져. 본능이 가볍게 유지하고 계속 움직이고 계속 웃는 거야 — 다 웃고 있으면 진짜 부서진 건 없으니까\n\n관계에서 넌 싸움이 커지기 전에 농담으로 바꾸는 사람이야. \"우리 얘기 좀 해\"에 타이밍 완벽한 밈으로 답해서 진짜로 텐션을 풀고 줄 서기나 정체나 가구 조립 같은 일상도 모험으로 만들지. 관계가 식지 않게 하는 즉흥성과 장난기를 가져오는 사람이야. 너랑의 데이트는 절대 지루하지 않아 넌 지루한 걸 못 하는 사람이니까\n\n이게 진짜 재능이야. 사랑은 재미있어야 한다는 걸 사람들한테 상기시켜. 관계를 끊임없는 정비가 필요한 심각한 사업으로 취급하는 세상에서 넌 가장 강한 유대가 함께 웃고 둘만의 농담과 함께 바보가 되는 걸 감수하는 것에서 만들어진다는 걸 증명해. 웃음이 네 사랑 언어고 그건 대부분이 생각하는 것보다 훨씬 효과적이야\n\n문제는 모든 게 웃음으로 해결되지는 않는다는 거야. 상대가 슬픔 안에 같이 앉아있어 주길 바랄 때 — 전환하지 않고 연기하지 않고 고치지 않고 그냥 거기 있어주기 — 분위기 밝히려는 네 본능이 상대의 아픔을 가볍게 여기는 것처럼 느껴질 수 있어. 로그의 성장 포인트는 더 웃기는 법이 아니야. 때로는 웃기는 걸 멈추고 그냥 거기 있는 게 가장 용감한 거라는 걸 배우는 거야\n\n재미없는 사랑은 사랑이 아니야",
           "tags": [
             "유머",
             "밝음",

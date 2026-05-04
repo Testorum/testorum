@@ -818,7 +818,7 @@
       "locale_data": {
         "en": {
           "title": "Silence Is Not My Style",
-          "description": "You face problems head-on — no sugarcoating, no dodging. People know where they stand with you, which is refreshing. Just watch the delivery — sometimes the message gets lost in the heat.",
+          "description": "When something is wrong, you say it's wrong — out loud, in the moment, with the kind of directness that makes some people uncomfortable and other people profoundly grateful. You don't do passive aggression. You don't do the slow build of resentment that explodes three months later over an unrelated argument. If there's a problem, you name it, now, because pretending it doesn't exist has never once made it go away.\n\nIn conflict, you're the person who leans forward instead of pulling back. You respond immediately because waiting feels like letting the other person think their behavior was acceptable. You match energy — if someone raises their voice, yours rises to meet it. Not to dominate, but because you refuse to be diminished. Your arguments are direct, your points are clear, and you don't sugarcoat things that taste bitter because bitter truths deserve honest delivery.\n\nThis confrontational honesty has genuine value. You clear the air faster than anyone else in your life. Problems don't fester around you because you don't let them. People who appreciate directness love you for it — they know exactly where they stand, there's no guessing, and after the collision, the relationship is usually stronger for having survived it.\n\nThe edge to manage: directness in the heat of the moment can become cruelty if you're not careful. There's a line between \"I'm being honest\" and \"I'm being right at the cost of being kind.\" You sometimes win arguments by inflicting damage that outlasts the disagreement. The words you choose at peak intensity are the ones people remember longest. Fighting for resolution and fighting to win are different sports — and you're not always playing the one you think you are.\n\nI'd rather fight than fake it.",
           "tags": [
             "direct",
             "assertive",
@@ -828,7 +828,7 @@
         },
         "ko": {
           "title": "참으면 나만 손해",
-          "description": "문제가 생기면 바로 부딪히는 타입! 돌려 말하기 싫고 직접적으로 해결하려 해요. 시원시원해서 좋지만 가끔 말투가 강할 수 있으니 전달 방식에 주의!",
+          "description": "뭔가 잘못됐으면 잘못됐다고 말해 — 크게 그 순간에 어떤 사람은 불편하게 만들고 어떤 사람은 깊이 감사하게 만드는 직접적임으로. 소극적 공격 안 해. 3개월 동안 쌓다가 상관없는 싸움에서 터지는 것도 안 해. 문제가 있으면 지금 이름 붙여 — 없는 척한다고 사라진 적은 한 번도 없으니까\n\n갈등 상황에서 넌 뒤로 빠지는 게 아니라 앞으로 기우는 사람이야. 즉시 반응해 — 기다리면 상대가 자기 행동이 괜찮았다고 생각할 것 같으니까. 에너지를 맞춰 — 상대가 목소리 높이면 네 것도 올라가. 지배하려는 게 아니라 작아지기를 거부하는 거야. 논쟁은 직접적이고 포인트는 명확하고 쓴 진실에 설탕을 입히지 않아\n\n이 대면적 솔직함에 진짜 가치가 있어. 누구보다 빨리 공기를 맑게 해. 네 주변에서는 문제가 곪지 않아 네가 놔두지를 않으니까. 직접적임을 좋아하는 사람들은 너를 사랑해 — 자기가 어디 서 있는지 정확히 알고 추측이 없고 충돌 후에 관계가 보통 더 단단해지니까\n\n관리할 부분은 순간의 직접적함이 조심 안 하면 잔인함이 될 수 있다는 거야. \"솔직한 것\"과 \"친절함을 대가로 맞는 것\" 사이에 선이 있어. 가끔 의견 차이보다 오래 가는 상처를 입혀서 논쟁에서 이기거든. 최고조에서 고른 단어가 사람들이 가장 오래 기억하는 단어야. 해결을 위한 싸움과 이기기 위한 싸움은 다른 종목인데 — 네가 항상 생각하는 종목을 하고 있는 건 아니야\n\n참느니 싸울래",
           "tags": [
             "직접적",
             "당당함",
@@ -850,7 +850,7 @@
       "locale_data": {
         "en": {
           "title": "If I Can Avoid It I Will",
-          "description": "Peace is your priority — even at the cost of your own comfort. You'd rather walk away than escalate. Noble, but things left unsaid have a way of piling up.",
+          "description": "Your nervous system decided a long time ago that conflict is a threat, not an opportunity, and your entire behavioral architecture is built around minimizing exposure to it. This isn't cowardice — it's a deeply rational calculation: most fights aren't worth the damage they cause, most arguments don't change anyone's mind, and most confrontations leave both people worse off than before. You chose peace, and you chose it on purpose.\n\nIn practice, you're the person who changes the subject when a conversation gets heated, who agrees to things you don't fully support to avoid an argument, and who has perfected the art of the diplomatic exit — \"I see your point\" said with just enough conviction to end the discussion without actually conceding anything. You read rising tension the way other people read weather forecasts, and you adjust your route accordingly.\n\nThe upside: your life has less unnecessary drama than almost anyone you know. You preserve relationships that more confrontational people would have burned. You've maintained friendships and professional relationships for years precisely because you know when to let something go, and that skill is genuinely underrated.\n\nThe cost is paid in silence. Every conflict you avoid deposits something in your body that doesn't disappear — it just goes underground. The opinions you swallowed, the boundaries you didn't enforce, the moments you said \"it's fine\" when it absolutely wasn't — they accumulate. And one day, something small triggers everything at once, and the person on the receiving end has no idea where all of this came from. Avoidance isn't peace. It's deferred confrontation with compound interest.\n\nI choose my battles — most aren't worth it.",
           "tags": [
             "peaceful",
             "avoidant",
@@ -860,7 +860,7 @@
         },
         "ko": {
           "title": "피할 수 있으면 피한다",
-          "description": "싸우느니 참는 게 나은 타입! 갈등 자체가 스트레스여서 가능하면 피해요. 평화로운 성격이지만 쌓아두면 언젠가 터지니 적당히 표현하는 연습도 필요해요!",
+          "description": "네 신경계는 오래전에 갈등이 기회가 아니라 위협이라고 결정했고 네 행동 전체가 그 노출을 최소화하도록 설계돼 있어. 겁쟁이가 아니야 — 깊이 합리적인 계산이야. 대부분의 싸움은 생기는 피해만큼 가치가 없고 대부분의 논쟁은 누구 마음도 안 바꾸고 대부분의 대면은 둘 다 더 나빠지게 하니까. 넌 평화를 택했고 의도적으로 택했어\n\n실제로 넌 대화가 뜨거워지면 화제를 바꾸고 싸움 피하려고 완전히 동의 안 하는 것에 동의하고 외교적 퇴장 기술을 완성한 사람이야 — \"네 말도 맞아\"를 실제로는 아무것도 양보하지 않으면서 토론을 끝낼 만큼의 확신으로 말하는 기술. 남들이 일기예보 읽듯 고조되는 긴장을 읽고 경로를 조정해\n\n장점은 네 삶에 아는 사람 거의 누구보다 불필요한 드라마가 적다는 거야. 더 대면적인 사람이었으면 태웠을 관계를 보존해. 우정과 직업적 관계를 몇 년간 유지한 게 정확히 언제 놓아야 하는지 아는 능력 덕분인데 그 능력은 진짜 저평가돼 있어\n\n대가는 침묵으로 지불돼. 피한 갈등마다 몸에 뭔가가 쌓이는데 사라지지 않아 — 지하로 갈 뿐이야. 삼킨 의견들 세우지 않은 경계들 절대 괜찮지 않았는데 \"괜찮아\"라고 한 순간들이 쌓여. 그러다 어느 날 작은 게 전부를 한 번에 터뜨리고 받는 쪽은 이게 다 어디서 온 건지 전혀 모르겠는 거야. 회피는 평화가 아니야 복리가 붙는 유예된 대면이야\n\n싸움을 고른다 — 대부분은 가치가 없어",
           "tags": [
             "평화주의",
             "회피형",
@@ -882,7 +882,7 @@
       "locale_data": {
         "en": {
           "title": "Let's Talk It Through",
-          "description": "You believe every conflict has a solution if both sides try. You stay calm, listen, and find the middle ground. Master negotiator — just don't compromise your own values away.",
+          "description": "You believe — genuinely, stubbornly, almost religiously — that every conflict has a talking-it-out solution if both people are willing to show up honestly. You don't run from hard conversations; you run toward them with a mediator's energy and a therapist's patience. When things break, your first instinct isn't to fight or flee. It's to sit down, look the other person in the eye, and say \"okay, let's figure this out.\"\n\nIn conflicts, you're the person who asks \"what did you actually mean by that?\" when everyone else is already reacting. You separate the behavior from the person, address the issue without attacking the human, and create space for both sides to feel heard before pushing toward resolution. You've probably said \"I understand your perspective, but here's mine\" more times than you can count, and you meant it every time.\n\nThis mediation instinct is incredibly valuable. You resolve situations that would otherwise escalate into relationship-ending disasters. You model healthy communication in real time, and people learn from watching you — even if they'd never admit it. You're proof that two people can disagree intensely and still walk away respecting each other.\n\nThe blind spot: not every conflict deserves a conversation. Some people aren't interested in resolution — they're interested in winning, or in making you exhaust yourself trying. When you extend the invitation to talk and the other person uses it to manipulate, stall, or gaslight, your faith in dialogue becomes a vulnerability. The hardest lesson for someone like you is that sometimes the healthiest resolution is walking away — and that doing so isn't a communication failure.\n\nEvery wall has a door — let's find it.",
           "tags": [
             "rational",
             "diplomatic",
@@ -892,7 +892,7 @@
         },
         "ko": {
           "title": "대화로 풀 수 있다",
-          "description": "모든 갈등에는 해결책이 있다고 믿는 타입! 차분하게 듣고 타협점을 찾아요. 조율의 달인이지만 남 맞추다 내 기준을 잃지 않도록 주의!",
+          "description": "넌 모든 갈등에는 둘 다 솔직하게 나오면 대화로 풀리는 해결책이 있다고 진심으로 고집스럽게 거의 종교적으로 믿어. 어려운 대화를 피하지 않아 — 중재자의 에너지와 상담사의 인내로 달려가. 뭔가 부서지면 첫 본능이 싸우거나 도망가는 게 아니라 앉아서 상대 눈을 보고 \"자 이걸 풀어보자\" 하는 거야\n\n갈등에서 넌 다른 사람이 이미 반응하고 있을 때 \"그거 진짜 무슨 뜻으로 한 거야?\"라고 물어보는 사람이야. 행동과 사람을 분리하고 인격 공격 없이 이슈를 다루고 해결을 밀기 전에 양쪽 다 들렸다고 느끼는 공간을 만들어. \"네 관점은 이해해 근데 내 생각은 이래\" 를 셀 수 없이 말했을 텐데 매번 진심이었어\n\n이 중재 본능이 엄청나게 귀해. 안 그러면 관계 끝나는 재앙으로 갔을 상황을 해결해. 실시간으로 건강한 소통을 보여주고 사람들이 — 인정은 안 해도 — 너를 보면서 배워. 두 사람이 격하게 동의 안 해도 서로 존중하며 돌아설 수 있다는 증거야\n\n사각지대는 모든 갈등이 대화를 받을 자격이 있는 건 아니라는 거야. 해결에 관심 없는 사람도 있어 — 이기는 데 관심 있거나 널 지치게 하는 데 관심 있는 사람. 대화 초대를 건넸는데 상대가 그걸로 조종하거나 질질 끌거나 가스라이팅하면 대화에 대한 네 믿음이 약점이 돼. 너 같은 사람한테 가장 어려운 교훈은 때로는 가장 건강한 해결이 떠나는 거라는 거야 — 그리고 그게 소통 실패가 아니라는 거\n\n모든 벽에는 문이 있어 — 찾아보자",
           "tags": [
             "합리적",
             "외교적",
@@ -914,7 +914,7 @@
       "locale_data": {
         "en": {
           "title": "My Heart Speaks First",
-          "description": "You feel conflicts deeply — they hit your heart before your head. Your emotional intelligence is high, but sometimes feelings overwhelm the facts. Give yourself space to process, then speak.",
+          "description": "When conflict hits, your emotions arrive first — a full-body wave that floods through you before logic even boots up. You don't choose to feel everything so intensely; it's just how your system processes threat. While others are calculating their response, you're already feeling the sting, the frustration, the hurt, the betrayal, all at once, and that emotional data drives every word out of your mouth.\n\nIn conflicts, you're the person who tears up not because you're weak, but because your body processes injustice through emotion before it processes it through reason. You say \"that really hurt me\" instead of \"let's analyze what happened.\" You use feeling-words first, framework-words second. When you're upset, it shows — in your voice, your face, your body language — and you can't fake otherwise. Performing calm when you're not calm feels like a betrayal of your own experience.\n\nThis emotional honesty has real power. You make conflict human in a way that logic-first people can't. When you say you're hurt, the other person can't intellectualize their way out of it — they have to reckon with the actual impact of their actions. You ground conversations in lived experience instead of abstractions, and that forces accountability in a way that polite debate never does.\n\nThe vulnerability: leading with emotion can override your own message. When tears or anger arrive before your argument, the other person might respond to the delivery instead of the content — dismissing your feelings as \"overreacting\" instead of hearing what caused them. You also risk making decisions in the emotional peak that you wouldn't endorse once the wave passes. The goal isn't to feel less. It's to give your feelings a slightly longer leash so they arrive as allies, not ambushes.\n\nI feel first — and I'm not sorry.",
           "tags": [
             "sensitive",
             "empathetic",
@@ -924,7 +924,7 @@
         },
         "ko": {
           "title": "마음이 먼저 반응한다",
-          "description": "갈등이 생기면 머리보다 마음이 먼저 반응하는 타입! 감수성이 풍부하고 공감 능력이 높아요. 감정이 앞서면 말을 못 하기도 하니 정리 후 표현하는 연습이 도움 돼요!",
+          "description": "갈등이 오면 감정이 먼저 도착해 — 논리가 부팅하기도 전에 온몸을 휩쓰는 파도. 이렇게 강렬하게 느끼겠다고 선택한 게 아니야 네 시스템이 위협을 처리하는 방식이 그런 거야. 남들이 반응을 계산하는 동안 넌 이미 찔림과 좌절과 상처와 배신을 한꺼번에 느끼고 있고 그 감정 데이터가 입에서 나오는 모든 말을 움직여\n\n갈등에서 넌 눈물 나는 사람인데 약해서가 아니라 네 몸이 부당함을 이성보다 감정으로 먼저 처리하니까. \"무슨 일이 있었는지 분석하자\" 대신 \"그거 나 진짜 상처받았어\"라고 말해. 감정 단어가 먼저고 프레임워크 단어가 나중이야. 속상하면 티 나 — 목소리에 얼굴에 몸짓에 — 아닌 척 못 해. 안 괜찮은데 괜찮은 척하는 건 자기 경험에 대한 배신처럼 느껴지거든\n\n이 감정적 솔직함에 진짜 힘이 있어. 논리 우선 사람이 못 하는 방식으로 갈등을 인간적으로 만들어. 네가 상처받았다고 하면 상대가 머리로 빠져나갈 수 없어 — 자기 행동의 실제 영향과 마주해야 하거든. 추상 대신 실제 경험에 대화를 뿌리내리게 해서 예의 바른 토론이 절대 못 하는 방식으로 책임을 만들어\n\n취약점은 감정이 앞서면 네 메시지 자체를 덮을 수 있다는 거야. 눈물이나 분노가 논리보다 먼저 오면 상대가 원인을 듣는 대신 전달 방식에 반응해서 \"과민반응\"으로 치부할 수 있어. 감정의 최고조에서 파도가 지나면 동의 안 했을 결정을 내릴 위험도 있고. 덜 느끼라는 게 아니야 감정에 조금만 더 긴 줄을 줘서 기습이 아니라 아군으로 도착하게 하는 거야\n\n마음이 먼저야 — 미안하지 않아",
           "tags": [
             "감수성",
             "공감형",
