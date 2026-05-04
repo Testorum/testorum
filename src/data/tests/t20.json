@@ -1,0 +1,1112 @@
+{
+  "meta": {
+    "slug": "t20",
+    "locale_data": {
+      "en": {
+        "title": "First Impression vs Real You",
+        "subtitle": "The you they see vs the you that is",
+        "description": "Find out how different your public persona is from your private self",
+        "shareText": "My first impression vs real me is..."
+      },
+      "ko": {
+        "title": "첫인상 vs 진짜 나",
+        "subtitle": "사람들이 보는 나 vs 진짜 나",
+        "description": "공적 페르소나와 사적 자아가 얼마나 다른지 알아보자",
+        "shareText": "첫인상 vs 진짜 나..."
+      }
+    },
+    "emoji": "🎭",
+    "category": "identity",
+    "estimatedMinutes": 3,
+    "theme": {
+      "primary": "#9B5DE5",
+      "bg": "#F5EDFF",
+      "accent": "#1D1D3B"
+    }
+  },
+  "scoring": {
+    "type": "tpm",
+    "axes": [
+      "drive",
+      "process",
+      "compass"
+    ]
+  },
+  "_designNote": "Q1-Q4 measure PUBLIC persona (first impression). Q5-Q8 measure PRIVATE self. The GAP between the two TPM profiles = result.",
+  "questions": [
+    {
+      "id": 1,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "When you meet someone new,\nthe first impression you usually give is..."
+        },
+        "ko": {
+          "text": "새로운 사람을 만날 때\n보통 주는 첫인상은..."
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Outgoing and energetic — I light up around new people"
+            },
+            "ko": {
+              "text": "외향적이고 에너지 넘치는 — 새 사람 앞에서 빛나"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Public: high-energy self-presentation"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Warm and approachable — people feel comfortable around me quickly"
+            },
+            "ko": {
+              "text": "따뜻하고 다가가기 쉬운 — 사람들이 빨리 편해해"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Public: warm connector"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Calm and composed — I come across as someone who has it together"
+            },
+            "ko": {
+              "text": "차분하고 안정적 — 정돈된 사람이라는 인상"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Public: composed rational"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Quiet and observant — I watch more than I talk at first"
+            },
+            "ko": {
+              "text": "조용하고 관찰하는 — 처음엔 말보다 보는 게 많아"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Public: quiet observer"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "In a new group setting,\npeople probably think you're..."
+        },
+        "ko": {
+          "text": "새로운 모임에서\n사람들이 아마 너를 이렇게 볼 거야"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "The confident one who has opinions and shares them"
+            },
+            "ko": {
+              "text": "의견이 있고 당당하게 말하는 사람"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Public: assertive"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "The friendly one everyone gravitates toward"
+            },
+            "ko": {
+              "text": "모두가 끌리는 친근한 사람"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Public: magnetic warm"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "The thoughtful one who speaks when they have something real to say"
+            },
+            "ko": {
+              "text": "할 말이 있을 때 말하는 사려 깊은 사람"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Public: selective thoughtful"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "The easygoing one who goes with the flow"
+            },
+            "ko": {
+              "text": "흐름에 따라가는 편한 사람"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Public: easygoing"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "At work or school,\nyour public persona is mostly..."
+        },
+        "ko": {
+          "text": "직장이나 학교에서\n너의 공적 페르소나는..."
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Professional and put-together — emotions stay private"
+            },
+            "ko": {
+              "text": "프로페셔널하고 정돈된 — 감정은 개인적으로"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Public: controlled professional"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Helpful and available — the person everyone comes to"
+            },
+            "ko": {
+              "text": "도움이 되고 열린 — 모두가 찾아오는 사람"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Public: helper"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Fun and social — I make the environment lighter"
+            },
+            "ko": {
+              "text": "재밌고 사교적 — 분위기를 가볍게 만드는 사람"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Public: entertainer"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Independent and focused — I do my work and do it well"
+            },
+            "ko": {
+              "text": "독립적이고 집중하는 — 내 일을 잘 하는 사람"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Public: independent worker"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "image_grid",
+      "locale_data": {
+        "en": {
+          "text": "Pick the mask you wear\nmost often in public"
+        },
+        "ko": {
+          "text": "사람들 앞에서\n가장 자주 쓰는 가면은?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "The capable leader who always knows what to do"
+            },
+            "ko": {
+              "text": "항상 뭘 해야 하는지 아는 유능한 리더"
+            }
+          },
+          "emoji": "👔",
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Public mask: competent leader"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "The easygoing person who never gets bothered"
+            },
+            "ko": {
+              "text": "아무것도 신경 안 쓰는 편한 사람"
+            }
+          },
+          "emoji": "😎",
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Public mask: unbothered cool"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "The warm caretaker everyone relies on"
+            },
+            "ko": {
+              "text": "모두가 기대는 따뜻한 돌봄이"
+            }
+          },
+          "emoji": "🤗",
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Public mask: caretaker"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "The fun social butterfly who lights up the room"
+            },
+            "ko": {
+              "text": "방을 밝히는 재밌는 소셜 나비"
+            }
+          },
+          "emoji": "🦋",
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Public mask: social butterfly"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "When you're alone and totally yourself,\nyou're actually more..."
+        },
+        "ko": {
+          "text": "혼자 있고 완전히 나 자신일 때\n실은 더..."
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Emotional than people would guess — I feel everything deeply"
+            },
+            "ko": {
+              "text": "사람들 예상보다 감정적 — 다 깊게 느껴"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Private: deeply emotional"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Ambitious than I let on — I have big plans I keep to myself"
+            },
+            "ko": {
+              "text": "겉보기보다 야심적 — 혼자 품고 있는 큰 계획이 있어"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Private: secretly ambitious"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Anxious than anyone knows — I worry about things I never mention"
+            },
+            "ko": {
+              "text": "아무도 모르는 만큼 불안 — 절대 말 안 하는 걱정이 있어"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Private: hidden anxiety"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Silly and weird — the real me is way goofier than the public me"
+            },
+            "ko": {
+              "text": "멍청하고 이상한 — 진짜 나는 겉보다 훨씬 유치해"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Private: secretly goofy"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "The part of yourself you almost\nnever show to others is..."
+        },
+        "ko": {
+          "text": "다른 사람에게 거의\n보여주지 않는 나의 면은..."
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "How much I actually need people — I seem more independent than I am"
+            },
+            "ko": {
+              "text": "사람이 얼마나 필요한지 — 실제보다 독립적으로 보여"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Private: hidden need for connection"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "How analytical I really am — I overthink everything privately"
+            },
+            "ko": {
+              "text": "얼마나 분석적인지 — 혼자서 모든 걸 과잉 분석해"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Private: hidden overthinking"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "How soft I am inside — I protect it with humor or toughness"
+            },
+            "ko": {
+              "text": "속이 얼마나 부드러운지 — 유머나 강함으로 보호해"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Private: hidden softness"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "How much I want to be seen — I act like I don't care but I do"
+            },
+            "ko": {
+              "text": "인정받고 싶은 욕구 — 상관없는 척하지만 진짜는 아니야"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "Private: hidden need for recognition"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "Your closest friend knows you're actually..."
+        },
+        "ko": {
+          "text": "가장 친한 친구는 네가 사실은\n이런 사람인 걸 알아"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Way more intense than you seem — you care deeply about everything"
+            },
+            "ko": {
+              "text": "겉보다 훨씬 강렬한 — 모든 걸 깊이 신경 써"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Private: intense caring"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Funnier and weirder than your public persona lets on"
+            },
+            "ko": {
+              "text": "공적 페르소나보다 훨씬 웃기고 이상한"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Private: hidden humor"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "More strategic than you look — you think 5 steps ahead"
+            },
+            "ko": {
+              "text": "겉보다 전략적인 — 5단계 앞을 생각해"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Private: hidden strategist"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Softer and more vulnerable — you just don't trust easily"
+            },
+            "ko": {
+              "text": "더 부드럽고 취약한 — 쉽게 안 믿을 뿐"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Private: guarded vulnerability"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "If people could see the REAL you,\nthey'd be most surprised by..."
+        },
+        "ko": {
+          "text": "진짜 나를 볼 수 있다면\n가장 놀랄 부분은..."
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "How much I actually think before I speak — I'm not as impulsive as I seem"
+            },
+            "ko": {
+              "text": "말하기 전에 얼마나 생각하는지 — 겉보다 충동적이지 않아"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Gap: seems impulsive but actually deliberate"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "How emotional I actually am — the calm exterior is a performance"
+            },
+            "ko": {
+              "text": "실제로 얼마나 감정적인지 — 차분한 겉은 연기야"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Gap: seems calm but actually emotional"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "How much I care about them specifically — I'm bad at showing it"
+            },
+            "ko": {
+              "text": "그들을 구체적으로 얼마나 챙기는지 — 표현을 못 해서"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Gap: seems distant but actually caring"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "How chaotic and unfiltered I am inside — outside is a curated version"
+            },
+            "ko": {
+              "text": "속이 얼마나 혼돈스럽고 필터 없는지 — 밖은 큐레이션된 버전"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Gap: seems composed but actually chaotic"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "wysiwyg",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "self"
+      },
+      "locale_data": {
+        "en": {
+          "title": "What You See Is What You Get",
+          "description": "Your public and private selves are basically the same person. What people see in the first five minutes is what they get after five years. This isn't because you lack depth — it's because you refuse to perform. Your authenticity is rare and magnetic. Blind spot? Some social contexts actually benefit from a filter. Being 100% yourself 100% of the time can overwhelm people who aren't ready for that intensity.",
+          "tags": [
+            "authentic",
+            "consistent",
+            "no-filter"
+          ],
+          "compatibility": "Social Chameleon"
+        },
+        "ko": {
+          "title": "보이는 게 전부다",
+          "description": "공적 자아와 사적 자아가 거의 같은 사람이야. 처음 5분에 보이는 게 5년 후에도 같아. 깊이가 없어서가 아니라 연기를 거부해서야. 사각지대는 어떤 사회적 맥락에서는 필터가 도움이 된다는 거. 항상 100% 자기 자신이면 그 강도에 준비 안 된 사람들을 압도할 수 있어.",
+          "tags": [
+            "진정성",
+            "일관성",
+            "필터 없음"
+          ],
+          "compatibility": "소셜 카멜레온"
+        }
+      },
+      "emoji": "🪟",
+      "emojiCombo": "🪟✨"
+    },
+    {
+      "id": "quiet_storm",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "pulse",
+        "compass": "bond"
+      },
+      "locale_data": {
+        "en": {
+          "title": "Quiet Storm",
+          "description": "Outside: calm, composed, maybe even reserved. Inside: a full orchestra of feelings, ideas, and intensity that would shock most people who think they know you. You process deeply but express selectively. The few people who've seen the real you? They'll never forget it. Blind spot? The gap between your inner world and outer expression can make people underestimate you — or feel surprised when the storm finally surfaces.",
+          "tags": [
+            "deep-interior",
+            "selective-expression",
+            "intensity-hidden"
+          ],
+          "compatibility": "What You See Is What You Get"
+        },
+        "ko": {
+          "title": "조용한 폭풍",
+          "description": "밖: 차분하고 안정적이고 어쩌면 조용한. 안: 대부분의 사람이 너를 안다고 생각하면 충격받을 감정과 아이디어와 강렬함의 풀 오케스트라. 깊게 처리하지만 선택적으로 표현해. 진짜 너를 본 소수? 절대 잊지 않을 거야. 사각지대는 내면과 외부 표현의 갭이 사람들을 과소평가하게 만들거나 폭풍이 올라왔을 때 놀라게 할 수 있다는 거.",
+          "tags": [
+            "깊은 내면",
+            "선택적 표현",
+            "숨은 강렬함"
+          ],
+          "compatibility": "보이는 게 전부다"
+        }
+      },
+      "emoji": "🌊",
+      "emojiCombo": "🌊⚡"
+    },
+    {
+      "id": "chameleon",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "prism",
+        "compass": "bond"
+      },
+      "locale_data": {
+        "en": {
+          "title": "Social Chameleon",
+          "description": "You instinctively adjust who you are based on who you're with. Not fake — adaptive. You read the room and become what it needs. With your boss: professional. With friends: chaos agent. With someone hurting: the calmest person alive. Your core stays the same but your expression shape-shifts. Blind spot? Adapting too much can make you lose track of who you are when nobody's watching. Make sure the chameleon has a home color.",
+          "tags": [
+            "adaptive",
+            "context-sensitive",
+            "shape-shifting"
+          ],
+          "compatibility": "Secret Softie"
+        },
+        "ko": {
+          "title": "소셜 카멜레온",
+          "description": "본능적으로 함께하는 사람에 따라 자신을 조정해. 가짜가 아니라 적응형이야. 분위기를 읽고 필요한 것이 돼. 상사 앞: 프로. 친구: 혼돈의 에이전트. 힘든 사람: 세상에서 가장 차분한 사람. 코어는 같지만 표현이 형태를 바꿔. 사각지대는 너무 적응하면 아무도 안 볼 때 내가 누군지 잃을 수 있다는 거. 카멜레온도 기본 색이 있어야 해.",
+          "tags": [
+            "적응형",
+            "맥락 감지",
+            "형태 변환"
+          ],
+          "compatibility": "시크릿 소프티"
+        }
+      },
+      "emoji": "🦎",
+      "emojiCombo": "🦎🎭"
+    },
+    {
+      "id": "softie",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "self"
+      },
+      "locale_data": {
+        "en": {
+          "title": "Secret Softie",
+          "description": "The world sees competence, composure, maybe even a little edge. But behind closed doors? You're way softer than anyone would guess. You analyze in public and feel in private. Your tough exterior protects a heart that's more tender than you'd ever admit. Blind spot? The armor works so well that people might never reach the person underneath. Letting someone past the gates isn't weakness — it's the bravest thing you can do.",
+          "tags": [
+            "armored-exterior",
+            "tender-interior",
+            "controlled-reveal"
+          ],
+          "compatibility": "Social Chameleon"
+        },
+        "ko": {
+          "title": "시크릿 소프티",
+          "description": "세상은 유능함 침착함 어쩌면 약간의 날카로움을 봐. 하지만 문 닫으면? 아무도 예상 못 할 만큼 부드러워. 공개적으로 분석하고 개인적으로 느끼지. 단단한 겉이 절대 인정 안 할 만큼 여린 마음을 보호해. 사각지대는 갑옷이 너무 잘 작동해서 사람들이 안에 있는 사람에게 영원히 닿지 못할 수 있다는 거. 문을 여는 건 약함이 아니야 — 네가 할 수 있는 가장 용감한 거야.",
+          "tags": [
+            "갑옷 외면",
+            "부드러운 내면",
+            "통제된 공개"
+          ],
+          "compatibility": "소셜 카멜레온"
+        }
+      },
+      "emoji": "🧊",
+      "emojiCombo": "🧊💗"
+    }
+  ]
+}

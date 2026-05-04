@@ -1,0 +1,1111 @@
+{
+  "meta": {
+    "slug": "t19",
+    "locale_data": {
+      "en": {
+        "title": "What's Your Humor Type?",
+        "subtitle": "How you use laughter to connect — or cope",
+        "description": "Find out what your jokes reveal about how you see the world",
+        "shareText": "My humor type is..."
+      },
+      "ko": {
+        "title": "유머 유형 테스트",
+        "subtitle": "웃음으로 연결하는 — 또는 대처하는 방식",
+        "description": "네 농담이 세상을 보는 방식에 대해 뭘 말해주는지 알아보자",
+        "shareText": "나의 유머 유형은..."
+      }
+    },
+    "emoji": "😂",
+    "category": "communication",
+    "estimatedMinutes": 3,
+    "theme": {
+      "primary": "#FF6B6B",
+      "bg": "#FFF0F0",
+      "accent": "#1D1D3B"
+    }
+  },
+  "scoring": {
+    "type": "tpm",
+    "axes": [
+      "drive",
+      "process",
+      "compass"
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "What usually makes YOU\nlaugh the hardest?"
+        },
+        "ko": {
+          "text": "너를 가장 크게\n웃기는 건 뭐야?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Someone's perfectly timed comeback in a group conversation"
+            },
+            "ko": {
+              "text": "단체 대화에서 누군가의 완벽한 타이밍 받아치기"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Social timing humor"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Absurd situations that nobody else seems to find funny"
+            },
+            "ko": {
+              "text": "아무도 웃기지 않아 하는 황당한 상황"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Absurdist personal"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Clever wordplay or a joke that takes a second to get"
+            },
+            "ko": {
+              "text": "한 박자 늦게 이해되는 말장난이나 언어유희"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Intellectual humor"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Inside jokes that only my closest friends understand"
+            },
+            "ko": {
+              "text": "가장 친한 친구들만 아는 인사이드 조크"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Intimate bonding humor"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "You accidentally embarrass yourself\nin public. Your response?"
+        },
+        "ko": {
+          "text": "공공장소에서 실수로\n창피당했다 반응은?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "I turn it into a bit — if I'm going down, I'm going down funny"
+            },
+            "ko": {
+              "text": "쇼로 만든다 — 망할 거면 웃기게 망하겠어"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Self-enhancing humor"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I laugh it off with whoever saw it — shared cringe is half the cringe"
+            },
+            "ko": {
+              "text": "목격자랑 같이 웃어버린다 — 같이 쪽팔리면 반이야"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Affiliative sharing"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I make a dry comment about it later that catches people off guard"
+            },
+            "ko": {
+              "text": "나중에 건조하게 한마디 해서 사람들 허 찌른다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Delayed dry wit"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I replay it in my head for days but eventually it becomes a great story"
+            },
+            "ko": {
+              "text": "며칠 동안 복기하지만 결국 좋은 썰이 된다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Retrospective storytelling"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "What role does humor play\nin your friendships?"
+        },
+        "ko": {
+          "text": "너의 우정에서 유머는\n어떤 역할이야?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "It's the glue — if we're not laughing, something's wrong"
+            },
+            "ko": {
+              "text": "접착제 — 안 웃고 있으면 뭔가 잘못된 거"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Humor as bonding"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "It's my shield — I use it when things get too real"
+            },
+            "ko": {
+              "text": "방패 — 너무 진지해지면 쓴다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Humor as defense"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "It's my signature — people know me for my specific kind of funny"
+            },
+            "ko": {
+              "text": "내 시그니처 — 사람들이 내 특유의 웃김을 알아"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Humor as identity"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "It's how I check if someone's on my wavelength"
+            },
+            "ko": {
+              "text": "상대가 내 주파수인지 확인하는 방법"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Humor as compatibility test"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "image_grid",
+      "locale_data": {
+        "en": {
+          "text": "Pick your comedy\nspirit animal"
+        },
+        "ko": {
+          "text": "너의 코미디\n스피릿 애니멀은?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "The one who makes everyone in the room laugh"
+            },
+            "ko": {
+              "text": "방 안의 모두를 웃기는 사람"
+            }
+          },
+          "emoji": "🎭",
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Group entertainer"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "The one with the quiet joke that only two people catch"
+            },
+            "ko": {
+              "text": "두 명만 알아듣는 조용한 농담"
+            }
+          },
+          "emoji": "🤫",
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Subtle niche"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "The one who makes themselves the punchline and owns it"
+            },
+            "ko": {
+              "text": "자기를 펀치라인으로 만들고 당당한 사람"
+            }
+          },
+          "emoji": "😅",
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Self-deprecating owner"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "The one who sees the funny side of everything, even dark stuff"
+            },
+            "ko": {
+              "text": "어두운 것까지 웃긴 면을 보는 사람"
+            }
+          },
+          "emoji": "🌚",
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Dark humor perspective"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "When someone else is having a bad day,\nhow do you use humor?"
+        },
+        "ko": {
+          "text": "누가 힘든 하루를 보내고 있을 때\n유머를 어떻게 쓰는 편이야?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "I try to make them laugh — laughter is the best medicine"
+            },
+            "ko": {
+              "text": "웃기려고 한다 — 웃음이 최고의 약"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Active comedy relief"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I wait for THEM to joke about it first, then I match their energy"
+            },
+            "ko": {
+              "text": "상대가 먼저 농담할 때까지 기다린 다음 맞춰준다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Following their lead"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I don't — some moments aren't for jokes and I respect that"
+            },
+            "ko": {
+              "text": "안 써 — 농담의 때가 아닌 순간이 있고 그걸 존중해"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Situational restraint"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I share something embarrassing about myself to lighten the mood"
+            },
+            "ko": {
+              "text": "분위기 풀려고 내 창피한 경험을 공유한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "Vulnerability humor"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "Your humor has been described as..."
+        },
+        "ko": {
+          "text": "너의 유머를\n묘사하자면..."
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Warm and inclusive — I want everyone in on the joke"
+            },
+            "ko": {
+              "text": "따뜻하고 포용적 — 모두가 농담에 함께하길 원해"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Affiliative warm"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Dry and unexpected — people can't tell if I'm serious"
+            },
+            "ko": {
+              "text": "건조하고 예상 못함 — 진짜인지 농담인지 모르겠대"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Deadpan dry"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "High energy and physical — I'm basically performing all the time"
+            },
+            "ko": {
+              "text": "하이 에너지 피지컬 — 거의 항상 공연 중"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Performative physical"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Dark or edgy — I find humor in the things you're not supposed to laugh at"
+            },
+            "ko": {
+              "text": "다크하거나 엣지 — 웃으면 안 되는 것에서 웃음을 찾아"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Dark edgy"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "The funniest person in the room\nis usually the one who..."
+        },
+        "ko": {
+          "text": "방에서 가장 웃긴 사람은\n보통 이런 사람이야"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Reads the room perfectly and says what everyone's thinking"
+            },
+            "ko": {
+              "text": "분위기를 완벽히 읽고 모두가 생각하는 걸 말하는 사람"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Room-reading"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Has zero filter and just says whatever comes to mind"
+            },
+            "ko": {
+              "text": "필터 제로 머릿속에 떠오르는 대로 말하는 사람"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Unfiltered spontaneous"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Sets up long jokes with perfect delivery and timing"
+            },
+            "ko": {
+              "text": "긴 셋업에 완벽한 전달과 타이밍의 농담을 하는 사람"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Crafted delivery"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Makes everyone feel like they're the funniest person in the room"
+            },
+            "ko": {
+              "text": "방 안의 모두가 자기가 제일 웃기다고 느끼게 하는 사람"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Audience-elevating"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "If you could never make another joke again,\nwhat would you miss most?"
+        },
+        "ko": {
+          "text": "다시는 농담을 못 한다면\n가장 아쉬울 건?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "The way laughter instantly bonds me with strangers"
+            },
+            "ko": {
+              "text": "웃음이 낯선 사람과 즉시 연결해주는 것"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Connection through laughter"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Being able to cope with hard things by finding the absurd in them"
+            },
+            "ko": {
+              "text": "어려운 일에서 황당함을 찾아 대처하는 능력"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Coping humor"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "The satisfaction of crafting the perfect joke that lands exactly right"
+            },
+            "ko": {
+              "text": "딱 맞는 완벽한 농담을 만드는 만족감"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Craft satisfaction"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Making people feel better when they're down — laughter heals"
+            },
+            "ko": {
+              "text": "힘들 때 기분 좋게 해주는 것 — 웃음은 치유야"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Healing humor"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "connector",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "bond"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Make Everyone Laugh",
+          "description": "Your humor is social glue. You read a room and know exactly what will crack everyone up. Your jokes pull people together rather than push anyone out. Laughter isn't just fun for you — it's how you build trust, break tension, and create belonging. Blind spot? You might suppress your real feelings behind the comedy. Not every moment needs a laugh track.",
+          "tags": [
+            "social-glue",
+            "inclusive",
+            "warm-funny"
+          ],
+          "compatibility": "I Keep Them Guessing"
+        },
+        "ko": {
+          "title": "모두를 웃긴다",
+          "description": "너의 유머는 사회적 접착제야. 분위기를 읽고 모두를 웃길 걸 정확히 알아. 농담이 사람을 모으지 밀어내지 않아. 사각지대는 코미디 뒤에 진짜 감정을 숨길 수 있다는 거. 모든 순간에 웃음 트랙이 필요하진 않아.",
+          "tags": [
+            "사교 접착제",
+            "포용적",
+            "따뜻한 웃김"
+          ],
+          "compatibility": "갸우뚱하게 한다"
+        }
+      },
+      "emoji": "🎪",
+      "emojiCombo": "🎪💛"
+    },
+    {
+      "id": "coper",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "pulse",
+        "compass": "self"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Laugh at the Chaos",
+          "description": "Your humor is a survival tool. When things get dark, absurd, or overwhelming, you find the funny — not to minimize, but to metabolize. You've turned some of your worst experiences into your best material. Blind spot? Others might not be ready to laugh at something you've already processed. Timing matters even when the joke is genuinely healing.",
+          "tags": [
+            "coping-humor",
+            "absurdist",
+            "resilient"
+          ],
+          "compatibility": "I Make Everyone Laugh"
+        },
+        "ko": {
+          "title": "혼돈에서 웃는다",
+          "description": "유머가 생존 도구야. 어둡거나 황당하거나 압도적일 때 웃길 걸 찾아 — 축소하려는 게 아니라 소화하려고. 최악의 경험을 최고의 소재로 바꿔놨지. 사각지대는 네가 이미 처리한 걸 다른 사람은 아직 웃을 준비가 안 됐을 수 있다는 거.",
+          "tags": [
+            "대처 유머",
+            "부조리",
+            "회복탄력"
+          ],
+          "compatibility": "모두를 웃긴다"
+        }
+      },
+      "emoji": "🌪️",
+      "emojiCombo": "🌪️😂"
+    },
+    {
+      "id": "crafter",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "prism",
+        "compass": "self"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Craft the Perfect Line",
+          "description": "Your humor is precision-engineered. You don't just say funny things — you build them. Setup, timing, word choice, delivery — it's all calculated for maximum impact. Your jokes land because you've thought about exactly why they're funny. Blind spot? Overthinking humor can kill spontaneity. Sometimes the funniest thing is the unplanned thing.",
+          "tags": [
+            "crafted",
+            "precision",
+            "wit"
+          ],
+          "compatibility": "I Laugh at the Chaos"
+        },
+        "ko": {
+          "title": "완벽한 한 줄을 만든다",
+          "description": "유머가 정밀 설계돼 있어. 웃긴 말을 하는 게 아니라 만드는 거야. 셋업 타이밍 단어 선택 전달 — 최대 임팩트를 위해 다 계산돼 있지. 사각지대는 유머를 과잉 분석하면 즉흥성이 죽을 수 있다는 거. 가끔 가장 웃긴 건 계획 없는 거야.",
+          "tags": [
+            "설계형",
+            "정밀",
+            "위트"
+          ],
+          "compatibility": "혼돈에서 웃는다"
+        }
+      },
+      "emoji": "🎯",
+      "emojiCombo": "🎯✍️"
+    },
+    {
+      "id": "guardian",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "bond"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Keep Them Guessing",
+          "description": "Your humor is quiet, unexpected, and devastatingly well-timed. You're not the loudest person in the room but when you speak, people listen — and then lose it. Your deadpan delivery and left-field observations make people wonder if you're joking right up until they're crying laughing. Blind spot? Dry humor can read as coldness to people who don't know you. Sometimes a warm setup helps the punchline land softer.",
+          "tags": [
+            "deadpan",
+            "unexpected",
+            "left-field"
+          ],
+          "compatibility": "I Craft the Perfect Line"
+        },
+        "ko": {
+          "title": "갸우뚱하게 한다",
+          "description": "유머가 조용하고 예상 못하고 파괴적으로 타이밍이 좋아. 방에서 가장 시끄러운 사람이 아닌데 말하면 사람들이 듣고 — 그리고 무너져. 데드팬 전달과 뜬금없는 관찰이 농담인지 아닌지 궁금하게 만들다가 결국 빵 터뜨려. 사각지대는 건조한 유머가 널 모르는 사람에겐 차가움으로 읽힐 수 있다는 거.",
+          "tags": [
+            "데드팬",
+            "예상 불가",
+            "뜬금없는"
+          ],
+          "compatibility": "완벽한 한 줄을 만든다"
+        }
+      },
+      "emoji": "🤫",
+      "emojiCombo": "🤫💣"
+    }
+  ]
+}

@@ -25,13 +25,11 @@
     }
   },
   "scoring": {
-    "type": "accumulate",
-    "dimensions": [
-      "saver",
-      "splurge",
-      "invest",
-      "treat",
-      "split"
+    "type": "tpm",
+    "axes": [
+      "drive",
+      "process",
+      "compass"
     ]
   },
   "questions": [
@@ -58,8 +56,20 @@
           },
           "emoji": null,
           "scores": {
-            "saver": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: saver"
         },
         {
           "locale_data": {
@@ -72,9 +82,20 @@
           },
           "emoji": null,
           "scores": {
-            "splurge": 2,
-            "treat": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: splurge + Secondary: treat"
         },
         {
           "locale_data": {
@@ -87,8 +108,20 @@
           },
           "emoji": null,
           "scores": {
-            "invest": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: invest"
         },
         {
           "locale_data": {
@@ -101,9 +134,16 @@
           },
           "emoji": null,
           "scores": {
-            "treat": 2,
-            "split": 1
-          }
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            },
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: treat + Secondary: split"
         }
       ]
     },
@@ -130,8 +170,20 @@
           },
           "emoji": null,
           "scores": {
-            "saver": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: saver"
         },
         {
           "locale_data": {
@@ -144,8 +196,20 @@
           },
           "emoji": null,
           "scores": {
-            "splurge": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: splurge"
         },
         {
           "locale_data": {
@@ -158,9 +222,20 @@
           },
           "emoji": null,
           "scores": {
-            "invest": 2,
-            "saver": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: invest + Secondary: saver"
         },
         {
           "locale_data": {
@@ -173,9 +248,20 @@
           },
           "emoji": null,
           "scores": {
-            "saver": 2,
-            "split": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: saver + Secondary: split"
         }
       ]
     },
@@ -202,8 +288,20 @@
           },
           "emoji": null,
           "scores": {
-            "saver": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: saver"
         },
         {
           "locale_data": {
@@ -216,8 +314,20 @@
           },
           "emoji": null,
           "scores": {
-            "splurge": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: splurge"
         },
         {
           "locale_data": {
@@ -230,8 +340,20 @@
           },
           "emoji": null,
           "scores": {
-            "invest": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: invest"
         },
         {
           "locale_data": {
@@ -244,8 +366,20 @@
           },
           "emoji": null,
           "scores": {
-            "treat": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: treat"
         }
       ]
     },
@@ -272,9 +406,20 @@
           },
           "emoji": null,
           "scores": {
-            "saver": 2,
-            "split": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: saver + Secondary: split"
         },
         {
           "locale_data": {
@@ -287,8 +432,20 @@
           },
           "emoji": null,
           "scores": {
-            "treat": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: treat"
         },
         {
           "locale_data": {
@@ -301,8 +458,20 @@
           },
           "emoji": null,
           "scores": {
-            "split": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: split"
         },
         {
           "locale_data": {
@@ -315,9 +484,16 @@
           },
           "emoji": null,
           "scores": {
-            "split": 2,
-            "treat": 1
-          }
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            },
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: split + Secondary: treat"
         }
       ]
     },
@@ -344,9 +520,20 @@
           },
           "emoji": null,
           "scores": {
-            "split": 2,
-            "saver": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: split + Secondary: saver"
         },
         {
           "locale_data": {
@@ -359,8 +546,20 @@
           },
           "emoji": null,
           "scores": {
-            "treat": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: treat"
         },
         {
           "locale_data": {
@@ -373,9 +572,20 @@
           },
           "emoji": null,
           "scores": {
-            "saver": 2,
-            "split": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: saver + Secondary: split"
         },
         {
           "locale_data": {
@@ -388,9 +598,20 @@
           },
           "emoji": null,
           "scores": {
-            "invest": 1,
-            "saver": 2
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: saver + Secondary: invest"
         }
       ]
     },
@@ -417,9 +638,20 @@
           },
           "emoji": null,
           "scores": {
-            "saver": 2,
-            "invest": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: saver + Secondary: invest"
         },
         {
           "locale_data": {
@@ -432,8 +664,20 @@
           },
           "emoji": null,
           "scores": {
-            "splurge": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: splurge"
         },
         {
           "locale_data": {
@@ -446,8 +690,20 @@
           },
           "emoji": null,
           "scores": {
-            "invest": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: invest"
         },
         {
           "locale_data": {
@@ -460,9 +716,16 @@
           },
           "emoji": null,
           "scores": {
-            "treat": 2,
-            "split": 1
-          }
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            },
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: treat + Secondary: split"
         }
       ]
     },
@@ -489,8 +752,20 @@
           },
           "emoji": null,
           "scores": {
-            "saver": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: saver"
         },
         {
           "locale_data": {
@@ -503,9 +778,16 @@
           },
           "emoji": null,
           "scores": {
-            "splurge": 2,
-            "split": 1
-          }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: splurge + Secondary: split"
         },
         {
           "locale_data": {
@@ -518,9 +800,20 @@
           },
           "emoji": null,
           "scores": {
-            "invest": 2,
-            "saver": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: invest + Secondary: saver"
         },
         {
           "locale_data": {
@@ -533,8 +826,20 @@
           },
           "emoji": null,
           "scores": {
-            "treat": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: treat"
         }
       ]
     },
@@ -561,8 +866,20 @@
           },
           "emoji": null,
           "scores": {
-            "saver": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: saver"
         },
         {
           "locale_data": {
@@ -575,9 +892,20 @@
           },
           "emoji": null,
           "scores": {
-            "splurge": 2,
-            "treat": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: splurge + Secondary: treat"
         },
         {
           "locale_data": {
@@ -590,9 +918,20 @@
           },
           "emoji": null,
           "scores": {
-            "invest": 2,
-            "saver": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: invest + Secondary: saver"
         },
         {
           "locale_data": {
@@ -605,9 +944,16 @@
           },
           "emoji": null,
           "scores": {
-            "treat": 2,
-            "split": 1
-          }
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            },
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: treat + Secondary: split"
         }
       ]
     }
@@ -638,7 +984,12 @@
         }
       },
       "emoji": "🏦",
-      "emojiCombo": "🏦"
+      "emojiCombo": "🏦",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "self"
+      }
     },
     {
       "id": "splurge",
@@ -665,7 +1016,12 @@
         }
       },
       "emoji": "💸",
-      "emojiCombo": "💸"
+      "emojiCombo": "💸",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "self"
+      }
     },
     {
       "id": "invest",
@@ -692,7 +1048,12 @@
         }
       },
       "emoji": "📈",
-      "emojiCombo": "📈"
+      "emojiCombo": "📈",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "prism",
+        "compass": "self"
+      }
     },
     {
       "id": "treat",
@@ -719,7 +1080,12 @@
         }
       },
       "emoji": "🎁",
-      "emojiCombo": "🎁"
+      "emojiCombo": "🎁",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "bond"
+      }
     },
     {
       "id": "split",
@@ -746,7 +1112,12 @@
         }
       },
       "emoji": "⚖️",
-      "emojiCombo": "⚖️"
+      "emojiCombo": "⚖️",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "bond"
+      }
     }
   ],
   "dna_mapping": {

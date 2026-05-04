@@ -25,13 +25,11 @@
     }
   },
   "scoring": {
-    "type": "accumulate",
-    "dimensions": [
-      "warm",
-      "cool",
-      "funny",
-      "sad",
-      "mystery"
+    "type": "tpm",
+    "axes": [
+      "drive",
+      "process",
+      "compass"
     ]
   },
   "questions": [
@@ -58,8 +56,20 @@
           },
           "emoji": null,
           "scores": {
-            "warm": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Active caregiving initiative (Ignite) + emotionally-driven nurture (Pulse) + partner-centered action (Bond)"
         },
         {
           "locale_data": {
@@ -72,8 +82,20 @@
           },
           "emoji": null,
           "scores": {
-            "funny": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Active energy creation (Ignite) + spontaneous humor generation (Pulse) + self-expressive entertainment style (Self)"
         },
         {
           "locale_data": {
@@ -86,9 +108,20 @@
           },
           "emoji": null,
           "scores": {
-            "mystery": 2,
-            "sad": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Internal emotional processing (Observe) + deep sentimental feeling (Pulse) + inner world cultivation (Self)"
         },
         {
           "locale_data": {
@@ -101,9 +134,20 @@
           },
           "emoji": null,
           "scores": {
-            "cool": 2,
-            "sad": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Passive adaptive stance (Observe) + rational role assessment (Prism) + partner-deferring orientation (Bond)"
         }
       ]
     },
@@ -130,8 +174,20 @@
           },
           "emoji": null,
           "scores": {
-            "warm": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Repair initiative (Ignite) + emotionally-driven reconciliation (Pulse) + relationship preservation priority (Bond)"
         },
         {
           "locale_data": {
@@ -144,8 +200,20 @@
           },
           "emoji": null,
           "scores": {
-            "cool": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Strategic withdrawal (Observe) + rational cooling period (Prism) + independent self-regulation (Self)"
         },
         {
           "locale_data": {
@@ -158,8 +226,20 @@
           },
           "emoji": null,
           "scores": {
-            "funny": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Active tension-breaking (Ignite) + humor as instinctive response (Pulse) + self-expression through comedy (Self)"
         },
         {
           "locale_data": {
@@ -172,8 +252,20 @@
           },
           "emoji": null,
           "scores": {
-            "sad": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Emotional overwhelm (Observe) + uncontrolled feeling surge (Pulse) + relationship-anxiety driven (Bond)"
         }
       ]
     },
@@ -200,9 +292,20 @@
           },
           "emoji": null,
           "scores": {
-            "warm": 2,
-            "funny": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Proactive planning effort (Ignite) + detail-oriented preparation (Prism) + partner experience priority (Bond)"
         },
         {
           "locale_data": {
@@ -215,9 +318,20 @@
           },
           "emoji": null,
           "scores": {
-            "funny": 1,
-            "sad": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Effort with imperfection (Ignite) + feeling-based engagement (Pulse) + caring intent (Bond)"
         },
         {
           "locale_data": {
@@ -230,9 +344,20 @@
           },
           "emoji": null,
           "scores": {
-            "cool": 1,
-            "mystery": 2
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "Disengaged from conventions (Observe) + rational de-prioritization (Prism) + self-standard independence (Self)"
         },
         {
           "locale_data": {
@@ -245,9 +370,20 @@
           },
           "emoji": null,
           "scores": {
-            "cool": 2,
-            "mystery": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Philosophical reframing (Observe) + principle-based reasoning (Prism) + own value system priority (Self)"
         }
       ]
     },
@@ -274,8 +410,20 @@
           },
           "emoji": null,
           "scores": {
-            "warm": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Immediate action response (Ignite) + emotionally-driven urgency (Pulse) + partner needs priority (Bond)"
         },
         {
           "locale_data": {
@@ -288,9 +436,20 @@
           },
           "emoji": null,
           "scores": {
-            "warm": 2,
-            "sad": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Receptive listening stance (Observe) + empathic holding space (Pulse) + complete other-focus (Bond)"
         },
         {
           "locale_data": {
@@ -303,9 +462,20 @@
           },
           "emoji": null,
           "scores": {
-            "cool": 2,
-            "funny": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Active problem-solving (Ignite) + analytical thinking approach (Prism) + solution-oriented detachment (Self)"
         },
         {
           "locale_data": {
@@ -318,9 +488,20 @@
           },
           "emoji": null,
           "scores": {
-            "cool": 2,
-            "mystery": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Distance-giving (Observe) + rational space assessment (Prism) + independent processing respect (Self)"
         }
       ]
     },
@@ -347,9 +528,20 @@
           },
           "emoji": null,
           "scores": {
-            "warm": 2,
-            "sad": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Always-initiating pattern (Ignite) + emotionally-driven reaching out (Pulse) + partner-directed attention (Bond)"
         },
         {
           "locale_data": {
@@ -362,8 +554,20 @@
           },
           "emoji": null,
           "scores": {
-            "cool": 2
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Balanced reciprocity (Observe) + measured exchange (Prism) + mutual independence (Self)"
         },
         {
           "locale_data": {
@@ -376,9 +580,20 @@
           },
           "emoji": null,
           "scores": {
-            "cool": 1,
-            "mystery": 2
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Passive communication pattern (Observe) + receiving rather than sending (Pulse) + self-contained presence (Self)"
         },
         {
           "locale_data": {
@@ -391,9 +606,20 @@
           },
           "emoji": null,
           "scores": {
-            "mystery": 2,
-            "funny": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Quality-over-quantity approach (Ignite in person) + chemistry-based connection (Pulse) + authenticity priority (Self)"
         }
       ]
     },
@@ -420,8 +646,20 @@
           },
           "emoji": null,
           "scores": {
-            "warm": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Active graceful-ending effort (Ignite) + emotionally-motivated closure (Pulse) + relationship dignity priority (Bond)"
         },
         {
           "locale_data": {
@@ -434,8 +672,20 @@
           },
           "emoji": null,
           "scores": {
-            "cool": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Calm acceptance (Observe) + rational processing (Prism) + self-directed forward movement (Self)"
         },
         {
           "locale_data": {
@@ -448,8 +698,20 @@
           },
           "emoji": null,
           "scores": {
-            "sad": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Emotional flooding (Observe/passive) + overwhelming feeling response (Pulse) + loss-of-connection grief (Bond)"
         },
         {
           "locale_data": {
@@ -462,9 +724,20 @@
           },
           "emoji": null,
           "scores": {
-            "funny": 2,
-            "mystery": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "Unexpected reaction expression (Ignite) + surreal feeling processing (Pulse) + self-protective humor (Self)"
         }
       ]
     },
@@ -491,9 +764,20 @@
           },
           "emoji": null,
           "scores": {
-            "warm": 1,
-            "sad": 2
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Partner-adaptive molding (Observe) + feeling-driven sacrifice (Pulse) + other-prioritizing self-erasure (Bond)"
         },
         {
           "locale_data": {
@@ -506,8 +790,20 @@
           },
           "emoji": null,
           "scores": {
-            "cool": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "Consistent self-maintenance (Observe) + rational self-preservation (Prism) + core identity protection (Self)"
         },
         {
           "locale_data": {
@@ -520,9 +816,20 @@
           },
           "emoji": null,
           "scores": {
-            "funny": 1,
-            "warm": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Growth-embracing engagement (Ignite) + reflective learning (Prism) + mutual enrichment (Bond)"
         },
         {
           "locale_data": {
@@ -535,9 +842,20 @@
           },
           "emoji": null,
           "scores": {
-            "sad": 2,
-            "mystery": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Identity dissolution processing (Observe) + confused self-feeling (Pulse) + self-recovery seeking (Self)"
         }
       ]
     }
@@ -568,7 +886,12 @@
         }
       },
       "emoji": "🌻",
-      "emojiCombo": "🌻"
+      "emojiCombo": "🌻",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "bond"
+      }
     },
     {
       "id": "cool",
@@ -595,7 +918,12 @@
         }
       },
       "emoji": "😎",
-      "emojiCombo": "😎"
+      "emojiCombo": "😎",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "self"
+      }
     },
     {
       "id": "funny",
@@ -622,34 +950,44 @@
         }
       },
       "emoji": "😄",
-      "emojiCombo": "😄"
+      "emojiCombo": "😄",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "self"
+      }
     },
     {
       "id": "sad",
       "locale_data": {
         "en": {
-          "title": "Sorry and Thank You",
-          "description": "Your ex carries a little guilt about you. 'I should have treated them better.' You tried so hard — maybe too hard. Next time, love someone who matches your energy.",
+          "title": "The Love That Stayed",
+          "description": "Your ex can't shake the feeling you left behind. 'They loved with everything they had — and that kind of love leaves a mark.' Your depth of feeling wasn't too much. It was the real thing in a world where most people keep score. That wholehearted love is what makes you unforgettable.",
           "tags": [
+            "deep-feeling",
             "devoted",
-            "emotional",
-            "pure"
+            "genuine"
           ],
           "compatibility": "Still Makes Me Smile"
         },
         "ko": {
-          "title": "미안해 그리고 고마워",
-          "description": "전 애인 기억 속에서 당신은 많이 노력했던 사람이에요. '내가 더 잘해줬어야 했는데'라는 미안함과 함께 기억될 타입이에요. 이제는 당신을 위한 연애를 해보세요!",
+          "title": "떠나고도 남은 사랑",
+          "description": "전 애인 기억 속에서 당신은 온 마음을 다한 사람이에요. '그 사람처럼 사랑하는 사람은 또 못 만날 거야'라는 말을 들을 타입이에요. 셈하지 않고 진심으로 사랑한 그 깊이가 오래도록 기억에 남을 거예요.",
           "tags": [
-            "노력파",
-            "감성적",
-            "순수함"
+            "깊은 감정",
+            "헌신적",
+            "진심"
           ],
           "compatibility": "웃음이 떠오르는 사람"
         }
       },
       "emoji": "🥺",
-      "emojiCombo": "🥺"
+      "emojiCombo": "🥺",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "pulse",
+        "compass": "bond"
+      }
     },
     {
       "id": "mystery",
@@ -676,7 +1014,12 @@
         }
       },
       "emoji": "🌙",
-      "emojiCombo": "🌙"
+      "emojiCombo": "🌙",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "pulse",
+        "compass": "self"
+      }
     }
   ],
   "dna_mapping": {

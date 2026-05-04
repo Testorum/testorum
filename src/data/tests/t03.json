@@ -25,13 +25,11 @@
     }
   },
   "scoring": {
-    "type": "accumulate",
-    "dimensions": [
-      "quick",
-      "slow",
-      "reader",
-      "emoji",
-      "voice"
+    "type": "tpm",
+    "axes": [
+      "drive",
+      "process",
+      "compass"
     ]
   },
   "questions": [
@@ -58,8 +56,20 @@
           },
           "emoji": null,
           "scores": {
-            "quick": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: quick"
         },
         {
           "locale_data": {
@@ -72,9 +82,20 @@
           },
           "emoji": null,
           "scores": {
-            "slow": 2,
-            "reader": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: slow + Secondary: reader"
         },
         {
           "locale_data": {
@@ -87,9 +108,20 @@
           },
           "emoji": null,
           "scores": {
-            "reader": 2,
-            "slow": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: reader + Secondary: slow"
         },
         {
           "locale_data": {
@@ -102,8 +134,20 @@
           },
           "emoji": null,
           "scores": {
-            "voice": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: voice"
         }
       ]
     },
@@ -130,9 +174,16 @@
           },
           "emoji": null,
           "scores": {
-            "emoji": 3,
-            "quick": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: emoji + Secondary: quick"
         },
         {
           "locale_data": {
@@ -145,9 +196,16 @@
           },
           "emoji": null,
           "scores": {
-            "slow": 1,
-            "quick": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: slow + Secondary: quick"
         },
         {
           "locale_data": {
@@ -160,8 +218,20 @@
           },
           "emoji": null,
           "scores": {
-            "reader": 2
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: reader"
         },
         {
           "locale_data": {
@@ -174,9 +244,20 @@
           },
           "emoji": null,
           "scores": {
-            "emoji": 2,
-            "voice": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: emoji + Secondary: voice"
         }
       ]
     },
@@ -203,8 +284,20 @@
           },
           "emoji": null,
           "scores": {
-            "quick": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: quick"
         },
         {
           "locale_data": {
@@ -217,9 +310,20 @@
           },
           "emoji": null,
           "scores": {
-            "reader": 2,
-            "slow": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: reader + Secondary: slow"
         },
         {
           "locale_data": {
@@ -232,9 +336,20 @@
           },
           "emoji": null,
           "scores": {
-            "slow": 2,
-            "reader": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: slow + Secondary: reader"
         },
         {
           "locale_data": {
@@ -247,9 +362,20 @@
           },
           "emoji": null,
           "scores": {
-            "voice": 2,
-            "quick": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: voice + Secondary: quick"
         }
       ]
     },
@@ -276,9 +402,16 @@
           },
           "emoji": null,
           "scores": {
-            "emoji": 2,
-            "quick": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: emoji + Secondary: quick"
         },
         {
           "locale_data": {
@@ -291,8 +424,20 @@
           },
           "emoji": null,
           "scores": {
-            "slow": 2
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: slow"
         },
         {
           "locale_data": {
@@ -305,9 +450,16 @@
           },
           "emoji": null,
           "scores": {
-            "voice": 2,
-            "slow": 1
-          }
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: voice + Secondary: slow"
         },
         {
           "locale_data": {
@@ -320,9 +472,20 @@
           },
           "emoji": null,
           "scores": {
-            "reader": 1,
-            "slow": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: reader + Secondary: slow"
         }
       ]
     },
@@ -349,8 +512,20 @@
           },
           "emoji": null,
           "scores": {
-            "quick": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: quick"
         },
         {
           "locale_data": {
@@ -363,9 +538,20 @@
           },
           "emoji": null,
           "scores": {
-            "slow": 2,
-            "reader": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: slow + Secondary: reader"
         },
         {
           "locale_data": {
@@ -378,8 +564,20 @@
           },
           "emoji": null,
           "scores": {
-            "reader": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: reader"
         },
         {
           "locale_data": {
@@ -392,8 +590,20 @@
           },
           "emoji": null,
           "scores": {
-            "voice": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: voice"
         }
       ]
     },
@@ -420,8 +630,20 @@
           },
           "emoji": null,
           "scores": {
-            "quick": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: quick"
         },
         {
           "locale_data": {
@@ -434,9 +656,20 @@
           },
           "emoji": null,
           "scores": {
-            "slow": 2,
-            "reader": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: slow + Secondary: reader"
         },
         {
           "locale_data": {
@@ -449,9 +682,20 @@
           },
           "emoji": null,
           "scores": {
-            "reader": 2,
-            "slow": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: reader + Secondary: slow"
         },
         {
           "locale_data": {
@@ -464,9 +708,20 @@
           },
           "emoji": null,
           "scores": {
-            "voice": 2,
-            "emoji": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: voice + Secondary: emoji"
         }
       ]
     },
@@ -493,9 +748,20 @@
           },
           "emoji": null,
           "scores": {
-            "emoji": 2,
-            "quick": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: emoji + Secondary: quick"
         },
         {
           "locale_data": {
@@ -508,8 +774,20 @@
           },
           "emoji": null,
           "scores": {
-            "slow": 2
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: slow"
         },
         {
           "locale_data": {
@@ -522,8 +800,20 @@
           },
           "emoji": null,
           "scores": {
-            "reader": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: reader"
         },
         {
           "locale_data": {
@@ -536,9 +826,20 @@
           },
           "emoji": null,
           "scores": {
-            "reader": 2,
-            "slow": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: reader + Secondary: slow"
         }
       ]
     }
@@ -569,7 +870,12 @@
         }
       },
       "emoji": "⚡",
-      "emojiCombo": "⚡"
+      "emojiCombo": "⚡",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "bond"
+      }
     },
     {
       "id": "slow",
@@ -596,7 +902,12 @@
         }
       },
       "emoji": "🐢",
-      "emojiCombo": "🐢"
+      "emojiCombo": "🐢",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "self"
+      }
     },
     {
       "id": "reader",
@@ -623,7 +934,12 @@
         }
       },
       "emoji": "👁️",
-      "emojiCombo": "👁️"
+      "emojiCombo": "👁️",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "self"
+      }
     },
     {
       "id": "emoji",
@@ -650,7 +966,12 @@
         }
       },
       "emoji": "🎭",
-      "emojiCombo": "🎭"
+      "emojiCombo": "🎭",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "self"
+      }
     },
     {
       "id": "voice",
@@ -677,7 +998,12 @@
         }
       },
       "emoji": "📞",
-      "emojiCombo": "📞"
+      "emojiCombo": "📞",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "bond"
+      }
     }
   ],
   "dna_mapping": {

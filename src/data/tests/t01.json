@@ -25,14 +25,11 @@
     }
   },
   "scoring": {
-    "type": "accumulate",
-    "dimensions": [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E",
-      "F"
+    "type": "tpm",
+    "axes": [
+      "drive",
+      "process",
+      "compass"
     ]
   },
   "questions": [
@@ -59,9 +56,16 @@
           },
           "emoji": null,
           "scores": {
-            "A": 2,
-            "B": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            }
+          },
+          "rationale": "Covert information gathering (Observe) + systematic profile analysis (Prism) — corrected from A-type: stalking socials is analytical observation, not bold directness"
         },
         {
           "locale_data": {
@@ -74,9 +78,20 @@
           },
           "emoji": null,
           "scores": {
-            "B": 2,
-            "C": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Approach engineering (Ignite planning) + strategic timing analysis (Prism) + planning FOR their reception (Bond)"
         },
         {
           "locale_data": {
@@ -89,9 +104,20 @@
           },
           "emoji": null,
           "scores": {
-            "C": 2,
-            "D": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Passive natural flow (Observe) + intuition-based patience (Pulse) + self-contained comfort (Self)"
         },
         {
           "locale_data": {
@@ -104,9 +130,20 @@
           },
           "emoji": null,
           "scores": {
-            "D": 2,
-            "E": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Indirect action via social proxy (Observe) + feeling-based interest (Pulse) + other-focused intelligence gathering (Bond)"
         }
       ]
     },
@@ -133,9 +170,20 @@
           },
           "emoji": null,
           "scores": {
-            "A": 2,
-            "F": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Immediate proactive outreach (Ignite) + impulse-driven timing (Pulse) + self-expression priority (Self)"
         },
         {
           "locale_data": {
@@ -148,9 +196,20 @@
           },
           "emoji": null,
           "scores": {
-            "A": 1,
-            "B": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Intent to act but calculating optimal moment (Ignite+Prism) + considering how message will land (Bond)"
         },
         {
           "locale_data": {
@@ -163,9 +222,20 @@
           },
           "emoji": null,
           "scores": {
-            "C": 2,
-            "D": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Patient waiting (Observe) + natural rhythm following (Pulse) + comfortable with own space (Self)"
         },
         {
           "locale_data": {
@@ -178,9 +248,20 @@
           },
           "emoji": null,
           "scores": {
-            "E": 1,
-            "D": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Indirect action initiative (Ignite) + instinctive excuse-making (Pulse) + approach designed for other's perception (Bond)"
         }
       ]
     },
@@ -207,9 +288,20 @@
           },
           "emoji": null,
           "scores": {
-            "A": 2,
-            "F": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Immediate check-in initiative (Ignite) + concern-driven response (Pulse) + care for their state (Bond)"
         },
         {
           "locale_data": {
@@ -222,9 +314,20 @@
           },
           "emoji": null,
           "scores": {
-            "C": 2,
-            "D": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Emotional suppression with patience (Observe) + anxiety as feeling not analysis (Pulse) + self-containment (Self)"
         },
         {
           "locale_data": {
@@ -237,9 +340,20 @@
           },
           "emoji": null,
           "scores": {
-            "B": 2,
-            "E": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Strategic withdrawal matching (Observe) + calculated energy-matching (Prism) + self-protective pull-back (Self)"
         },
         {
           "locale_data": {
@@ -252,9 +366,16 @@
           },
           "emoji": null,
           "scores": {
-            "F": 2,
-            "A": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            }
+          },
+          "rationale": "Internal replay processing (Observe) + analytical reconstruction (Prism) — A-point removed: overthinking is Observe+Prism behavior"
         }
       ]
     },
@@ -281,9 +402,20 @@
           },
           "emoji": null,
           "scores": {
-            "A": 2,
-            "E": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Direct verbal action (Ignite) + gut-driven authenticity (Pulse) + self-expression over impression (Self)"
         },
         {
           "locale_data": {
@@ -296,9 +428,20 @@
           },
           "emoji": null,
           "scores": {
-            "B": 2,
-            "D": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Indirect but active mood-setting (Ignite) + atmosphere engineering (Prism) + receptivity optimization for other (Bond)"
         },
         {
           "locale_data": {
@@ -311,9 +454,20 @@
           },
           "emoji": null,
           "scores": {
-            "C": 2,
-            "D": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Receptive passive stance (Observe) + comfort with being chosen (Pulse) + other-dependent validation (Bond)"
         },
         {
           "locale_data": {
@@ -326,9 +480,20 @@
           },
           "emoji": null,
           "scores": {
-            "F": 2,
-            "C": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Paralyzed by analysis (Observe) + overthinking timing (Prism) + self-critical hesitation (Self)"
         }
       ]
     },
@@ -355,9 +520,20 @@
           },
           "emoji": null,
           "scores": {
-            "B": 2,
-            "A": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Proactive reservation-making (Ignite) + research-driven selection (Prism) + other's experience optimization (Bond)"
         },
         {
           "locale_data": {
@@ -370,9 +546,20 @@
           },
           "emoji": null,
           "scores": {
-            "D": 2,
-            "C": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Input-gathering stance (Observe) + accommodation instinct (Pulse) + other's preferences priority (Bond)"
         },
         {
           "locale_data": {
@@ -385,9 +572,20 @@
           },
           "emoji": null,
           "scores": {
-            "C": 2,
-            "E": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Spontaneous showing up (Ignite) + vibe-following instinct (Pulse) + stress-free self-comfort (Self)"
         },
         {
           "locale_data": {
@@ -400,9 +598,20 @@
           },
           "emoji": null,
           "scores": {
-            "E": 1,
-            "A": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Active familiar-place selection (Ignite) + impression management calculation (Prism) + self-presentation priority (Self)"
         }
       ]
     },
@@ -429,9 +638,20 @@
           },
           "emoji": null,
           "scores": {
-            "E": 2,
-            "B": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Curated romantic experience (Ignite) + deliberately planned atmosphere (Prism) + shared intimate setting (Bond)"
         },
         {
           "locale_data": {
@@ -444,9 +664,20 @@
           },
           "emoji": null,
           "scores": {
-            "C": 2,
-            "D": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Calm intimate setting (Observe) + conversation-based connection (Pulse) + mutual sharing desire (Bond)"
         },
         {
           "locale_data": {
@@ -459,9 +690,20 @@
           },
           "emoji": null,
           "scores": {
-            "A": 2,
-            "F": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "High-energy activity seeking (Ignite) + excitement-driven choice (Pulse) + self-expression through thrill (Self)"
         },
         {
           "locale_data": {
@@ -474,9 +716,20 @@
           },
           "emoji": null,
           "scores": {
-            "D": 2,
-            "C": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Low-key comfort seeking (Observe) + warmth-based choice (Pulse) + intimate proximity desire (Bond)"
         }
       ]
     },
@@ -503,9 +756,20 @@
           },
           "emoji": null,
           "scores": {
-            "A": 2,
-            "F": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Signal interpretation distress (Observe) + meaning-seeking analysis (Prism) + self-focused anxiety (Self) — corrected from A-type: anxiety over ambiguity is Prism behavior"
         },
         {
           "locale_data": {
@@ -518,9 +782,20 @@
           },
           "emoji": null,
           "scores": {
-            "F": 2,
-            "E": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Passive entanglement in games (Observe) + emotional confusion (Pulse) + entangled with other's moves (Bond)"
         },
         {
           "locale_data": {
@@ -533,9 +808,20 @@
           },
           "emoji": null,
           "scores": {
-            "D": 2,
-            "B": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Signal-reading without acting (Observe) + feeling-based uncertainty (Pulse) + focused on other's intentions (Bond)"
         },
         {
           "locale_data": {
@@ -548,9 +834,20 @@
           },
           "emoji": null,
           "scores": {
-            "E": 2,
-            "A": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Impatience for forward movement (Ignite) + frustration as feeling (Pulse) + own pace priority (Self)"
         }
       ]
     },
@@ -577,9 +874,20 @@
           },
           "emoji": null,
           "scores": {
-            "A": 2,
-            "E": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Energy escalation (Ignite) + spontaneous expressiveness (Pulse) + uninhibited self-expression (Self)"
         },
         {
           "locale_data": {
@@ -592,9 +900,20 @@
           },
           "emoji": null,
           "scores": {
-            "E": 2,
-            "B": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Effort-driven impression-making (Ignite) + performance calculation (Prism) + impressing the other (Bond)"
         },
         {
           "locale_data": {
@@ -607,9 +926,20 @@
           },
           "emoji": null,
           "scores": {
-            "D": 2,
-            "F": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Behavioral withdrawal (Observe) + overwhelmed by feelings (Pulse) + other-awareness induced freeze (Bond)"
         },
         {
           "locale_data": {
@@ -622,9 +952,20 @@
           },
           "emoji": null,
           "scores": {
-            "D": 1,
-            "F": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "External composure maintenance (Observe) + internal emotional processing (Pulse) + self-image control (Self)"
         }
       ]
     }
@@ -655,7 +996,12 @@
         }
       },
       "emoji": "🎯",
-      "emojiCombo": "🎯"
+      "emojiCombo": "🎯",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "self"
+      }
     },
     {
       "id": "B",
@@ -682,7 +1028,12 @@
         }
       },
       "emoji": "♟️",
-      "emojiCombo": "♟️"
+      "emojiCombo": "♟️",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "prism",
+        "compass": "bond"
+      }
     },
     {
       "id": "C",
@@ -709,7 +1060,12 @@
         }
       },
       "emoji": "🌸",
-      "emojiCombo": "🌸"
+      "emojiCombo": "🌸",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "pulse",
+        "compass": "self"
+      }
     },
     {
       "id": "D",
@@ -736,7 +1092,12 @@
         }
       },
       "emoji": "🐣",
-      "emojiCombo": "🐣"
+      "emojiCombo": "🐣",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "pulse",
+        "compass": "bond"
+      }
     },
     {
       "id": "E",
@@ -763,7 +1124,12 @@
         }
       },
       "emoji": "🎣",
-      "emojiCombo": "🎣"
+      "emojiCombo": "🎣",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "bond"
+      }
     },
     {
       "id": "F",
@@ -790,7 +1156,12 @@
         }
       },
       "emoji": "🔬",
-      "emojiCombo": "🔬"
+      "emojiCombo": "🔬",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "self"
+      }
     }
   ],
   "premiumResults": {

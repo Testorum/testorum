@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "slug": "t14",
+    "locale_data": {
+      "en": { "title": "What's Your Decision Style?", "subtitle": "How your brain actually makes choices", "description": "Find out whether you decide with your gut, your head, or something in between", "shareText": "My decision style is..." },
+      "ko": { "title": "결정 장애 테스트", "subtitle": "네 뇌가 진짜 선택하는 방식", "description": "직감으로 결정하는지 머리로 결정하는지 아니면 그 사이인지 알아보자", "shareText": "나의 결정 스타일은..." }
+    },
+    "emoji": "🎯", "category": "identity", "estimatedMinutes": 3,
+    "theme": { "primary": "#FF8C42", "bg": "#FFF6EE", "accent": "#1D1D3B" }
+  },
+  "scoring": { "type": "tpm", "axes": ["drive", "process", "compass"] },
+  "questions": [
+    { "id": 1, "type": "text_choice",
+      "locale_data": { "en": { "text": "You have to choose between two job offers.\nHow do you decide?" }, "ko": { "text": "두 개의 잡 오퍼 중 선택해야 한다\n어떻게 결정해?" } },
+      "options": [
+        { "locale_data": { "en": { "text": "I already know which one feels right — I trust my gut" }, "ko": { "text": "어디가 맞는지 이미 느껴진다 — 직감을 믿는다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Immediate internal knowing (Ignite) + intuitive judgment (Pulse) + self-trust priority (Self)" },
+        { "locale_data": { "en": { "text": "Spreadsheet time — salary, growth, commute, everything compared" }, "ko": { "text": "스프레드시트 — 연봉 성장 통근 다 비교한다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"prism","weight":2}, "compass":{"direction":"self","weight":1} }, "rationale": "Systematic evaluation (Observe) + data-driven analysis (Prism) + optimal self-outcome seeking (Self)" },
+        { "locale_data": { "en": { "text": "I ask the 5 people I trust most and weigh their input" }, "ko": { "text": "가장 믿는 5명한테 물어보고 의견을 종합한다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Input-gathering (Observe) + perspective synthesis (Prism) + trusted-circle reliance (Bond)" },
+        { "locale_data": { "en": { "text": "I sit with it for a while — clarity comes when I stop forcing it" }, "ko": { "text": "좀 묵혀둔다 — 강제하지 않으면 선명해지니까" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Patient incubation (Observe) + subconscious processing (Pulse) + internal clarity trust (Self)" }
+      ]
+    },
+    { "id": 2, "type": "text_choice",
+      "locale_data": { "en": { "text": "At a restaurant with a huge menu.\nHow do you pick?" }, "ko": { "text": "메뉴가 엄청 많은 식당이다\n어떻게 고를 거야?" } },
+      "options": [
+        { "locale_data": { "en": { "text": "First thing that catches my eye — done in 10 seconds" }, "ko": { "text": "눈에 먼저 들어오는 거 — 10초 안에 끝" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Instant choice (Ignite) + visual/gut appeal (Pulse) + self-preference trust (Self)" },
+        { "locale_data": { "en": { "text": "Check reviews, ask what's popular, narrow down logically" }, "ko": { "text": "리뷰 보고 인기 메뉴 물어보고 논리적으로 줄여간다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"prism","weight":2}, "compass":{"direction":"self","weight":1} }, "rationale": "Research mode (Observe) + systematic elimination (Prism) + optimal personal choice (Self)" },
+        { "locale_data": { "en": { "text": "'What are you getting?' — I decide based on what the group picks" }, "ko": { "text": "'뭐 시킬 거야?' — 다들 뭘 시키나 보고 정한다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Social cue waiting (Observe) + group-vibing (Pulse) + social harmony in choice (Bond)" },
+        { "locale_data": { "en": { "text": "Ask the server what they'd recommend and go with that" }, "ko": { "text": "직원한테 추천 물어보고 그걸로 간다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Active inquiry (Ignite) + expert-leveraging strategy (Prism) + trust in others' judgment (Bond)" }
+      ]
+    },
+    { "id": 3, "type": "text_choice",
+      "locale_data": { "en": { "text": "You made a decision that turned out badly.\nHow do you process it?" }, "ko": { "text": "내린 결정이 안 좋은 결과를 냈다\n어떻게 소화해?" } },
+      "options": [
+        { "locale_data": { "en": { "text": "'It felt right at the time and I'd probably do it again'" }, "ko": { "text": "'그때 느낌은 맞았고 다시 해도 같은 선택할 거야'" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"pulse","weight":2}, "compass":{"direction":"self","weight":1} }, "rationale": "Forward-moving (Ignite) + feeling-validated decision (Pulse) + self-trust preservation (Self)" },
+        { "locale_data": { "en": { "text": "I analyze exactly where the logic broke down to avoid repeating it" }, "ko": { "text": "정확히 어디서 논리가 틀렸는지 분석해서 반복 방지한다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"prism","weight":2}, "compass":{"direction":"self","weight":1} }, "rationale": "Post-mortem analysis (Observe) + systematic error identification (Prism) + self-improvement (Self)" },
+        { "locale_data": { "en": { "text": "I talk to people about it — hearing different perspectives helps me" }, "ko": { "text": "사람들한테 얘기한다 — 다른 시각을 들으면 도움이 돼" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Social processing (Ignite) + emotional sharing (Pulse) + perspective-seeking from others (Bond)" },
+        { "locale_data": { "en": { "text": "I let time pass — eventually the lesson becomes clear on its own" }, "ko": { "text": "시간이 지나면 — 교훈이 저절로 선명해진다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Patient temporal processing (Observe) + organic insight emergence (Pulse) + internal resolution (Self)" }
+      ]
+    },
+    { "id": 4, "type": "image_grid",
+      "locale_data": { "en": { "text": "Which decision moment\nstresses you out most?" }, "ko": { "text": "가장 스트레스 받는\n결정 순간은?" } },
+      "options": [
+        { "locale_data": { "en": { "text": "Too many good options and I can only pick one" }, "ko": { "text": "다 좋은데 하나만 골라야 할 때" } }, "emoji": "😵",
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"pulse","weight":2}, "compass":{"direction":"self","weight":1} }, "rationale": "Want-it-all impulse (Ignite) + desire-based paralysis (Pulse) + self-FOMO (Self)" },
+        { "locale_data": { "en": { "text": "Not enough information to make a confident call" }, "ko": { "text": "확신 있게 결정할 정보가 부족할 때" } }, "emoji": "🔍",
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"prism","weight":2}, "compass":{"direction":"self","weight":1} }, "rationale": "Data insufficiency distress (Observe) + analytical confidence need (Prism) + self-standard pressure (Self)" },
+        { "locale_data": { "en": { "text": "My choice will affect someone else and I might hurt them" }, "ko": { "text": "내 선택이 다른 사람에게 영향을 주고 상처줄 수 있을 때" } }, "emoji": "💭",
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Impact-awareness (Observe) + empathic concern (Pulse) + other-harm avoidance (Bond)" },
+        { "locale_data": { "en": { "text": "Everyone's giving different advice and I don't know who to follow" }, "ko": { "text": "다 다른 조언을 하는데 누구 말을 따라야 할지 모를 때" } }, "emoji": "🌀",
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"bond","weight":1} }, "rationale": "Input overload (Observe) + conflicting data analysis (Prism) + social influence susceptibility (Bond)" }
+      ]
+    },
+    { "id": 5, "type": "text_choice",
+      "locale_data": { "en": { "text": "Do you trust your first instinct\nor do you second-guess yourself?" }, "ko": { "text": "첫 직감을 믿는 편이야\n아니면 다시 생각하는 편이야?" } },
+      "options": [
+        { "locale_data": { "en": { "text": "First instinct almost always — overthinking makes it worse" }, "ko": { "text": "거의 항상 첫 직감 — 생각 많이 하면 더 나빠져" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Decisive action bias (Ignite) + gut-trust (Pulse) + self-confident choosing (Self)" },
+        { "locale_data": { "en": { "text": "I trust it but I verify it with logic before committing" }, "ko": { "text": "직감을 믿되 논리로 검증하고 나서 확정한다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"prism","weight":2}, "compass":{"direction":"self","weight":1} }, "rationale": "Action-intent with verification (Ignite) + dual-process integration (Prism) + self-assured methodology (Self)" },
+        { "locale_data": { "en": { "text": "I check with someone I trust — if they agree I feel confident" }, "ko": { "text": "믿는 사람한테 확인한다 — 동의하면 확신이 생겨" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Validation-seeking (Observe) + confidence through social resonance (Pulse) + relational trust (Bond)" },
+        { "locale_data": { "en": { "text": "I second-guess a lot — I need time to circle back to what I really want" }, "ko": { "text": "많이 흔들려 — 진짜 원하는 게 뭔지 돌아오는 데 시간이 걸려" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Deliberation cycle (Observe) + feeling-based uncertainty (Pulse) + eventual self-clarity seeking (Self)" }
+      ]
+    },
+    { "id": 6, "type": "text_choice",
+      "locale_data": { "en": { "text": "Someone asks you to decide something\nright now with no time to think. You..." }, "ko": { "text": "지금 당장 생각할 시간 없이\n결정해야 한다고 한다 너는..." } },
+      "options": [
+        { "locale_data": { "en": { "text": "I thrive under this — pressure makes my instincts sharper" }, "ko": { "text": "이럴 때 잘 돼 — 압박이 직감을 더 날카롭게 해" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":2}, "process":{"direction":"pulse","weight":2} }, "rationale": "Pressure-activated (Ignite) + instinct amplification under stress (Pulse)" },
+        { "locale_data": { "en": { "text": "I hate this — I need at least a few minutes to think it through" }, "ko": { "text": "이거 싫어 — 최소 몇 분은 생각해야 해" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"prism","weight":2} }, "rationale": "Processing time need (Observe) + analytical requirement (Prism)" },
+        { "locale_data": { "en": { "text": "I'd quickly check with someone nearby — 'what do you think?'" }, "ko": { "text": "옆에 있는 사람한테 빠르게 확인 — '어떻게 생각해?'" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Quick social check (Ignite) + gut-level consultation (Pulse) + shared decision comfort (Bond)" },
+        { "locale_data": { "en": { "text": "I'd pick the safest option and adjust later if needed" }, "ko": { "text": "가장 안전한 걸 고르고 나중에 필요하면 수정한다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"self","weight":2} }, "rationale": "Risk-minimizing (Observe) + conservative calculation (Prism) + self-protection priority (Self)" }
+      ]
+    },
+    { "id": 7, "type": "text_choice",
+      "locale_data": { "en": { "text": "What helps you most when you're\nstuck on a tough decision?" }, "ko": { "text": "어려운 결정에 막혔을 때\n가장 도움이 되는 건?" } },
+      "options": [
+        { "locale_data": { "en": { "text": "Talking it out with someone who just listens" }, "ko": { "text": "그냥 들어주는 사람한테 말하기" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Verbal externalization (Ignite) + emotional processing (Pulse) + relational support need (Bond)" },
+        { "locale_data": { "en": { "text": "Writing a pros-and-cons list until the answer becomes obvious" }, "ko": { "text": "장단점 리스트를 답이 보일 때까지 적기" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"prism","weight":2}, "compass":{"direction":"self","weight":1} }, "rationale": "Active list-making (Ignite) + structured comparative analysis (Prism) + self-directed resolution (Self)" },
+        { "locale_data": { "en": { "text": "Sleeping on it — my subconscious sorts it out overnight" }, "ko": { "text": "일단 자고 본다 — 무의식이 밤새 정리해줌" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Conscious surrender (Observe) + subconscious incubation (Pulse) + self-trusting process (Self)" },
+        { "locale_data": { "en": { "text": "Researching every possible angle until I'm confident" }, "ko": { "text": "확신이 들 때까지 가능한 모든 각도를 조사한다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"prism","weight":2}, "compass":{"direction":"self","weight":1} }, "rationale": "Comprehensive research (Observe) + exhaustive analysis (Prism) + confidence through data (Self)" }
+      ]
+    },
+    { "id": 8, "type": "text_choice",
+      "locale_data": { "en": { "text": "Looking back, your best decisions\nwere usually the ones where you..." }, "ko": { "text": "돌아보면 가장 좋았던 결정은\n보통 이렇게 했을 때야" } },
+      "options": [
+        { "locale_data": { "en": { "text": "Didn't think too hard and just went for it" }, "ko": { "text": "너무 생각 안 하고 그냥 간 것" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Action-bias validated (Ignite) + intuitive success (Pulse) + self-trust reinforcement (Self)" },
+        { "locale_data": { "en": { "text": "Did thorough research and had all the facts lined up" }, "ko": { "text": "철저히 조사하고 팩트를 다 갖춘 것" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"prism","weight":2}, "compass":{"direction":"self","weight":1} }, "rationale": "Preparation-based confidence (Observe) + data-validated success (Prism) + self-achievement (Self)" },
+        { "locale_data": { "en": { "text": "Listened to someone who saw something I couldn't" }, "ko": { "text": "내가 못 본 걸 본 사람의 말을 들은 것" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Receptive to input (Observe) + external-perspective integration (Prism) + trust in others' vision (Bond)" },
+        { "locale_data": { "en": { "text": "Waited until I felt completely at peace with the choice" }, "ko": { "text": "선택에 대해 완전히 평화로울 때까지 기다린 것" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Patient waiting (Observe) + somatic peace as signal (Pulse) + inner alignment priority (Self)" }
+      ]
+    }
+  ],
+  "results": [
+    { "id": "gut", "tpm_profile": {"drive":"ignite","process":"pulse","compass":"self"},
+      "locale_data": {
+        "en": { "title": "I Just Know", "description": "Your decisions happen fast — not because you're careless, but because your internal compass calibrates instantly. While others are still weighing options, you've already felt the answer land in your body. You trust the signal over the spreadsheet. Your blind spot? Speed can skip nuance. But your hit rate is probably higher than most people who overthink it — because your gut has been training on every experience you've ever had.", "tags": ["intuitive","fast","self-trusting"], "compatibility": "Show Me the Numbers" },
+        "ko": { "title": "그냥 안다", "description": "결정이 빨라 — 무책임해서가 아니라 내부 나침반이 순간적으로 보정되니까. 다른 사람들이 아직 옵션을 저울질할 때 너는 이미 답이 몸에 내려앉는 걸 느꼈어. 스프레드시트보다 신호를 믿지. 사각지대는 속도가 뉘앙스를 건너뛸 수 있다는 거. 하지만 적중률은 아마 과잉 분석하는 사람들보다 높을 거야 — 직감은 네가 겪은 모든 경험으로 훈련돼 있으니까.", "tags": ["직관적","빠른","자기신뢰"], "compatibility": "숫자를 보여줘" }
+      }, "emoji": "⚡", "emojiCombo": "⚡🎯" },
+    { "id": "data", "tpm_profile": {"drive":"observe","process":"prism","compass":"self"},
+      "locale_data": {
+        "en": { "title": "Show Me the Numbers", "description": "You don't guess — you calculate. Before committing, you need evidence, comparison, and a clear view of the outcomes. This isn't indecision; it's precision. You'd rather be slow and right than fast and wrong. Your blind spot? Analysis can become avoidance. At some point the data won't tell you what to feel — that part you have to trust yourself on. But when you finally pull the trigger, you rarely regret it.", "tags": ["analytical","thorough","evidence-based"], "compatibility": "I Just Know" },
+        "ko": { "title": "숫자를 보여줘", "description": "추측하지 않아 — 계산해. 확정하기 전에 증거와 비교와 결과의 명확한 그림이 필요하지. 이건 우유부단이 아니라 정밀함이야. 빠르고 틀리기보다 느리고 맞는 쪽을 선택해. 사각지대는 분석이 회피가 될 수 있다는 거. 어느 시점에서 데이터는 뭘 느꼈는지 알려주지 않아 — 그 부분은 자기 자신을 믿어야 해. 하지만 마침내 방아쇠를 당기면 거의 후회하지 않지.", "tags": ["분석적","철저한","증거 기반"], "compatibility": "그냥 안다" }
+      }, "emoji": "📊", "emojiCombo": "📊🔬" },
+    { "id": "consult", "tpm_profile": {"drive":"observe","process":"prism","compass":"bond"},
+      "locale_data": {
+        "en": { "title": "Let Me Ask Around", "description": "You make better decisions when you've heard from the people you trust. Not because you can't decide alone — but because different angles make the picture clearer. You're the person who calls three friends before buying a couch, and you know what? You end up loving the couch. Your blind spot? Too many voices can drown out your own. But your collaborative approach often catches blind spots that solo deciders miss entirely.", "tags": ["collaborative","perspective-seeker","socially-anchored"], "compatibility": "It'll Come to Me" },
+        "ko": { "title": "좀 물어볼게", "description": "믿는 사람들한테 들어봤을 때 더 나은 결정을 내려. 혼자 못 해서가 아니라 다른 각도가 그림을 선명하게 해주니까. 소파 하나 사기 전에 세 명한테 전화하는 사람이지 — 그리고 결국 소파 만족도? 높아. 사각지대는 너무 많은 목소리가 자기 목소리를 덮을 수 있다는 거. 하지만 너의 협업적 접근이 혼자 결정하는 사람들이 완전히 놓치는 사각지대를 잡아내는 경우가 많아.", "tags": ["협업적","시각 수집","사회적 앵커"], "compatibility": "알아서 올 거야" }
+      }, "emoji": "🗣️", "emojiCombo": "🗣️🤝" },
+    { "id": "wait", "tpm_profile": {"drive":"observe","process":"pulse","compass":"self"},
+      "locale_data": {
+        "en": { "title": "It'll Come to Me", "description": "You decide by not deciding — and somehow it works. You trust that if you stop pushing, the right answer will surface on its own. Sleep on it, walk away, let the subconscious do its thing. People mistake this for avoidance, but it's actually a sophisticated processing style. Your blind spot? Some decisions have deadlines that don't wait for inner clarity. But the decisions you do make this way tend to feel right for years, not just days.", "tags": ["patient","subconscious-processor","organic"], "compatibility": "Let Me Ask Around" },
+        "ko": { "title": "알아서 올 거야", "description": "결정하지 않음으로써 결정하는 사람이야 — 그리고 어떻게든 맞아떨어져. 밀어붙이기를 멈추면 맞는 답이 저절로 올라온다고 믿지. 자고 일어나거나 떠나거나 무의식한테 맡겨. 사람들이 회피라고 오해하지만 실은 정교한 처리 방식이야. 사각지대는 어떤 결정에는 내면의 선명함을 기다려주지 않는 데드라인이 있다는 거. 하지만 이 방식으로 내린 결정은 며칠이 아니라 몇 년을 가는 경향이 있어.", "tags": ["인내형","무의식 처리","유기적"], "compatibility": "좀 물어볼게" }
+      }, "emoji": "🌊", "emojiCombo": "🌊💤" }
+  ]
+}

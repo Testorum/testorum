@@ -25,13 +25,11 @@
     }
   },
   "scoring": {
-    "type": "accumulate",
-    "dimensions": [
-      "lead",
-      "solo",
-      "peace",
-      "grind",
-      "social"
+    "type": "tpm",
+    "axes": [
+      "drive",
+      "process",
+      "compass"
     ]
   },
   "questions": [
@@ -58,8 +56,20 @@
           },
           "emoji": null,
           "scores": {
-            "lead": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: lead"
         },
         {
           "locale_data": {
@@ -72,8 +82,20 @@
           },
           "emoji": null,
           "scores": {
-            "solo": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: solo"
         },
         {
           "locale_data": {
@@ -86,9 +108,16 @@
           },
           "emoji": null,
           "scores": {
-            "social": 2,
-            "peace": 1
-          }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: social + Secondary: peace"
         },
         {
           "locale_data": {
@@ -101,8 +130,20 @@
           },
           "emoji": null,
           "scores": {
-            "grind": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: grind"
         }
       ]
     },
@@ -129,9 +170,16 @@
           },
           "emoji": null,
           "scores": {
-            "lead": 2,
-            "grind": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: lead + Secondary: grind"
         },
         {
           "locale_data": {
@@ -144,9 +192,16 @@
           },
           "emoji": null,
           "scores": {
-            "peace": 2,
-            "solo": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: peace + Secondary: solo"
         },
         {
           "locale_data": {
@@ -159,9 +214,16 @@
           },
           "emoji": null,
           "scores": {
-            "social": 2,
-            "peace": 1
-          }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: social + Secondary: peace"
         },
         {
           "locale_data": {
@@ -174,9 +236,16 @@
           },
           "emoji": null,
           "scores": {
-            "solo": 2,
-            "peace": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: solo + Secondary: peace"
         }
       ]
     },
@@ -203,8 +272,20 @@
           },
           "emoji": null,
           "scores": {
-            "lead": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: lead"
         },
         {
           "locale_data": {
@@ -217,9 +298,20 @@
           },
           "emoji": null,
           "scores": {
-            "solo": 2,
-            "grind": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: solo + Secondary: grind"
         },
         {
           "locale_data": {
@@ -232,8 +324,20 @@
           },
           "emoji": null,
           "scores": {
-            "peace": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: peace"
         },
         {
           "locale_data": {
@@ -246,8 +350,20 @@
           },
           "emoji": null,
           "scores": {
-            "social": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: social"
         }
       ]
     },
@@ -274,8 +390,20 @@
           },
           "emoji": null,
           "scores": {
-            "grind": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: grind"
         },
         {
           "locale_data": {
@@ -288,9 +416,20 @@
           },
           "emoji": null,
           "scores": {
-            "lead": 2,
-            "solo": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: lead + Secondary: solo"
         },
         {
           "locale_data": {
@@ -303,9 +442,16 @@
           },
           "emoji": null,
           "scores": {
-            "peace": 2,
-            "solo": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: peace + Secondary: solo"
         },
         {
           "locale_data": {
@@ -318,8 +464,20 @@
           },
           "emoji": null,
           "scores": {
-            "social": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: social"
         }
       ]
     },
@@ -346,8 +504,20 @@
           },
           "emoji": null,
           "scores": {
-            "social": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: social"
         },
         {
           "locale_data": {
@@ -360,8 +530,20 @@
           },
           "emoji": null,
           "scores": {
-            "solo": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: solo"
         },
         {
           "locale_data": {
@@ -374,9 +556,16 @@
           },
           "emoji": null,
           "scores": {
-            "peace": 2,
-            "social": 1
-          }
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: peace + Secondary: social"
         },
         {
           "locale_data": {
@@ -389,9 +578,20 @@
           },
           "emoji": null,
           "scores": {
-            "grind": 2,
-            "solo": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: grind + Secondary: solo"
         }
       ]
     },
@@ -418,8 +618,20 @@
           },
           "emoji": null,
           "scores": {
-            "peace": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: peace"
         },
         {
           "locale_data": {
@@ -432,8 +644,20 @@
           },
           "emoji": null,
           "scores": {
-            "lead": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: lead"
         },
         {
           "locale_data": {
@@ -446,9 +670,20 @@
           },
           "emoji": null,
           "scores": {
-            "solo": 2,
-            "grind": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: solo + Secondary: grind"
         },
         {
           "locale_data": {
@@ -461,9 +696,16 @@
           },
           "emoji": null,
           "scores": {
-            "social": 2,
-            "peace": 1
-          }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: social + Secondary: peace"
         }
       ]
     },
@@ -490,9 +732,20 @@
           },
           "emoji": null,
           "scores": {
-            "lead": 2,
-            "solo": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: lead + Secondary: solo"
         },
         {
           "locale_data": {
@@ -505,8 +758,20 @@
           },
           "emoji": null,
           "scores": {
-            "solo": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: solo"
         },
         {
           "locale_data": {
@@ -519,9 +784,16 @@
           },
           "emoji": null,
           "scores": {
-            "social": 2,
-            "peace": 1
-          }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: social + Secondary: peace"
         },
         {
           "locale_data": {
@@ -534,9 +806,16 @@
           },
           "emoji": null,
           "scores": {
-            "grind": 2,
-            "lead": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: grind + Secondary: lead"
         }
       ]
     }
@@ -567,7 +846,12 @@
         }
       },
       "emoji": "👔",
-      "emojiCombo": "👔"
+      "emojiCombo": "👔",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "prism",
+        "compass": "bond"
+      }
     },
     {
       "id": "solo",
@@ -594,7 +878,12 @@
         }
       },
       "emoji": "🐺",
-      "emojiCombo": "🐺"
+      "emojiCombo": "🐺",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "self"
+      }
     },
     {
       "id": "peace",
@@ -621,7 +910,12 @@
         }
       },
       "emoji": "☮️",
-      "emojiCombo": "☮️"
+      "emojiCombo": "☮️",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "pulse",
+        "compass": "bond"
+      }
     },
     {
       "id": "grind",
@@ -648,7 +942,12 @@
         }
       },
       "emoji": "⚡",
-      "emojiCombo": "⚡"
+      "emojiCombo": "⚡",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "prism",
+        "compass": "self"
+      }
     },
     {
       "id": "social",
@@ -675,7 +974,12 @@
         }
       },
       "emoji": "🦋",
-      "emojiCombo": "🦋"
+      "emojiCombo": "🦋",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "bond"
+      }
     }
   ],
   "premiumResults": {

@@ -1,0 +1,1111 @@
+{
+  "meta": {
+    "slug": "t17",
+    "locale_data": {
+      "en": {
+        "title": "What's Your Leadership Style?",
+        "subtitle": "How you lead when the spotlight's on you",
+        "description": "Find out what kind of leader you naturally become",
+        "shareText": "My leadership style is..."
+      },
+      "ko": {
+        "title": "리더십 스타일 테스트",
+        "subtitle": "스포트라이트가 켜졌을 때 이끄는 방식",
+        "description": "자연스럽게 되는 리더 유형을 알아보자",
+        "shareText": "나의 리더십은..."
+      }
+    },
+    "emoji": "👑",
+    "category": "work",
+    "estimatedMinutes": 3,
+    "theme": {
+      "primary": "#D4A574",
+      "bg": "#FFF8F0",
+      "accent": "#1D1D3B"
+    }
+  },
+  "scoring": {
+    "type": "tpm",
+    "axes": [
+      "drive",
+      "process",
+      "compass"
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "Your team is stuck on a problem.\nWhat do you do?"
+        },
+        "ko": {
+          "text": "팀이 문제에 막혔다\n어떻게 해?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "I take charge and make a call — someone has to"
+            },
+            "ko": {
+              "text": "내가 결정한다 — 누군가는 해야 하니까"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Directive leadership"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I ask what everyone thinks and build a solution together"
+            },
+            "ko": {
+              "text": "다 의견 물어보고 같이 해결책을 만든다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Participative leadership"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I step back and let the expert on the team handle it"
+            },
+            "ko": {
+              "text": "전문가한테 맡기고 한 발 물러난다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Delegating leadership"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I throw out a wild idea to shake things loose"
+            },
+            "ko": {
+              "text": "분위기 깨려고 파격적인 아이디어를 던진다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Inspirational leadership"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "Someone on your team is underperforming.\nYour approach?"
+        },
+        "ko": {
+          "text": "팀원 한 명이 성과가 안 나온다\n접근 방식은?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Direct conversation — clear expectations, clear timeline"
+            },
+            "ko": {
+              "text": "직접 대화 — 명확한 기대 명확한 기한"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Performance-focused"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I check in privately to see if something's going on personally"
+            },
+            "ko": {
+              "text": "개인적으로 뭔가 있는 건지 따로 확인한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Empathic approach"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I pair them with someone strong to learn from"
+            },
+            "ko": {
+              "text": "잘하는 사람이랑 짝지어서 배울 수 있게 한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Strategic mentoring"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I motivate them — find what lights them up and use it"
+            },
+            "ko": {
+              "text": "동기부여 — 뭐가 불을 붙이는지 찾아서 활용한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Motivational approach"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "The team achieved something big.\nHow do you celebrate?"
+        },
+        "ko": {
+          "text": "팀이 큰 성과를 냈다\n어떻게 축하해?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "I highlight every person's specific contribution publicly"
+            },
+            "ko": {
+              "text": "각자의 기여를 구체적으로 공개 칭찬한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Recognition-giving"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Party or dinner — we need to feel this win together"
+            },
+            "ko": {
+              "text": "파티나 회식 — 이 승리를 같이 느껴야 해"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Social celebration"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I'm already thinking about what's next — momentum matters"
+            },
+            "ko": {
+              "text": "이미 다음을 생각 중 — 모멘텀이 중요해"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Forward-driving"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "A quiet 'well done' to each person individually"
+            },
+            "ko": {
+              "text": "각자한테 조용히 '잘했어'"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Personal recognition"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "image_grid",
+      "locale_data": {
+        "en": {
+          "text": "Pick the leader you'd\nwant to follow"
+        },
+        "ko": {
+          "text": "따르고 싶은\n리더를 골라봐"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "The one who always has a plan and stays calm under fire"
+            },
+            "ko": {
+              "text": "항상 계획 있고 위기에 침착한 사람"
+            }
+          },
+          "emoji": "🧠",
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Strategic calm"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "The one who inspires and makes you believe in impossible things"
+            },
+            "ko": {
+              "text": "영감을 주고 불가능을 믿게 만드는 사람"
+            }
+          },
+          "emoji": "🔥",
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Visionary inspiring"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "The one who genuinely cares about you as a person, not just output"
+            },
+            "ko": {
+              "text": "결과물이 아니라 사람으로서 진심으로 챙기는 사람"
+            }
+          },
+          "emoji": "💚",
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Caring servant"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "The one who builds a system where everyone can shine"
+            },
+            "ko": {
+              "text": "모두가 빛날 수 있는 시스템을 만드는 사람"
+            }
+          },
+          "emoji": "⚙️",
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "System-building"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "You disagree with your boss's direction.\nWhat do you do?"
+        },
+        "ko": {
+          "text": "상사의 방향에 동의하지 않는다\n어떻게 해?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "I push back directly with data to support my position"
+            },
+            "ko": {
+              "text": "데이터로 내 입장을 뒷받침하며 직접 반대한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Assertive challenger"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I try to understand their reasoning first before disagreeing"
+            },
+            "ko": {
+              "text": "반대하기 전에 그들의 논리를 먼저 이해하려 한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Empathic challenger"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I go along with it and adapt — they might see something I don't"
+            },
+            "ko": {
+              "text": "따르고 적응한다 — 내가 못 보는 걸 볼 수 있으니까"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Adaptive follower"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I propose an alternative that incorporates both views"
+            },
+            "ko": {
+              "text": "양쪽 관점을 통합한 대안을 제시한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Integrative negotiator"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "What's the hardest part\nof leading for you?"
+        },
+        "ko": {
+          "text": "이끄는 것에서\n가장 힘든 부분은?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Making decisions that not everyone will agree with"
+            },
+            "ko": {
+              "text": "모두가 동의하지 않을 결정 내리기"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Consensus-challenged"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Slowing down for others when I can see the answer clearly"
+            },
+            "ko": {
+              "text": "답이 보이는데 다른 사람을 위해 속도 줄이기"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Pace-frustrated"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Giving negative feedback without damaging the relationship"
+            },
+            "ko": {
+              "text": "관계 손상 없이 부정적 피드백 주기"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Feedback-anxious"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Letting go of control and trusting others to execute"
+            },
+            "ko": {
+              "text": "통제를 놓고 다른 사람의 실행을 믿기"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Control-challenged"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "What do people probably\nsay about your leadership?"
+        },
+        "ko": {
+          "text": "사람들이 아마\n너의 리더십에 대해 뭐라 할까?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "'They always know what to do — total confidence'"
+            },
+            "ko": {
+              "text": "'항상 뭘 해야 하는지 알아 — 완전한 자신감'"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Confident decisive"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "'They make everyone feel included and valued'"
+            },
+            "ko": {
+              "text": "'모든 사람이 포함되고 가치 있다고 느끼게 해'"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Inclusive caring"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "'They push hard but the results speak for themselves'"
+            },
+            "ko": {
+              "text": "'많이 밀어붙이지만 결과가 말해줘'"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Results-driven"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "'They bring out strengths in people they didn't know they had'"
+            },
+            "ko": {
+              "text": "'자기도 몰랐던 강점을 끌어내줘'"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Talent-developer"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "If you could have ONE leadership\nsuperpower, it would be..."
+        },
+        "ko": {
+          "text": "리더십 초능력\n하나를 고른다면..."
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Seeing exactly what needs to happen and making it happen"
+            },
+            "ko": {
+              "text": "정확히 뭘 해야 하는지 보고 실행하는 것"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Execution vision"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Reading people perfectly — knowing what they need before they say it"
+            },
+            "ko": {
+              "text": "사람을 완벽히 읽기 — 말하기 전에 뭐가 필요한지 아는 것"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Emotional intelligence"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Building teams where every person is in their perfect role"
+            },
+            "ko": {
+              "text": "모든 사람이 완벽한 역할에 있는 팀 만들기"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Team architecture"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Inspiring people to do things they didn't think they could"
+            },
+            "ko": {
+              "text": "불가능하다고 생각한 걸 하게 영감 주기"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Inspiration power"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "commander",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "prism",
+        "compass": "self"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Lead from the Front",
+          "description": "You lead by example and decisive action. When things are unclear, you're the one who steps forward and says 'follow me.' Your confidence isn't arrogance — it's earned clarity. You see the path and you take it. Blind spot? You might move so fast that your team can't keep up, or feel unheard.",
+          "tags": [
+            "decisive",
+            "action-first",
+            "confident"
+          ],
+          "compatibility": "I Lead by Listening"
+        },
+        "ko": {
+          "title": "앞에서 이끈다",
+          "description": "모범과 결단력으로 이끄는 사람이야. 불확실할 때 앞으로 나서서 '따라와'라고 말하지. 너의 자신감은 오만이 아니라 경험으로 얻은 선명함이야. 사각지대는 너무 빨리 가서 팀이 못 따라오거나 목소리를 못 낼 수 있다는 거.",
+          "tags": [
+            "결단력",
+            "행동 우선",
+            "자신감"
+          ],
+          "compatibility": "들으면서 이끈다"
+        }
+      },
+      "emoji": "⚡",
+      "emojiCombo": "⚡👑"
+    },
+    {
+      "id": "servant",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "pulse",
+        "compass": "bond"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Lead by Listening",
+          "description": "Your leadership starts with understanding. You don't command — you create conditions where people feel safe enough to do their best work. You lead by caring, by asking, by being the person everyone trusts. Blind spot? Being liked can become more important than being effective, and hard calls might get delayed.",
+          "tags": [
+            "empathic",
+            "people-first",
+            "trust-builder"
+          ],
+          "compatibility": "I Lead from the Front"
+        },
+        "ko": {
+          "title": "들으면서 이끈다",
+          "description": "리더십이 이해에서 시작해. 명령하지 않아 — 사람들이 최고의 일을 할 만큼 안전하다고 느끼는 조건을 만들어. 챙기고 물어보고 모두가 신뢰하는 사람이 됨으로써 이끌지. 사각지대는 호감이 효과보다 중요해질 수 있고 어려운 결정이 미뤄질 수 있다는 거.",
+          "tags": [
+            "공감형",
+            "사람 우선",
+            "신뢰 구축"
+          ],
+          "compatibility": "앞에서 이끈다"
+        }
+      },
+      "emoji": "🫂",
+      "emojiCombo": "🫂👂"
+    },
+    {
+      "id": "strategist",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "bond"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Build the Machine",
+          "description": "You don't just lead people — you design systems where the right outcomes happen naturally. You think in structures, processes, and long-term sustainability. Your team runs smoothly even when you're not in the room. Blind spot? Systems can feel cold. Sometimes what people need isn't a better process — it's a leader who sits with them in the mess.",
+          "tags": [
+            "systematic",
+            "architect",
+            "long-term"
+          ],
+          "compatibility": "I Light the Fire"
+        },
+        "ko": {
+          "title": "시스템을 만든다",
+          "description": "사람만 이끄는 게 아니라 올바른 결과가 자연스럽게 나오는 시스템을 설계해. 구조 프로세스 장기 지속가능성으로 생각하지. 네가 방에 없어도 팀이 매끄럽게 돌아가. 사각지대는 시스템이 차갑게 느껴질 수 있다는 거. 때로는 더 나은 프로세스가 아니라 혼돈 속에 같이 앉아줄 리더가 필요해.",
+          "tags": [
+            "체계적",
+            "설계자",
+            "장기적"
+          ],
+          "compatibility": "불을 붙인다"
+        }
+      },
+      "emoji": "⚙️",
+      "emojiCombo": "⚙️🏗️"
+    },
+    {
+      "id": "inspirer",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "self"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Light the Fire",
+          "description": "You lead through energy and vision. People follow you not because of your title but because your passion is contagious. You see possibilities where others see walls, and your belief becomes their belief. Blind spot? Inspiration without execution is just a speech. Make sure the vision has a plan underneath it, or the fire burns bright and dies fast.",
+          "tags": [
+            "visionary",
+            "energizing",
+            "passion-driven"
+          ],
+          "compatibility": "I Build the Machine"
+        },
+        "ko": {
+          "title": "불을 붙인다",
+          "description": "에너지와 비전으로 이끌어. 직함 때문이 아니라 열정이 전염되니까 따르는 거야. 다른 사람이 벽을 볼 때 가능성을 보고 너의 믿음이 그들의 믿음이 되지. 사각지대는 실행 없는 영감은 그냥 연설이라는 거. 비전 아래 계획이 있는지 확인해 — 아니면 불이 밝게 타다 빨리 꺼져.",
+          "tags": [
+            "비전형",
+            "에너지",
+            "열정 기반"
+          ],
+          "compatibility": "시스템을 만든다"
+        }
+      },
+      "emoji": "🔥",
+      "emojiCombo": "🔥🎤"
+    }
+  ]
+}

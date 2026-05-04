@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "slug": "t15",
+    "locale_data": {
+      "en": { "title": "What's Your Attachment Style?", "subtitle": "How you connect when it really counts", "description": "Discover how you naturally bond with the people closest to you", "shareText": "My attachment style is..." },
+      "ko": { "title": "애착 유형 테스트", "subtitle": "진짜 중요할 때 연결하는 방식", "description": "가장 가까운 사람들과 자연스럽게 유대를 맺는 방식을 알아보자", "shareText": "나의 애착 유형은..." }
+    },
+    "emoji": "🔗", "category": "love", "estimatedMinutes": 3,
+    "theme": { "primary": "#E88D97", "bg": "#FFF5F6", "accent": "#1D1D3B" }
+  },
+  "scoring": { "type": "tpm", "axes": ["drive", "process", "compass"] },
+  "questions": [
+    { "id": 1, "type": "text_choice",
+      "locale_data": { "en": { "text": "A new relationship is going well.\nWhat's your default feeling?" }, "ko": { "text": "새로운 관계가 잘 되고 있다\n기본적으로 드는 감정은?" } },
+      "options": [
+        { "locale_data": { "en": { "text": "Excited and all in — I want to share everything with this person" }, "ko": { "text": "설레고 올인 — 이 사람이랑 다 나누고 싶다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"bond","weight":1} }, "rationale": "Active investment (Ignite) + emotional openness (Pulse) + relationship deepening (Bond) — Secure attachment: comfortable with intimacy" },
+        { "locale_data": { "en": { "text": "Happy but nervous — what if they lose interest tomorrow?" }, "ko": { "text": "기쁜데 불안 — 내일 관심 식으면 어쩌지?" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"bond","weight":1} }, "rationale": "Hypervigilant monitoring (Observe) + anxiety-based feeling (Pulse) + attachment-craving (Bond) — Anxious: fears loss of connection" },
+        { "locale_data": { "en": { "text": "Good but I'm careful not to let it move too fast" }, "ko": { "text": "좋긴 한데 너무 빨리 가지 않게 조심한다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"self","weight":2} }, "rationale": "Paced engagement (Ignite) + controlled progression (Prism) + self-protection priority (Self) — Avoidant: guards independence" },
+        { "locale_data": { "en": { "text": "One day I'm all in, next day I need distance — it's confusing" }, "ko": { "text": "어떤 날은 올인 어떤 날은 거리가 필요 — 나도 헷갈려" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":2} }, "rationale": "Fluctuating approach-avoidance (Observe) + emotional confusion (Pulse) + self-protective oscillation (Self) — Disorganized: wants closeness but fears it" }
+      ]
+    },
+    { "id": 2, "type": "text_choice",
+      "locale_data": { "en": { "text": "Your partner hasn't texted back in hours.\nWhat happens inside you?" }, "ko": { "text": "상대가 몇 시간째 답이 없다\n속에서 무슨 일이 벌어져?" } },
+      "options": [
+        { "locale_data": { "en": { "text": "They're probably just busy — I'll hear from them soon" }, "ko": { "text": "바쁜가 보지 — 곧 연락 오겠지" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Confident expectation (Ignite) + rational reassurance (Prism) + relationship trust (Bond) — Secure: doesn't catastrophize silence" },
+        { "locale_data": { "en": { "text": "I check my phone constantly and replay our last conversation" }, "ko": { "text": "폰을 계속 확인하고 마지막 대화를 복기한다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"bond","weight":1} }, "rationale": "Anxious monitoring (Observe) + emotional rumination (Pulse) + connection-seeking distress (Bond) — Anxious: silence triggers abandonment fear" },
+        { "locale_data": { "en": { "text": "I barely notice — I'm doing my own thing anyway" }, "ko": { "text": "거의 신경 안 써 — 나도 내 할 거 하는 중이라" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":2}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Independent activity continuation (Ignite) + rational non-concern (Prism) + self-sufficiency (Self) — Avoidant: genuine independence from partner's availability" },
+        { "locale_data": { "en": { "text": "Part of me panics, part of me thinks 'good, I need space too'" }, "ko": { "text": "반은 불안하고 반은 '나도 공간 필요하긴 해' 생각" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"pulse","weight":2}, "compass":{"direction":"self","weight":1} }, "rationale": "Internal conflict (Observe) + split emotional response (Pulse) + self-protective ambivalence (Self) — Disorganized: simultaneous desire and relief" }
+      ]
+    },
+    { "id": 3, "type": "text_choice",
+      "locale_data": { "en": { "text": "How comfortable are you\nwith emotional vulnerability?" }, "ko": { "text": "감정적으로 약한 모습을\n보여주는 게 얼마나 편해?" } },
+      "options": [
+        { "locale_data": { "en": { "text": "Very — being open with the right person feels natural and safe" }, "ko": { "text": "매우 — 맞는 사람한테 열린 게 자연스럽고 안전하게 느껴져" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Active emotional sharing (Ignite) + feeling-based openness (Pulse) + trust in intimacy (Bond) — Secure" },
+        { "locale_data": { "en": { "text": "I open up fast, maybe too fast — then worry if it was too much" }, "ko": { "text": "빨리 열어 어쩌면 너무 빨리 — 그리고 너무 많았나 걱정" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"pulse","weight":2}, "compass":{"direction":"bond","weight":1} }, "rationale": "Quick emotional disclosure (Ignite) + anxiety-driven vulnerability (Pulse) + validation-seeking through openness (Bond) — Anxious" },
+        { "locale_data": { "en": { "text": "Not easy — I'd rather be the strong one than the vulnerable one" }, "ko": { "text": "쉽지 않아 — 약한 모습보다 강한 모습을 보여주고 싶다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"self","weight":2} }, "rationale": "Controlled self-presentation (Ignite) + strategic image management (Prism) + independence maintenance (Self) — Avoidant" },
+        { "locale_data": { "en": { "text": "I want to be vulnerable but something in me shuts down when I try" }, "ko": { "text": "열고 싶은데 막상 하려면 뭔가가 닫혀버려" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Approach-avoidance freeze (Observe) + emotional desire conflicting with defense (Pulse) + self-protective shutdown (Self) — Disorganized" }
+      ]
+    },
+    { "id": 4, "type": "image_grid",
+      "locale_data": { "en": { "text": "Pick the relationship dynamic\nthat feels most like you" }, "ko": { "text": "가장 나 같은\n관계 역학을 골라봐" } },
+      "options": [
+        { "locale_data": { "en": { "text": "We're a team — we lean on each other equally" }, "ko": { "text": "우리는 팀이야 — 서로 동등하게 기대" } }, "emoji": "🤝",
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Active partnership (Ignite) + balanced structure (Prism) + mutual reliance (Bond) — Secure" },
+        { "locale_data": { "en": { "text": "I give a lot and sometimes wonder if I get enough back" }, "ko": { "text": "많이 주는 편인데 가끔 충분히 돌아오는지 궁금해" } }, "emoji": "💝",
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"pulse","weight":2}, "compass":{"direction":"bond","weight":1} }, "rationale": "Reciprocity monitoring (Observe) + emotional investment anxiety (Pulse) + over-giving orientation (Bond) — Anxious" },
+        { "locale_data": { "en": { "text": "I love my partner but I also really need my own space" }, "ko": { "text": "상대를 사랑하지만 내 공간도 진짜 필요해" } }, "emoji": "🏔️",
+          "scores": { "drive":{"direction":"ignite","weight":2}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Active boundary-setting (Ignite) + deliberate space management (Prism) + autonomy assertion (Self) — Avoidant" },
+        { "locale_data": { "en": { "text": "It's complicated — I crave closeness but also push it away" }, "ko": { "text": "복잡해 — 가까움을 원하면서도 밀어내" } }, "emoji": "🌪️",
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Oscillating approach-avoidance (Observe) + emotional turbulence (Pulse) + defensive self-protection (Self) — Disorganized" }
+      ]
+    },
+    { "id": 5, "type": "text_choice",
+      "locale_data": { "en": { "text": "After a fight with someone close,\nwhat's your instinct?" }, "ko": { "text": "가까운 사람과 싸운 후\n본능적으로 어떻게 해?" } },
+      "options": [
+        { "locale_data": { "en": { "text": "I want to talk it out and reconnect as soon as possible" }, "ko": { "text": "최대한 빨리 대화하고 다시 연결되고 싶다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"bond","weight":1} }, "rationale": "Immediate repair drive (Ignite) + emotional urgency (Pulse) + reconnection priority (Bond) — Secure" },
+        { "locale_data": { "en": { "text": "I reach out a lot — maybe too much — because I can't stand the distance" }, "ko": { "text": "많이 연락해 — 아마 너무 많이 — 거리를 못 견디겠어서" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"pulse","weight":2}, "compass":{"direction":"bond","weight":1} }, "rationale": "Anxious monitoring of distance (Observe) + distress-driven reaching (Pulse) + cannot tolerate separation (Bond) — Anxious" },
+        { "locale_data": { "en": { "text": "I pull back and focus on myself until I've cooled down" }, "ko": { "text": "물러나서 진정될 때까지 나한테 집중한다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"self","weight":2} }, "rationale": "Active withdrawal (Ignite) + strategic cooling (Prism) + self-regulatory priority (Self) — Avoidant" },
+        { "locale_data": { "en": { "text": "I go back and forth between wanting to fix it and wanting to disappear" }, "ko": { "text": "고치고 싶은 마음과 사라지고 싶은 마음 사이를 왔다 갔다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Oscillating paralysis (Observe) + conflicting emotional pulls (Pulse) + self-protective indecision (Self) — Disorganized" }
+      ]
+    },
+    { "id": 6, "type": "text_choice",
+      "locale_data": { "en": { "text": "How do you feel about\ndepending on someone?" }, "ko": { "text": "누군가에게 의존하는 것에 대해\n어떻게 느껴?" } },
+      "options": [
+        { "locale_data": { "en": { "text": "It's human — we all need people and that's totally okay" }, "ko": { "text": "당연한 거야 — 다 사람이 필요하고 그게 괜찮아" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Positive acceptance (Ignite) + rational normalization (Prism) + interdependence embrace (Bond) — Secure" },
+        { "locale_data": { "en": { "text": "I need it more than I'd like to admit — and that scares me" }, "ko": { "text": "인정하고 싶은 것보다 더 필요해 — 그게 무서워" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"pulse","weight":2}, "compass":{"direction":"bond","weight":1} }, "rationale": "Reluctant awareness (Observe) + fear-based need acknowledgment (Pulse) + dependency anxiety (Bond) — Anxious" },
+        { "locale_data": { "en": { "text": "I'd rather not — I prefer to handle things on my own" }, "ko": { "text": "안 그러고 싶어 — 혼자 처리하는 쪽이 편해" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":2}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Active self-reliance (Ignite) + logical independence preference (Prism) + autonomy value (Self) — Avoidant" },
+        { "locale_data": { "en": { "text": "I want to depend on someone but I've been let down before so it's hard" }, "ko": { "text": "의지하고 싶은데 전에 실망한 적이 있어서 어렵다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":2} }, "rationale": "Cautious approach (Observe) + hurt-informed wariness (Pulse) + self-protection from past experience (Self) — Disorganized" }
+      ]
+    },
+    { "id": 7, "type": "text_choice",
+      "locale_data": { "en": { "text": "When someone shows you\nconsistent love, you feel..." }, "ko": { "text": "누군가 꾸준히 사랑을\n보여주면 느끼는 건..." } },
+      "options": [
+        { "locale_data": { "en": { "text": "Grateful and grounded — this is what I want to give back too" }, "ko": { "text": "감사하고 안정적 — 나도 이렇게 해주고 싶다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Reciprocal activation (Ignite) + emotional gratitude (Pulse) + mutual investment (Bond) — Secure" },
+        { "locale_data": { "en": { "text": "Relieved but waiting for the other shoe to drop" }, "ko": { "text": "안심되지만 언제 깨질까 기다리게 된다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"bond","weight":1} }, "rationale": "Hypervigilant monitoring even in safety (Observe) + anxiety persisting through good (Pulse) + attachment fear (Bond) — Anxious" },
+        { "locale_data": { "en": { "text": "A little uncomfortable — like the closeness is too much pressure" }, "ko": { "text": "약간 불편 — 가까움이 부담처럼 느껴진다" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"prism","weight":2}, "compass":{"direction":"self","weight":1} }, "rationale": "Boundary-triggered response (Ignite) + closeness-as-pressure evaluation (Prism) + space-needing (Self) — Avoidant" },
+        { "locale_data": { "en": { "text": "Suspicious — why do they love me this much? What's the catch?" }, "ko": { "text": "의심 — 왜 이렇게까지 좋아하지? 뭔가 있는 거 아닌가?" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Threat-scanning in safety (Observe) + motive-analyzing (Prism) + self-protective suspicion (Self) — Disorganized" }
+      ]
+    },
+    { "id": 8, "type": "text_choice",
+      "locale_data": { "en": { "text": "What does 'feeling secure'\nin a relationship mean to you?" }, "ko": { "text": "관계에서 '안정감'\n이란 너한테 뭘 의미해?" } },
+      "options": [
+        { "locale_data": { "en": { "text": "Knowing we can handle anything because we trust each other fully" }, "ko": { "text": "서로 완전히 믿으니까 무슨 일이든 해결할 수 있다는 확신" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":1}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"bond","weight":2} }, "rationale": "Active confidence (Ignite) + rational trust foundation (Prism) + deep mutual reliance (Bond) — Secure" },
+        { "locale_data": { "en": { "text": "Hearing 'I'm not going anywhere' — and actually believing it" }, "ko": { "text": "'나 안 떠나' 듣는 것 — 그리고 진짜 믿어지는 것" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":1}, "process":{"direction":"pulse","weight":2}, "compass":{"direction":"bond","weight":1} }, "rationale": "Reassurance-needing (Observe) + emotional evidence over logical (Pulse) + abandonment fear soothing (Bond) — Anxious" },
+        { "locale_data": { "en": { "text": "Having enough space to be myself without losing the relationship" }, "ko": { "text": "관계를 잃지 않으면서 나 자신으로 있을 수 있는 충분한 공간" } }, "emoji": null,
+          "scores": { "drive":{"direction":"ignite","weight":2}, "process":{"direction":"prism","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Active space-claiming (Ignite) + calculated balance (Prism) + identity preservation (Self) — Avoidant" },
+        { "locale_data": { "en": { "text": "I'm honestly not sure I've ever fully felt it — but I want to" }, "ko": { "text": "솔직히 완전히 느껴본 적 있는지 모르겠어 — 하지만 원해" } }, "emoji": null,
+          "scores": { "drive":{"direction":"observe","weight":2}, "process":{"direction":"pulse","weight":1}, "compass":{"direction":"self","weight":1} }, "rationale": "Experiential void acknowledgment (Observe) + yearning (Pulse) + self-aware aspiration (Self) — Disorganized" }
+      ]
+    }
+  ],
+  "results": [
+    { "id": "secure", "tpm_profile": {"drive":"ignite","process":"pulse","compass":"bond"},
+      "locale_data": {
+        "en": { "title": "I Dive Right In", "description": "You love freely and without a safety net — not because you've never been hurt, but because you've decided that the reward of real connection is worth the risk. You give trust before it's earned and somehow that generosity tends to bring out the best in people. You can depend on others without losing yourself. Your blind spot? You might expect everyone to process love the way you do. Not everyone finds intimacy easy, and that's not a reflection of how they feel about you.", "tags": ["open-hearted","trusting","grounded"], "compatibility": "I'm Fine on My Own" },
+        "ko": { "title": "바로 뛰어든다", "description": "안전망 없이 자유롭게 사랑하는 사람이야 — 상처받은 적 없어서가 아니라 진짜 연결의 보상이 리스크를 감수할 가치가 있다고 결정했으니까. 증명되기 전에 신뢰를 주고 그 너그러움이 사람들의 최선을 끌어내는 경향이 있지. 자기 자신을 잃지 않으면서 타인에게 기댈 수 있어. 사각지대는 모두가 너처럼 사랑을 처리할 거라 기대할 수 있다는 거. 친밀함이 쉽지 않은 사람도 있고 그건 너한테 느끼는 감정의 반영이 아니야.", "tags": ["열린 마음","신뢰형","안정적"], "compatibility": "나 혼자서도 괜찮아" }
+      }, "emoji": "💚", "emojiCombo": "💚🤿" },
+    { "id": "anxious", "tpm_profile": {"drive":"observe","process":"pulse","compass":"bond"},
+      "locale_data": {
+        "en": { "title": "I Need to Know Where I Stand", "description": "You love deeply and you love loudly — inside your own head, at least. You feel everything at full volume: the joy of connection, the terror of silence, the relief of reassurance. Your love isn't clingy — it's thorough. You pay attention to details others miss because for you, love is something you monitor like a heartbeat. Your blind spot? Hypervigilance can turn neutral signals into red alerts. The silence doesn't always mean something. Sometimes it just means they're busy.", "tags": ["attentive","deep-feeling","reassurance-seeking"], "compatibility": "I Want You Close but Not Too Close" },
+        "ko": { "title": "나의 위치를 알고 싶다", "description": "깊게 사랑하고 크게 사랑해 — 적어도 머릿속에서는. 연결의 기쁨 침묵의 공포 확인의 안도를 풀볼륨으로 느껴. 너의 사랑은 집착이 아니라 철저함이야. 다른 사람이 놓치는 디테일에 주목하는 건 너한테 사랑이 심장 박동처럼 모니터링하는 거니까. 사각지대는 초경계가 중립 신호를 빨간 경보로 바꿀 수 있다는 거. 침묵이 항상 뭔가를 의미하진 않아. 그냥 바쁜 거일 때도 있어.", "tags": ["세심한","깊은 감정","확인 필요"], "compatibility": "가까이 오되 너무 가까이는 말아줘" }
+      }, "emoji": "💛", "emojiCombo": "💛📡" },
+    { "id": "avoidant", "tpm_profile": {"drive":"ignite","process":"prism","compass":"self"},
+      "locale_data": {
+        "en": { "title": "I'm Fine on My Own", "description": "You love best when you have room to breathe. Your independence isn't a wall — it's a feature. You process emotions privately, solve your own problems first, and show love through actions more than words. You're fully capable of deep connection; you just need it to come without pressure or performance. Your blind spot? Distance can be misread as disinterest. The people who love you might need more signals than you naturally give. Being fine on your own is a strength — just make sure 'fine' isn't code for 'isolated.'", "tags": ["independent","self-sufficient","action-over-words"], "compatibility": "I Dive Right In" },
+        "ko": { "title": "나 혼자서도 괜찮아", "description": "숨 쉴 공간이 있을 때 가장 잘 사랑하는 사람이야. 독립성은 벽이 아니라 특징이지. 감정을 개인적으로 처리하고 자기 문제를 먼저 해결하고 말보다 행동으로 사랑을 보여줘. 깊은 연결이 충분히 가능해 — 압박이나 연기 없이 와야 할 뿐이야. 사각지대는 거리가 무관심으로 읽힐 수 있다는 거. 널 사랑하는 사람들은 네가 자연스럽게 주는 것보다 더 많은 신호가 필요할 수 있어. 혼자서도 괜찮은 건 강점이야 — '괜찮다'가 '고립'의 코드가 아닌지만 확인해.", "tags": ["독립적","자립적","행동형 사랑"], "compatibility": "바로 뛰어든다" }
+      }, "emoji": "🏔️", "emojiCombo": "🏔️🛡️" },
+    { "id": "fearful", "tpm_profile": {"drive":"observe","process":"pulse","compass":"self"},
+      "locale_data": {
+        "en": { "title": "I Want You Close but Not Too Close", "description": "You live in the tension between wanting and fearing the same thing: real intimacy. You crave deep connection but something in your wiring triggers a retreat right when you're about to get it. This isn't a flaw — it's a protection system that once made sense and might just need updating. Your blind spot? You might interpret your own complexity as being 'broken.' You're not. You're someone whose heart wants to trust but whose experience taught it to be careful. That awareness itself is the beginning of something new.", "tags": ["complex","self-aware","approach-avoidance"], "compatibility": "I Need to Know Where I Stand" },
+        "ko": { "title": "가까이 오되 너무 가까이는 말아줘", "description": "같은 것을 원하면서 두려워하는 긴장 속에 살아 — 진짜 친밀함. 깊은 연결을 갈망하지만 막 얻으려는 순간 뭔가가 후퇴를 작동시켜. 이건 결함이 아니야 — 한때 의미가 있었고 업데이트가 필요할 수 있는 보호 시스템이지. 사각지대는 자기 복잡함을 '고장'으로 해석할 수 있다는 거. 아니야. 마음은 신뢰하고 싶은데 경험이 조심하라고 가르친 사람인 거야. 그 인식 자체가 뭔가 새로운 것의 시작이야.", "tags": ["복잡한","자기인식","접근-회피"], "compatibility": "나의 위치를 알고 싶다" }
+      }, "emoji": "🌪️", "emojiCombo": "🌪️💜" }
+  ]
+}

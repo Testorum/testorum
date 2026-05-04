@@ -25,14 +25,11 @@
     }
   },
   "scoring": {
-    "type": "accumulate",
-    "dimensions": [
-      "primal",
-      "ancient",
-      "medieval",
-      "retro",
-      "modern",
-      "future"
+    "type": "tpm",
+    "axes": [
+      "drive",
+      "process",
+      "compass"
     ]
   },
   "questions": [
@@ -59,8 +56,20 @@
           },
           "emoji": null,
           "scores": {
-            "primal": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: primal"
         },
         {
           "locale_data": {
@@ -73,8 +82,20 @@
           },
           "emoji": null,
           "scores": {
-            "retro": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: retro"
         },
         {
           "locale_data": {
@@ -87,8 +108,20 @@
           },
           "emoji": null,
           "scores": {
-            "modern": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: modern"
         },
         {
           "locale_data": {
@@ -101,8 +134,20 @@
           },
           "emoji": null,
           "scores": {
-            "future": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: future"
         }
       ]
     },
@@ -129,8 +174,20 @@
           },
           "emoji": null,
           "scores": {
-            "primal": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: primal"
         },
         {
           "locale_data": {
@@ -143,8 +200,20 @@
           },
           "emoji": null,
           "scores": {
-            "ancient": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: ancient"
         },
         {
           "locale_data": {
@@ -157,9 +226,20 @@
           },
           "emoji": null,
           "scores": {
-            "medieval": 2,
-            "retro": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: medieval + Secondary: retro"
         },
         {
           "locale_data": {
@@ -172,8 +252,20 @@
           },
           "emoji": null,
           "scores": {
-            "future": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: future"
         }
       ]
     },
@@ -200,9 +292,16 @@
           },
           "emoji": null,
           "scores": {
-            "primal": 1,
-            "medieval": 2
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: medieval + Secondary: primal"
         },
         {
           "locale_data": {
@@ -215,9 +314,20 @@
           },
           "emoji": null,
           "scores": {
-            "modern": 2,
-            "future": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: modern + Secondary: future"
         },
         {
           "locale_data": {
@@ -230,9 +340,20 @@
           },
           "emoji": null,
           "scores": {
-            "ancient": 2,
-            "retro": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: ancient + Secondary: retro"
         },
         {
           "locale_data": {
@@ -245,9 +366,20 @@
           },
           "emoji": null,
           "scores": {
-            "retro": 2,
-            "ancient": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: retro + Secondary: ancient"
         }
       ]
     },
@@ -274,8 +406,20 @@
           },
           "emoji": null,
           "scores": {
-            "primal": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: primal"
         },
         {
           "locale_data": {
@@ -288,8 +432,20 @@
           },
           "emoji": null,
           "scores": {
-            "ancient": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: ancient"
         },
         {
           "locale_data": {
@@ -302,8 +458,20 @@
           },
           "emoji": null,
           "scores": {
-            "medieval": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: medieval"
         },
         {
           "locale_data": {
@@ -316,9 +484,16 @@
           },
           "emoji": null,
           "scores": {
-            "modern": 2,
-            "retro": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: modern + Secondary: retro"
         }
       ]
     },
@@ -345,9 +520,16 @@
           },
           "emoji": null,
           "scores": {
-            "primal": 2,
-            "ancient": 1
-          }
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: primal + Secondary: ancient"
         },
         {
           "locale_data": {
@@ -360,8 +542,20 @@
           },
           "emoji": null,
           "scores": {
-            "retro": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: retro"
         },
         {
           "locale_data": {
@@ -374,8 +568,20 @@
           },
           "emoji": null,
           "scores": {
-            "modern": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: modern"
         },
         {
           "locale_data": {
@@ -388,8 +594,20 @@
           },
           "emoji": null,
           "scores": {
-            "future": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: future"
         }
       ]
     },
@@ -416,9 +634,16 @@
           },
           "emoji": null,
           "scores": {
-            "primal": 2,
-            "medieval": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: primal + Secondary: medieval"
         },
         {
           "locale_data": {
@@ -431,9 +656,20 @@
           },
           "emoji": null,
           "scores": {
-            "modern": 1,
-            "future": 2
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: future + Secondary: modern"
         },
         {
           "locale_data": {
@@ -446,9 +682,20 @@
           },
           "emoji": null,
           "scores": {
-            "ancient": 2,
-            "medieval": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: ancient + Secondary: medieval"
         },
         {
           "locale_data": {
@@ -461,9 +708,20 @@
           },
           "emoji": null,
           "scores": {
-            "retro": 1,
-            "ancient": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: retro + Secondary: ancient"
         }
       ]
     },
@@ -490,9 +748,16 @@
           },
           "emoji": null,
           "scores": {
-            "primal": 2,
-            "medieval": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: primal + Secondary: medieval"
         },
         {
           "locale_data": {
@@ -505,9 +770,20 @@
           },
           "emoji": null,
           "scores": {
-            "ancient": 2,
-            "retro": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: ancient + Secondary: retro"
         },
         {
           "locale_data": {
@@ -520,8 +796,20 @@
           },
           "emoji": null,
           "scores": {
-            "modern": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: modern"
         },
         {
           "locale_data": {
@@ -534,9 +822,20 @@
           },
           "emoji": null,
           "scores": {
-            "future": 2,
-            "modern": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: future + Secondary: modern"
         }
       ]
     }
@@ -567,7 +866,12 @@
         }
       },
       "emoji": "🦴",
-      "emojiCombo": "🦴"
+      "emojiCombo": "🦴",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "self"
+      }
     },
     {
       "id": "ancient",
@@ -594,7 +898,12 @@
         }
       },
       "emoji": "📜",
-      "emojiCombo": "📜"
+      "emojiCombo": "📜",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "bond"
+      }
     },
     {
       "id": "medieval",
@@ -621,7 +930,12 @@
         }
       },
       "emoji": "🏰",
-      "emojiCombo": "🏰"
+      "emojiCombo": "🏰",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "bond"
+      }
     },
     {
       "id": "retro",
@@ -648,7 +962,12 @@
         }
       },
       "emoji": "📻",
-      "emojiCombo": "📻"
+      "emojiCombo": "📻",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "pulse",
+        "compass": "bond"
+      }
     },
     {
       "id": "modern",
@@ -675,7 +994,12 @@
         }
       },
       "emoji": "📱",
-      "emojiCombo": "📱"
+      "emojiCombo": "📱",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "self"
+      }
     },
     {
       "id": "future",
@@ -702,7 +1026,12 @@
         }
       },
       "emoji": "🚀",
-      "emojiCombo": "🚀"
+      "emojiCombo": "🚀",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "prism",
+        "compass": "self"
+      }
     }
   ],
   "premiumResults": {

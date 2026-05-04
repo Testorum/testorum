@@ -1,0 +1,1184 @@
+
+{
+  "meta": {
+    "slug": "t11",
+    "locale_data": {
+      "en": {
+        "title": "What Drives You?",
+        "subtitle": "The hidden engine behind everything you do",
+        "description": "Discover the core motivation that shapes how you move through the world",
+        "shareText": "What drives me is..."
+      },
+      "ko": {
+        "title": "나를 움직이는 건 뭘까?",
+        "subtitle": "내 모든 행동 뒤에 숨겨진 엔진",
+        "description": "내가 세상을 살아가는 방식을 만드는 핵심 동력을 찾아보자",
+        "shareText": "나를 움직이는 건..."
+      }
+    },
+    "emoji": "⚡",
+    "category": "identity",
+    "estimatedMinutes": 3,
+    "theme": {
+      "primary": "#FF6B35",
+      "bg": "#FFF4EE",
+      "accent": "#1D1D3B"
+    }
+  },
+  "scoring": {
+    "type": "tpm",
+    "axes": [
+      "drive",
+      "process",
+      "compass"
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "You wake up with zero plans.\nWhat sounds best?"
+        },
+        "ko": {
+          "text": "아무 계획 없는 아침이다\n뭐가 제일 끌려?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Hit up friends for a spontaneous adventure somewhere"
+            },
+            "ko": {
+              "text": "친구들한테 연락해서 아무 데나 놀러 간다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Spontaneous social initiative (Ignite) + feeling-driven choice (Pulse) + connection-seeking (Bond) — Schwartz: Stimulation + Benevolence"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Finally work on that project I've been planning in my head"
+            },
+            "ko": {
+              "text": "머릿속으로만 그리던 프로젝트를 드디어 시작한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Deliberate internal-to-external transition (Observe) + planned execution (Prism) + self-directed purpose (Self) — Schwartz: Self-Direction + Achievement"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Explore somewhere new all by myself — no plan needed"
+            },
+            "ko": {
+              "text": "혼자 처음 가보는 데를 돌아다닌다 — 계획 없이"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Active solo exploration (Ignite) + intuition-led wandering (Pulse) + individual freedom priority (Self) — Schwartz: Stimulation + Self-Direction"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Check in on someone who's been going through a tough time"
+            },
+            "ko": {
+              "text": "요즘 힘들어하는 사람한테 안부 연락을 한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Noticing others' state (Observe) + empathic response (Pulse) + other-care priority (Bond) — Schwartz: Benevolence + Universalism"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "A friend asks 'what do you\nactually want out of life?'"
+        },
+        "ko": {
+          "text": "친구가 '너 진짜 인생에서\n뭘 원해?'라고 물어본다"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Freedom to do whatever I want whenever I want"
+            },
+            "ko": {
+              "text": "하고 싶을 때 하고 싶은 거 하는 자유"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Action-readiness (Ignite) + desire-driven living (Pulse) + autonomy priority (Self) — Schwartz: Self-Direction + Hedonism"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "To be really really good at something that matters"
+            },
+            "ko": {
+              "text": "의미 있는 분야에서 진짜 잘하는 사람이 되는 것"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Achievement-driven initiative (Ignite) + mastery through analysis (Prism) + self-focused excellence (Self) — Schwartz: Achievement + Power"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Deep connections with people who actually get me"
+            },
+            "ko": {
+              "text": "나를 진짜 이해해주는 사람들과의 깊은 연결"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Receptive to connection (Observe) + emotional depth (Pulse) + relationship-centered life goal (Bond) — Schwartz: Benevolence"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "To leave the world a little better than I found it"
+            },
+            "ko": {
+              "text": "세상을 내가 발견한 것보다 조금이라도 낫게 만드는 것"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Long-term perspective (Observe) + systemic thinking (Prism) + collective impact priority (Bond) — Schwartz: Universalism + Benevolence"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "You're in a group project.\nWhat role do you naturally take?"
+        },
+        "ko": {
+          "text": "그룹 프로젝트를 하게 됐다\n자연스럽게 맡는 역할은?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "I push things forward — someone has to set the pace"
+            },
+            "ko": {
+              "text": "앞에서 끌고 간다 — 누군가는 페이스를 잡아야 하니까"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Initiative-taking leadership (Ignite) + structural pace-setting (Prism) + self-determined direction (Self) — Schwartz: Power + Achievement"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I make sure everyone's voice gets heard before we decide"
+            },
+            "ko": {
+              "text": "결정 전에 다 한마디씩 할 수 있게 챙긴다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Listening-first approach (Observe) + emotional attunement to group (Pulse) + collective inclusion priority (Bond) — Schwartz: Universalism + Conformity"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I come up with the ideas that spark the whole direction"
+            },
+            "ko": {
+              "text": "방향을 잡아주는 아이디어를 내는 역할이 된다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Creative contribution (Ignite) + intuition-based ideation (Pulse) + individual originality priority (Self) — Schwartz: Self-Direction + Stimulation"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I quietly organize everything so the team runs smoothly"
+            },
+            "ko": {
+              "text": "조용히 뒤에서 정리해서 팀이 매끄럽게 돌아가게 한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Background operational support (Observe) + structural organization (Prism) + team-serving function (Bond) — Schwartz: Tradition + Security"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "image_grid",
+      "locale_data": {
+        "en": {
+          "text": "What makes you feel\nmost alive?"
+        },
+        "ko": {
+          "text": "가장 살아있다고\n느끼는 순간은?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Being in a crowd that's all vibing together"
+            },
+            "ko": {
+              "text": "다 같이 하나로 빠져든 순간"
+            }
+          },
+          "emoji": "🎪",
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Active social immersion (Ignite) + shared emotional energy (Pulse) + collective experience priority (Bond) — Schwartz: Stimulation + Benevolence"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Cracking something nobody else could figure out"
+            },
+            "ko": {
+              "text": "아무도 못 풀던 걸 내가 풀어낸 순간"
+            }
+          },
+          "emoji": "🧩",
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Achievement-driven breakthrough (Ignite) + analytical problem-solving (Prism) + individual mastery satisfaction (Self) — Schwartz: Achievement + Self-Direction"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "A quiet moment where everything just clicks inside"
+            },
+            "ko": {
+              "text": "조용한 순간에 내 안에서 모든 게 맞아떨어질 때"
+            }
+          },
+          "emoji": "🌅",
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Internal contemplation (Observe) + intuitive alignment (Pulse) + self-connection (Self) — Schwartz: Self-Direction + Security"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Watching someone you helped actually succeed"
+            },
+            "ko": {
+              "text": "내가 도운 사람이 진짜 성공하는 걸 볼 때"
+            }
+          },
+          "emoji": "🌱",
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Witnessing outcome (Observe) + evaluating impact (Prism) + other-invested fulfillment (Bond) — Schwartz: Benevolence + Universalism"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "What stresses you out\nthe most?"
+        },
+        "ko": {
+          "text": "가장 스트레스\n받는 상황은?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Feeling stuck with no way to change my situation"
+            },
+            "ko": {
+              "text": "상황을 바꿀 수 없다는 무력감"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Frustration from blocked action (Ignite frustrated) + feeling-based distress (Pulse) + autonomy threat (Self) — Schwartz: Self-Direction threatened"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Wasting time on things that don't lead anywhere"
+            },
+            "ko": {
+              "text": "아무 결과도 없는 일에 시간 쓰는 것"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Efficiency-driven urgency (Ignite) + outcome-evaluating mindset (Prism) + self-investment protection (Self) — Schwartz: Achievement threatened"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "People around me being upset and I can't fix it"
+            },
+            "ko": {
+              "text": "주변 사람이 힘들어하는데 내가 해줄 수 있는 게 없을 때"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Helpless witnessing (Observe) + empathic absorption (Pulse) + other-care distress (Bond) — Schwartz: Benevolence frustrated"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Chaos with no structure or plan in sight"
+            },
+            "ko": {
+              "text": "구조도 계획도 없는 혼돈 상태"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Need for environmental stability (Observe) + structural clarity need (Prism) + personal control concern (Self) — Schwartz: Security threatened"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "A friend texts 'I need your help\nwith something big.' First thought?"
+        },
+        "ko": {
+          "text": "친구한테 '나 큰 일 있는데\n도와줘' 연락이 왔다 첫 반응은?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Let's go — I'm already grabbing my keys"
+            },
+            "ko": {
+              "text": "가자 — 이미 열쇠 들고 나가는 중"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Immediate mobilization (Ignite) + gut-level response (Pulse) + friend-oriented action (Bond)"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "What kind of help? I need more context before I jump in"
+            },
+            "ko": {
+              "text": "어떤 도움? 일단 상황 파악부터 하고 싶다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Information-gathering before action (Observe) + analytical assessment (Prism) + resource-conscious self-management (Self)"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Hope they're okay — I'm already worried about them"
+            },
+            "ko": {
+              "text": "괜찮은 건가 — 벌써 걱정부터 된다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Emotional receptivity (Observe) + empathic concern (Pulse) + other-wellbeing priority (Bond)"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "How can I make the biggest impact here? Let me think"
+            },
+            "ko": {
+              "text": "내가 어떻게 해야 가장 도움이 될까 생각한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Solution-oriented intent (Ignite) + strategic impact assessment (Prism) + other-serving optimization (Bond)"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "What do you secretly value\nmost about yourself?"
+        },
+        "ko": {
+          "text": "나 자신에 대해\n은근히 제일 자랑스러운 건?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "My energy — I can make anything feel exciting"
+            },
+            "ko": {
+              "text": "내 에너지 — 뭐든 재밌게 만들 수 있다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Energy as action-generating force (Ignite) + vibrancy as felt quality (Pulse) + self-expressive identity (Self)"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "My mind — I can figure out almost anything given time"
+            },
+            "ko": {
+              "text": "내 머리 — 시간 주면 거의 다 알아낸다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Patient processing (Observe) + analytical capability as identity (Prism) + self-reliant intelligence (Self)"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "My heart — I genuinely care about the people around me"
+            },
+            "ko": {
+              "text": "내 마음 — 주변 사람들을 진심으로 챙긴다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Attentive care (Observe) + emotional warmth (Pulse) + relational identity (Bond)"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "My vision — I can see how to get from here to there"
+            },
+            "ko": {
+              "text": "내 비전 — 지금 여기서 저기까지 가는 길이 보인다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Forward-moving orientation (Ignite) + strategic path-mapping (Prism) + self-valued capability (Self)"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "It's 10 years from now.\nWhat would make you feel like\nyou made it?"
+        },
+        "ko": {
+          "text": "10년 후의 나\n'해냈다'고 느끼려면?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Total freedom — living completely on my own terms"
+            },
+            "ko": {
+              "text": "완전한 자유 — 내 맘대로 사는 인생"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "Autonomous action capacity (Ignite) + desire-driven life (Pulse) + ultimate self-sovereignty (Self) — Schwartz: Self-Direction peak"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Being known as the best at what I do"
+            },
+            "ko": {
+              "text": "내 분야에서 최고라고 인정받는 것"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Achievement-driven ambition (Ignite) + expertise-based recognition (Prism) + self-centered legacy (Self) — Schwartz: Achievement + Power peak"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Being surrounded by people who truly love me"
+            },
+            "ko": {
+              "text": "나를 진심으로 사랑하는 사람들에 둘러싸인 것"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Receptive to love (Observe) + emotional fulfillment (Pulse) + relational life goal (Bond) — Schwartz: Benevolence peak"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Having built something that outlasts me"
+            },
+            "ko": {
+              "text": "내가 사라져도 남는 뭔가를 만들어놓은 것"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Long-term perspective (Observe) + designed durability (Prism) + legacy for others (Bond) — Schwartz: Universalism + Tradition peak"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "rush",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "self"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Chase the Rush",
+          "description": "You run on pure adrenaline and freedom. The world is one giant playground and you refuse to watch from the bench. You're at your best when there's no script — just instinct, energy, and whatever comes next. Routine doesn't drain you because you never stay in one long enough to find out. Your engine is lit by novelty, spontaneity, and the electric feeling of doing something for the first time. The risk? Sometimes you sprint past the things worth slowing down for. The gift? You remind everyone around you that life is supposed to feel alive.",
+          "tags": [
+            "freedom-seeker",
+            "spontaneous",
+            "high-energy"
+          ],
+          "compatibility": "I See the Whole Board"
+        },
+        "ko": {
+          "title": "짜릿한 게 좋다",
+          "description": "순수한 아드레날린과 자유로 움직이는 사람이야. 세상은 거대한 놀이터고 너는 벤치에 앉아있을 생각이 없지. 대본 없이 본능과 에너지와 다음에 올 무엇이든으로 움직일 때 가장 빛나. 루틴이 지겨울 새도 없어 — 그만큼 오래 머물지를 않으니까. 새로운 것 즉흥적인 것 처음 해보는 것의 전기 같은 느낌이 너의 엔진이야. 리스크는 천천히 봐야 할 것들을 지나쳐버릴 때가 있다는 거. 선물은 주변 사람들에게 인생은 원래 살아있는 느낌이어야 한다는 걸 상기시켜준다는 거야.",
+          "tags": [
+            "자유추구",
+            "즉흥적",
+            "에너지"
+          ],
+          "compatibility": "전체 판을 본다"
+        }
+      },
+      "emoji": "🔥",
+      "emojiCombo": "🔥⚡"
+    },
+    {
+      "id": "mastery",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "prism",
+        "compass": "self"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Play to Win",
+          "description": "You're powered by the pursuit of excellence. Not for the trophy — for the feeling of knowing you earned it. You set standards most people don't even see, and then you meet them. Your mind naturally calculates the shortest path between where you are and where you want to be. Wasted effort is your kryptonite; you'd rather do one thing brilliantly than ten things okay. The risk? You might forget that not everything worth doing produces a measurable result. The gift? When you commit, you deliver at a level that moves the entire room forward.",
+          "tags": [
+            "mastery-driven",
+            "strategic",
+            "ambitious"
+          ],
+          "compatibility": "I Keep Things Together"
+        },
+        "ko": {
+          "title": "이기는 게 좋다",
+          "description": "탁월함의 추구가 너를 움직여. 트로피 때문이 아니라 '내가 해냈다'는 감각 때문이지. 대부분이 보지도 못하는 기준을 세우고 그걸 달성해. 지금 위치에서 목표까지 가장 짧은 경로를 머리가 자동으로 계산해. 낭비되는 노력이 너의 적이야 — 열 개를 그저 그렇게보다 하나를 끝내주게 하는 쪽을 고르지. 리스크는 측정 가능한 결과가 나오지 않는 것도 할 가치가 있다는 걸 잊을 때가 있다는 거. 선물은 네가 진심으로 임하면 방 전체를 앞으로 끌고 가는 수준의 결과를 내놓는다는 거야.",
+          "tags": [
+            "성취지향",
+            "전략적",
+            "야심"
+          ],
+          "compatibility": "균형을 잡는다"
+        }
+      },
+      "emoji": "🏆",
+      "emojiCombo": "🏆🎯"
+    },
+    {
+      "id": "spark",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "bond"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Light Up the Room",
+          "description": "Your fuel is people. Not in a needy way — in a 'the more of us the better' way. You walk into a room and the energy shifts because you bring warmth, spontaneity, and this magnetic quality that makes people want to be around you. Your instinct is to include, to connect, to make sure nobody's standing alone. You read emotional currents like a native language and respond before anyone has to ask. The risk? You might burn out giving energy you didn't save for yourself. The gift? You create the moments people remember for years.",
+          "tags": [
+            "connector",
+            "warm",
+            "magnetic"
+          ],
+          "compatibility": "I Build My Own World"
+        },
+        "ko": {
+          "title": "분위기를 만든다",
+          "description": "사람이 너의 연료야. 의존적으로가 아니라 '많을수록 좋다'는 방식으로. 방에 들어가면 에너지가 바뀌어 — 너는 따뜻함과 즉흥성과 사람들이 옆에 있고 싶게 만드는 자력을 가져오니까. 포함시키고 연결하고 아무도 혼자 서 있지 않게 하는 게 본능이야. 감정의 흐름을 모국어처럼 읽고 아무도 부탁하기 전에 반응해. 리스크는 자기한테 남겨두지 않은 에너지를 주다가 타버릴 수 있다는 거. 선물은 사람들이 몇 년이 지나도 기억하는 순간을 만들어낸다는 거야.",
+          "tags": [
+            "연결자",
+            "따뜻함",
+            "자력"
+          ],
+          "compatibility": "내 세계를 만든다"
+        }
+      },
+      "emoji": "✨",
+      "emojiCombo": "✨🫂"
+    },
+    {
+      "id": "care",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "pulse",
+        "compass": "bond"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Feel What Matters",
+          "description": "You move through the world with your emotional antenna always on. Before someone tells you they're struggling, you already felt the shift. Your drive isn't about achievement or adventure — it's about making sure the people in your orbit are truly okay. You don't just listen; you absorb, process, and carry. Meaning for you lives in the spaces between people — in the text that says 'I'm here,' in showing up when nobody asked. The risk? You might absorb more than your system can process. The gift? People feel genuinely safe in your presence, and that's rarer than you know.",
+          "tags": [
+            "empathic",
+            "present",
+            "meaning-seeker"
+          ],
+          "compatibility": "I Chase the Rush"
+        },
+        "ko": {
+          "title": "마음이 먼저 움직인다",
+          "description": "감정 안테나가 항상 켜진 채로 세상을 살아가는 사람이야. 누군가 힘들다고 말하기 전에 이미 변화를 느꼈어. 너의 동력은 성취나 모험이 아니라 네 궤도에 있는 사람들이 진짜 괜찮은지 확인하는 거야. 그냥 듣는 게 아니라 흡수하고 처리하고 품어. 너에게 의미는 사람과 사람 사이의 공간에 있어 — '나 여기 있어'라는 문자에 아무도 부르지 않았는데 나타나는 것에. 리스크는 시스템이 처리할 수 있는 것보다 더 많이 흡수할 수 있다는 거. 선물은 사람들이 네 곁에서 진짜 안전하다고 느끼는 거고 그건 네가 아는 것보다 훨씬 드문 거야.",
+          "tags": [
+            "공감형",
+            "함께하는",
+            "의미추구"
+          ],
+          "compatibility": "짜릿한 게 좋다"
+        }
+      },
+      "emoji": "💜",
+      "emojiCombo": "💜🌊"
+    },
+    {
+      "id": "builder",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "self"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Build My Own World",
+          "description": "You're constructing something — maybe not a physical thing, but a system, a body of knowledge, a life that runs exactly the way you designed it. You don't need external validation because your internal scorecard is harder to impress than any outside judge. You think in structures, timelines, and cause-effect chains. When chaos hits, you're the one who stays calm because you already thought through the contingencies. The risk? Building alone can become isolation if you're not careful. The gift? What you build tends to actually last, because you don't cut corners even when nobody's watching.",
+          "tags": [
+            "architect",
+            "self-sufficient",
+            "systematic"
+          ],
+          "compatibility": "I Light Up the Room"
+        },
+        "ko": {
+          "title": "내 세계를 만든다",
+          "description": "뭔가를 짓고 있는 사람이야 — 물리적인 건 아닐 수 있어도 시스템이든 지식이든 내가 설계한 대로 정확히 돌아가는 삶이든. 외부 인정이 필요 없어 — 내부 채점표가 어떤 외부 심사위원보다 까다로우니까. 구조와 타임라인과 인과관계 사슬로 생각해. 혼돈이 오면 네가 가장 침착한 사람이야 — 이미 비상 계획을 생각해뒀으니까. 리스크는 혼자 짓는 게 조심하지 않으면 고립이 될 수 있다는 거. 선물은 네가 만드는 건 진짜 오래 남는 경향이 있어 — 아무도 안 볼 때도 대충 안 하니까.",
+          "tags": [
+            "설계자",
+            "자립적",
+            "체계적"
+          ],
+          "compatibility": "분위기를 만든다"
+        }
+      },
+      "emoji": "🏗️",
+      "emojiCombo": "🏗️🧠"
+    },
+    {
+      "id": "steward",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "bond"
+      },
+      "locale_data": {
+        "en": {
+          "title": "I Keep Things Together",
+          "description": "You're the person who sees the whole board while everyone else is focused on their own piece. Your drive isn't to lead from the front or to be the loudest voice — it's to make sure the system works and everyone in it is accounted for. You think in balance: fairness, sustainability, long-term health of relationships and structures. You quietly hold things together in ways most people never notice until you step away. The risk? You might suppress your own needs to keep the machine running smoothly. The gift? You build the kind of stability that others can grow inside of.",
+          "tags": [
+            "stabilizer",
+            "fair-minded",
+            "long-view"
+          ],
+          "compatibility": "I Play to Win"
+        },
+        "ko": {
+          "title": "균형을 잡는다",
+          "description": "다른 사람들이 자기 말만 집중할 때 전체 판을 보는 사람이야. 앞에서 이끌거나 가장 큰 목소리가 되는 게 아니라 시스템이 작동하고 그 안의 모든 사람이 챙겨지는 게 너의 동력이지. 균형으로 생각해 — 공정함 지속가능성 관계와 구조의 장기적 건강. 대부분의 사람이 네가 자리를 비우기 전까지 눈치 못 챌 만큼 조용히 모든 걸 잡아주고 있어. 리스크는 기계가 매끄럽게 돌아가게 하려고 자기 필요를 억누를 수 있다는 거. 선물은 다른 사람들이 그 안에서 성장할 수 있는 종류의 안정감을 만든다는 거야.",
+          "tags": [
+            "안정자",
+            "공정한",
+            "긴 시야"
+          ],
+          "compatibility": "이기는 게 좋다"
+        }
+      },
+      "emoji": "⚖️",
+      "emojiCombo": "⚖️🌳"
+    }
+  ],
+  "_designNotes": {
+    "testType": "TPM Anchor Test — measures all 3 axes equally",
+    "psychBasis": "Schwartz Values Theory (10 basic values → 3 TPM axes)",
+    "resultTypes": "6 types covering IPS, IRS, IPB, OPB, ORS, ORB — all 3 axes represented in both directions",
+    "missing": "IRB (Architect) and OPS (Dreamer) — these are better measured by domain-specific tests",
+    "axisEmphasis": "Q1-Q2: Compass emphasis | Q3-Q4: Process emphasis | Q5-Q6: Drive emphasis | Q7-Q8: mixed/anchor",
+    "compatibilityLogic": "Each type paired with its diagonal opposite on the TPM cube for maximum growth"
+  }
+}

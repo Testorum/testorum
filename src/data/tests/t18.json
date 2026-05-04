@@ -1,0 +1,1111 @@
+{
+  "meta": {
+    "slug": "t18",
+    "locale_data": {
+      "en": {
+        "title": "What's Your Social Battery?",
+        "subtitle": "How much people-time do you actually need?",
+        "description": "Find out your real social capacity — not what you think it should be",
+        "shareText": "My social battery is..."
+      },
+      "ko": {
+        "title": "소셜 배터리 테스트",
+        "subtitle": "실제로 필요한 사람-시간은?",
+        "description": "네가 생각하는 게 아니라 진짜 소셜 용량을 알아보자",
+        "shareText": "나의 소셜 배터리는..."
+      }
+    },
+    "emoji": "🔋",
+    "category": "social",
+    "estimatedMinutes": 3,
+    "theme": {
+      "primary": "#FFD93D",
+      "bg": "#FFFBE6",
+      "accent": "#1D1D3B"
+    }
+  },
+  "scoring": {
+    "type": "tpm",
+    "axes": [
+      "drive",
+      "process",
+      "compass"
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "It's Saturday. You have zero obligations.\nWhat fills you up?"
+        },
+        "ko": {
+          "text": "토요일 아무 의무 없음\n뭘 하면 채워져?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Big group hangout — the more people the better"
+            },
+            "ko": {
+              "text": "대규모 모임 — 사람 많을수록 좋아"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "High social drive"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "One-on-one with my favorite person over coffee"
+            },
+            "ko": {
+              "text": "가장 좋아하는 사람이랑 둘이 커피"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Selective intimate connection (Observe) + deliberate person choice (Prism) + depth-seeking bond (Bond)"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Solo time — I've been waiting for this all week"
+            },
+            "ko": {
+              "text": "혼자 시간 — 일주일 내내 기다렸어"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Solo recharge"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Depends entirely on my mood — I'll decide in the morning"
+            },
+            "ko": {
+              "text": "기분에 따라 완전히 다름 — 아침에 정한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Mood-dependent"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "You're at a party where you\nonly know the host. You..."
+        },
+        "ko": {
+          "text": "아는 사람이 주최자밖에 없는\n파티에 왔다 너는..."
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Start conversations with strangers — this is where I thrive"
+            },
+            "ko": {
+              "text": "모르는 사람한테 말 걸기 시작 — 여기가 내 무대"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Extroverted approach"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Find one person who seems interesting and go deep with them"
+            },
+            "ko": {
+              "text": "재밌어 보이는 한 명 찾아서 깊게 대화"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Deep connector"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Stick near the host and let introductions happen naturally"
+            },
+            "ko": {
+              "text": "주최자 옆에 있으면서 자연스럽게 소개받기"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Strategic social"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Find the dog, the balcony, or a quiet corner with snacks"
+            },
+            "ko": {
+              "text": "강아지나 발코니나 과자 있는 조용한 구석 찾기"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Low-stimulus seeking"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "After 3 hours at a social event,\nhow do you feel?"
+        },
+        "ko": {
+          "text": "사교 모임 3시간 후\n기분이 어때?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Energized — I could keep going all night honestly"
+            },
+            "ko": {
+              "text": "에너지 충전됨 — 솔직히 밤새 갈 수 있어"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Social energy gain"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Good but I'm starting to look for an exit strategy"
+            },
+            "ko": {
+              "text": "좋긴 한데 슬슬 빠질 타이밍을 잡고 있다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Strategic withdrawal"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Drained — I need silence and solitude to recover"
+            },
+            "ko": {
+              "text": "방전 — 침묵과 고독이 필요해"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Social depletion"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Depends on the people — right crowd = infinite, wrong crowd = 30 min"
+            },
+            "ko": {
+              "text": "사람에 따라 — 맞으면 무한 안 맞으면 30분"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "People-selective"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "image_grid",
+      "locale_data": {
+        "en": {
+          "text": "Pick your ideal\nweekend ratio"
+        },
+        "ko": {
+          "text": "이상적인\n주말 비율을 골라"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "80% people, 20% alone — I get lonely fast"
+            },
+            "ko": {
+              "text": "80% 사람 20% 혼자 — 빨리 외로워져"
+            }
+          },
+          "emoji": "👯",
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "High-social"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "50/50 — balanced mix of social and solo"
+            },
+            "ko": {
+              "text": "50/50 — 사교와 혼자의 균형"
+            }
+          },
+          "emoji": "⚖️",
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Balanced ambivert"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "20% people, 80% alone — I need my space"
+            },
+            "ko": {
+              "text": "20% 사람 80% 혼자 — 내 공간이 필요해"
+            }
+          },
+          "emoji": "🏠",
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "High-solo"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "100% flexible — some weeks all social, some weeks all alone"
+            },
+            "ko": {
+              "text": "100% 유동적 — 어떤 주는 다 사교 어떤 주는 다 혼자"
+            }
+          },
+          "emoji": "🌊",
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Fluid social"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "A friend invites you to\na last-minute group dinner. You..."
+        },
+        "ko": {
+          "text": "친구가 갑자기\n단체 저녁에 부른다 너는..."
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Already putting on my shoes — spontaneous is the best kind"
+            },
+            "ko": {
+              "text": "이미 신발 신는 중 — 즉흥이 최고"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Spontaneous joiner"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Who's coming? I'll decide based on the guest list"
+            },
+            "ko": {
+              "text": "누가 와? 명단 보고 결정한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Selective evaluator"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Probably pass — I need more mental prep for group things"
+            },
+            "ko": {
+              "text": "아마 패스 — 단체 모임은 마음의 준비가 필요해"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Prep-needing"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I'll go but might leave early if I start fading"
+            },
+            "ko": {
+              "text": "가긴 하는데 지치면 일찍 빠질 수도"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 2
+            }
+          },
+          "rationale": "Conditional joiner"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "How do you feel about\nsmall talk?"
+        },
+        "ko": {
+          "text": "스몰톡에 대해\n어떻게 느껴?"
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "Love it — every small talk is a door to something real"
+            },
+            "ko": {
+              "text": "좋아 — 모든 스몰톡은 진짜 대화로 가는 문"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Small-talk positive"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I can do it but I'd rather skip to the deep stuff"
+            },
+            "ko": {
+              "text": "할 수 있지만 깊은 얘기로 바로 가고 싶다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Depth-preferring"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "It physically drains me — I'd rather sit in comfortable silence"
+            },
+            "ko": {
+              "text": "체력이 빠져 — 편한 침묵이 낫다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Small-talk averse"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "Fine in small doses but I need substance to stay engaged"
+            },
+            "ko": {
+              "text": "소량은 괜찮은데 계속하려면 내용이 있어야 해"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Substance-needing"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "When you've had too much\npeople-time, the first sign is..."
+        },
+        "ko": {
+          "text": "사람-시간이 과하면\n첫 번째 신호는..."
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "I get quiet — I'm still here but my brain checked out"
+            },
+            "ko": {
+              "text": "조용해진다 — 몸은 있는데 머리가 떠났다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Internal shutdown"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I get irritable — small things start annoying me"
+            },
+            "ko": {
+              "text": "짜증나기 시작 — 사소한 게 거슬려"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Irritability signal"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "I start making excuses to leave early"
+            },
+            "ko": {
+              "text": "일찍 빠질 핑계를 만들기 시작한다"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Strategic exit"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "What do you mean too much? I rarely hit that limit"
+            },
+            "ko": {
+              "text": "과하다니? 거의 그 한계에 안 닿아"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "High-capacity social"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "text_choice",
+      "locale_data": {
+        "en": {
+          "text": "Your ideal friend group size\nfor hanging out is..."
+        },
+        "ko": {
+          "text": "놀 때 이상적인\n친구 그룹 사이즈는..."
+        }
+      },
+      "options": [
+        {
+          "locale_data": {
+            "en": {
+              "text": "The bigger the better — 8+ is when it gets really fun"
+            },
+            "ko": {
+              "text": "클수록 좋아 — 8명 이상이면 진짜 재밌어져"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Large-group lover"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "4-5 feels right — enough energy, still personal"
+            },
+            "ko": {
+              "text": "4-5명이 딱 — 에너지도 있고 개인적이기도 하고"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Medium-group"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "2-3 max — I want real conversation, not surface chat"
+            },
+            "ko": {
+              "text": "최대 2-3명 — 진짜 대화를 원해 표면적 잡담 말고"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Small-intimate"
+        },
+        {
+          "locale_data": {
+            "en": {
+              "text": "1 — honestly I connect best one-on-one or solo"
+            },
+            "ko": {
+              "text": "1명 — 솔직히 1:1이나 혼자일 때 가장 잘 연결돼"
+            }
+          },
+          "emoji": null,
+          "scores": {
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "One-on-one or solo"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "solar",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "bond"
+      },
+      "locale_data": {
+        "en": {
+          "title": "Solar Panel — Always Charging",
+          "description": "People ARE your energy source. You don't just tolerate social time — you need it to function. Alone too long and you start wilting. In a crowd? You bloom. Your blind spot? You might not recognize your own depletion until you crash. Even solar panels need nighttime.",
+          "tags": [
+            "extroverted",
+            "people-powered",
+            "high-capacity"
+          ],
+          "compatibility": "Deep Well — Slow to Surface"
+        },
+        "ko": {
+          "title": "태양광 패널 — 항상 충전 중",
+          "description": "사람이 에너지원이야. 사교 시간을 견디는 게 아니라 기능하려면 필요해. 혼자 너무 오래면 시들기 시작하지. 사람 속에서? 활짝 핀다. 사각지대는 바닥날 때까지 자기 소진을 못 알아챌 수 있다는 거. 태양광 패널도 밤이 필요해.",
+          "tags": [
+            "외향적",
+            "사람 에너지",
+            "고용량"
+          ],
+          "compatibility": "깊은 우물 — 천천히 올라온다"
+        }
+      },
+      "emoji": "☀️",
+      "emojiCombo": "☀️🔋"
+    },
+    {
+      "id": "hybrid",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "prism",
+        "compass": "bond"
+      },
+      "locale_data": {
+        "en": {
+          "title": "Hybrid Engine — Selective Spark",
+          "description": "You're not an introvert or an extrovert — you're a highly tuned filter. The RIGHT people charge you instantly; the wrong ones drain you in minutes. You don't need more social time — you need better social time. Quality over quantity is your operating system. Blind spot? Being too selective can shrink your world.",
+          "tags": [
+            "selective",
+            "quality-focused",
+            "adaptable"
+          ],
+          "compatibility": "Reserve Tank — Deep and Slow"
+        },
+        "ko": {
+          "title": "하이브리드 엔진 — 선택적 스파크",
+          "description": "내향도 외향도 아니야 — 정교하게 조율된 필터야. 맞는 사람은 즉시 충전시키고 안 맞는 사람은 몇 분 만에 방전시켜. 더 많은 사교 시간이 아니라 더 나은 사교 시간이 필요해. 사각지대는 너무 선택적이면 세상이 좁아질 수 있다는 거.",
+          "tags": [
+            "선택적",
+            "질 중심",
+            "적응형"
+          ],
+          "compatibility": "비축 탱크 — 깊고 느리게"
+        }
+      },
+      "emoji": "⚡",
+      "emojiCombo": "⚡🔌"
+    },
+    {
+      "id": "reserve",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "self"
+      },
+      "locale_data": {
+        "en": {
+          "title": "Reserve Tank — Deep and Slow",
+          "description": "Your battery is smaller but it powers something deeper. You don't need a lot of people — you need the right ones, in the right dose. Small groups, meaningful conversation, and comfortable silence are your sweet spot. Blind spot? Protecting your energy can become avoiding connection. The discomfort of stretching socially sometimes leads to the richest experiences.",
+          "tags": [
+            "selective",
+            "small-dose",
+            "depth-oriented"
+          ],
+          "compatibility": "Hybrid Engine — Selective Spark"
+        },
+        "ko": {
+          "title": "비축 탱크 — 깊고 느리게",
+          "description": "배터리가 작지만 더 깊은 걸 동력으로 삼아. 많은 사람이 필요 없어 — 맞는 사람이 맞는 용량으로 필요해. 소그룹 의미 있는 대화 편한 침묵이 스윗 스팟이지. 사각지대는 에너지 보호가 연결 회피가 될 수 있다는 거. 사회적으로 늘어나는 불편함이 때로는 가장 풍부한 경험으로 이어져.",
+          "tags": [
+            "선택적",
+            "소량",
+            "깊이 지향"
+          ],
+          "compatibility": "하이브리드 엔진 — 선택적 스파크"
+        }
+      },
+      "emoji": "🌙",
+      "emojiCombo": "🌙🔋"
+    },
+    {
+      "id": "deep_well",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "pulse",
+        "compass": "self"
+      },
+      "locale_data": {
+        "en": {
+          "title": "Deep Well — Slow to Surface",
+          "description": "You live in your inner world and surface when the conditions are exactly right. It's not that you dislike people — it's that most social contexts aren't designed for how you connect. You need warmth, depth, and zero performance pressure. Blind spot? Waiting for perfect conditions means missing good-enough ones. Sometimes connection requires jumping in before you're ready.",
+          "tags": [
+            "introverted",
+            "inner-world",
+            "condition-dependent"
+          ],
+          "compatibility": "Solar Panel — Always Charging"
+        },
+        "ko": {
+          "title": "깊은 우물 — 천천히 올라온다",
+          "description": "내면 세계에 살면서 조건이 정확히 맞을 때 올라오는 사람이야. 사람이 싫은 게 아니라 대부분의 사교 맥락이 네가 연결하는 방식에 맞게 설계되지 않은 거야. 따뜻함 깊이 제로 연기 압박이 필요해. 사각지대는 완벽한 조건을 기다리면 괜찮은 조건을 놓친다는 거. 때로는 준비되기 전에 뛰어드는 게 연결이야.",
+          "tags": [
+            "내향적",
+            "내면 세계",
+            "조건 의존"
+          ],
+          "compatibility": "태양광 패널 — 항상 충전 중"
+        }
+      },
+      "emoji": "🕳️",
+      "emojiCombo": "🕳️💎"
+    }
+  ]
+}

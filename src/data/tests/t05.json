@@ -25,21 +25,12 @@
     }
   },
   "scoring": {
-    "type": "rpg",
-    "dimensions": [
-      "charm",
-      "empathy",
-      "courage",
-      "patience",
-      "humor"
-    ],
-    "dimensionToResult": {
-      "charm": "bard",
-      "empathy": "paladin",
-      "courage": "warrior",
-      "patience": "mage",
-      "humor": "rogue"
-    }
+    "type": "tpm",
+    "axes": [
+      "drive",
+      "process",
+      "compass"
+    ]
   },
   "questions": [
     {
@@ -65,9 +56,16 @@
           },
           "emoji": null,
           "scores": {
-            "charm": 3,
-            "courage": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: charm + Secondary: courage"
         },
         {
           "locale_data": {
@@ -80,8 +78,20 @@
           },
           "emoji": null,
           "scores": {
-            "empathy": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: empathy"
         },
         {
           "locale_data": {
@@ -94,8 +104,20 @@
           },
           "emoji": null,
           "scores": {
-            "courage": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: courage"
         },
         {
           "locale_data": {
@@ -108,9 +130,20 @@
           },
           "emoji": null,
           "scores": {
-            "humor": 2,
-            "charm": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: humor + Secondary: charm"
         }
       ]
     },
@@ -137,8 +170,20 @@
           },
           "emoji": null,
           "scores": {
-            "charm": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: charm"
         },
         {
           "locale_data": {
@@ -151,8 +196,20 @@
           },
           "emoji": null,
           "scores": {
-            "empathy": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: empathy"
         },
         {
           "locale_data": {
@@ -165,8 +222,20 @@
           },
           "emoji": null,
           "scores": {
-            "courage": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: courage"
         },
         {
           "locale_data": {
@@ -179,8 +248,20 @@
           },
           "emoji": null,
           "scores": {
-            "humor": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: humor"
         }
       ]
     },
@@ -207,9 +288,20 @@
           },
           "emoji": null,
           "scores": {
-            "empathy": 3,
-            "patience": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: empathy + Secondary: patience"
         },
         {
           "locale_data": {
@@ -222,8 +314,20 @@
           },
           "emoji": null,
           "scores": {
-            "humor": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: humor"
         },
         {
           "locale_data": {
@@ -236,9 +340,20 @@
           },
           "emoji": null,
           "scores": {
-            "patience": 2,
-            "empathy": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: patience + Secondary: empathy"
         },
         {
           "locale_data": {
@@ -251,9 +366,16 @@
           },
           "emoji": null,
           "scores": {
-            "courage": 2,
-            "charm": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: courage + Secondary: charm"
         }
       ]
     },
@@ -280,8 +402,20 @@
           },
           "emoji": null,
           "scores": {
-            "charm": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: charm"
         },
         {
           "locale_data": {
@@ -294,9 +428,20 @@
           },
           "emoji": null,
           "scores": {
-            "empathy": 2,
-            "patience": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: empathy + Secondary: patience"
         },
         {
           "locale_data": {
@@ -309,8 +454,20 @@
           },
           "emoji": null,
           "scores": {
-            "courage": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: courage"
         },
         {
           "locale_data": {
@@ -323,8 +480,20 @@
           },
           "emoji": null,
           "scores": {
-            "humor": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: humor"
         }
       ]
     },
@@ -351,9 +520,20 @@
           },
           "emoji": null,
           "scores": {
-            "charm": 2,
-            "humor": 1
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: charm + Secondary: humor"
         },
         {
           "locale_data": {
@@ -366,8 +546,20 @@
           },
           "emoji": null,
           "scores": {
-            "empathy": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: empathy"
         },
         {
           "locale_data": {
@@ -380,8 +572,20 @@
           },
           "emoji": null,
           "scores": {
-            "courage": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: courage"
         },
         {
           "locale_data": {
@@ -394,8 +598,20 @@
           },
           "emoji": null,
           "scores": {
-            "patience": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 2
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: patience"
         }
       ]
     },
@@ -422,8 +638,20 @@
           },
           "emoji": null,
           "scores": {
-            "charm": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: charm"
         },
         {
           "locale_data": {
@@ -436,9 +664,20 @@
           },
           "emoji": null,
           "scores": {
-            "empathy": 3,
-            "patience": 1
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: empathy + Secondary: patience"
         },
         {
           "locale_data": {
@@ -451,8 +690,20 @@
           },
           "emoji": null,
           "scores": {
-            "courage": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: courage"
         },
         {
           "locale_data": {
@@ -465,8 +716,20 @@
           },
           "emoji": null,
           "scores": {
-            "humor": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: humor"
         }
       ]
     },
@@ -493,8 +756,20 @@
           },
           "emoji": null,
           "scores": {
-            "charm": 2
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: charm"
         },
         {
           "locale_data": {
@@ -507,8 +782,20 @@
           },
           "emoji": null,
           "scores": {
-            "empathy": 2
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: empathy"
         },
         {
           "locale_data": {
@@ -521,8 +808,20 @@
           },
           "emoji": null,
           "scores": {
-            "courage": 2
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: courage"
         },
         {
           "locale_data": {
@@ -535,8 +834,20 @@
           },
           "emoji": null,
           "scores": {
-            "humor": 2
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: humor"
         }
       ]
     },
@@ -563,8 +874,20 @@
           },
           "emoji": null,
           "scores": {
-            "charm": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: charm"
         },
         {
           "locale_data": {
@@ -577,8 +900,20 @@
           },
           "emoji": null,
           "scores": {
-            "empathy": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 1
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "bond",
+              "weight": 2
+            }
+          },
+          "rationale": "Primary: empathy"
         },
         {
           "locale_data": {
@@ -591,8 +926,20 @@
           },
           "emoji": null,
           "scores": {
-            "courage": 3
-          }
+            "drive": {
+              "direction": "ignite",
+              "weight": 2
+            },
+            "process": {
+              "direction": "prism",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: courage"
         },
         {
           "locale_data": {
@@ -605,8 +952,20 @@
           },
           "emoji": null,
           "scores": {
-            "humor": 3
-          }
+            "drive": {
+              "direction": "observe",
+              "weight": 2
+            },
+            "process": {
+              "direction": "pulse",
+              "weight": 1
+            },
+            "compass": {
+              "direction": "self",
+              "weight": 1
+            }
+          },
+          "rationale": "Primary: humor"
         }
       ]
     }
@@ -637,7 +996,12 @@
         }
       },
       "emoji": "⚔️",
-      "emojiCombo": "⚔️"
+      "emojiCombo": "⚔️",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "prism",
+        "compass": "self"
+      }
     },
     {
       "id": "mage",
@@ -664,7 +1028,12 @@
         }
       },
       "emoji": "🔮",
-      "emojiCombo": "🔮"
+      "emojiCombo": "🔮",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "prism",
+        "compass": "bond"
+      }
     },
     {
       "id": "bard",
@@ -691,7 +1060,12 @@
         }
       },
       "emoji": "🎭",
-      "emojiCombo": "🎭"
+      "emojiCombo": "🎭",
+      "tpm_profile": {
+        "drive": "ignite",
+        "process": "pulse",
+        "compass": "bond"
+      }
     },
     {
       "id": "paladin",
@@ -718,7 +1092,12 @@
         }
       },
       "emoji": "🛡️",
-      "emojiCombo": "🛡️"
+      "emojiCombo": "🛡️",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "pulse",
+        "compass": "bond"
+      }
     },
     {
       "id": "rogue",
@@ -745,7 +1124,12 @@
         }
       },
       "emoji": "🃏",
-      "emojiCombo": "🃏"
+      "emojiCombo": "🃏",
+      "tpm_profile": {
+        "drive": "observe",
+        "process": "pulse",
+        "compass": "self"
+      }
     }
   ],
   "dna_mapping": {
