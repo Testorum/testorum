@@ -31,14 +31,20 @@
     "ctaExplore": "Explore Tests",
     "trendingTitle": "Trending Now",
     "trendingSubtitle": "See what everyone's taking right now",
-    "featuredTitle": "Editor's Picks",
+    "featuredTitle": "Most Popular",
     "categoryAll": "All",
     "categoryLove": "Love & Dating",
     "categoryPersonality": "Personality",
     "categorySocial": "Social",
     "categoryFun": "Just for Fun",
     "statsParticipants": "{count} people took this",
-    "statsShares": "{count} shares"
+    "statsShares": "{count} shares",
+    "heroHeadline": "Discover who you really are — in 5 minutes",
+    "heroCta": "Start Your First Test",
+    "heroStats": "20 tests · 56 personality types · Built on real psychology",
+    "allTestsTitle": "All Tests",
+    "viewAll": "View All",
+    "disclaimer": "TPM is designed for entertainment and self-reflection — not clinical diagnosis"
   },
   "TestList": {
     "title": "All Tests",
@@ -121,7 +127,7 @@
   "Footer": {
     "copyright": "© {year} Testorum. All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
+    "terms": "Terms",
     "contact": "Contact",
     "madeWith": "Made with curiosity"
   },
@@ -230,7 +236,10 @@
     "social": "Social",
     "money": "Money",
     "personality": "Personality",
-    "fun": "Fun"
+    "fun": "Fun",
+    "identity": "Identity",
+    "lifestyle": "Lifestyle",
+    "all": "All"
   },
   "Login": {
     "title": "Sign in to Testorum",
@@ -241,5 +250,13 @@
     "continueWithout": "Continue without signing in",
     "privacyNote": "By signing in, you agree to our Privacy Policy. We only store your email and display name.",
     "genericError": "Something went wrong. Please try again."
+  },
+  "Waitlist": {
+    "title": "Create Your Own Test",
+    "description": "Build personality tests and share them with the world. Coming soon!",
+    "placeholder": "your@email.com",
+    "submit": "Notify Me",
+    "success": "You're on the list!",
+    "duplicate": "You're already on the list!"
   }
 }

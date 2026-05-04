@@ -20,7 +20,7 @@ interface Props {
   locale: string
 }
 
-const CATEGORY_FILTERS = ['all', 'love', 'communication', 'work', 'social', 'money'] as const
+const CATEGORY_FILTERS = ['all', 'love', 'communication', 'work', 'social', 'money', 'identity', 'lifestyle'] as const
 
 export function TestListClient({ tests, locale }: Props) {
   const t = useTranslations('TestList')

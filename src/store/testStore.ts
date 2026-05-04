@@ -1,12 +1,15 @@
 import { create } from 'zustand'
 import type { TestOption } from '@/types'
+import type { TPMResult } from '@/lib/scoring'
 
 interface TestState {
   currentIndex: number
   answers: TestOption[]
   rpgStats: Record<string, number>
+  tpmResult: TPMResult | null
   isComplete: boolean
   addAnswer: (option: TestOption) => void
+  setTPMResult: (result: TPMResult) => void
   reset: () => void
 }
 
@@ -14,6 +17,7 @@ export const useTestStore = create<TestState>((set) => ({
   currentIndex: 0,
   answers: [],
   rpgStats: {},
+  tpmResult: null,
   isComplete: false,
   addAnswer: (option) =>
     set((state) => {
@@ -28,6 +32,7 @@ export const useTestStore = create<TestState>((set) => ({
         rpgStats: newStats,
       }
     }),
+  setTPMResult: (result) => set({ tpmResult: result }),
   reset: () =>
-    set({ currentIndex: 0, answers: [], rpgStats: {}, isComplete: false }),
+    set({ currentIndex: 0, answers: [], rpgStats: {}, tpmResult: null, isComplete: false }),
 }))

@@ -11,6 +11,7 @@ import { ShareButtons } from '@/components/share/ShareButtons'
 import { CompareButton } from '@/components/test/CompareButton'
 import { FeedbackWidget } from '@/components/feedback/FeedbackWidget'
 import { RPGRadarChart } from '@/components/test/RadarChart'
+import { TPMSpectrumChart } from '@/components/test/TPMSpectrumChart'
 import { AdBanner } from '@/components/ads/AdBanner'
 import { useTestStore } from '@/store/testStore'
 import { Link } from '@/i18n/navigation'
@@ -19,6 +20,7 @@ import { trackEvent } from '@/lib/ga4'
 import { XPGainToast } from '@/components/gamification/XPGainToast'
 import { useUpdateProgress, useUpdateDna } from '@/hooks/useGamification'
 import type { TestData, TestResult, PremiumResult, FeedbackCount, ToriMood, GamificationUpdateResult } from '@/types'
+import type { TPMResult } from '@/lib/scoring'
 
 // ─── Types ─────────────────────────────────────────────────────
 
@@ -28,12 +30,13 @@ interface Props {
   premiumResult?: PremiumResult
   initialCounts: FeedbackCount
   locale: string
+  tpmResult?: TPMResult | null
 }
 
 interface MessageStep {
   id: string
   mood: ToriMood
-  type: 'tori' | 'result_reveal' | 'tags' | 'compatibility' | 'radar' | 'premium_tease' | 'paywall'
+  type: 'tori' | 'result_reveal' | 'tags' | 'compatibility' | 'radar' | 'premium_tease' | 'paywall' | 'tpm_chart' | 'share_early'
   getMessage?: (locale: string) => string
   delay: number // ms after previous
 }
@@ -68,6 +71,7 @@ export function ConversationalResult({
   premiumResult,
   initialCounts,
   locale,
+  tpmResult,
 }: Props) {
   const t = useTranslations('TestResult')
   const tConv = useTranslations('Conversational')
@@ -104,6 +108,33 @@ export function ConversationalResult({
       type: 'result_reveal',
       delay: 1000,
     })
+
+    // Early share button right after reveal
+    s.push({
+      id: 'share_early',
+      mood: 'happy',
+      type: 'share_early',
+      delay: 300,
+    })
+
+    // TPM 3-axis chart (if TPM data available)
+    if (tpmResult) {
+      s.push({
+        id: 'tpm_intro',
+        mood: 'curious',
+        type: 'tori',
+        getMessage: (l) => l === 'ko'
+          ? '너의 성격 3축도 분석해봤어! 📊'
+          : 'I mapped your personality across 3 axes! 📊',
+        delay: 800,
+      })
+      s.push({
+        id: 'tpm_chart',
+        mood: 'excited',
+        type: 'tpm_chart',
+        delay: 500,
+      })
+    }
 
     s.push({
       id: 'description',
@@ -164,7 +195,7 @@ export function ConversationalResult({
     }
 
     return s
-  }, [result, hasStats, hasPremium, isKo])
+  }, [result, hasStats, hasPremium, isKo, tpmResult])
 
   // Visible step index — always start at 0 for SSR hydration match
   const [visibleCount, setVisibleCount] = useState(0)
@@ -318,6 +349,8 @@ export function ConversationalResult({
             rpgStats={rpgStats}
             hasStats={hasStats}
             isAnimated={!skipped}
+            tpmResult={tpmResult ?? undefined}
+            data={data}
           />
         ))}
 
@@ -395,6 +428,8 @@ function MessageBubble({
   rpgStats,
   hasStats,
   isAnimated,
+  tpmResult,
+  data,
 }: {
   step: MessageStep
   result: TestResult
@@ -405,6 +440,8 @@ function MessageBubble({
   rpgStats: Record<string, number>
   hasStats: boolean
   isAnimated: boolean
+  tpmResult?: TPMResult
+  data: TestData
 }) {
   const isKo = locale === 'ko'
 
@@ -446,6 +483,58 @@ function MessageBubble({
           >
             {result.title}
           </h2>
+          {/* TPM type code (e.g. Torch.Architect or Spark (Pure)) */}
+          {tpmResult && (
+            <span
+              className="px-3 py-1 rounded-full text-xs font-bold tracking-wide"
+              style={{ backgroundColor: `${theme.primary}10`, color: theme.primary }}
+            >
+              {tpmResult.code}
+            </span>
+          )}
+          {/* Sub type hint */}
+          {tpmResult && tpmResult.subType && (
+            <p className="text-xs text-center max-w-[280px]" style={{ color: '#9B9B9B' }}>
+              {isKo
+                ? `보조 성향: ${tpmResult.subType} — 분석적 사고 쪽으로 기울어져 있어`
+                : `Secondary: ${tpmResult.subType} — your shadow side leans this way`
+              }
+            </p>
+          )}
+          {tpmResult?.isPure && (
+            <p className="text-xs text-center max-w-[280px]" style={{ color: '#9B9B9B' }}>
+              {isKo
+                ? '순수 유형이야! 세 축 모두 뚜렷한 방향성을 보여줘'
+                : 'A Pure Type! You show strong clarity across all three axes'
+              }
+            </p>
+          )}
+        </div>
+      )
+
+    case 'share_early':
+      return wrapper(
+        <div className="flex justify-center py-1">
+          <ShareButtons
+            slug={data.meta.slug}
+            resultId={result.id}
+            shareText={`${data.meta.shareText} - ${result.title}`}
+            theme={theme}
+            locale={locale}
+          />
+        </div>
+      )
+
+    case 'tpm_chart':
+      return wrapper(
+        <div className="w-full py-2">
+          {tpmResult && (
+            <TPMSpectrumChart
+              axes={tpmResult.axes}
+              locale={locale}
+              animated={isAnimated}
+            />
+          )}
         </div>
       )
 

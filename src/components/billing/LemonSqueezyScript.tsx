@@ -1,17 +1,15 @@
 'use client';
 
 import Script from 'next/script';
+import { FEATURES } from '@/lib/feature-flags';
 
 /**
  * LemonSqueezy Lemon.js loader.
  * Add this once in a root layout to enable checkout overlays site-wide.
- *
- * Usage: <LemonSqueezyScript />
- *
- * Then open overlays with:
- *   window.LemonSqueezy.Url.Open(checkoutUrl)
  */
 export default function LemonSqueezyScript() {
+  if (!FEATURES.PAYMENT_ENABLED) return null;
+
   return (
     <Script
       src="https://app.lemonsqueezy.com/js/lemon.js"

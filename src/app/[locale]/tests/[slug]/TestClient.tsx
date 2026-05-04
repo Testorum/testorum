@@ -12,7 +12,7 @@ import { AdBanner } from '@/components/ads/AdBanner'
 import { BehaviorTracker } from '@/lib/behavior-tracker'
 import { getToriMessage } from '@/lib/tori-brain'
 import { trackEvent } from '@/lib/ga4'
-import { resolveResult } from '@/lib/scoring'
+import { resolveResult, calculateTPMResult } from '@/lib/scoring'
 import { createClient } from '@/lib/supabase'
 import type { TestData, TestOption, ToriMood, ToriResponse } from '@/types'
 
@@ -28,6 +28,7 @@ export function TestClient({ data, locale }: Props) {
   const router = useRouter()
   const t = useTranslations('TestPlay')
   const { currentIndex, answers, addAnswer, reset } = useTestStore()
+  const setTPMResult = useTestStore((s) => s.setTPMResult)
   const [showLoading, setShowLoading] = useState(false)
   const searchParams = useSearchParams()
   const compareFromId = searchParams.get('from')
@@ -113,6 +114,17 @@ export function TestClient({ data, locale }: Props) {
     if (nextIndex >= data.questions.length) {
       const newAnswers = [...answers, option]
       const resultId = resolveResult(data, newAnswers)
+
+      // Calculate and persist TPM result for the result page
+      const tpmResult = calculateTPMResult(newAnswers.map((a) => a.scores))
+      setTPMResult(tpmResult)
+      try {
+        sessionStorage.setItem(
+          `tpm_${data.meta.slug}_${resultId}`,
+          JSON.stringify(tpmResult)
+        )
+      } catch { /* sessionStorage unavailable */ }
+
       trackEvent('test_complete', {
         test_slug: data.meta.slug,
         result_id: resultId,

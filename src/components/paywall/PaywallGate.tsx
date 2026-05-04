@@ -8,6 +8,7 @@ import { useBilling, useDeductCredits, useCheckout } from '@/hooks/useBilling'
 import { ToriMessage } from '@/components/tori/ToriMessage'
 import { trackEvent } from '@/lib/ga4'
 import { CREDIT_COSTS } from '@/types/billing'
+import { FEATURES } from '@/lib/feature-flags'
 import type { TestTheme } from '@/types'
 
 interface PaywallGateProps {
@@ -29,6 +30,10 @@ export function PaywallGate({
   children,
   toriMessage,
 }: PaywallGateProps) {
+  // Feature flag: bypass paywall entirely when payment is disabled
+  if (!FEATURES.PAYMENT_ENABLED) {
+    return <>{children}</>;
+  }
   const t = useTranslations('Paywall')
   const { data: billing, loading: billingLoading, refresh } = useBilling()
   const { deduct, loading: deducting } = useDeductCredits()

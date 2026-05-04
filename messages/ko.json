@@ -31,14 +31,20 @@
     "ctaExplore": "뭐가 있나 보기",
     "trendingTitle": "지금 핫한 테스트",
     "trendingSubtitle": "다들 이거 하고 있어",
-    "featuredTitle": "에디터 추천",
+    "featuredTitle": "인기 테스트",
     "categoryAll": "전체",
     "categoryLove": "연애/썸",
     "categoryPersonality": "성격",
     "categorySocial": "관계",
     "categoryFun": "재미로",
     "statsParticipants": "{count}명이 해봤어",
-    "statsShares": "공유 {count}회"
+    "statsShares": "공유 {count}회",
+    "heroHeadline": "5분 안에 진짜 나를 발견해봐",
+    "heroCta": "첫 테스트 시작하기",
+    "heroStats": "20개 테스트 · 56가지 성격 유형 · 진짜 심리학 기반",
+    "allTestsTitle": "모든 테스트",
+    "viewAll": "전체 보기",
+    "disclaimer": "TPM은 재미와 자기 성찰을 위한 것이며 임상 진단이 아닙니다"
   },
   "TestList": {
     "title": "전체 테스트",
@@ -230,7 +236,10 @@
     "social": "사회",
     "money": "금전",
     "personality": "성격",
-    "fun": "재미"
+    "fun": "재미",
+    "identity": "정체성",
+    "lifestyle": "라이프",
+    "all": "전체"
   },
   "Login": {
     "title": "Testorum 로그인",
@@ -241,5 +250,13 @@
     "continueWithout": "로그인 없이 계속하기",
     "privacyNote": "로그인 시 개인정보처리방침에 동의하게 됩니다. 이메일과 이름만 저장됩니다.",
     "genericError": "문제가 발생했어요. 다시 시도해 주세요."
+  },
+  "Waitlist": {
+    "title": "나만의 테스트 만들기",
+    "description": "심리테스트를 직접 만들고 세상에 공유해봐! 곧 출시 예정",
+    "placeholder": "이메일 주소",
+    "submit": "알림 받기",
+    "success": "등록 완료!",
+    "duplicate": "이미 등록되어 있어!"
   }
 }

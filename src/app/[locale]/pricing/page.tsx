@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useLocale } from 'next-intl';
+import { FEATURES } from '@/lib/feature-flags';
 import PricingCard from '@/components/billing/PricingCard';
 import { CREDIT_COSTS } from '@/types/billing';
 import { useCheckout } from '@/hooks/useBilling';
@@ -17,7 +18,45 @@ declare global {
   }
 }
 
+function ComingSoonPage() {
+  const locale = useLocale();
+  const isKo = locale === 'ko';
+
+  return (
+    <div className="mx-auto max-w-2xl px-4 py-24 text-center">
+      <div className="text-5xl mb-6">🚧</div>
+      <h1
+        className="text-2xl md:text-3xl font-bold tracking-tight mb-3"
+        style={{ color: '#1A1A1A', fontFamily: 'var(--font-display)' }}
+      >
+        {isKo ? '곧 만나요!' : 'Coming Soon!'}
+      </h1>
+      <p className="text-base mb-8" style={{ color: '#9B9B9B' }}>
+        {isKo
+          ? '프리미엄 플랜을 준비하고 있어요'
+          : "We're preparing premium plans for you"
+        }
+      </p>
+      <a
+        href={`/${locale}`}
+        className="inline-block px-6 py-3 rounded-full font-semibold text-sm text-white transition-transform active:scale-[0.97]"
+        style={{ backgroundColor: '#FF4F4F' }}
+      >
+        {isKo ? '홈으로' : 'Go Home'}
+      </a>
+    </div>
+  );
+}
+
 export default function PricingPage() {
+  if (!FEATURES.PAYMENT_ENABLED) {
+    return <ComingSoonPage />;
+  }
+
+  return <PricingPageInner />;
+}
+
+function PricingPageInner() {
   const [interval, setInterval] = useState<BillingInterval>('monthly');
   const [currentPlan, setCurrentPlan] = useState<SubscriptionPlan | null>(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -25,7 +64,6 @@ export default function PricingPage() {
   const locale = useLocale();
   const [creditError, setCreditError] = useState<string | null>(null);
 
-  // Check login + current plan
   useEffect(() => {
     fetch('/api/billing/subscription')
       .then((res) => {
@@ -65,7 +103,6 @@ export default function PricingPage() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16">
-      {/* Header */}
       <div className="text-center">
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
           Choose your plan
@@ -75,30 +112,17 @@ export default function PricingPage() {
         </p>
       </div>
 
-      {/* Interval toggle */}
       <div className="mt-8 flex items-center justify-center gap-3">
-        <span
-          className={`text-sm ${interval === 'monthly' ? 'font-medium text-gray-900 dark:text-white' : 'text-gray-500'}`}
-        >
+        <span className={`text-sm ${interval === 'monthly' ? 'font-medium text-gray-900 dark:text-white' : 'text-gray-500'}`}>
           Monthly
         </span>
         <button
           onClick={() => setInterval(interval === 'monthly' ? 'yearly' : 'monthly')}
-          className={`
-            relative h-6 w-11 rounded-full transition-colors
-            ${interval === 'yearly' ? 'bg-indigo-500' : 'bg-gray-300 dark:bg-gray-600'}
-          `}
+          className={`relative h-6 w-11 rounded-full transition-colors ${interval === 'yearly' ? 'bg-indigo-500' : 'bg-gray-300 dark:bg-gray-600'}`}
         >
-          <span
-            className={`
-              absolute top-0.5 left-0.5 h-5 w-5 rounded-full bg-white shadow transition-transform
-              ${interval === 'yearly' ? 'translate-x-5' : 'translate-x-0'}
-            `}
-          />
+          <span className={`absolute top-0.5 left-0.5 h-5 w-5 rounded-full bg-white shadow transition-transform ${interval === 'yearly' ? 'translate-x-5' : 'translate-x-0'}`} />
         </button>
-        <span
-          className={`text-sm ${interval === 'yearly' ? 'font-medium text-gray-900 dark:text-white' : 'text-gray-500'}`}
-        >
+        <span className={`text-sm ${interval === 'yearly' ? 'font-medium text-gray-900 dark:text-white' : 'text-gray-500'}`}>
           Yearly
         </span>
         {interval === 'yearly' && (
@@ -108,25 +132,15 @@ export default function PricingPage() {
         )}
       </div>
 
-      {/* Plan cards */}
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {plans.map((plan) => (
-          <PricingCard
-            key={plan}
-            plan={plan}
-            interval={interval}
-            currentPlan={currentPlan}
-            isLoggedIn={isLoggedIn}
-          />
+          <PricingCard key={plan} plan={plan} interval={interval} currentPlan={currentPlan} isLoggedIn={isLoggedIn} />
         ))}
       </div>
 
-      {/* Credit pack section */}
       <div className="mt-16 text-center">
         <div className="mx-auto max-w-md rounded-xl border border-dashed border-gray-300 bg-gray-50 px-6 py-8 dark:border-gray-700 dark:bg-gray-800/50">
-          <h3 className="text-base font-semibold text-gray-900 dark:text-white">
-            Need more credits?
-          </h3>
+          <h3 className="text-base font-semibold text-gray-900 dark:text-white">Need more credits?</h3>
           <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
             Buy {CREDIT_COSTS.credit_pack_amount} credits for ${CREDIT_COSTS.credit_pack_price_usd} — available for all users
           </p>
@@ -137,9 +151,7 @@ export default function PricingPage() {
           >
             {checkoutLoading ? 'Loading...' : 'Buy Credit Pack'}
           </button>
-          {creditError && (
-            <p className="mt-2 text-xs text-red-500">{creditError}</p>
-          )}
+          {creditError && <p className="mt-2 text-xs text-red-500">{creditError}</p>}
         </div>
       </div>
     </div>

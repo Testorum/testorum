@@ -10,6 +10,7 @@ import { useLocale } from 'next-intl';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { createClient } from '@/lib/supabase';
+import { FEATURES } from '@/lib/feature-flags';
 import type { User } from '@supabase/supabase-js';
 
 export function AuthButton() {
@@ -172,6 +173,7 @@ export function AuthButton() {
                 </svg>
                 {locale === 'ko' ? '프로필' : 'Profile'}
               </a>
+              {FEATURES.PAYMENT_ENABLED && (
               <a
                 href={`/${locale}/billing`}
                 className="flex items-center gap-2.5 px-4 py-2.5 text-xs text-[#1A1A1A] hover:bg-[#FAFAF8] transition-colors"
@@ -183,6 +185,7 @@ export function AuthButton() {
                 </svg>
                 {locale === 'ko' ? '결제 관리' : 'Billing'}
               </a>
+              )}
             </div>
 
             {/* Logout */}

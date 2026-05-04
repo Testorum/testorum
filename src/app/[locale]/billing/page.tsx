@@ -2,12 +2,44 @@
 
 import { useBilling } from '@/hooks/useBilling';
 import { useLocale } from 'next-intl';
+import { FEATURES } from '@/lib/feature-flags';
 import CreditBalance from '@/components/billing/CreditBalance';
 import ManageSubscription from '@/components/billing/ManageSubscription';
 import TransactionHistory from '@/components/billing/TransactionHistory';
 import BuyCreditPack from '@/components/billing/BuyCreditPack';
 
 export default function BillingPage() {
+  const locale = useLocale();
+
+  if (!FEATURES.PAYMENT_ENABLED) {
+    const isKo = locale === 'ko';
+    return (
+      <div className="mx-auto max-w-2xl px-4 py-24 text-center">
+        <div className="text-5xl mb-6">🚧</div>
+        <h1
+          className="text-2xl md:text-3xl font-bold tracking-tight mb-3"
+          style={{ color: '#1A1A1A', fontFamily: 'var(--font-display)' }}
+        >
+          {isKo ? '곧 만나요!' : 'Coming Soon!'}
+        </h1>
+        <p className="text-base mb-8" style={{ color: '#9B9B9B' }}>
+          {isKo ? '결제 관리 페이지를 준비하고 있어요' : "We're preparing the billing dashboard"}
+        </p>
+        <a
+          href={`/${locale}`}
+          className="inline-block px-6 py-3 rounded-full font-semibold text-sm text-white transition-transform active:scale-[0.97]"
+          style={{ backgroundColor: '#FF4F4F' }}
+        >
+          {isKo ? '홈으로' : 'Go Home'}
+        </a>
+      </div>
+    );
+  }
+
+  return <BillingPageInner />;
+}
+
+function BillingPageInner() {
   const { data, loading, error } = useBilling();
   const locale = useLocale();
 

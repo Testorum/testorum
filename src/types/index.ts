@@ -308,6 +308,7 @@ export type GA4EventName =
   | 'streak_milestone'
   | 'compare_created'
   | 'referral_claimed'
+  | 'waitlist_signup'
 
 export interface GA4EventParams {
   test_slug?: string
