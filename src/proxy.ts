@@ -1,49 +1,11 @@
 import createMiddleware from 'next-intl/middleware';
 import { NextRequest, NextResponse } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
+import { globalApiLimiter } from '@/lib/rate-limit';
 
 // ─── Config ───
 const locales = ['en', 'ko'] as const;
 const defaultLocale = 'en';
-
-// ─── Rate Limiter (Edge-compatible in-memory) ───
-// NOTE: Vercel Edge Functions are stateless per invocation in production.
-// This Map resets on cold starts. For true rate limiting at scale,
-// replace with Upstash Redis (@upstash/ratelimit).
-const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
-const RATE_LIMIT_WINDOW_MS = 60_000; // 1 minute
-const RATE_LIMIT_MAX = 60; // requests per window
-
-function isRateLimited(ip: string): boolean {
-  const now = Date.now();
-  const entry = rateLimitMap.get(ip);
-
-  if (!entry || now > entry.resetTime) {
-    rateLimitMap.set(ip, { count: 1, resetTime: now + RATE_LIMIT_WINDOW_MS });
-    return false;
-  }
-
-  entry.count++;
-  if (entry.count > RATE_LIMIT_MAX) {
-    return true;
-  }
-
-  return false;
-}
-
-// Periodic cleanup to prevent memory leak (runs every 1000 checks)
-let cleanupCounter = 0;
-function maybeCleanup() {
-  cleanupCounter++;
-  if (cleanupCounter % 1000 === 0) {
-    const now = Date.now();
-    for (const [key, value] of rateLimitMap) {
-      if (now > value.resetTime) {
-        rateLimitMap.delete(key);
-      }
-    }
-  }
-}
 
 // ─── Security Headers ───
 const CSP_DIRECTIVES = [
@@ -125,15 +87,25 @@ export default async function proxy(request: NextRequest) {
       request.headers.get('x-real-ip') ||
       'unknown';
 
-    maybeCleanup();
+    // Upstash Redis rate limiting (persistent across cold starts)
+    try {
+      const { success, limit, remaining, reset } = await globalApiLimiter.limit(ip);
 
-    if (isRateLimited(ip)) {
-      return applySecurityHeaders(
-        NextResponse.json(
+      if (!success) {
+        const response = NextResponse.json(
           { error: 'Too many requests. Please try again later.' },
           { status: 429 }
-        )
-      );
+        );
+        response.headers.set('X-RateLimit-Limit', limit.toString());
+        response.headers.set('X-RateLimit-Remaining', '0');
+        response.headers.set('X-RateLimit-Reset', reset.toString());
+        response.headers.set('Retry-After', Math.ceil((reset - Date.now()) / 1000).toString());
+        return applySecurityHeaders(response);
+      }
+    } catch (err) {
+      // Redis 장애 시 요청을 차단하지 않음 (fail-open)
+      // 레이트 리미팅 없이 통과시키되 로그 남김
+      console.error('[rate-limit] Redis error, failing open:', err);
     }
 
     // API routes: security headers + Supabase session refresh

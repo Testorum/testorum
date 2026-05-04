@@ -2,36 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createServerClient } from '@/lib/supabase-server';
 import { validateCommentInput } from '@/lib/validation';
 import { logger } from '@/lib/logger';
-
-/**
- * 간단한 IP 기반 중복 댓글 방지
- * 같은 IP에서 10초 내 동일 test_slug+result_id에 대한 댓글 차단
- */
-const recentComments = new Map<string, number>();
-const DUPLICATE_WINDOW_MS = 10_000; // 10 seconds
-
-function isDuplicateComment(ip: string, testSlug: string, resultId: string): boolean {
-  const key = `${ip}:${testSlug}:${resultId}`;
-  const now = Date.now();
-  const lastTime = recentComments.get(key);
-
-  if (lastTime && now - lastTime < DUPLICATE_WINDOW_MS) {
-    return true;
-  }
-
-  recentComments.set(key, now);
-
-  // Cleanup old entries periodically
-  if (recentComments.size > 5000) {
-    for (const [k, v] of recentComments) {
-      if (now - v > DUPLICATE_WINDOW_MS * 6) {
-        recentComments.delete(k);
-      }
-    }
-  }
-
-  return false;
-}
+import { isDuplicateComment } from '@/lib/rate-limit';
 
 /**
  * POST /api/comments
@@ -62,17 +33,27 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 3. Duplicate check
+    // 3. Duplicate check (Upstash Redis — 같은 IP+slug+result 10초 내 차단)
     const ip =
       request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
       request.headers.get('x-real-ip') ||
       'unknown';
 
-    if (isDuplicateComment(ip, validation.data.test_slug, validation.data.result_id)) {
-      return NextResponse.json(
-        { error: 'Please wait before posting another comment' },
-        { status: 429 }
+    try {
+      const duplicate = await isDuplicateComment(
+        ip,
+        validation.data.test_slug,
+        validation.data.result_id
       );
+      if (duplicate) {
+        return NextResponse.json(
+          { error: 'Please wait before posting another comment' },
+          { status: 429 }
+        );
+      }
+    } catch (err) {
+      // Redis 장애 시 fail-open
+      logger.error('API/comments/ratelimit', err);
     }
 
     // 4. Insert via server client

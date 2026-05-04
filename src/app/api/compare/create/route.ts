@@ -6,22 +6,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import { logger } from '@/lib/logger';
-
-// Rate limit: 간단한 in-memory (프로덕션은 Upstash Redis 권장)
-const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
-const RATE_LIMIT = 20; // 분당 20회
-const RATE_WINDOW = 60_000;
-
-function checkRateLimit(ip: string): boolean {
-  const now = Date.now();
-  const entry = rateLimitMap.get(ip);
-  if (!entry || now > entry.resetAt) {
-    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_WINDOW });
-    return true;
-  }
-  entry.count++;
-  return entry.count <= RATE_LIMIT;
-}
+import { compareCreateLimiter } from '@/lib/rate-limit';
 
 // 입력값 검증
 function validateInput(body: unknown): {
@@ -57,13 +42,20 @@ function validateInput(body: unknown): {
 
 export async function POST(request: NextRequest) {
   try {
-    // Rate limit
+    // Rate limit (Upstash Redis — 20 req/min per IP)
     const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'unknown';
-    if (!checkRateLimit(ip)) {
-      return NextResponse.json(
-        { error: 'Too many requests' },
-        { status: 429 }
-      );
+
+    try {
+      const { success } = await compareCreateLimiter.limit(ip);
+      if (!success) {
+        return NextResponse.json(
+          { error: 'Too many requests' },
+          { status: 429 }
+        );
+      }
+    } catch (err) {
+      // Redis 장애 시 fail-open
+      logger.error('compare/create/ratelimit', err);
     }
 
     // Body 파싱
