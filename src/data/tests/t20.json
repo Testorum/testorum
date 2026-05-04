@@ -990,7 +990,7 @@
       "locale_data": {
         "en": {
           "title": "What You See Is What You Get",
-          "description": "Your public and private selves are basically the same person. What people see in the first five minutes is what they get after five years. This isn't because you lack depth — it's because you refuse to perform. Your authenticity is rare and magnetic. Blind spot? Some social contexts actually benefit from a filter. Being 100% yourself 100% of the time can overwhelm people who aren't ready for that intensity.",
+          "description": "Your public and private selves are basically the same person. What people see in the first five minutes is what they get at year five. Not because you lack depth — because you refuse to perform. Authenticity isn't a buzzword for you. It's a non-negotiable way of existing.\n\nYou're the one who says the same thing to someone's face that you'd say behind their back. You don't code-switch between groups or adjust your personality based on who's watching. Your humor is the same at work and at home. Your opinions don't change depending on the room. People sometimes find this jarring — they're used to social polish, and you show up raw. But the people who stick around learn that what they see is genuinely all there is. No hidden agenda, no second face.\n\nPeople trust you fast because your consistency is rare. In a world full of curated versions, you're refreshingly real. Your relationships tend to be built on solid ground because nobody has to wonder which version of you they're getting — there's only one.\n\nHere's the blind spot: radical transparency can sometimes lack tact. Being real doesn't mean every thought deserves air time. You might accidentally hurt people not because you're cruel but because you don't filter — and sometimes a filter isn't fakeness, it's kindness. Learning to be authentic AND considerate isn't selling out. It's leveling up.\n\nWhat you see is what you get. No exceptions.",
           "tags": [
             "authentic",
             "consistent",
@@ -1000,7 +1000,7 @@
         },
         "ko": {
           "title": "보이는 게 전부다",
-          "description": "공적 자아와 사적 자아가 거의 같은 사람이야. 처음 5분에 보이는 게 5년 후에도 같아. 깊이가 없어서가 아니라 연기를 거부해서야. 사각지대는 어떤 사회적 맥락에서는 필터가 도움이 된다는 거. 항상 100% 자기 자신이면 그 강도에 준비 안 된 사람들을 압도할 수 있어.",
+          "description": "공적 자아와 사적 자아가 거의 같은 사람이야. 처음 5분에 보이는 게 5년 후에도 같아. 깊이가 없어서가 아니라 연기를 거부해서야. 진정성이 유행어가 아니라 협상 불가능한 존재 방식이야.\n\n뒤에서 할 말을 앞에서도 똑같이 하는 게 너야. 그룹마다 코드 스위칭 안 하고 누가 보는지에 따라 성격을 조정하지 않아. 유머가 회사에서나 집에서나 같고 의견이 방에 따라 안 변해. 사람들이 가끔 당황하는데 — 사교적 광택에 익숙한데 넌 날것으로 나타나니까. 근데 곁에 남는 사람은 보이는 게 진짜 전부라는 걸 알게 돼. 숨은 의도도 두 번째 얼굴도 없어.\n\n일관성이 희귀하니까 사람들이 빨리 믿어. 큐레이션된 버전으로 가득한 세상에서 상쾌하게 진짜야. 어떤 버전의 너를 만나는 건지 궁금해할 필요가 없으니까 관계가 단단한 땅 위에 세워져.\n\n근데 급진적 투명성에 재치가 부족할 수 있어. 진짜라고 해서 모든 생각이 방송될 자격이 있는 건 아니거든. 잔인해서가 아니라 필터가 없어서 사람을 다치게 할 수 있어 — 가끔 필터는 가식이 아니라 배려야. 진정성이면서 동시에 사려 깊은 건 타협이 아니라 업그레이드야.\n\n보이는 게 전부야. 예외 없이",
           "tags": [
             "진정성",
             "일관성",
@@ -1022,7 +1022,7 @@
       "locale_data": {
         "en": {
           "title": "Quiet Storm",
-          "description": "Outside: calm, composed, maybe even reserved. Inside: a full orchestra of feelings, ideas, and intensity that would shock most people who think they know you. You process deeply but express selectively. The few people who've seen the real you? They'll never forget it. Blind spot? The gap between your inner world and outer expression can make people underestimate you — or feel surprised when the storm finally surfaces.",
+          "description": "Outside: calm, composed, maybe even reserved. Inside: a full orchestra of feelings, ideas, and intensity that would shock most people who think they know you. You process deeply and feel powerfully — you just don't broadcast it. Your inner world is rich enough to fill a novel, but people only see the cover.\n\nYou're the one who sits quietly at dinner while your mind is running through three different emotional layers of the conversation. You have strong opinions but you pick your battles carefully. When you do speak up, it lands hard — because people weren't expecting depth from the quiet one. You've probably shocked friends by revealing something you've been thinking about for weeks that they had no idea was even on your radar.\n\nYour depth is your superpower. While surface-level people exhaust their energy performing, you're conserving yours for moments that actually matter. The people who earn access to your inner world are treated to a version of you that's passionate, intense, and endlessly interesting. You reward patience.\n\nHere's the blind spot: if nobody knows what's going on inside you, they can't support you or connect with you fully. You might carry things alone that would be lighter if shared. People can't read your mind, and assuming they should is a recipe for loneliness. Letting the storm surface — not all at once, but gradually — is how you build the connections your depth deserves.\n\nCalm on the outside. An entire universe on the inside.",
           "tags": [
             "deep-interior",
             "selective-expression",
@@ -1032,7 +1032,7 @@
         },
         "ko": {
           "title": "조용한 폭풍",
-          "description": "밖: 차분하고 안정적이고 어쩌면 조용한. 안: 대부분의 사람이 너를 안다고 생각하면 충격받을 감정과 아이디어와 강렬함의 풀 오케스트라. 깊게 처리하지만 선택적으로 표현해. 진짜 너를 본 소수? 절대 잊지 않을 거야. 사각지대는 내면과 외부 표현의 갭이 사람들을 과소평가하게 만들거나 폭풍이 올라왔을 때 놀라게 할 수 있다는 거.",
+          "description": "밖: 차분하고 안정적이고 어쩌면 조용한. 안: 널 안다고 생각하는 대부분이 충격받을 감정과 아이디어와 강렬함의 풀 오케스트라. 깊게 처리하고 강하게 느끼는데 그냥 방송을 안 해. 내면 세계가 소설을 채울 만큼 풍부한데 사람들은 표지만 봐.\n\n저녁 식사에서 조용히 앉아 있으면서 머릿속에서 대화의 감정적 레이어 세 개를 동시에 돌리는 게 너야. 강한 의견이 있는데 싸울 곳을 신중하게 골라. 말할 때 세게 꽂히는 건 — 조용한 사람한테서 깊이를 기대 안 했으니까. 몇 주째 생각하던 걸 꺼냈는데 친구들이 그게 네 레이더에 있는 줄도 몰라서 놀란 적 있을 걸.\n\n깊이가 초능력이야. 표면적인 사람들이 연기에 에너지를 소진할 때 넌 진짜 중요한 순간을 위해 아끼고 있어. 네 내면에 접근을 얻은 사람은 열정적이고 강렬하고 끝없이 흥미로운 버전의 너를 만나. 인내심에 보상하는 타입이야.\n\n근데 안에서 무슨 일이 일어나는지 아무도 모르면 지지해줄 수도 제대로 연결될 수도 없어. 나누면 가벼워질 걸 혼자 짊어질 수 있거든. 사람들은 마음을 읽지 못하고 읽어야 한다고 가정하는 건 외로움의 레시피야. 폭풍을 한꺼번에가 아니라 조금씩 드러내는 게 네 깊이가 받을 자격 있는 연결을 만드는 방법이야.\n\n겉은 고요해. 안에는 하나의 우주가 있는 사람",
           "tags": [
             "깊은 내면",
             "선택적 표현",
@@ -1054,7 +1054,7 @@
       "locale_data": {
         "en": {
           "title": "Social Chameleon",
-          "description": "You instinctively adjust who you are based on who you're with. Not fake — adaptive. You read the room and become what it needs. With your boss: professional. With friends: chaos agent. With someone hurting: the calmest person alive. Your core stays the same but your expression shape-shifts. Blind spot? Adapting too much can make you lose track of who you are when nobody's watching. Make sure the chameleon has a home color.",
+          "description": "You instinctively adjust who you are based on who you're with. Not fake — adaptive. You read the room and become what it needs. Boss? Professional. Friends? Chaos agent. Family? Whatever keeps the peace. It's not manipulation. It's social intelligence operating at a level most people can't even see.\n\nYou're the one who moves seamlessly between completely different social groups and fits into each one like you've always been there. You pick up accents, mannerisms, and energy levels like a human mirror. At work you're polished; at a party you're the wild card. Someone's said \"you're so different with them\" and you didn't even notice you switched.\n\nYour adaptability is an extraordinary social skill. You make everyone comfortable because you meet them exactly where they are. You're a natural diplomat, mediator, and connector. People feel understood by you because you genuinely tune into their wavelength — not as a performance, but as a reflex.\n\nHere's the thing: if you spend too long being what everyone else needs, you can lose track of what YOU are. When you're finally alone, you might feel strangely empty — like the character you've been playing all day dissolved and there's nothing underneath. The question isn't \"am I being fake.\" It's \"do I know which version is the real one?\" Finding and protecting that core — the you that exists when nobody's watching — is the most important work you'll do.\n\nI become what the room needs. I'm still learning what I need.",
           "tags": [
             "adaptive",
             "context-sensitive",
@@ -1064,7 +1064,7 @@
         },
         "ko": {
           "title": "소셜 카멜레온",
-          "description": "본능적으로 함께하는 사람에 따라 자신을 조정해. 가짜가 아니라 적응형이야. 분위기를 읽고 필요한 것이 돼. 상사 앞: 프로. 친구: 혼돈의 에이전트. 힘든 사람: 세상에서 가장 차분한 사람. 코어는 같지만 표현이 형태를 바꿔. 사각지대는 너무 적응하면 아무도 안 볼 때 내가 누군지 잃을 수 있다는 거. 카멜레온도 기본 색이 있어야 해.",
+          "description": "본능적으로 함께하는 사람에 따라 자신을 조정해. 가짜가 아니라 적응형이야. 분위기를 읽고 필요한 것이 돼. 상사 앞: 프로. 친구: 혼돈의 에이전트. 가족: 평화를 지키는 역할. 조종이 아니라 대부분이 보지도 못하는 수준의 사회적 지능이야.\n\n완전히 다른 사교 그룹을 매끄럽게 오가면서 각각에 원래 있었던 것처럼 녹아드는 게 너야. 억양 매너리즘 에너지 레벨을 인간 거울처럼 흡수해. 회사 행사에선 세련되고 파티에선 와일드카드야. \"쟤네랑 있을 때 넌 완전 다르다\"는 소리 들어봤을 텐데 바꾼 줄도 몰랐을 걸.\n\n적응력이 대단한 사교 스킬이야. 상대를 정확히 그 지점에서 만나주니까 모두를 편안하게 해. 타고난 외교관이자 중재자이자 연결자야. 연기가 아니라 반사적으로 파장을 맞추니까 사람들이 너한테 이해받는다고 느껴.\n\n근데 남들이 필요한 게 되는 데 너무 오래 쓰면 네가 뭔지 잊어버릴 수 있어. 혼자가 됐을 때 묘하게 공허할 수 있어 — 하루 종일 연기한 캐릭터가 녹아버리고 아래에 아무것도 없는 것 같은 느낌. 질문은 \"내가 가짜인가\"가 아니라 \"어떤 버전이 진짜인지 알고 있나\"야. 그 핵심 — 아무도 안 볼 때의 너 — 을 찾고 지키는 게 네가 할 가장 중요한 작업이야.\n\n방이 필요한 게 돼. 내가 뭘 필요로 하는지는 아직 배우는 중",
           "tags": [
             "적응형",
             "맥락 감지",
@@ -1086,7 +1086,7 @@
       "locale_data": {
         "en": {
           "title": "Secret Softie",
-          "description": "The world sees competence, composure, maybe even a little edge. But behind closed doors? You're way softer than anyone would guess. You analyze in public and feel in private. Your tough exterior protects a heart that's more tender than you'd ever admit. Blind spot? The armor works so well that people might never reach the person underneath. Letting someone past the gates isn't weakness — it's the bravest thing you can do.",
+          "description": "The world sees competence, composure, maybe even a little edge. But behind closed doors? You're way softer than anyone would guess. You analyze publicly and feel privately. Sharp advice at work, tears at a dog video at home.\n\nYou're the one who holds it together in every public setting but completely melts in private. You write long unsent messages to people you care about. You notice tiny gestures — someone holding a door, a stranger being kind — and feel them deeply while keeping a straight face. Your closest person knows a version of you that coworkers wouldn't believe exists.\n\nYour hidden softness is actually your depth. You've learned to protect it because the world doesn't always reward vulnerability, and that survival instinct served you well. But the people who get past your exterior discover someone genuinely warm, tender, and surprisingly emotional. That contrast — between the public armor and the private warmth — is what makes you fascinating to the people who truly know you.\n\nHere's the blind spot: hiding your softness too well means people treat you like you don't need care. If you always look strong, nobody thinks to check on you. And over time, the gap between public and private can feel lonely — like nobody knows the real you. You don't need to broadcast your feelings. But letting the right people see them more often is how the soft version of you gets the love it deserves.\n\nTough exterior. Soft core. Worth the discovery.",
           "tags": [
             "armored-exterior",
             "tender-interior",
@@ -1096,7 +1096,7 @@
         },
         "ko": {
           "title": "시크릿 소프티",
-          "description": "세상은 유능함 침착함 어쩌면 약간의 날카로움을 봐. 하지만 문 닫으면? 아무도 예상 못 할 만큼 부드러워. 공개적으로 분석하고 개인적으로 느끼지. 단단한 겉이 절대 인정 안 할 만큼 여린 마음을 보호해. 사각지대는 갑옷이 너무 잘 작동해서 사람들이 안에 있는 사람에게 영원히 닿지 못할 수 있다는 거. 문을 여는 건 약함이 아니야 — 네가 할 수 있는 가장 용감한 거야.",
+          "description": "세상은 유능함 침착함 어쩌면 약간의 날카로움을 봐. 하지만 문 닫으면? 아무도 예상 못 할 만큼 부드러워. 공개적으로 분석하고 개인적으로 느끼지. 회사에서 날카로운 조언 하고 집에 가서 강아지 영상에 우는 사람이야.\n\n공적인 자리에서 다 감당하고 사적으로는 완전히 녹는 게 너야. 관심 있는 사람한테 길게 쓰고 안 보낸 메시지가 있을 걸. 누가 문을 잡아주거나 낯선 사람이 아이한테 친절한 것 같은 작은 제스처를 깊이 느끼면서 표정은 안 바꿔. 파트너나 가장 친한 친구는 동료들이 믿지 못할 버전의 너를 알고 있을 거야.\n\n숨겨진 부드러움이 사실 깊이야. 세상이 항상 취약함에 보상하지 않으니까 보호하는 법을 배웠고 그 생존 본능이 잘 작동했어. 근데 겉을 통과한 사람은 진짜 따뜻하고 다정하고 놀랍도록 감정적인 누군가를 발견해. 공적 갑옷과 사적 따뜻함 사이의 대비 — 그게 널 진짜 아는 사람한테 매력적인 거야.\n\n근데 부드러움을 너무 잘 숨기면 사람들이 너한테 돌봄이 필요 없다고 대해. 항상 강해 보이면 아무도 안부를 안 물어. 시간이 지나면 공과 사의 간격이 외로울 수 있어 — 진짜 나를 아무도 모르는 것 같은 느낌. 감정을 방송할 필요는 없어. 근데 맞는 사람한테 조금 더 자주 보여주는 게 부드러운 버전의 너가 받을 자격 있는 사랑을 받는 방법이야.\n\n딱딱한 겉. 부드러운 속. 발견할 가치가 있는 사람",
           "tags": [
             "갑옷 외면",
             "부드러운 내면",
